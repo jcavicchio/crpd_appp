@@ -1,0 +1,1115 @@
+<!DOCTYPE PROGRAM SYSTEM 'cfglib.dtd'>
+<PROGRAM   id ="1"   name="fibcall"   entry="0" >
+<INSTRUCTION id="5" code="addiu sp,sp,-24" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="6" code="sw a0,24(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="7" code="li v0,1" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="8" code="sw v0,4(sp)" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="9" code="sw zero,8(sp)" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="10" code="li v0,2" time="129">
+</INSTRUCTION>
+<INSTRUCTION id="11" code="j 400074" time="130">
+</INSTRUCTION>
+<INSTRUCTION id="12" code="sw v0,0(sp)" time="131">
+</INSTRUCTION>
+<INSTRUCTION id="5" code="addiu sp,sp,-24" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="6" code="sw a0,24(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="7" code="li v0,1" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="8" code="sw v0,4(sp)" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="9" code="sw zero,8(sp)" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="10" code="li v0,2" time="129">
+</INSTRUCTION>
+<INSTRUCTION id="11" code="j 400074" time="130">
+</INSTRUCTION>
+<INSTRUCTION id="12" code="sw v0,0(sp)" time="131">
+</INSTRUCTION>
+<INSTRUCTION id="14" code="lw v0,4(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="15" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="16" code="sw v0,12(sp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="17" code="lw v1,4(sp)" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="18" code="lw v0,8(sp)" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="19" code="nop" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="20" code="addu v0,v1,v0" time="120">
+</INSTRUCTION>
+<INSTRUCTION id="21" code="sw v0,4(sp)" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="22" code="lw v0,12(sp)" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="23" code="nop" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="24" code="sw v0,8(sp)" time="124">
+</INSTRUCTION>
+<INSTRUCTION id="25" code="lw v0,0(sp)" time="125">
+</INSTRUCTION>
+<INSTRUCTION id="26" code="nop" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="27" code="addiu v0,v0,1" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="28" code="sw v0,0(sp)" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="14" code="lw v0,4(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="15" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="16" code="sw v0,12(sp)" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="17" code="lw v1,4(sp)" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="18" code="lw v0,8(sp)" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="19" code="nop" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="20" code="addu v0,v1,v0" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="21" code="sw v0,4(sp)" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="22" code="lw v0,12(sp)" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="23" code="nop" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="24" code="sw v0,8(sp)" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="25" code="lw v0,0(sp)" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="26" code="nop" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="27" code="addiu v0,v0,1" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="28" code="sw v0,0(sp)" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="30" code="lw v0,0(sp)" time="213">
+</INSTRUCTION>
+<INSTRUCTION id="31" code="nop" time="214">
+</INSTRUCTION>
+<INSTRUCTION id="32" code="slti v0,v0,31" time="215">
+</INSTRUCTION>
+<INSTRUCTION id="33" code="beqz v0,4000a0" time="216">
+</INSTRUCTION>
+<INSTRUCTION id="34" code="nop" time="217">
+</INSTRUCTION>
+<INSTRUCTION id="30" code="lw v0,0(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="31" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="32" code="slti v0,v0,31" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="33" code="beqz v0,4000a0" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="34" code="nop" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="36" code="lw v1,0(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="37" code="lw v0,24(sp)" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="38" code="nop" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="39" code="slt v0,v0,v1" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="40" code="beqz v0,400038" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="41" code="nop" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="36" code="lw v1,0(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="37" code="lw v0,24(sp)" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="38" code="nop" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="39" code="slt v0,v0,v1" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="40" code="beqz v0,400038" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="41" code="nop" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="42" code="lw v0,4(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="43" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="44" code="sw v0,16(sp)" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="45" code="lw v0,16(sp)" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="46" code="jr ra" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="47" code="addiu sp,sp,24" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="42" code="lw v0,4(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="43" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="44" code="sw v0,16(sp)" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="45" code="lw v0,16(sp)" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="46" code="jr ra" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="47" code="addiu sp,sp,24" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="5" code="addiu sp,sp,-24" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="6" code="sw a0,24(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="7" code="li v0,1" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="8" code="sw v0,4(sp)" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="9" code="sw zero,8(sp)" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="10" code="li v0,2" time="129">
+</INSTRUCTION>
+<INSTRUCTION id="11" code="j 400074" time="130">
+</INSTRUCTION>
+<INSTRUCTION id="12" code="sw v0,0(sp)" time="131">
+</INSTRUCTION>
+<INSTRUCTION id="30" code="lw v0,0(sp)" time="242">
+</INSTRUCTION>
+<INSTRUCTION id="31" code="nop" time="243">
+</INSTRUCTION>
+<INSTRUCTION id="32" code="slti v0,v0,31" time="244">
+</INSTRUCTION>
+<INSTRUCTION id="33" code="beqz v0,4000a0" time="255">
+</INSTRUCTION>
+<INSTRUCTION id="34" code="nop" time="256">
+</INSTRUCTION>
+<INSTRUCTION id="5" code="addiu sp,sp,-24" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="6" code="sw a0,24(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="7" code="li v0,1" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="8" code="sw v0,4(sp)" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="9" code="sw zero,8(sp)" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="10" code="li v0,2" time="129">
+</INSTRUCTION>
+<INSTRUCTION id="11" code="j 400074" time="130">
+</INSTRUCTION>
+<INSTRUCTION id="12" code="sw v0,0(sp)" time="131">
+</INSTRUCTION>
+<INSTRUCTION id="30" code="lw v0,0(sp)" time="132">
+</INSTRUCTION>
+<INSTRUCTION id="31" code="nop" time="133">
+</INSTRUCTION>
+<INSTRUCTION id="32" code="slti v0,v0,31" time="134">
+</INSTRUCTION>
+<INSTRUCTION id="33" code="beqz v0,4000a0" time="135">
+</INSTRUCTION>
+<INSTRUCTION id="34" code="nop" time="136">
+</INSTRUCTION>
+<INSTRUCTION id="5" code="addiu sp,sp,-24" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="6" code="sw a0,24(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="7" code="li v0,1" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="8" code="sw v0,4(sp)" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="9" code="sw zero,8(sp)" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="10" code="li v0,2" time="129">
+</INSTRUCTION>
+<INSTRUCTION id="11" code="j 400074" time="130">
+</INSTRUCTION>
+<INSTRUCTION id="12" code="sw v0,0(sp)" time="131">
+</INSTRUCTION>
+<INSTRUCTION id="30" code="lw v0,0(sp)" time="242">
+</INSTRUCTION>
+<INSTRUCTION id="31" code="nop" time="243">
+</INSTRUCTION>
+<INSTRUCTION id="32" code="slti v0,v0,31" time="244">
+</INSTRUCTION>
+<INSTRUCTION id="33" code="beqz v0,4000a0" time="255">
+</INSTRUCTION>
+<INSTRUCTION id="34" code="nop" time="256">
+</INSTRUCTION>
+<INSTRUCTION id="5" code="addiu sp,sp,-24" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="6" code="sw a0,24(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="7" code="li v0,1" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="8" code="sw v0,4(sp)" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="9" code="sw zero,8(sp)" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="10" code="li v0,2" time="129">
+</INSTRUCTION>
+<INSTRUCTION id="11" code="j 400074" time="130">
+</INSTRUCTION>
+<INSTRUCTION id="12" code="sw v0,0(sp)" time="131">
+</INSTRUCTION>
+<INSTRUCTION id="30" code="lw v0,0(sp)" time="132">
+</INSTRUCTION>
+<INSTRUCTION id="31" code="nop" time="133">
+</INSTRUCTION>
+<INSTRUCTION id="32" code="slti v0,v0,31" time="134">
+</INSTRUCTION>
+<INSTRUCTION id="33" code="beqz v0,4000a0" time="135">
+</INSTRUCTION>
+<INSTRUCTION id="34" code="nop" time="136">
+</INSTRUCTION>
+<INSTRUCTION id="14" code="lw v0,4(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="15" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="16" code="sw v0,12(sp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="17" code="lw v1,4(sp)" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="18" code="lw v0,8(sp)" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="19" code="nop" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="20" code="addu v0,v1,v0" time="120">
+</INSTRUCTION>
+<INSTRUCTION id="21" code="sw v0,4(sp)" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="22" code="lw v0,12(sp)" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="23" code="nop" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="24" code="sw v0,8(sp)" time="124">
+</INSTRUCTION>
+<INSTRUCTION id="25" code="lw v0,0(sp)" time="125">
+</INSTRUCTION>
+<INSTRUCTION id="26" code="nop" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="27" code="addiu v0,v0,1" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="28" code="sw v0,0(sp)" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="30" code="lw v0,0(sp)" time="239">
+</INSTRUCTION>
+<INSTRUCTION id="31" code="nop" time="240">
+</INSTRUCTION>
+<INSTRUCTION id="32" code="slti v0,v0,31" time="241">
+</INSTRUCTION>
+<INSTRUCTION id="33" code="beqz v0,4000a0" time="252">
+</INSTRUCTION>
+<INSTRUCTION id="34" code="nop" time="253">
+</INSTRUCTION>
+<INSTRUCTION id="14" code="lw v0,4(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="15" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="16" code="sw v0,12(sp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="17" code="lw v1,4(sp)" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="18" code="lw v0,8(sp)" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="19" code="nop" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="20" code="addu v0,v1,v0" time="120">
+</INSTRUCTION>
+<INSTRUCTION id="21" code="sw v0,4(sp)" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="22" code="lw v0,12(sp)" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="23" code="nop" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="24" code="sw v0,8(sp)" time="124">
+</INSTRUCTION>
+<INSTRUCTION id="25" code="lw v0,0(sp)" time="125">
+</INSTRUCTION>
+<INSTRUCTION id="26" code="nop" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="27" code="addiu v0,v0,1" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="28" code="sw v0,0(sp)" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="30" code="lw v0,0(sp)" time="129">
+</INSTRUCTION>
+<INSTRUCTION id="31" code="nop" time="130">
+</INSTRUCTION>
+<INSTRUCTION id="32" code="slti v0,v0,31" time="131">
+</INSTRUCTION>
+<INSTRUCTION id="33" code="beqz v0,4000a0" time="132">
+</INSTRUCTION>
+<INSTRUCTION id="34" code="nop" time="133">
+</INSTRUCTION>
+<INSTRUCTION id="14" code="lw v0,4(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="15" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="16" code="sw v0,12(sp)" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="17" code="lw v1,4(sp)" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="18" code="lw v0,8(sp)" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="19" code="nop" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="20" code="addu v0,v1,v0" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="21" code="sw v0,4(sp)" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="22" code="lw v0,12(sp)" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="23" code="nop" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="24" code="sw v0,8(sp)" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="25" code="lw v0,0(sp)" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="26" code="nop" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="27" code="addiu v0,v0,1" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="28" code="sw v0,0(sp)" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="30" code="lw v0,0(sp)" time="129">
+</INSTRUCTION>
+<INSTRUCTION id="31" code="nop" time="130">
+</INSTRUCTION>
+<INSTRUCTION id="32" code="slti v0,v0,31" time="131">
+</INSTRUCTION>
+<INSTRUCTION id="33" code="beqz v0,4000a0" time="142">
+</INSTRUCTION>
+<INSTRUCTION id="34" code="nop" time="143">
+</INSTRUCTION>
+<INSTRUCTION id="14" code="lw v0,4(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="15" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="16" code="sw v0,12(sp)" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="17" code="lw v1,4(sp)" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="18" code="lw v0,8(sp)" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="19" code="nop" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="20" code="addu v0,v1,v0" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="21" code="sw v0,4(sp)" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="22" code="lw v0,12(sp)" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="23" code="nop" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="24" code="sw v0,8(sp)" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="25" code="lw v0,0(sp)" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="26" code="nop" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="27" code="addiu v0,v0,1" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="28" code="sw v0,0(sp)" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="30" code="lw v0,0(sp)" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="31" code="nop" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="32" code="slti v0,v0,31" time="120">
+</INSTRUCTION>
+<INSTRUCTION id="33" code="beqz v0,4000a0" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="34" code="nop" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="30" code="lw v0,0(sp)" time="213">
+</INSTRUCTION>
+<INSTRUCTION id="31" code="nop" time="214">
+</INSTRUCTION>
+<INSTRUCTION id="32" code="slti v0,v0,31" time="215">
+</INSTRUCTION>
+<INSTRUCTION id="33" code="beqz v0,4000a0" time="216">
+</INSTRUCTION>
+<INSTRUCTION id="34" code="nop" time="217">
+</INSTRUCTION>
+<INSTRUCTION id="36" code="lw v1,0(sp)" time="218">
+</INSTRUCTION>
+<INSTRUCTION id="37" code="lw v0,24(sp)" time="219">
+</INSTRUCTION>
+<INSTRUCTION id="38" code="nop" time="220">
+</INSTRUCTION>
+<INSTRUCTION id="39" code="slt v0,v0,v1" time="221">
+</INSTRUCTION>
+<INSTRUCTION id="40" code="beqz v0,400038" time="222">
+</INSTRUCTION>
+<INSTRUCTION id="41" code="nop" time="223">
+</INSTRUCTION>
+<INSTRUCTION id="30" code="lw v0,0(sp)" time="213">
+</INSTRUCTION>
+<INSTRUCTION id="31" code="nop" time="214">
+</INSTRUCTION>
+<INSTRUCTION id="32" code="slti v0,v0,31" time="215">
+</INSTRUCTION>
+<INSTRUCTION id="33" code="beqz v0,4000a0" time="216">
+</INSTRUCTION>
+<INSTRUCTION id="34" code="nop" time="217">
+</INSTRUCTION>
+<INSTRUCTION id="36" code="lw v1,0(sp)" time="218">
+</INSTRUCTION>
+<INSTRUCTION id="37" code="lw v0,24(sp)" time="219">
+</INSTRUCTION>
+<INSTRUCTION id="38" code="nop" time="220">
+</INSTRUCTION>
+<INSTRUCTION id="39" code="slt v0,v0,v1" time="221">
+</INSTRUCTION>
+<INSTRUCTION id="40" code="beqz v0,400038" time="222">
+</INSTRUCTION>
+<INSTRUCTION id="41" code="nop" time="223">
+</INSTRUCTION>
+<INSTRUCTION id="30" code="lw v0,0(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="31" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="32" code="slti v0,v0,31" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="33" code="beqz v0,4000a0" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="34" code="nop" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="36" code="lw v1,0(sp)" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="37" code="lw v0,24(sp)" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="38" code="nop" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="39" code="slt v0,v0,v1" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="40" code="beqz v0,400038" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="41" code="nop" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="30" code="lw v0,0(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="31" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="32" code="slti v0,v0,31" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="33" code="beqz v0,4000a0" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="34" code="nop" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="36" code="lw v1,0(sp)" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="37" code="lw v0,24(sp)" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="38" code="nop" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="39" code="slt v0,v0,v1" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="40" code="beqz v0,400038" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="41" code="nop" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="30" code="lw v0,0(sp)" time="213">
+</INSTRUCTION>
+<INSTRUCTION id="31" code="nop" time="214">
+</INSTRUCTION>
+<INSTRUCTION id="32" code="slti v0,v0,31" time="215">
+</INSTRUCTION>
+<INSTRUCTION id="33" code="beqz v0,4000a0" time="216">
+</INSTRUCTION>
+<INSTRUCTION id="34" code="nop" time="217">
+</INSTRUCTION>
+<INSTRUCTION id="42" code="lw v0,4(sp)" time="218">
+</INSTRUCTION>
+<INSTRUCTION id="43" code="nop" time="219">
+</INSTRUCTION>
+<INSTRUCTION id="44" code="sw v0,16(sp)" time="220">
+</INSTRUCTION>
+<INSTRUCTION id="45" code="lw v0,16(sp)" time="221">
+</INSTRUCTION>
+<INSTRUCTION id="46" code="jr ra" time="222">
+</INSTRUCTION>
+<INSTRUCTION id="47" code="addiu sp,sp,24" time="223">
+</INSTRUCTION>
+<INSTRUCTION id="30" code="lw v0,0(sp)" time="213">
+</INSTRUCTION>
+<INSTRUCTION id="31" code="nop" time="214">
+</INSTRUCTION>
+<INSTRUCTION id="32" code="slti v0,v0,31" time="215">
+</INSTRUCTION>
+<INSTRUCTION id="33" code="beqz v0,4000a0" time="216">
+</INSTRUCTION>
+<INSTRUCTION id="34" code="nop" time="217">
+</INSTRUCTION>
+<INSTRUCTION id="42" code="lw v0,4(sp)" time="218">
+</INSTRUCTION>
+<INSTRUCTION id="43" code="nop" time="219">
+</INSTRUCTION>
+<INSTRUCTION id="44" code="sw v0,16(sp)" time="220">
+</INSTRUCTION>
+<INSTRUCTION id="45" code="lw v0,16(sp)" time="221">
+</INSTRUCTION>
+<INSTRUCTION id="46" code="jr ra" time="222">
+</INSTRUCTION>
+<INSTRUCTION id="47" code="addiu sp,sp,24" time="223">
+</INSTRUCTION>
+<INSTRUCTION id="30" code="lw v0,0(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="31" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="32" code="slti v0,v0,31" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="33" code="beqz v0,4000a0" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="34" code="nop" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="42" code="lw v0,4(sp)" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="43" code="nop" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="44" code="sw v0,16(sp)" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="45" code="lw v0,16(sp)" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="46" code="jr ra" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="47" code="addiu sp,sp,24" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="30" code="lw v0,0(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="31" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="32" code="slti v0,v0,31" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="33" code="beqz v0,4000a0" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="34" code="nop" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="42" code="lw v0,4(sp)" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="43" code="nop" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="44" code="sw v0,16(sp)" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="45" code="lw v0,16(sp)" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="46" code="jr ra" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="47" code="addiu sp,sp,24" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="36" code="lw v1,0(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="37" code="lw v0,24(sp)" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="38" code="nop" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="39" code="slt v0,v0,v1" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="40" code="beqz v0,400038" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="41" code="nop" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="14" code="lw v0,4(sp)" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="15" code="nop" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="16" code="sw v0,12(sp)" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="17" code="lw v1,4(sp)" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="18" code="lw v0,8(sp)" time="124">
+</INSTRUCTION>
+<INSTRUCTION id="19" code="nop" time="125">
+</INSTRUCTION>
+<INSTRUCTION id="20" code="addu v0,v1,v0" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="21" code="sw v0,4(sp)" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="22" code="lw v0,12(sp)" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="23" code="nop" time="129">
+</INSTRUCTION>
+<INSTRUCTION id="24" code="sw v0,8(sp)" time="130">
+</INSTRUCTION>
+<INSTRUCTION id="25" code="lw v0,0(sp)" time="131">
+</INSTRUCTION>
+<INSTRUCTION id="26" code="nop" time="132">
+</INSTRUCTION>
+<INSTRUCTION id="27" code="addiu v0,v0,1" time="133">
+</INSTRUCTION>
+<INSTRUCTION id="28" code="sw v0,0(sp)" time="134">
+</INSTRUCTION>
+<INSTRUCTION id="36" code="lw v1,0(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="37" code="lw v0,24(sp)" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="38" code="nop" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="39" code="slt v0,v0,v1" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="40" code="beqz v0,400038" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="41" code="nop" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="14" code="lw v0,4(sp)" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="15" code="nop" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="16" code="sw v0,12(sp)" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="17" code="lw v1,4(sp)" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="18" code="lw v0,8(sp)" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="19" code="nop" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="20" code="addu v0,v1,v0" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="21" code="sw v0,4(sp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="22" code="lw v0,12(sp)" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="23" code="nop" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="24" code="sw v0,8(sp)" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="25" code="lw v0,0(sp)" time="120">
+</INSTRUCTION>
+<INSTRUCTION id="26" code="nop" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="27" code="addiu v0,v0,1" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="28" code="sw v0,0(sp)" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="36" code="lw v1,0(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="37" code="lw v0,24(sp)" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="38" code="nop" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="39" code="slt v0,v0,v1" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="40" code="beqz v0,400038" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="41" code="nop" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="14" code="lw v0,4(sp)" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="15" code="nop" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="16" code="sw v0,12(sp)" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="17" code="lw v1,4(sp)" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="18" code="lw v0,8(sp)" time="124">
+</INSTRUCTION>
+<INSTRUCTION id="19" code="nop" time="125">
+</INSTRUCTION>
+<INSTRUCTION id="20" code="addu v0,v1,v0" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="21" code="sw v0,4(sp)" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="22" code="lw v0,12(sp)" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="23" code="nop" time="129">
+</INSTRUCTION>
+<INSTRUCTION id="24" code="sw v0,8(sp)" time="130">
+</INSTRUCTION>
+<INSTRUCTION id="25" code="lw v0,0(sp)" time="131">
+</INSTRUCTION>
+<INSTRUCTION id="26" code="nop" time="132">
+</INSTRUCTION>
+<INSTRUCTION id="27" code="addiu v0,v0,1" time="133">
+</INSTRUCTION>
+<INSTRUCTION id="28" code="sw v0,0(sp)" time="134">
+</INSTRUCTION>
+<INSTRUCTION id="36" code="lw v1,0(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="37" code="lw v0,24(sp)" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="38" code="nop" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="39" code="slt v0,v0,v1" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="40" code="beqz v0,400038" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="41" code="nop" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="14" code="lw v0,4(sp)" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="15" code="nop" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="16" code="sw v0,12(sp)" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="17" code="lw v1,4(sp)" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="18" code="lw v0,8(sp)" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="19" code="nop" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="20" code="addu v0,v1,v0" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="21" code="sw v0,4(sp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="22" code="lw v0,12(sp)" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="23" code="nop" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="24" code="sw v0,8(sp)" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="25" code="lw v0,0(sp)" time="120">
+</INSTRUCTION>
+<INSTRUCTION id="26" code="nop" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="27" code="addiu v0,v0,1" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="28" code="sw v0,0(sp)" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="36" code="lw v1,0(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="37" code="lw v0,24(sp)" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="38" code="nop" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="39" code="slt v0,v0,v1" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="40" code="beqz v0,400038" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="41" code="nop" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="42" code="lw v0,4(sp)" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="43" code="nop" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="44" code="sw v0,16(sp)" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="45" code="lw v0,16(sp)" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="46" code="jr ra" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="47" code="addiu sp,sp,24" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="36" code="lw v1,0(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="37" code="lw v0,24(sp)" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="38" code="nop" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="39" code="slt v0,v0,v1" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="40" code="beqz v0,400038" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="41" code="nop" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="42" code="lw v0,4(sp)" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="43" code="nop" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="44" code="sw v0,16(sp)" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="45" code="lw v0,16(sp)" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="46" code="jr ra" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="47" code="addiu sp,sp,24" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="36" code="lw v1,0(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="37" code="lw v0,24(sp)" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="38" code="nop" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="39" code="slt v0,v0,v1" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="40" code="beqz v0,400038" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="41" code="nop" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="42" code="lw v0,4(sp)" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="43" code="nop" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="44" code="sw v0,16(sp)" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="45" code="lw v0,16(sp)" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="46" code="jr ra" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="47" code="addiu sp,sp,24" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="36" code="lw v1,0(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="37" code="lw v0,24(sp)" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="38" code="nop" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="39" code="slt v0,v0,v1" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="40" code="beqz v0,400038" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="41" code="nop" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="42" code="lw v0,4(sp)" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="43" code="nop" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="44" code="sw v0,16(sp)" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="45" code="lw v0,16(sp)" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="46" code="jr ra" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="47" code="addiu sp,sp,24" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="58" code="addiu sp,sp,-32" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="59" code="sw ra,28(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="60" code="li v0,30" time="226">
+</INSTRUCTION>
+<INSTRUCTION id="61" code="sw v0,16(sp)" time="227">
+</INSTRUCTION>
+<INSTRUCTION id="62" code="lw a0,16(sp)" time="228">
+</INSTRUCTION>
+<INSTRUCTION id="63" code="jal 400018" time="229">
+</INSTRUCTION>
+<INSTRUCTION id="64" code="nop" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="58" code="addiu sp,sp,-32" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="59" code="sw ra,28(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="60" code="li v0,30" time="226">
+</INSTRUCTION>
+<INSTRUCTION id="61" code="sw v0,16(sp)" time="227">
+</INSTRUCTION>
+<INSTRUCTION id="62" code="lw a0,16(sp)" time="228">
+</INSTRUCTION>
+<INSTRUCTION id="63" code="jal 400018" time="229">
+</INSTRUCTION>
+<INSTRUCTION id="64" code="nop" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="65" code="lw v0,16(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="66" code="lw ra,28(sp)" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="67" code="addiu sp,sp,32" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="68" code="jr ra" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="69" code="nop" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="65" code="lw v0,16(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="66" code="lw ra,28(sp)" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="67" code="addiu sp,sp,32" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="68" code="jr ra" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="69" code="nop" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="58" code="addiu sp,sp,-32" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="59" code="sw ra,28(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="60" code="li v0,30" time="226">
+</INSTRUCTION>
+<INSTRUCTION id="61" code="sw v0,16(sp)" time="227">
+</INSTRUCTION>
+<INSTRUCTION id="62" code="lw a0,16(sp)" time="228">
+</INSTRUCTION>
+<INSTRUCTION id="63" code="jal 400018" time="229">
+</INSTRUCTION>
+<INSTRUCTION id="64" code="nop" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="65" code="lw v0,16(sp)" time="231">
+</INSTRUCTION>
+<INSTRUCTION id="66" code="lw ra,28(sp)" time="232">
+</INSTRUCTION>
+<INSTRUCTION id="67" code="addiu sp,sp,32" time="233">
+</INSTRUCTION>
+<INSTRUCTION id="68" code="jr ra" time="244">
+</INSTRUCTION>
+<INSTRUCTION id="69" code="nop" time="245">
+</INSTRUCTION>
+<INSTRUCTION id="58" code="addiu sp,sp,-32" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="59" code="sw ra,28(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="60" code="li v0,30" time="226">
+</INSTRUCTION>
+<INSTRUCTION id="61" code="sw v0,16(sp)" time="227">
+</INSTRUCTION>
+<INSTRUCTION id="62" code="lw a0,16(sp)" time="228">
+</INSTRUCTION>
+<INSTRUCTION id="63" code="jal 400018" time="229">
+</INSTRUCTION>
+<INSTRUCTION id="64" code="nop" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="65" code="lw v0,16(sp)" time="231">
+</INSTRUCTION>
+<INSTRUCTION id="66" code="lw ra,28(sp)" time="232">
+</INSTRUCTION>
+<INSTRUCTION id="67" code="addiu sp,sp,32" time="233">
+</INSTRUCTION>
+<INSTRUCTION id="68" code="jr ra" time="244">
+</INSTRUCTION>
+<INSTRUCTION id="69" code="nop" time="245">
+</INSTRUCTION>
+<INSTRUCTION id="58" code="addiu sp,sp,-32" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="59" code="sw ra,28(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="60" code="li v0,30" time="226">
+</INSTRUCTION>
+<INSTRUCTION id="61" code="sw v0,16(sp)" time="227">
+</INSTRUCTION>
+<INSTRUCTION id="62" code="lw a0,16(sp)" time="228">
+</INSTRUCTION>
+<INSTRUCTION id="63" code="jal 400018" time="229">
+</INSTRUCTION>
+<INSTRUCTION id="64" code="nop" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="65" code="lw v0,16(sp)" time="231">
+</INSTRUCTION>
+<INSTRUCTION id="66" code="lw ra,28(sp)" time="232">
+</INSTRUCTION>
+<INSTRUCTION id="67" code="addiu sp,sp,32" time="233">
+</INSTRUCTION>
+<INSTRUCTION id="68" code="jr ra" time="244">
+</INSTRUCTION>
+<INSTRUCTION id="69" code="nop" time="245">
+</INSTRUCTION>
+<INSTRUCTION id="58" code="addiu sp,sp,-32" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="59" code="sw ra,28(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="60" code="li v0,30" time="226">
+</INSTRUCTION>
+<INSTRUCTION id="61" code="sw v0,16(sp)" time="227">
+</INSTRUCTION>
+<INSTRUCTION id="62" code="lw a0,16(sp)" time="228">
+</INSTRUCTION>
+<INSTRUCTION id="63" code="jal 400018" time="229">
+</INSTRUCTION>
+<INSTRUCTION id="64" code="nop" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="65" code="lw v0,16(sp)" time="231">
+</INSTRUCTION>
+<INSTRUCTION id="66" code="lw ra,28(sp)" time="232">
+</INSTRUCTION>
+<INSTRUCTION id="67" code="addiu sp,sp,32" time="233">
+</INSTRUCTION>
+<INSTRUCTION id="68" code="jr ra" time="244">
+</INSTRUCTION>
+<INSTRUCTION id="69" code="nop" time="245">
+</INSTRUCTION>
+<INSTRUCTION id="58" code="addiu sp,sp,-32" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="59" code="sw ra,28(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="60" code="li v0,30" time="226">
+</INSTRUCTION>
+<INSTRUCTION id="61" code="sw v0,16(sp)" time="227">
+</INSTRUCTION>
+<INSTRUCTION id="62" code="lw a0,16(sp)" time="228">
+</INSTRUCTION>
+<INSTRUCTION id="63" code="jal 400018" time="229">
+</INSTRUCTION>
+<INSTRUCTION id="64" code="nop" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="5" code="addiu sp,sp,-24" time="341">
+</INSTRUCTION>
+<INSTRUCTION id="6" code="sw a0,24(sp)" time="342">
+</INSTRUCTION>
+<INSTRUCTION id="7" code="li v0,1" time="353">
+</INSTRUCTION>
+<INSTRUCTION id="8" code="sw v0,4(sp)" time="354">
+</INSTRUCTION>
+<INSTRUCTION id="9" code="sw zero,8(sp)" time="355">
+</INSTRUCTION>
+<INSTRUCTION id="10" code="li v0,2" time="356">
+</INSTRUCTION>
+<INSTRUCTION id="11" code="j 400074" time="357">
+</INSTRUCTION>
+<INSTRUCTION id="12" code="sw v0,0(sp)" time="358">
+</INSTRUCTION>
+<INSTRUCTION id="58" code="addiu sp,sp,-32" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="59" code="sw ra,28(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="60" code="li v0,30" time="226">
+</INSTRUCTION>
+<INSTRUCTION id="61" code="sw v0,16(sp)" time="227">
+</INSTRUCTION>
+<INSTRUCTION id="62" code="lw a0,16(sp)" time="228">
+</INSTRUCTION>
+<INSTRUCTION id="63" code="jal 400018" time="229">
+</INSTRUCTION>
+<INSTRUCTION id="64" code="nop" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="5" code="addiu sp,sp,-24" time="341">
+</INSTRUCTION>
+<INSTRUCTION id="6" code="sw a0,24(sp)" time="342">
+</INSTRUCTION>
+<INSTRUCTION id="7" code="li v0,1" time="353">
+</INSTRUCTION>
+<INSTRUCTION id="8" code="sw v0,4(sp)" time="354">
+</INSTRUCTION>
+<INSTRUCTION id="9" code="sw zero,8(sp)" time="355">
+</INSTRUCTION>
+<INSTRUCTION id="10" code="li v0,2" time="356">
+</INSTRUCTION>
+<INSTRUCTION id="11" code="j 400074" time="357">
+</INSTRUCTION>
+<INSTRUCTION id="12" code="sw v0,0(sp)" time="358">
+</INSTRUCTION>
+<INSTRUCTION id="42" code="lw v0,4(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="43" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="44" code="sw v0,16(sp)" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="45" code="lw v0,16(sp)" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="46" code="jr ra" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="47" code="addiu sp,sp,24" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="65" code="lw v0,16(sp)" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="66" code="lw ra,28(sp)" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="67" code="addiu sp,sp,32" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="68" code="jr ra" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="69" code="nop" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="42" code="lw v0,4(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="43" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="44" code="sw v0,16(sp)" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="45" code="lw v0,16(sp)" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="46" code="jr ra" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="47" code="addiu sp,sp,24" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="65" code="lw v0,16(sp)" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="66" code="lw ra,28(sp)" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="67" code="addiu sp,sp,32" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="68" code="jr ra" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="69" code="nop" time="113">
+</INSTRUCTION>
+</PROGRAM>

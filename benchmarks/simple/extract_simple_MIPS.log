@@ -1,0 +1,11 @@
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS_LINUX/bin/mips-cpp -I. -I.. simple.c>/tmp/simple.c
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-gcc -fomit-frame-pointer -ggdb -c -S  /tmp/simple.c -o /tmp/simple.s
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-as  /tmp/simple.s -o /tmp/simple.o
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-ld  -e main -o /tmp/simple /tmp/simple.o
+** Executing : /bin/cp -f /tmp/simple ./simple.exe 
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-readelf  -S /tmp/simple>./simple.readelf
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-objdump  -t -d -z  /tmp/simple > /tmp/simple.objdump
+Objdump done (address extraction)
+** Executing : /bin/cp -f /tmp/simple.objdump ./simple.objdump 
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-objdump  -s -z --section=.wcet_annot /tmp/simple > /tmp/simple.annot
+Creating Cfg

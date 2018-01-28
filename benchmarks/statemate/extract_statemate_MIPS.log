@@ -1,0 +1,11 @@
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS_LINUX/bin/mips-cpp -I. -I.. statemate.c>/tmp/statemate.c
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-gcc -fomit-frame-pointer -ggdb -c -S  /tmp/statemate.c -o /tmp/statemate.s
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-as  /tmp/statemate.s -o /tmp/statemate.o
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-ld  -e main -o /tmp/statemate /tmp/statemate.o
+** Executing : /bin/cp -f /tmp/statemate ./statemate.exe 
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-readelf  -S /tmp/statemate>./statemate.readelf
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-objdump  -t -d -z  /tmp/statemate > /tmp/statemate.objdump
+Objdump done (address extraction)
+** Executing : /bin/cp -f /tmp/statemate.objdump ./statemate.objdump 
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-objdump  -s -z --section=.wcet_annot /tmp/statemate > /tmp/statemate.annot
+Creating Cfg

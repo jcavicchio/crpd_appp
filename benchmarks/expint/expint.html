@@ -1,0 +1,337 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<h1>/home/cavicchio/Downloads/heptane_svn/benchmarks/expint/expint.c</h1> <br>
+<table border=0 cellpadding=0 cellspacing=0>
+<tr><td><h2>Frequency</h2></td><th><h2>Source</h2></th></tr><tr><td> 0</td>
+<td><tt><pre>/* MDH WCET BENCHMARK SUITE. File version $Id: expint.c,v 1.1.1.1 2007-12-11 15:22:55 puaut Exp $ */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/************************************************************************</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * FROM:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *   http://sron9907.sron.nl/manual/numrecip/c/expint.c</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * FEATURE:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *   One loop depends on a loop-invariant value to determine</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *   if it run or not.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> ***********************************************************************/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#include <annot.h></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> /*</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  * Changes: JG 2005/12/23: Changed type of main to int, added prototypes.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>                            Indented program.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>long int        foo(long int x);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>long int        expint(int n, long int x);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>main(void)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	expint(50, 1);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	/* with  expint(50,21) as argument, runs the short path */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	/* in expint.   expint(50,1)  gives the longest execution time */</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	return 0;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>long int </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>foo(long int x)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>100 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>100 </td>
+<td><tt><pre>	return x * x + (8 * x) << (4 - x);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>100 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/* Function with same flow, different data types,</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>   nonsensical calculations */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>long int </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>expint(int n, long int x)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	int             i, ii, nm1;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	long int        a, b, c, d, del, fact, h, psi, ans;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	nm1 = n - 1;		/* arg=50 --> 49 */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	if (x > 1) {		/* take this leg? */</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>		b = x + n;</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>		c = 2e6;</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>		d = 3e7;</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>		h = d;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>		for (i = 1; i <= 100; i++) {	/* MAXIT is 100 */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		  ANNOT_MAXITER(100);</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>		  a = -i * (nm1 + i);</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>		  b += 2;</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>		  d = 10 * (a * d + b);</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>		  c = b + a / c;</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>		  del = c * d;</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>		  h *= del;</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>		  if (del < 10000) {</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>		    ans = h * -x;</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>		    return ans;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		  }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	} else {		/* or this leg? */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* For the current argument, will always take */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		/* '2' path here: */</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 0 </td>
+<td><tt><pre>		ans = nm1 != 0 ? 2 : 1000;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>		fact = 1;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 100 101 </td>
+<td><tt><pre>		for (i = 1; i <= 100; i++) {	/* MAXIT */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		  ANNOT_MAXITER(100);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>100 </td>
+<td><tt><pre>		  fact *= -x / i;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>100 </td>
+<td><tt><pre>		  if (i != nm1)	/* depends on parameter n */</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>		    del = -fact / (i - nm1);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		  else {	/* this fat piece only runs ONCE *//* runs on</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>								    * iter 49 */</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>100 </td>
+<td><tt><pre>		    psi = 0x00FF;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>100 4900 5000 </td>
+<td><tt><pre>		    for (ii = 1; ii <= nm1; ii++)	/* */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		      ANNOT_MAXITER(49);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>100 </td>
+<td><tt><pre>		      psi += ii + nm1;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>100 </td>
+<td><tt><pre>		      del = psi + fact * foo(x);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		  }</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>100 </td>
+<td><tt><pre>		  ans += del;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		  /* conditional leave removed */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	return ans;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  #define MAXIT 100 */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  #define EULER 0.5772156649 */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  #define FPMIN 1.0e-30 */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  #define EPS 1.0e-7 */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  float expint(int n, float x) */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  { */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*    void nrerror(char error_text[]); */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*    int i,ii,nm1; */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*    float a,b,c,d,del,fact,h,psi,ans; */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*    nm1=n-1; */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*    if (n < 0 || x < 0.0 || (x==0.0 && (n==0 || n==1))) */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*    nrerror("bad arguments in expint");                */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*     else {  */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*    if (n == 0)  */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*      ans=exp(-x)/x; */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*    else  */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*      { */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*        if (x == 0.0)  */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          ans=1.0/nm1; */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*        else  */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          { */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*            if (x > 1.0) { */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*              b=x+n; */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*              c=1.0/FPMIN; */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*              d=1.0/b; */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*              h=d; */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*              for (i=1;i<=MAXIT;i++)  */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*              { */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                a = -i*(nm1+i); */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                b += 2.0; */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                d=1.0/(a*d+b); */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                c=b+a/c; */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                del=c*d; */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                h *= del; */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                if (fabs(del-1.0) < EPS)  */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                  { */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                    ans=h*exp(-x); */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                    return ans; */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                  } */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*              } */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*            nrerror("continued fraction failed in expint");*/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          }  */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          else  */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*            { */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*              ans = (nm1!=0 ? 1.0/nm1 : -log(x)-EULER); */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*            fact=1.0; */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*            for (i=1;i<=MAXIT;i++) { */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*              fact *= -x/i; */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*              if (i != nm1) del = -fact/(i-nm1); */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*              else { */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                psi = -EULER; */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                for (ii=1;ii<=nm1;ii++) psi += 1.0/ii; */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                del=fact*(-log(x)+psi); */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*              } */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*              ans += del; */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*              if (fabs(del) < fabs(ans)*EPS) return ans; */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*            } */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*            nrerror("series failed in expint"); */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          } */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*        } */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*      } */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*    } */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*    return ans; */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  } */</pre></tt></td></tr>
+</table>
+</body> </html>

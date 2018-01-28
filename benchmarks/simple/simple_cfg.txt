@@ -1,0 +1,161 @@
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS_LINUX/bin/mips-cpp -I. -I.. simple.c>/tmp/simple.c
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-gcc -fomit-frame-pointer -ggdb -c -S  /tmp/simple.c -o /tmp/simple.s
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-as  /tmp/simple.s -o /tmp/simple.o
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-ld  -e main -o /tmp/simple /tmp/simple.o
+** Executing : /bin/cp -f /tmp/simple ./simple.exe 
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-readelf  -S /tmp/simple>./simple.readelf
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-objdump  -t -d -z  /tmp/simple > /tmp/simple.objdump
+Objdump done (address extraction)
+** Executing : /bin/cp -f /tmp/simple.objdump ./simple.objdump 
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-objdump  -s -z --section=.wcet_annot /tmp/simple > /tmp/simple.annot
+Creating Cfg
+Heptane version 1.0
+Reading configuration file
+Executing from configuration file
+
+*** Begin analysis for entry point: main
+[INFO]	ICacheAnalysis: MUST done: 0.000394
+[INFO]	ICacheAnalysis: PS done: 3.8e-05
+[INFO]	ICacheAnalysis: MAY done: 0.000215
+[INFO]	ICacheAnalysis: MUST done: 0.000414
+[INFO]	ICacheAnalysis: PS done: 4.6e-05
+[INFO]	ICacheAnalysis: MAY done: 0.000208
+[INFO]	DcacheAnalysis: MUST done: 0.000483
+[INFO]	DcacheAnalysis: PS done: 3.6e-05
+[INFO]	DcacheAnalysis: MAY done: 0.0003
+[INFO]	DcacheAnalysis: MUST done: 0.00042
+[INFO]	DcacheAnalysis: PS done: 3.5e-05
+[INFO]	DcacheAnalysis: MAY done: 0.000275
+ Pipeline analysis architecture: MIPS
+<INSTRUCTION id="3" code="addiu sp,sp,-16" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="4" code="lw v0,0(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="5" code="nop" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="6" code="sll v0,v0,0x1" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="7" code="sll v1,v0,0x2" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="8" code="addu v1,v0,v1" time="129">
+</INSTRUCTION>
+<INSTRUCTION id="9" code="lw v0,4(sp)" time="130">
+</INSTRUCTION>
+<INSTRUCTION id="10" code="nop" time="131">
+</INSTRUCTION>
+<INSTRUCTION id="11" code="addu v0,v1,v0" time="132">
+</INSTRUCTION>
+<INSTRUCTION id="12" code="addiu v0,v0,-1" time="133">
+</INSTRUCTION>
+<INSTRUCTION id="13" code="sw v0,0(sp)" time="244">
+</INSTRUCTION>
+<INSTRUCTION id="14" code="sw zero,8(sp)" time="245">
+</INSTRUCTION>
+<INSTRUCTION id="15" code="lw v0,4(sp)" time="246">
+</INSTRUCTION>
+<INSTRUCTION id="16" code="nop" time="247">
+</INSTRUCTION>
+<INSTRUCTION id="17" code="addiu v0,v0,1" time="248">
+</INSTRUCTION>
+<INSTRUCTION id="18" code="sw v0,4(sp)" time="249">
+</INSTRUCTION>
+<INSTRUCTION id="19" code="lw v0,0(sp)" time="250">
+</INSTRUCTION>
+<INSTRUCTION id="20" code="nop" time="251">
+</INSTRUCTION>
+<INSTRUCTION id="21" code="addiu v0,v0,-1" time="262">
+</INSTRUCTION>
+<INSTRUCTION id="22" code="sw v0,0(sp)" time="263">
+</INSTRUCTION>
+<INSTRUCTION id="23" code="addiu sp,sp,16" time="264">
+</INSTRUCTION>
+<INSTRUCTION id="24" code="jr ra" time="265">
+</INSTRUCTION>
+<INSTRUCTION id="25" code="nop" time="266">
+</INSTRUCTION>
+<INSTRUCTION id="3" code="addiu sp,sp,-16" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="4" code="lw v0,0(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="5" code="nop" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="6" code="sll v0,v0,0x1" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="7" code="sll v1,v0,0x2" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="8" code="addu v1,v0,v1" time="129">
+</INSTRUCTION>
+<INSTRUCTION id="9" code="lw v0,4(sp)" time="130">
+</INSTRUCTION>
+<INSTRUCTION id="10" code="nop" time="131">
+</INSTRUCTION>
+<INSTRUCTION id="11" code="addu v0,v1,v0" time="132">
+</INSTRUCTION>
+<INSTRUCTION id="12" code="addiu v0,v0,-1" time="133">
+</INSTRUCTION>
+<INSTRUCTION id="13" code="sw v0,0(sp)" time="244">
+</INSTRUCTION>
+<INSTRUCTION id="14" code="sw zero,8(sp)" time="245">
+</INSTRUCTION>
+<INSTRUCTION id="15" code="lw v0,4(sp)" time="246">
+</INSTRUCTION>
+<INSTRUCTION id="16" code="nop" time="247">
+</INSTRUCTION>
+<INSTRUCTION id="17" code="addiu v0,v0,1" time="248">
+</INSTRUCTION>
+<INSTRUCTION id="18" code="sw v0,4(sp)" time="249">
+</INSTRUCTION>
+<INSTRUCTION id="19" code="lw v0,0(sp)" time="250">
+</INSTRUCTION>
+<INSTRUCTION id="20" code="nop" time="251">
+</INSTRUCTION>
+<INSTRUCTION id="21" code="addiu v0,v0,-1" time="262">
+</INSTRUCTION>
+<INSTRUCTION id="22" code="sw v0,0(sp)" time="263">
+</INSTRUCTION>
+<INSTRUCTION id="23" code="addiu sp,sp,16" time="264">
+</INSTRUCTION>
+<INSTRUCTION id="24" code="jr ra" time="265">
+</INSTRUCTION>
+<INSTRUCTION id="25" code="nop" time="266">
+</INSTRUCTION>
+*** IPET analysis, the DATA CACHE is ignored in the PIPELINE analysis.
+IPET method: PIPELINE_ICACHE_DCACHE
+
+L1	type ICACHE	references 23	hits 19	misses 4	
+L1	type DCACHE	references 4	hits 3	misses 1	
+L2	type ICACHE	references 4	hits 2	misses 2	
+L2	type DCACHE	references 1	hits 0	misses 1	
+****************************************
+CFG of name main
+1 end nodes
+------------------------------
+Basic block node
+Node address 400018
+Node instructions
+    addiu sp,sp,-16	 address 400018
+    lw v0,0(sp)	 address 40001c
+    nop	 address 400020
+    sll v0,v0,0x1	 address 400024
+    sll v1,v0,0x2	 address 400028
+    addu v1,v0,v1	 address 40002c
+    lw v0,4(sp)	 address 400030
+    nop	 address 400034
+    addu v0,v1,v0	 address 400038
+    addiu v0,v0,-1	 address 40003c
+    sw v0,0(sp)	 address 400040
+    sw zero,8(sp)	 address 400044
+    lw v0,4(sp)	 address 400048
+    nop	 address 40004c
+    addiu v0,v0,1	 address 400050
+    sw v0,4(sp)	 address 400054
+    lw v0,0(sp)	 address 400058
+    nop	 address 40005c
+    addiu v0,v0,-1	 address 400060
+    sw v0,0(sp)	 address 400064
+    addiu sp,sp,16	 address 400068
+    jr ra	 address 40006c
+    nop	 address 400070
+No successors
+No predecessors
+WCET: 266

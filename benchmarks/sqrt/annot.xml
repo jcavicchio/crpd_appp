@@ -1,0 +1,8 @@
+<CFG name="my_fabs">
+</CFG>
+<CFG name="my_sqrt">
+  <LOOP maxiter="19">
+  </LOOP>
+</CFG>
+<CFG name="main">
+</CFG>

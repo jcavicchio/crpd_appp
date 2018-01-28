@@ -1,0 +1,89 @@
+digraph G {
+subgraph cluster_foo {
+graph [label = "foo"];
+subgraph cluster_loop0x234b8b0 {
+graph [label = "loop [5]"];
+node0x2349030 [label = "@0x400228 (BB)" ,color="green"];
+node0x23485f0 [label = "@0x400218 (BB)"];
+node0x2347790 [label = "@0x400204 (BB)" ,color="green"];
+node0x2246630 [label = "@0x400028 (BB)"];
+node0x2346cc0 [label = "@0x4001f4 (BB)"];
+node0x23460c0 [label = "@0x4001e0 (BB)" ,color="green"];
+node0x2246b70 [label = "@0x400030 (BB)"];
+node0x23455b0 [label = "@0x4001d0 (BB)"];
+node0x225e060 [label = "@0x4001bc (BB)" ,color="green"];
+node0x2247150 [label = "@0x400038 (BB)"];
+node0x2344850 [label = "@0x4001ac (BB)"];
+node0x2252940 [label = "@0x400040 (BB)"];
+subgraph cluster_loop0x234b740 {
+graph [label = "loop [5]"];
+node0x2347790;
+node0x2346cc0;
+node0x23460c0;
+node0x2246b70;
+node0x23455b0;
+node0x225e060;
+node0x2247150;
+node0x2344850;
+node0x2252940;
+subgraph cluster_loop0x234b620 {
+graph [label = "loop [5]"];
+node0x23460c0;
+node0x23455b0;
+node0x225e060;
+node0x2247150;
+node0x2344850;
+node0x2252940;
+subgraph cluster_loop0x234b500 {
+graph [label = "loop [5]"];
+node0x225e060;
+node0x2344850;
+node0x2252940;
+}
+}
+}
+}
+node0x2249100 [label = "@0x400018 (BB)" ,color="blue"];
+node0x2246630;
+node0x2246b70;
+node0x2247150;
+node0x2252940;
+node0x225d3c0 [label = "@0x4000c0 (BB)"];
+node0x2344850;
+node0x225e060;
+node0x23455b0;
+node0x23460c0;
+node0x2346cc0;
+node0x2347790;
+node0x23485f0;
+node0x2349030;
+node0x2349e90 [label = "@0x40023c (BB)"];
+node0x234a130 [label = "@0x400240 (BB)"];
+}
+subgraph cluster_main {
+graph [label = "main"];
+node0x2251d80 [label = "@0x400248 (Call foo)" ,color="blue"];
+node0x234bf80 [label = "@0x40025c (BB)"];
+}
+node0x2249100 -> node0x2349030;
+node0x2246630 -> node0x2347790;
+node0x2246b70 -> node0x23460c0;
+node0x2247150 -> node0x225e060;
+node0x2252940 -> node0x225d3c0;
+node0x2252940 -> node0x2344850;
+node0x225d3c0 -> node0x234a130;
+node0x2344850 -> node0x225e060[color="red"];
+node0x225e060 -> node0x2252940;
+node0x225e060 -> node0x23455b0;
+node0x23455b0 -> node0x23460c0[color="red"];
+node0x23460c0 -> node0x2247150;
+node0x23460c0 -> node0x2346cc0;
+node0x2346cc0 -> node0x2347790[color="red"];
+node0x2347790 -> node0x2246b70;
+node0x2347790 -> node0x23485f0;
+node0x23485f0 -> node0x2349030[color="red"];
+node0x2349030 -> node0x2246630;
+node0x2349030 -> node0x2349e90;
+node0x2349e90 -> node0x234a130;
+node0x2251d80 -> node0x234bf80;
+}

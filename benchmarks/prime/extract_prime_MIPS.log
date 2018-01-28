@@ -1,0 +1,11 @@
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS_LINUX/bin/mips-cpp -I. -I.. prime.c>/tmp/prime.c
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-gcc -fomit-frame-pointer -ggdb -c -S  /tmp/prime.c -o /tmp/prime.s
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-as  /tmp/prime.s -o /tmp/prime.o
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-ld  -e main -o /tmp/prime /tmp/prime.o
+** Executing : /bin/cp -f /tmp/prime ./prime.exe 
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-readelf  -S /tmp/prime>./prime.readelf
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-objdump  -t -d -z  /tmp/prime > /tmp/prime.objdump
+Objdump done (address extraction)
+** Executing : /bin/cp -f /tmp/prime.objdump ./prime.objdump 
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-objdump  -s -z --section=.wcet_annot /tmp/prime > /tmp/prime.annot
+Creating Cfg

@@ -1,0 +1,11 @@
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS_LINUX/bin/mips-cpp -I. -I.. bsort100.c>/tmp/bsort100.c
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-gcc -fomit-frame-pointer -ggdb -c -S  /tmp/bsort100.c -o /tmp/bsort100.s
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-as  /tmp/bsort100.s -o /tmp/bsort100.o
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-ld  -e main -o /tmp/bsort100 /tmp/bsort100.o
+** Executing : /bin/cp -f /tmp/bsort100 ./bsort100.exe 
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-readelf  -S /tmp/bsort100>./bsort100.readelf
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-objdump  -t -d -z  /tmp/bsort100 > /tmp/bsort100.objdump
+Objdump done (address extraction)
+** Executing : /bin/cp -f /tmp/bsort100.objdump ./bsort100.objdump 
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-objdump  -s -z --section=.wcet_annot /tmp/bsort100 > /tmp/bsort100.annot
+Creating Cfg

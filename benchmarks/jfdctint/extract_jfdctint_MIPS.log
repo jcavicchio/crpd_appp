@@ -1,0 +1,11 @@
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS_LINUX/bin/mips-cpp -I. -I.. jfdctint.c>/tmp/jfdctint.c
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-gcc -fomit-frame-pointer -ggdb -c -S  /tmp/jfdctint.c -o /tmp/jfdctint.s
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-as  /tmp/jfdctint.s -o /tmp/jfdctint.o
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-ld  -e main -o /tmp/jfdctint /tmp/jfdctint.o
+** Executing : /bin/cp -f /tmp/jfdctint ./jfdctint.exe 
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-readelf  -S /tmp/jfdctint>./jfdctint.readelf
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-objdump  -t -d -z  /tmp/jfdctint > /tmp/jfdctint.objdump
+Objdump done (address extraction)
+** Executing : /bin/cp -f /tmp/jfdctint.objdump ./jfdctint.objdump 
+** Executing : /home/cavicchio/Downloads/heptane_svn/CROSS_COMPILERS/MIPS/bin/mips-objdump  -s -z --section=.wcet_annot /tmp/jfdctint > /tmp/jfdctint.annot
+Creating Cfg

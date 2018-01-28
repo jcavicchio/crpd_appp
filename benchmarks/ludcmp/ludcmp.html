@@ -1,0 +1,341 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<h1>/home/cavicchio/Downloads/heptane_svn/benchmarks/ludcmp/ludcmp.c</h1> <br>
+<table border=0 cellpadding=0 cellspacing=0>
+<tr><td><h2>Frequency</h2></td><th><h2>Source</h2></th></tr><tr><td> 0</td>
+<td><tt><pre>/* MDH WCET BENCHMARK SUITE. File version $Id: ludcmp.c,v 1.1.1.1 2007-12-11 15:22:56 puaut Exp $ */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*************************************************************************/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*   SNU-RT Benchmark Suite for Worst Case Timing Analysis               */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*   =====================================================               */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                              Collected and Modified by S.-S. Lim      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                           sslim@archi.snu.ac.kr       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                         Real-Time Research Group      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                        Seoul National University      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*        < Features > - restrictions for our experimental environment   */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          1. Completely structured.                                    */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - There are no unconditional jumps.                     */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - There are no exit from loop bodies.                   */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                 (There are no 'break' or 'return' in loop bodies)     */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          2. No 'switch' statements.                                   */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          3. No 'do..while' statements.                                */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          4. Expressions are restricted.                               */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - There are no multiple expressions joined by 'or',     */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                'and' operations.                                      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          5. No library calls.                                         */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - All the functions needed are implemented in the       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                 source file.                                          */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*************************************************************************/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  FILE: ludcmp.c                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  SOURCE : Turbo C Programming for Engineering                         */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  DESCRIPTION :                                                        */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*     Simultaneous linear equations by LU decomposition.                */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*     The arrays a[][] and b[] are input and the array x[] is output    */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*     row vector.                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*     The variable n is the number of equations.                        */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*     The input arrays are initialized in function main.                */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  REMARK :                                                             */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  EXECUTION TIME :                                                     */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*************************************************************************/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#include <annot.h></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/* Changes:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * JG 2005/12/12: Indented program. Removed unused variable nmax.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>** Benchmark Suite for Real-Time Applications, by Sung-Soo Lim</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>**</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>**    III-4. ludcmp.c : Simultaneous Linear Equations by LU Decomposition</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>**                 (from the book C Programming for EEs by Hyun Soon Ahn)</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>*/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>double          a[50][50], b[50], x[50];</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int             ludcmp( /* int nmax, */ int n, double eps);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>static double </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>fabs(double n)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>5 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	double          f;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>5 </td>
+<td><tt><pre>	if (n >= 0)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>		f = n;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	else</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>4 </td>
+<td><tt><pre>		f = -n;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>5 </td>
+<td><tt><pre>	return f;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>5 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>main(void)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	int             i, j/*, nmax = 50*/, n = 5, chkerr;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	double          eps, w;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	eps = 1.0e-6;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 6 7 </td>
+<td><tt><pre>	for (i = 0; i <= n; i++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  ANNOT_MAXITER(6);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>6 </td>
+<td><tt><pre>	  w = 0.0;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>6 36 42 </td>
+<td><tt><pre>		for (j = 0; j <= n; j++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		  ANNOT_MAXITER(6);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>36 </td>
+<td><tt><pre>		  a[i][j] = (i + 1) + (j + 1);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>36 </td>
+<td><tt><pre>		  if (i == j)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>36 </td>
+<td><tt><pre>		    a[i][j] *= 10.0;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>36 </td>
+<td><tt><pre>		  w += a[i][j];</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>6 </td>
+<td><tt><pre>		b[i] = w;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	chkerr = ludcmp( /* nmax, */ n, eps);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	return 0;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>ludcmp( /* int nmax, */ int n, double eps)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  int             i, j, k;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  double          w, y[100];</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>  if (n > 99 || eps <= 0.0)</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>    return (999);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 5 6 </td>
+<td><tt><pre>  for (i = 0; i < n; i++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>    ANNOT_MAXITER(5);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>5 </td>
+<td><tt><pre>    if (fabs(a[i][i]) <= eps)</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>      return (1);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>5 25 30 </td>
+<td><tt><pre>    for (j = i + 1; j <= n; j++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>      ANNOT_MAXITER(5);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>25 </td>
+<td><tt><pre>      w = a[j][i];</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>25 </td>
+<td><tt><pre>      if (i != 0)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>25 125 150 </td>
+<td><tt><pre>	for (k = 0; k < i; k++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  ANNOT_MAXITER(5);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>125 </td>
+<td><tt><pre>	  w -= a[j][k] * a[k][i];</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>25 </td>
+<td><tt><pre>      a[j][i] = w / a[i][i];</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>    }</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>5 25 30 </td>
+<td><tt><pre>    for (j = i + 1; j <= n; j++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>      ANNOT_MAXITER(5);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>25 </td>
+<td><tt><pre>      w = a[i + 1][j];</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>25 125 150 </td>
+<td><tt><pre>      for (k = 0; k <= i; k++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	ANNOT_MAXITER(5);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>125 </td>
+<td><tt><pre>	w -= a[i + 1][k] * a[k][j];</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>      }</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>25 </td>
+<td><tt><pre>      a[i + 1][j] = w;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>    }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  </pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>  y[0] = b[0];</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 5 6 </td>
+<td><tt><pre>  for (i = 1; i <= n; i++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>    ANNOT_MAXITER(5);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>5 </td>
+<td><tt><pre>    w = b[i];</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>5 25 30 </td>
+<td><tt><pre>    for (j = 0; j < i; j++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>      ANNOT_MAXITER(5);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>25 </td>
+<td><tt><pre>      w -= a[i][j] * y[j];</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>    }</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>5 </td>
+<td><tt><pre>    y[i] = w;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  }</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>  x[n] = y[n] / a[n][n];</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 5 6 </td>
+<td><tt><pre>  for (i = n - 1; i >= 0; i--) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>    ANNOT_MAXITER(5);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>5 </td>
+<td><tt><pre>    w = y[i];</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>5 25 30 </td>
+<td><tt><pre>    for (j = i + 1; j <= n; j++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>      ANNOT_MAXITER(5);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>25 </td>
+<td><tt><pre>      w -= a[i][j] * x[j];</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>    }</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>5 </td>
+<td><tt><pre>    x[i] = w / a[i][i];</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  }</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>  return (0);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+</table>
+</body> </html>

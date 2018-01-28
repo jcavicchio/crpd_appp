@@ -1,0 +1,440 @@
+    Function block (0) (0) (0) created
+    Block (1) (1) created
+    Section block (0) (2) created
+    Section block (0) (2) ID: JCSectionBlock0 Object type: JCSectionBlock added to block JCBlock1 (1) (1)
+    Loop block (0) (2) (3) created
+    Section block (1) (4) created
+    Section block (1) (4) ID: JCSectionBlock1 Object type: JCSectionBlock added to block JCBlock2 (2) (3)
+    Conditional block (0) (5) created
+    Conditional section (0) (3) (6) created
+    Section block (2) (7) created
+    Section block (2) (7) ID: JCSectionBlock2 Object type: JCSectionBlock added to block JCBlock3 (3) (6)
+    Conditional section (0) (3) (6) completed
+    Conditional section (0) (3) (6) ID: JCConditionalSection0 Object type: JCConditionalSection added to conditional block JCConditionalBlock0 (0) (5)
+    Conditional section (1) (4) (8) created
+    Section block (3) (9) created
+    Section block (3) (9) ID: JCSectionBlock3 Object type: JCSectionBlock added to block JCBlock4 (4) (8)
+    Conditional block (1) (10) created
+    Conditional section (2) (5) (11) created
+    Section block (4) (12) created
+    Section block (4) (12) ID: JCSectionBlock4 Object type: JCSectionBlock added to block JCBlock5 (5) (11)
+    Conditional section (2) (5) (11) completed
+    Conditional section (2) (5) (11) ID: JCConditionalSection2 Object type: JCConditionalSection added to conditional block JCConditionalBlock1 (1) (10)
+    Conditional section (3) (6) (13) created
+    Section block (5) (14) created
+    Section block (5) (14) ID: JCSectionBlock5 Object type: JCSectionBlock added to block JCBlock6 (6) (13)
+    Conditional section (3) (6) (13) completed
+    Conditional section (3) (6) (13) ID: JCConditionalSection3 Object type: JCConditionalSection added to conditional block JCConditionalBlock1 (1) (10)
+    Conditional block (1) (10) completed
+    Conditional block (1) (10) ID: JCConditionalBlock1 Object type: JCConditionalBlock added to block JCBlock4 (4) (8)
+    Section block (6) (15) created
+    Section block (6) (15) ID: JCSectionBlock6 Object type: JCSectionBlock added to block JCBlock4 (4) (8)
+    Section block (7) (16) created
+    Section block (7) (16) ID: JCSectionBlock7 Object type: JCSectionBlock added to block JCBlock4 (4) (8)
+    Conditional section (1) (4) (8) completed
+    Conditional section (1) (4) (8) ID: JCConditionalSection1 Object type: JCConditionalSection added to conditional block JCConditionalBlock0 (0) (5)
+    Conditional block (0) (5) completed
+    Conditional block (0) (5) ID: JCConditionalBlock0 Object type: JCConditionalBlock added to block JCBlock2 (2) (3)
+    Section block (8) (17) created
+    Section block (8) (17) ID: JCSectionBlock8 Object type: JCSectionBlock added to block JCBlock2 (2) (3)
+    Loop block (0) (2) (3) ID: JCLoopBlock0 Object type: JCLoopBlock maximum iterations set to 8
+    Loop block (0) (2) (3) completed
+    Loop block (0) (3) ID: JCLoopBlock0 Object type: JCLoopBlock added to block JCBlock1 (1) (1)
+    Block (1) (1) completed
+    Block (1) (1) ID: JCBlock1 Object type: JCBlock added to function block JCFunctionBlock0 (0) (0)
+    Function block (0) (0) (0) ID: JCFunctionBlock0 Object type: JCFunctionBlock function name set to icrc1
+    Function block (0) (0) (0) completed
+    Function block (1) (7) (18) created
+    Block (8) (19) created
+    Section block (9) (20) created
+    Section block (9) (20) ID: JCSectionBlock9 Object type: JCSectionBlock added to block JCBlock8 (8) (19)
+    Section block (10) (21) created
+    Section block (10) (21) ID: JCSectionBlock10 Object type: JCSectionBlock added to block JCBlock8 (8) (19)
+    Loop block (1) (9) (22) created
+    Section block (11) (23) created
+    Section block (11) (23) ID: JCSectionBlock11 Object type: JCSectionBlock added to block JCBlock9 (9) (22)
+    Conditional block (2) (24) created
+    Conditional section (4) (10) (25) created
+    Section block (12) (26) created
+    Section block (12) (26) ID: JCSectionBlock12 Object type: JCSectionBlock added to block JCBlock10 (10) (25)
+    Conditional block (3) (27) created
+    Conditional section (5) (11) (28) created
+    Section block (13) (29) created
+    Section block (13) (29) ID: JCSectionBlock13 Object type: JCSectionBlock added to block JCBlock11 (11) (28)
+    Conditional section (5) (11) (28) completed
+    Conditional section (5) (11) (28) ID: JCConditionalSection5 Object type: JCConditionalSection added to conditional block JCConditionalBlock3 (3) (27)
+    Conditional section (6) (12) (30) created
+    Section block (14) (31) created
+    Section block (14) (31) ID: JCSectionBlock14 Object type: JCSectionBlock added to block JCBlock12 (12) (30)
+    Conditional block (4) (32) created
+    Conditional section (7) (13) (33) created
+    Section block (15) (34) created
+    Section block (15) (34) ID: JCSectionBlock15 Object type: JCSectionBlock added to block JCBlock13 (13) (33)
+    Conditional section (7) (13) (33) completed
+    Conditional section (7) (13) (33) ID: JCConditionalSection7 Object type: JCConditionalSection added to conditional block JCConditionalBlock4 (4) (32)
+    Conditional block (4) (32) completed
+    Conditional block (4) (32) ID: JCConditionalBlock4 Object type: JCConditionalBlock added to block JCBlock12 (12) (30)
+    Section block (16) (35) created
+    Section block (16) (35) ID: JCSectionBlock16 Object type: JCSectionBlock added to block JCBlock12 (12) (30)
+    Conditional section (6) (12) (30) completed
+    Conditional section (6) (12) (30) ID: JCConditionalSection6 Object type: JCConditionalSection added to conditional block JCConditionalBlock3 (3) (27)
+    Conditional block (3) (27) completed
+    Conditional block (3) (27) ID: JCConditionalBlock3 Object type: JCConditionalBlock added to block JCBlock10 (10) (25)
+    Section block (17) (36) created
+    Section block (17) (36) ID: JCSectionBlock17 Object type: JCSectionBlock added to block JCBlock10 (10) (25)
+    Conditional section (4) (10) (25) completed
+    Conditional section (4) (10) (25) ID: JCConditionalSection4 Object type: JCConditionalSection added to conditional block JCConditionalBlock2 (2) (24)
+    Conditional section (8) (14) (37) created
+    Function call block (0) (15) (38) created
+    Block (16) (39) created
+    Section block (18) (40) created
+    Section block (18) (40) ID: JCSectionBlock18 Object type: JCSectionBlock added to block JCBlock16 (16) (39)
+    Block (16) (39) completed
+    Block (16) (39) ID: JCBlock16 Object type: JCBlock added to function call block JCFunctionCallBlock0 (0) (38)
+    Function call block (0) (38) ID: JCFunctionCallBlock0 Object type: JCFunctionCallBlock function name set to icrc1
+    Function call block (0) (38) ID: JCFunctionCallBlock0 Object type: JCFunctionCallBlock associated with Function Block name icrc1 (0) (0) ID: JCFunctionBlock0 Object type: JCFunctionBlock added to block JCBlock0 (0) (0)
+    Function call block (0) (15) (38) completed
+    Function call block (0) (38) ID: JCFunctionCallBlock0 Object type: JCFunctionCallBlock added to block JCBlock14 (14) (37)
+    Section block (19) (41) created
+    Section block (19) (41) ID: JCSectionBlock19 Object type: JCSectionBlock added to block JCBlock14 (14) (37)
+    Conditional section (8) (14) (37) completed
+    Conditional section (8) (14) (37) ID: JCConditionalSection8 Object type: JCConditionalSection added to conditional block JCConditionalBlock2 (2) (24)
+    Conditional block (2) (24) completed
+    Conditional block (2) (24) ID: JCConditionalBlock2 Object type: JCConditionalBlock added to block JCBlock9 (9) (22)
+    Section block (20) (42) created
+    Section block (20) (42) ID: JCSectionBlock20 Object type: JCSectionBlock added to block JCBlock9 (9) (22)
+    Loop block (1) (9) (22) ID: JCLoopBlock1 Object type: JCLoopBlock maximum iterations set to 255
+    Loop block (1) (9) (22) completed
+    Loop block (1) (22) ID: JCLoopBlock1 Object type: JCLoopBlock added to block JCBlock8 (8) (19)
+    Loop block (2) (17) (43) created
+    Section block (21) (44) created
+    Section block (21) (44) ID: JCSectionBlock21 Object type: JCSectionBlock added to block JCBlock17 (17) (43)
+    Conditional block (5) (45) created
+    Conditional section (9) (18) (46) created
+    Section block (22) (47) created
+    Section block (22) (47) ID: JCSectionBlock22 Object type: JCSectionBlock added to block JCBlock18 (18) (46)
+    Conditional block (6) (48) created
+    Conditional section (10) (19) (49) created
+    Section block (23) (50) created
+    Section block (23) (50) ID: JCSectionBlock23 Object type: JCSectionBlock added to block JCBlock19 (19) (49)
+    Conditional section (10) (19) (49) completed
+    Conditional section (10) (19) (49) ID: JCConditionalSection10 Object type: JCConditionalSection added to conditional block JCConditionalBlock6 (6) (48)
+    Conditional section (11) (20) (51) created
+    Section block (24) (52) created
+    Section block (24) (52) ID: JCSectionBlock24 Object type: JCSectionBlock added to block JCBlock20 (20) (51)
+    Conditional section (11) (20) (51) completed
+    Conditional section (11) (20) (51) ID: JCConditionalSection11 Object type: JCConditionalSection added to conditional block JCConditionalBlock6 (6) (48)
+    Conditional block (6) (48) completed
+    Conditional block (6) (48) ID: JCConditionalBlock6 Object type: JCConditionalBlock added to block JCBlock18 (18) (46)
+    Section block (25) (53) created
+    Section block (25) (53) ID: JCSectionBlock25 Object type: JCSectionBlock added to block JCBlock18 (18) (46)
+    Conditional section (9) (18) (46) completed
+    Conditional section (9) (18) (46) ID: JCConditionalSection9 Object type: JCConditionalSection added to conditional block JCConditionalBlock5 (5) (45)
+    Conditional section (12) (21) (54) created
+    Section block (26) (55) created
+    Section block (26) (55) ID: JCSectionBlock26 Object type: JCSectionBlock added to block JCBlock21 (21) (54)
+    Conditional block (7) (56) created
+    Conditional section (13) (22) (57) created
+    Section block (27) (58) created
+    Section block (27) (58) ID: JCSectionBlock27 Object type: JCSectionBlock added to block JCBlock22 (22) (57)
+    Conditional section (13) (22) (57) completed
+    Conditional section (13) (22) (57) ID: JCConditionalSection13 Object type: JCConditionalSection added to conditional block JCConditionalBlock7 (7) (56)
+    Conditional section (14) (23) (59) created
+    Section block (28) (60) created
+    Section block (28) (60) ID: JCSectionBlock28 Object type: JCSectionBlock added to block JCBlock23 (23) (59)
+    Conditional section (14) (23) (59) completed
+    Conditional section (14) (23) (59) ID: JCConditionalSection14 Object type: JCConditionalSection added to conditional block JCConditionalBlock7 (7) (56)
+    Conditional block (7) (56) completed
+    Conditional block (7) (56) ID: JCConditionalBlock7 Object type: JCConditionalBlock added to block JCBlock21 (21) (54)
+    Section block (29) (61) created
+    Section block (29) (61) ID: JCSectionBlock29 Object type: JCSectionBlock added to block JCBlock21 (21) (54)
+    Section block (30) (62) created
+    Section block (30) (62) ID: JCSectionBlock30 Object type: JCSectionBlock added to block JCBlock21 (21) (54)
+    Conditional section (12) (21) (54) completed
+    Conditional section (12) (21) (54) ID: JCConditionalSection12 Object type: JCConditionalSection added to conditional block JCConditionalBlock5 (5) (45)
+    Conditional block (5) (45) completed
+    Conditional block (5) (45) ID: JCConditionalBlock5 Object type: JCConditionalBlock added to block JCBlock17 (17) (43)
+    Section block (31) (63) created
+    Section block (31) (63) ID: JCSectionBlock31 Object type: JCSectionBlock added to block JCBlock17 (17) (43)
+    Loop block (2) (17) (43) ID: JCLoopBlock2 Object type: JCLoopBlock maximum iterations set to 42
+    Loop block (2) (17) (43) completed
+    Loop block (2) (43) ID: JCLoopBlock2 Object type: JCLoopBlock added to block JCBlock8 (8) (19)
+    Block (8) (19) completed
+    Block (8) (19) ID: JCBlock8 Object type: JCBlock added to function block JCFunctionBlock1 (1) (18)
+    Function block (1) (7) (18) ID: JCFunctionBlock1 Object type: JCFunctionBlock function name set to icrc
+    Function block (1) (7) (18) completed
+    Block (24) (64) created
+    Block (24) (64) set as the program block
+    Function call block (1) (25) (65) created
+    Block (26) (66) created
+    Starting Basic block set to BB ID 297(297) ID: i400490 WCET: 4
+    Section block (32) (67) created
+    Section block (32) (67) ID: JCSectionBlock32 Object type: JCSectionBlock added to block JCBlock26 (26) (66)
+    Block (26) (66) completed
+    Block (26) (66) ID: JCBlock26 Object type: JCBlock added to function call block JCFunctionCallBlock1 (1) (65)
+    Function call block (1) (65) ID: JCFunctionCallBlock1 Object type: JCFunctionCallBlock function name set to icrc
+    Function call block (1) (65) ID: JCFunctionCallBlock1 Object type: JCFunctionCallBlock associated with Function Block name icrc (1) (18) ID: JCFunctionBlock1 Object type: JCFunctionBlock added to block JCBlock7 (7) (18)
+    Function call block (1) (25) (65) completed
+    Function call block (1) (65) ID: JCFunctionCallBlock1 Object type: JCFunctionCallBlock added to block JCBlock24 (24) (64)
+    Function call block (2) (27) (68) created
+    Block (28) (69) created
+    Section block (33) (70) created
+    Section block (33) (70) ID: JCSectionBlock33 Object type: JCSectionBlock added to block JCBlock28 (28) (69)
+    Block (28) (69) completed
+    Block (28) (69) ID: JCBlock28 Object type: JCBlock added to function call block JCFunctionCallBlock2 (2) (68)
+    Function call block (2) (68) ID: JCFunctionCallBlock2 Object type: JCFunctionCallBlock function name set to icrc
+    Function call block (2) (68) ID: JCFunctionCallBlock2 Object type: JCFunctionCallBlock associated with Function Block name icrc (1) (18) ID: JCFunctionBlock1 Object type: JCFunctionBlock added to block JCBlock7 (7) (18)
+    Function call block (2) (27) (68) completed
+    Function call block (2) (68) ID: JCFunctionCallBlock2 Object type: JCFunctionCallBlock added to block JCBlock24 (24) (64)
+    Section block (34) (71) created
+    Section block (34) (71) ID: JCSectionBlock34 Object type: JCSectionBlock added to block JCBlock24 (24) (64)
+    Block (24) (64) completed
+    Function block (0) (0) (0) accessed
+    Block (1) (1) accessed
+    Section block (0) (2) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock0 is 171
+    JCBlock processConditionalBlock() Block (1) (1) ID: JCBlock1 Object type: JCBlock number of subblocks is 2
+    JCBlock processConditionalBlock() checking section (0) sub-block (2) index of subblock is 0
+    Loop block (0) (2) (3) accessed
+    Section block (1) (4) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock1 is 15
+    JCBlock processConditionalBlock() Block (2) (3) ID: JCBlock2 Object type: JCLoopBlock number of subblocks is 3
+    JCBlock processConditionalBlock() checking section (1) sub-block (4) index of subblock is 0
+    Conditional block (0) (5) accessed
+    Conditional section (0) (3) (6) accessed
+    Section block (2) (7) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock2 is 6
+    JCBlock processConditionalBlock() Block (3) (6) ID: JCBlock3 Object type: JCConditionalSection number of subblocks is 1
+    JCBlock processConditionalBlock() checking section (2) sub-block (7) index of subblock is 0
+    Conditional section (1) (4) (8) accessed
+    Section block (3) (9) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock3 is 10
+    JCBlock processConditionalBlock() Block (4) (8) ID: JCBlock4 Object type: JCConditionalSection number of subblocks is 4
+    JCBlock processConditionalBlock() checking section (3) sub-block (9) index of subblock is 0
+    Conditional block (1) (10) accessed
+    Conditional section (2) (5) (11) accessed
+    Section block (4) (12) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock4 is 45
+    JCBlock processConditionalBlock() Block (5) (11) ID: JCBlock5 Object type: JCConditionalSection number of subblocks is 1
+    JCBlock processConditionalBlock() checking section (4) sub-block (12) index of subblock is 0
+    Conditional section (3) (6) (13) accessed
+    Section block (5) (14) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock5 is 10
+    JCBlock processConditionalBlock() Block (6) (13) ID: JCBlock6 Object type: JCConditionalSection number of subblocks is 1
+    JCBlock processConditionalBlock() checking section (5) sub-block (14) index of subblock is 0
+    Section block (6) (15) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock6 is 10
+    JCBlock processConditionalBlock() Block (4) (8) ID: JCBlock4 Object type: JCConditionalSection number of subblocks is 4
+    JCBlock processConditionalBlock() checking section (6) sub-block (15) index of subblock is 2
+    JCBlock processConditionalBlock() computing SCS conditional solution
+    JCBlock: Number of minimum cost solutions for block JCBlock29 is 16
+    Section block (7) (16) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock7 is 1
+    JCBlock processConditionalBlock() Block (4) (8) ID: JCBlock4 Object type: JCConditionalSection number of subblocks is 2
+    JCBlock processConditionalBlock() checking section (7) sub-block (16) index of subblock is 1
+    JCBlock processConditionalBlock() computing BS blocks solution
+    JCBlock: Number of minimum cost solutions for block JCBlock30 is 4
+    Section block (8) (17) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock8 is 1
+    JCBlock processConditionalBlock() Block (2) (3) ID: JCBlock2 Object type: JCLoopBlock number of subblocks is 3
+    JCBlock processConditionalBlock() checking section (8) sub-block (17) index of subblock is 2
+    JCBlock processConditionalBlock() computing SCS conditional solution
+    JCBlock: Number of minimum cost solutions for block JCBlock31 is 5
+Computing loop preemption point solutions for (0,JCLoopBlock0,3,JCSubBlock3) 
+    Processing block (31,JCBlock31,74,JCSubBlock74) 
+    JCLoopBlock: Number of minimum cost solutions for loop block JCLoopBlock0 is 5
+    JCLoopBlock processLoopBlock() Block (1) (1) ID: JCBlock1 Object type: JCBlock number of subblocks is 2
+    JCLoopBlock processLoopBlock() checking loop block (0) sub-block (3) index of subblock is 1
+    JCLoopBlock processLoopBlock() computing SB blocks solution
+    JCBlock: Number of minimum cost solutions for block JCBlock32 is 18
+Computing function preemption point solutions for (0,JCFunctionBlock0,0,JCSubBlock0) 
+    Processing block (1,JCBlock1,1,JCSubBlock1) 
+    JCFunctionBlock: Number of minimum cost solutions for function block JCFunctionBlock0 is 18
+    Function block (1) (7) (18) accessed
+    Block (8) (19) accessed
+    Section block (9) (20) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock9 is 136
+    JCBlock processConditionalBlock() Block (8) (19) ID: JCBlock8 Object type: JCBlock number of subblocks is 4
+    JCBlock processConditionalBlock() checking section (9) sub-block (20) index of subblock is 0
+    Section block (10) (21) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock10 is 10
+    JCBlock processConditionalBlock() Block (8) (19) ID: JCBlock8 Object type: JCBlock number of subblocks is 4
+    JCBlock processConditionalBlock() checking section (10) sub-block (21) index of subblock is 1
+    JCBlock processConditionalBlock() computing SS blocks solution
+    JCBlock: Number of minimum cost solutions for block JCBlock33 is 64
+    Loop block (1) (9) (22) accessed
+    Section block (11) (23) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock11 is 15
+    JCBlock processConditionalBlock() Block (9) (22) ID: JCBlock9 Object type: JCLoopBlock number of subblocks is 3
+    JCBlock processConditionalBlock() checking section (11) sub-block (23) index of subblock is 0
+    Conditional block (2) (24) accessed
+    Conditional section (4) (10) (25) accessed
+    Section block (12) (26) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock12 is 10
+    JCBlock processConditionalBlock() Block (10) (25) ID: JCBlock10 Object type: JCConditionalSection number of subblocks is 3
+    JCBlock processConditionalBlock() checking section (12) sub-block (26) index of subblock is 0
+    Conditional block (3) (27) accessed
+    Conditional section (5) (11) (28) accessed
+    Section block (13) (29) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock13 is 136
+    JCBlock processConditionalBlock() Block (11) (28) ID: JCBlock11 Object type: JCConditionalSection number of subblocks is 1
+    JCBlock processConditionalBlock() checking section (13) sub-block (29) index of subblock is 0
+    Conditional section (6) (12) (30) accessed
+    Section block (14) (31) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock14 is 10
+    JCBlock processConditionalBlock() Block (12) (30) ID: JCBlock12 Object type: JCConditionalSection number of subblocks is 3
+    JCBlock processConditionalBlock() checking section (14) sub-block (31) index of subblock is 0
+    Conditional block (4) (32) accessed
+    Conditional section (7) (13) (33) accessed
+    Section block (15) (34) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock15 is 435
+    JCBlock processConditionalBlock() Block (13) (33) ID: JCBlock13 Object type: JCConditionalSection number of subblocks is 1
+    JCBlock processConditionalBlock() checking section (15) sub-block (34) index of subblock is 0
+    Section block (16) (35) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock16 is 1
+    JCBlock processConditionalBlock() Block (12) (30) ID: JCBlock12 Object type: JCConditionalSection number of subblocks is 3
+    JCBlock processConditionalBlock() checking section (16) sub-block (35) index of subblock is 2
+    JCBlock processConditionalBlock() computing SCS conditional solution
+    JCBlock: Number of minimum cost solutions for block JCBlock34 is 4
+    Section block (17) (36) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock17 is 6
+    JCBlock processConditionalBlock() Block (10) (25) ID: JCBlock10 Object type: JCConditionalSection number of subblocks is 3
+    JCBlock processConditionalBlock() checking section (17) sub-block (36) index of subblock is 2
+    JCBlock processConditionalBlock() computing SCS conditional solution
+    JCBlock: Number of minimum cost solutions for block JCBlock35 is 12
+    Conditional section (8) (14) (37) accessed
+    Function call block (0) (15) (38) accessed
+    Block (16) (39) accessed
+    Section block (18) (40) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock18 is 36
+    JCBlock processConditionalBlock() Block (16) (39) ID: JCBlock16 Object type: JCBlock number of subblocks is 1
+    JCBlock processConditionalBlock() checking section (18) sub-block (40) index of subblock is 0
+Computing function call preemption point solutions for (0,JCFunctionCallBlock0,38,JCSubBlock38) 
+    Processing block (16,JCBlock16,39,JCSubBlock39) 
+    JCBlock: Number of minimum cost solutions for block JCBlock15 is 8
+    JCFunctionCallBlock processFunctionBlock() Block (14) (37) ID: JCBlock14 Object type: JCConditionalSection number of subblocks is 2
+    JCFunctionCallBlock processFunctionBlock() checking function call block (0) sub-block (38) index of subblock is 0
+    Section block (19) (41) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock19 is 984
+    JCBlock processConditionalBlock() Block (14) (37) ID: JCBlock14 Object type: JCConditionalSection number of subblocks is 2
+    JCBlock processConditionalBlock() checking section (19) sub-block (41) index of subblock is 1
+    JCBlock processConditionalBlock() computing BS blocks solution
+    JCBlock: Number of minimum cost solutions for block JCBlock36 is 288
+    Section block (20) (42) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock20 is 1
+    JCBlock processConditionalBlock() Block (9) (22) ID: JCBlock9 Object type: JCLoopBlock number of subblocks is 3
+    JCBlock processConditionalBlock() checking section (20) sub-block (42) index of subblock is 2
+    JCBlock processConditionalBlock() computing SCS conditional solution
+    JCBlock: Number of minimum cost solutions for block JCBlock37 is 4
+Computing loop preemption point solutions for (1,JCLoopBlock1,22,JCSubBlock22) 
+    Processing block (37,JCBlock37,80,JCSubBlock80) 
+    JCLoopBlock: Number of minimum cost solutions for loop block JCLoopBlock1 is 4
+    JCLoopBlock processLoopBlock() Block (8) (19) ID: JCBlock8 Object type: JCBlock number of subblocks is 3
+    JCLoopBlock processLoopBlock() checking loop block (1) sub-block (22) index of subblock is 1
+    JCLoopBlock processLoopBlock() computing BB blocks solution
+    JCBlock: Number of minimum cost solutions for block JCBlock38 is 16
+    Loop block (2) (17) (43) accessed
+    Section block (21) (44) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock21 is 21
+    JCBlock processConditionalBlock() Block (17) (43) ID: JCBlock17 Object type: JCLoopBlock number of subblocks is 3
+    JCBlock processConditionalBlock() checking section (21) sub-block (44) index of subblock is 0
+    Conditional block (5) (45) accessed
+    Conditional section (9) (18) (46) accessed
+    Section block (22) (47) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock22 is 10
+    JCBlock processConditionalBlock() Block (18) (46) ID: JCBlock18 Object type: JCConditionalSection number of subblocks is 3
+    JCBlock processConditionalBlock() checking section (22) sub-block (47) index of subblock is 0
+    Conditional block (6) (48) accessed
+    Conditional section (10) (19) (49) accessed
+    Section block (23) (50) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock23 is 10
+    JCBlock processConditionalBlock() Block (19) (49) ID: JCBlock19 Object type: JCConditionalSection number of subblocks is 1
+    JCBlock processConditionalBlock() checking section (23) sub-block (50) index of subblock is 0
+    Conditional section (11) (20) (51) accessed
+    Section block (24) (52) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock24 is 435
+    JCBlock processConditionalBlock() Block (20) (51) ID: JCBlock20 Object type: JCConditionalSection number of subblocks is 1
+    JCBlock processConditionalBlock() checking section (24) sub-block (52) index of subblock is 0
+    Section block (25) (53) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock25 is 15
+    JCBlock processConditionalBlock() Block (18) (46) ID: JCBlock18 Object type: JCConditionalSection number of subblocks is 3
+    JCBlock processConditionalBlock() checking section (25) sub-block (53) index of subblock is 2
+    JCBlock processConditionalBlock() computing SCS conditional solution
+    JCBlock: Number of minimum cost solutions for block JCBlock39 is 20
+    Conditional section (12) (21) (54) accessed
+    Section block (26) (55) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock26 is 10
+    JCBlock processConditionalBlock() Block (21) (54) ID: JCBlock21 Object type: JCConditionalSection number of subblocks is 4
+    JCBlock processConditionalBlock() checking section (26) sub-block (55) index of subblock is 0
+    Conditional block (7) (56) accessed
+    Conditional section (13) (22) (57) accessed
+    Section block (27) (58) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock27 is 210
+    JCBlock processConditionalBlock() Block (22) (57) ID: JCBlock22 Object type: JCConditionalSection number of subblocks is 1
+    JCBlock processConditionalBlock() checking section (27) sub-block (58) index of subblock is 0
+    Conditional section (14) (23) (59) accessed
+    Section block (28) (60) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock28 is 91
+    JCBlock processConditionalBlock() Block (23) (59) ID: JCBlock23 Object type: JCConditionalSection number of subblocks is 1
+    JCBlock processConditionalBlock() checking section (28) sub-block (60) index of subblock is 0
+    Section block (29) (61) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock29 is 276
+    JCBlock processConditionalBlock() Block (21) (54) ID: JCBlock21 Object type: JCConditionalSection number of subblocks is 4
+    JCBlock processConditionalBlock() checking section (29) sub-block (61) index of subblock is 2
+    JCBlock processConditionalBlock() computing SCS conditional solution
+    JCBlock: Number of minimum cost solutions for block JCBlock40 is 92
+    Section block (30) (62) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock30 is 1
+    JCBlock processConditionalBlock() Block (21) (54) ID: JCBlock21 Object type: JCConditionalSection number of subblocks is 2
+    JCBlock processConditionalBlock() checking section (30) sub-block (62) index of subblock is 1
+    JCBlock processConditionalBlock() computing BS blocks solution
+    JCBlock: Number of minimum cost solutions for block JCBlock41 is 4
+    Section block (31) (63) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock31 is 1
+    JCBlock processConditionalBlock() Block (17) (43) ID: JCBlock17 Object type: JCLoopBlock number of subblocks is 3
+    JCBlock processConditionalBlock() checking section (31) sub-block (63) index of subblock is 2
+    JCBlock processConditionalBlock() computing SCS conditional solution
+    JCBlock: Number of minimum cost solutions for block JCBlock42 is 6
+Computing loop preemption point solutions for (2,JCLoopBlock2,43,JCSubBlock43) 
+    Processing block (42,JCBlock42,85,JCSubBlock85) 
+    JCLoopBlock: Number of minimum cost solutions for loop block JCLoopBlock2 is 6
+    JCLoopBlock processLoopBlock() Block (8) (19) ID: JCBlock8 Object type: JCBlock number of subblocks is 2
+    JCLoopBlock processLoopBlock() checking loop block (2) sub-block (43) index of subblock is 1
+    JCLoopBlock processLoopBlock() computing BB blocks solution
+    JCBlock: Number of minimum cost solutions for block JCBlock43 is 16
+Computing function preemption point solutions for (1,JCFunctionBlock1,18,JCSubBlock18) 
+    Processing block (8,JCBlock8,19,JCSubBlock19) 
+    JCFunctionBlock: Number of minimum cost solutions for function block JCFunctionBlock1 is 16
+    Block (24) (64) accessed
+    Function call block (1) (25) (65) accessed
+    Block (26) (66) accessed
+    Section block (32) (67) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock32 is 17
+    JCBlock processConditionalBlock() Block (26) (66) ID: JCBlock26 Object type: JCBlock number of subblocks is 1
+    JCBlock processConditionalBlock() checking section (32) sub-block (67) index of subblock is 0
+Computing function call preemption point solutions for (1,JCFunctionCallBlock1,65,JCSubBlock65) 
+    Processing block (26,JCBlock26,66,JCSubBlock66) 
+    JCBlock: Number of minimum cost solutions for block JCBlock25 is 1
+    JCFunctionCallBlock processFunctionBlock() Block (24) (64) ID: JCBlock24 Object type: JCBlock number of subblocks is 3
+    JCFunctionCallBlock processFunctionBlock() checking function call block (1) sub-block (65) index of subblock is 0
+    Function call block (2) (27) (68) accessed
+    Block (28) (69) accessed
+    Section block (33) (70) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock33 is 561
+    JCBlock processConditionalBlock() Block (28) (69) ID: JCBlock28 Object type: JCBlock number of subblocks is 1
+    JCBlock processConditionalBlock() checking section (33) sub-block (70) index of subblock is 0
+Computing function call preemption point solutions for (2,JCFunctionCallBlock2,68,JCSubBlock68) 
+    Processing block (28,JCBlock28,69,JCSubBlock69) 
+    JCBlock: Number of minimum cost solutions for block JCBlock27 is 33
+    JCFunctionCallBlock processFunctionBlock() Block (24) (64) ID: JCBlock24 Object type: JCBlock number of subblocks is 3
+    JCFunctionCallBlock processFunctionBlock() checking function call block (2) sub-block (68) index of subblock is 1
+    JCFunctionCallBlock processFunctionBlock() computing BB blocks solution
+    JCBlock: Number of minimum cost solutions for block JCBlock44 is 1
+    Section block (34) (71) accessed
+    JCSectionBlock: Number of minimum cost solutions for section JCSectionBlock34 is 6
+    JCBlock processConditionalBlock() Block (24) (64) ID: JCBlock24 Object type: JCBlock number of subblocks is 2
+    JCBlock processConditionalBlock() checking section (34) sub-block (71) index of subblock is 1
+    JCBlock processConditionalBlock() computing BS blocks solution
+    JCBlock: Number of minimum cost solutions for block JCBlock45 is 1
+Minimum cost solution is 188851
+Preemption points {i400018,i4000b4,i4000cc,i400060,i400070,i400094,i4000ac,i400570,i400578,i400108,i400114,i4001ec,i400200,i400210,i400254,i4002b4,i40056c,i4002d8,i40012c,i4001c4,i40057c,i4003d4,i4003ec,i4003f8,i400460,i400488,i4002e4,i40030c,i400354,i4003c8,i400574,i400580,i400490,i400508,i400564,i40056c} 

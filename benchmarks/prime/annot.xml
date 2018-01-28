@@ -1,0 +1,12 @@
+<CFG name="divides">
+</CFG>
+<CFG name="even">
+</CFG>
+<CFG name="prime">
+  <LOOP maxiter="358">
+  </LOOP>
+</CFG>
+<CFG name="swap">
+</CFG>
+<CFG name="main">
+</CFG>

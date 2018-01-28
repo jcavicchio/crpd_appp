@@ -1,0 +1,33 @@
+JCFunctionNode (0x4000b8,0,JCFunctionNode0,8,JCFunctionNode0,3333)
+{
+    JCSectionNode (0x4000b8,5,55,6,55,FunctionCall,fib,,28)
+        JCSectionNode (0x400018,0,3,0,3,BasicBlock,None,,32)
+        JCLoopNode (0x400074,0,54,5,54,29,3248)
+        {
+            JCConditionalNode (0x400074,1,JCConditionalNode1,14,JCConditionalNode1,112)
+            {
+                JCSectionNode (0x400074,2,29,2,29,BasicBlock,None,,20)
+                {
+                    JCSectionNode (0x4000e8,8,JCSectionNode8,10,JCSectionNode8,BasicBlock,None,,28)
+                }
+                {
+                    JCBlockNode (0x400088,0,JCBlockNode0,13,JCBlockNode0,88)
+                    {
+                        JCConditionalNode (0x400088,0,JCConditionalNode0,11,JCConditionalNode0,88)
+                        {
+                            JCSectionNode (0x400088,3,35,3,35,BasicBlock,None,,24)
+                            {
+                                JCSectionNode (0x400038,1,13,1,13,BasicBlock,None,,60)
+                            }
+                            {
+                                JCSectionNode (0x4000a0,4,4,4,4,BasicBlock,None,,24)
+                            }
+                            JCSectionNode (0x4000e4,7,JCSectionNode7,9,JCSectionNode7,BasicBlock,None,,4)
+                        }
+                    }
+                }
+                JCSectionNode (0x400104,9,JCSectionNode9,12,JCSectionNode9,BasicBlock,None,,4)
+            }
+        }
+        JCSectionNode (0x4000d4,6,56,7,56,BasicBlock,None,,25)
+}

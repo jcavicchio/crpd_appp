@@ -1,0 +1,6 @@
+<CFG name="main">
+</CFG>
+<CFG name="binary_search">
+  <LOOP maxiter="4">
+  </LOOP>
+</CFG>

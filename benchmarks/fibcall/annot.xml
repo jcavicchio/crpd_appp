@@ -1,0 +1,6 @@
+<CFG name="fib">
+  <LOOP maxiter="29">
+  </LOOP>
+</CFG>
+<CFG name="main">
+</CFG>

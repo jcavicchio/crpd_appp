@@ -1,0 +1,299 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<h1>/home/cavicchio/Downloads/heptane_svn/benchmarks/bsort100/bsort100.c</h1> <br>
+<table border=0 cellpadding=0 cellspacing=0>
+<tr><td><h2>Frequency</h2></td><th><h2>Source</h2></th></tr><tr><td> 0</td>
+<td><tt><pre>/* MDH WCET BENCHMARK SUITE. File version $Id: bsort100.c,v 1.1.1.1 2007-12-11 15:22:55 puaut Exp $ */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/* BUBBLESORT BENCHMARK PROGRAM:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * This program tests the basic loop constructs, integer comparisons,</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * and simple array handling of compilers by sorting an array of 10 randomly</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * generated integers.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/* Changes:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * JG 2005/12/06: All timing code excluded (made to comments)</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * JG 2005/12/13: The use of memory based I/O (KNOWN_VALUE etc.) is removed</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *                Instead unknown values should be set using annotations</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * JG 2005/12/20: LastIndex removed from function BubbleSort</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *                Indented program.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#include <annot.h></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/* All output disabled for wcsim */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#define WCSIM 1</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/* A read from this address will result in an known value of 1</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#define KNOWN_VALUE (int)(*((char *)0x80200001))</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>*/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/* A read from this address will result in an unknown value</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#define UNKNOWN_VALUE (int)(*((char *)0x80200003))</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>*/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#include <sys/types.h></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#include <sys/times.h></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#include <stdio.h></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>*/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#define WORSTCASE 1</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#define FALSE 0</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#define TRUE 1</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#define NUMELEMS 100</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#define MAXDIM   (NUMELEMS+1)</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int             Array[MAXDIM], Seed;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int             factor;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void            BubbleSort(/*int Array[]*/);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void            Initialize(/*int Array[]*/);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>main(void)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>   long  StartTime, StopTime;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>   float TotalTime;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>*/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifndef WCSIM</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	printf("\n *** BUBBLE SORT BENCHMARK TEST ***\n\n");</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	printf("RESULTS OF TEST:\n\n");</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	Initialize(/*Array*/);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	/* StartTime = ttime (); */</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	BubbleSort(/*Array*/);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	/* StopTime = ttime(); */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	/* TotalTime = (StopTime - StartTime) / 1000.0; */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifndef WCSIM</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	printf("     - Number of elements sorted is %d\n", NUMELEMS);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	printf("     - Total time sorting is %3.3f seconds\n\n", TotalTime);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	return 0;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>   int ttime()</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>   This function returns in milliseconds the amount of compiler time</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>   used prior to it being called.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>   struct tms buffer;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>   int utime;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>   times(&buffer);  not implemented</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>   utime = (buffer.tms_utime / 60.0) * 1000.0;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>   return(utime);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>*/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void Initialize(/*int Array[]*/)</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * Initializes given array with randomly generated integers.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> */</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>   int  Index, fact;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifdef WORSTCASE</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>   factor = -1;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#else</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>   factor = 1;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>   fact = factor;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 100 101 </td>
+<td><tt><pre> for (Index = 1; Index <= NUMELEMS; Index ++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>   ANNOT_MAXITER(100);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>100 </td>
+<td><tt><pre>   Array[Index] = Index * fact/* * KNOWN_VALUE*/;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> }</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>BubbleSort(/*int Array[]*/)</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * Sorts an array of integers of size NUMELEMS in ascending order.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> */</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	int             Sorted = FALSE;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	int             Temp, Index, i;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 100 </td>
+<td><tt><pre>	for (i = 1;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	     i <= NUMELEMS - 1;	/* apsim_loop 1 0 */</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>99 </td>
+<td><tt><pre>	     i++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  ANNOT_MAXITER(99);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>99 </td>
+<td><tt><pre>	  Sorted = TRUE;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>99 9900 </td>
+<td><tt><pre>	  for (Index = 1;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	       Index <= NUMELEMS - 1;	/* apsim_loop 10 1 */</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>9801 </td>
+<td><tt><pre>	       Index++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	    ANNOT_MAXITER(99);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>9801 </td>
+<td><tt><pre>	    if (Index > NUMELEMS - i)</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>	      break;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>9801 </td>
+<td><tt><pre>	    if (Array[Index] > Array[Index + 1]) {</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>9801 </td>
+<td><tt><pre>	      Temp = Array[Index];</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>9801 </td>
+<td><tt><pre>	      Array[Index] = Array[Index + 1];</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>9801 </td>
+<td><tt><pre>	      Array[Index + 1] = Temp;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>9801 </td>
+<td><tt><pre>	      Sorted = FALSE;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	    }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>99 </td>
+<td><tt><pre>	  if (Sorted)</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>	    break;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifndef WCSIM</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	if (Sorted || i == 1)</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		fprintf(stderr, "array was successfully sorted in %d passes\n", i - 1);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	else</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		fprintf(stderr, "array was unsuccessfully sorted in %d passes\n", i - 1);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+</table>
+</body> </html>

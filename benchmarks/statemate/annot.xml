@@ -1,0 +1,18 @@
+<CFG name="interface">
+</CFG>
+<CFG name="init">
+</CFG>
+<CFG name="generic_KINDERSICHERUNG_CTRL">
+</CFG>
+<CFG name="generic_FH_TUERMODUL_CTRL">
+</CFG>
+<CFG name="generic_EINKLEMMSCHUTZ_CTRL">
+</CFG>
+<CFG name="generic_BLOCK_ERKENNUNG_CTRL">
+</CFG>
+<CFG name="FH_DU">
+  <LOOP maxiter="10">
+  </LOOP>
+</CFG>
+<CFG name="main">
+</CFG>

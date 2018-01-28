@@ -1,0 +1,8 @@
+<CFG name="main">
+</CFG>
+<CFG name="fir_filter_int">
+  <LOOP maxiter="10">
+    <LOOP maxiter="17">
+    </LOOP>
+  </LOOP>
+</CFG>

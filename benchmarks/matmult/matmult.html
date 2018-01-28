@@ -1,0 +1,421 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<h1>/home/cavicchio/Downloads/heptane_svn/benchmarks/matmult/matmult.c</h1> <br>
+<table border=0 cellpadding=0 cellspacing=0>
+<tr><td><h2>Frequency</h2></td><th><h2>Source</h2></th></tr><tr><td> 0</td>
+<td><tt><pre>/* MDH WCET BENCHMARK SUITE. File version $Id: matmult.c,v 1.1.1.1 2007-12-11 15:22:56 puaut Exp $ */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/* matmult.c */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/* was mm.c! */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*----------------------------------------------------------------------*</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * To make this program compile under our assumed embedded environment,</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * we had to make several changes:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * - Declare all functions in ANSI style, not K&R.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *   this includes adding return types in all cases!</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * - Declare function prototypes</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * - Disable all output</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * - Disable all UNIX-style includes</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * This is a program that was developed from mm.c to matmult.c by</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * Thomas Lundqvist at Chalmers.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *----------------------------------------------------------------------*/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#include <annot.h></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/* Changes:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * JG 2005/12/12: Indented program.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#define UPPSALAWCET 1</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/* ***UPPSALA WCET***:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>   disable stupid UNIX includes */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifndef UPPSALAWCET</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#include <sys/types.h></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#include <sys/times.h></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * MATRIX MULTIPLICATION BENCHMARK PROGRAM:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * This program multiplies 2 square matrices resulting in a 3rd</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * matrix. It tests a compiler's speed in handling multidimensional</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * arrays and simple arithmetic.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#define UPPERLIMIT 20</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>typedef int     matrix[UPPERLIMIT][UPPERLIMIT];</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int             Seed;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>matrix          A, B, Res;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifdef UPPSALAWCET</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/* Our picky compiler wants prototypes! */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void            Multiply(/*matrix A, matrix B, matrix Res*/);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void            InitSeed(void);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void            Test(/*matrix A, matrix B, matrix Res*/);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*void            Initialize(matrix Array);*/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void            InitializeA(/*matrix Array*/);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void            InitializeB(/*matrix Array*/);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int             RandomInteger(void);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>main(void)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	InitSeed();</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/* ***UPPSALA WCET***:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>   no printing please! */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifndef UPPSALAWCET</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	printf("\n   *** MATRIX MULTIPLICATION BENCHMARK TEST ***\n\n");</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	printf("RESULTS OF THE TEST:\n");</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	Test(/*ArrayA, ArrayB, ResultArray*/);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	return 0;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>InitSeed(void)</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * Initializes the seed used in the random number generator.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	/*</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	 * ***UPPSALA WCET***: changed Thomas Ls code to something simpler.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	 * Seed = KNOWN_VALUE - 1;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	 */</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	Seed = 0;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>Test(/*matrix A, matrix B, matrix Res*/)</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * Runs a multiplication test on an array.  Calculates and prints the</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * time it takes to multiply the matrices.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> */</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifndef UPPSALAWCET</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	long            StartTime, StopTime;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	float           TotalTime;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	InitializeA(/*A*/);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	InitializeB(/*B*/);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	/* ***UPPSALA WCET***: don't print or time */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifndef UPPSALAWCET</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	StartTime = ttime();</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	Multiply(/*A, B, Res*/);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	/* ***UPPSALA WCET***: don't print or time */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifndef UPPSALAWCET</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	StopTime = ttime();</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	TotalTime = (StopTime - StartTime) / 1000.0;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	printf("    - Size of array is %d\n", UPPERLIMIT);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	printf("    - Total multiplication time is %3.3f seconds\n\n", TotalTime);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>InitializeA(/*matrix Array*/)</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * Intializes the given array with random integers.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> */</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	int             OuterIndex, InnerIndex;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 20 21 </td>
+<td><tt><pre>	for (OuterIndex = 0; OuterIndex < UPPERLIMIT; OuterIndex++) {	 </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  ANNOT_MAXITER(20);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>20 400 420 </td>
+<td><tt><pre>	  for (InnerIndex = 0; InnerIndex < UPPERLIMIT; InnerIndex++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	    ANNOT_MAXITER(20);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>400 </td>
+<td><tt><pre>	    A[OuterIndex][InnerIndex] = RandomInteger();</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>InitializeB(/*matrix Array*/)</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * Intializes the given array with random integers.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> */</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	int             OuterIndex, InnerIndex;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 20 21 </td>
+<td><tt><pre>	for (OuterIndex = 0; OuterIndex < UPPERLIMIT; OuterIndex++) {	 </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  ANNOT_MAXITER(20);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>20 400 420 </td>
+<td><tt><pre>	  for (InnerIndex = 0; InnerIndex < UPPERLIMIT; InnerIndex++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	    ANNOT_MAXITER(20);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>400 </td>
+<td><tt><pre>	    B[OuterIndex][InnerIndex] = RandomInteger();</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>RandomInteger(void)</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * Generates random integers between 0 and 8095</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>800 </td>
+<td><tt><pre>	Seed = ((Seed * 133) + 81) % 8095;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>800 </td>
+<td><tt><pre>	return (Seed);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>800 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifndef UPPSALAWCET</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>ttime()</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * This function returns in milliseconds the amount of compiler time</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * used prior to it being called.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	struct tms      buffer;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	int             utime;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	/* times(&buffer);   times not implemented */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	utime = (buffer.tms_utime / 60.0) * 1000.0;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	return (utime);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>void </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>Multiply(/*matrix A, matrix B, matrix Res*/)</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * Multiplies arrays A and B and stores the result in ResultArray.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> */</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  register int    Outer, Inner, Index;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 20 21 </td>
+<td><tt><pre>  for (Outer = 0; Outer < UPPERLIMIT; Outer++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>    ANNOT_MAXITER(20);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>20 400 420 </td>
+<td><tt><pre>    for (Inner = 0; Inner < UPPERLIMIT; Inner++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>      ANNOT_MAXITER(20);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>400 </td>
+<td><tt><pre>      Res[Outer][Inner] = 0;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>400 8000 8400 </td>
+<td><tt><pre>      for (Index = 0; Index < UPPERLIMIT; Index++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	ANNOT_MAXITER(20);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>8000 </td>
+<td><tt><pre>	Res[Outer][Inner] +=</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>8000 </td>
+<td><tt><pre>	  A[Outer][Index] * B[Index][Inner];</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>      }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>    }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  }</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+</table>
+</body> </html>

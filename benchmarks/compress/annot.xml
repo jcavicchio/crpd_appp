@@ -1,0 +1,32 @@
+<CFG name="main">
+</CFG>
+<CFG name="initbuffer">
+  <LOOP maxiter="50">
+  </LOOP>
+</CFG>
+<CFG name="compress">
+  <LOOP maxiter="8">
+  </LOOP>
+  <LOOP maxiter="49">
+    <LOOP maxiter="49">
+    </LOOP>
+  </LOOP>
+</CFG>
+<CFG name="cl_block">
+</CFG>
+<CFG name="cl_hash">
+  <LOOP maxiter="15">
+  </LOOP>
+</CFG>
+<CFG name="getbyte">
+</CFG>
+<CFG name="putbyte">
+</CFG>
+<CFG name="writebytes">
+  <LOOP maxiter="16">
+  </LOOP>
+</CFG>
+<CFG name="output">
+  <LOOP maxiter="16">
+  </LOOP>
+</CFG>

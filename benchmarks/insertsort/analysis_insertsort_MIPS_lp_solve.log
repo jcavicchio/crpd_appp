@@ -1,0 +1,1381 @@
+Heptane version 1.0
+Reading configuration file
+Executing from configuration file
+
+*** Begin analysis for entry point: main
+[INFO]	ICacheAnalysis: MUST done: 0.002351
+[INFO]	ICacheAnalysis: PS done: 0.001219
+[INFO]	ICacheAnalysis: MAY done: 0.001992
+[INFO]	ICacheAnalysis: MUST done: 0.003497
+[INFO]	ICacheAnalysis: PS done: 0.001292
+[INFO]	ICacheAnalysis: MAY done: 0.003531
+[INFO]	DcacheAnalysis: MUST done: 0.001938
+[INFO]	DcacheAnalysis: PS done: 0.001276
+[INFO]	DcacheAnalysis: MAY done: 0.001849
+[INFO]	DcacheAnalysis: MUST done: 0.003257
+[INFO]	DcacheAnalysis: PS done: 0.001376
+[INFO]	DcacheAnalysis: MAY done: 0.003398
+ Pipeline analysis architecture: MIPS
+Instruction addiu sp,sp,-16 time: 114
+Instruction lui v0,0x40 time: 115
+Instruction sw zero,4592(v0) time: 126
+Instruction lui v0,0x40 time: 127
+Instruction addiu v0,v0,4592 time: 128
+Instruction li v1,11 time: 129
+Instruction sw v1,4(v0) time: 130
+Instruction lui v0,0x40 time: 131
+Instruction addiu v0,v0,4592 time: 132
+Instruction li v1,10 time: 133
+Instruction sw v1,8(v0) time: 244
+Instruction lui v0,0x40 time: 245
+Instruction addiu v0,v0,4592 time: 246
+Instruction li v1,9 time: 247
+Instruction sw v1,12(v0) time: 248
+Instruction lui v0,0x40 time: 249
+Instruction addiu v0,v0,4592 time: 250
+Instruction li v1,8 time: 251
+Instruction sw v1,16(v0) time: 262
+Instruction lui v0,0x40 time: 263
+Instruction addiu v0,v0,4592 time: 264
+Instruction li v1,7 time: 265
+Instruction sw v1,20(v0) time: 266
+Instruction lui v0,0x40 time: 267
+Instruction addiu v0,v0,4592 time: 268
+Instruction li v1,6 time: 269
+Instruction sw v1,24(v0) time: 380
+Instruction lui v0,0x40 time: 381
+Instruction addiu v0,v0,4592 time: 382
+Instruction li v1,5 time: 383
+Instruction sw v1,28(v0) time: 384
+Instruction lui v0,0x40 time: 385
+Instruction addiu v0,v0,4592 time: 386
+Instruction li v1,4 time: 387
+Instruction sw v1,32(v0) time: 398
+Instruction lui v0,0x40 time: 399
+Instruction addiu v0,v0,4592 time: 400
+Instruction li v1,3 time: 401
+Instruction sw v1,36(v0) time: 402
+Instruction lui v0,0x40 time: 403
+Instruction addiu v0,v0,4592 time: 404
+Instruction li v1,2 time: 405
+Instruction sw v1,40(v0) time: 516
+Instruction li v0,2 time: 517
+Instruction j 4001d0 time: 518
+Instruction sw v0,0(sp) time: 519
+Instruction addiu sp,sp,-16 time: 114
+Instruction lui v0,0x40 time: 115
+Instruction sw zero,4592(v0) time: 126
+Instruction lui v0,0x40 time: 127
+Instruction addiu v0,v0,4592 time: 128
+Instruction li v1,11 time: 129
+Instruction sw v1,4(v0) time: 130
+Instruction lui v0,0x40 time: 131
+Instruction addiu v0,v0,4592 time: 132
+Instruction li v1,10 time: 133
+Instruction sw v1,8(v0) time: 244
+Instruction lui v0,0x40 time: 245
+Instruction addiu v0,v0,4592 time: 246
+Instruction li v1,9 time: 247
+Instruction sw v1,12(v0) time: 248
+Instruction lui v0,0x40 time: 249
+Instruction addiu v0,v0,4592 time: 250
+Instruction li v1,8 time: 251
+Instruction sw v1,16(v0) time: 262
+Instruction lui v0,0x40 time: 263
+Instruction addiu v0,v0,4592 time: 264
+Instruction li v1,7 time: 265
+Instruction sw v1,20(v0) time: 266
+Instruction lui v0,0x40 time: 267
+Instruction addiu v0,v0,4592 time: 268
+Instruction li v1,6 time: 269
+Instruction sw v1,24(v0) time: 380
+Instruction lui v0,0x40 time: 381
+Instruction addiu v0,v0,4592 time: 382
+Instruction li v1,5 time: 383
+Instruction sw v1,28(v0) time: 384
+Instruction lui v0,0x40 time: 385
+Instruction addiu v0,v0,4592 time: 386
+Instruction li v1,4 time: 387
+Instruction sw v1,32(v0) time: 398
+Instruction lui v0,0x40 time: 399
+Instruction addiu v0,v0,4592 time: 400
+Instruction li v1,3 time: 401
+Instruction sw v1,36(v0) time: 402
+Instruction lui v0,0x40 time: 403
+Instruction addiu v0,v0,4592 time: 404
+Instruction li v1,2 time: 405
+Instruction sw v1,40(v0) time: 516
+Instruction li v0,2 time: 517
+Instruction j 4001d0 time: 518
+Instruction sw v0,0(sp) time: 519
+Instruction lw v0,0(sp) time: 103
+Instruction nop time: 104
+Instruction j 400174 time: 105
+Instruction sw v0,4(sp) time: 106
+Instruction lw v0,0(sp) time: 103
+Instruction nop time: 104
+Instruction j 400174 time: 105
+Instruction sw v0,4(sp) time: 106
+Instruction lui v0,0x40 time: 14
+Instruction lw v1,4(sp) time: 15
+Instruction nop time: 16
+Instruction sll v1,v1,0x2 time: 17
+Instruction addiu v0,v0,4592 time: 18
+Instruction addu v0,v1,v0 time: 19
+Instruction lw v0,0(v0) time: 20
+Instruction nop time: 21
+Instruction sw v0,8(sp) time: 132
+Instruction lw v0,4(sp) time: 133
+Instruction nop time: 134
+Instruction addiu v1,v0,-1 time: 135
+Instruction lui v0,0x40 time: 136
+Instruction sll v1,v1,0x2 time: 137
+Instruction addiu v0,v0,4592 time: 138
+Instruction addu v0,v1,v0 time: 139
+Instruction lw v1,0(v0) time: 250
+Instruction lui v0,0x40 time: 251
+Instruction lw a0,4(sp) time: 252
+Instruction nop time: 253
+Instruction sll a0,a0,0x2 time: 254
+Instruction addiu v0,v0,4592 time: 255
+Instruction addu v0,a0,v0 time: 256
+Instruction sw v1,0(v0) time: 257
+Instruction lw v0,4(sp) time: 368
+Instruction nop time: 369
+Instruction addiu a0,v0,-1 time: 370
+Instruction lw v1,8(sp) time: 371
+Instruction lui v0,0x40 time: 372
+Instruction sll a0,a0,0x2 time: 373
+Instruction addiu v0,v0,4592 time: 374
+Instruction addu v0,a0,v0 time: 375
+Instruction sw v1,0(v0) time: 376
+Instruction lw v0,4(sp) time: 377
+Instruction nop time: 378
+Instruction addiu v0,v0,-1 time: 379
+Instruction sw v0,4(sp) time: 380
+Instruction lui v0,0x40 time: 4
+Instruction lw v1,4(sp) time: 5
+Instruction nop time: 6
+Instruction sll v1,v1,0x2 time: 7
+Instruction addiu v0,v0,4592 time: 8
+Instruction addu v0,v1,v0 time: 9
+Instruction lw v0,0(v0) time: 10
+Instruction nop time: 11
+Instruction sw v0,8(sp) time: 12
+Instruction lw v0,4(sp) time: 13
+Instruction nop time: 14
+Instruction addiu v1,v0,-1 time: 15
+Instruction lui v0,0x40 time: 16
+Instruction sll v1,v1,0x2 time: 17
+Instruction addiu v0,v0,4592 time: 18
+Instruction addu v0,v1,v0 time: 19
+Instruction lw v1,0(v0) time: 20
+Instruction lui v0,0x40 time: 21
+Instruction lw a0,4(sp) time: 22
+Instruction nop time: 23
+Instruction sll a0,a0,0x2 time: 24
+Instruction addiu v0,v0,4592 time: 25
+Instruction addu v0,a0,v0 time: 26
+Instruction sw v1,0(v0) time: 27
+Instruction lw v0,4(sp) time: 28
+Instruction nop time: 29
+Instruction addiu a0,v0,-1 time: 30
+Instruction lw v1,8(sp) time: 31
+Instruction lui v0,0x40 time: 32
+Instruction sll a0,a0,0x2 time: 33
+Instruction addiu v0,v0,4592 time: 34
+Instruction addu v0,a0,v0 time: 35
+Instruction sw v1,0(v0) time: 36
+Instruction lw v0,4(sp) time: 37
+Instruction nop time: 38
+Instruction addiu v0,v0,-1 time: 39
+Instruction sw v0,4(sp) time: 40
+Instruction lui v0,0x40 time: 114
+Instruction lw v1,4(sp) time: 115
+Instruction nop time: 116
+Instruction sll v1,v1,0x2 time: 227
+Instruction addiu v0,v0,4592 time: 228
+Instruction addu v0,v1,v0 time: 229
+Instruction lw v1,0(v0) time: 230
+Instruction lw v0,4(sp) time: 231
+Instruction nop time: 232
+Instruction addiu a0,v0,-1 time: 233
+Instruction lui v0,0x40 time: 234
+Instruction sll a0,a0,0x2 time: 345
+Instruction addiu v0,v0,4592 time: 346
+Instruction addu v0,a0,v0 time: 347
+Instruction lw v0,0(v0) time: 348
+Instruction nop time: 349
+Instruction sltu v0,v1,v0 time: 350
+Instruction bnez v0,4000e0 time: 351
+Instruction nop time: 352
+Instruction lui v0,0x40 time: 4
+Instruction lw v1,4(sp) time: 5
+Instruction nop time: 6
+Instruction sll v1,v1,0x2 time: 7
+Instruction addiu v0,v0,4592 time: 8
+Instruction addu v0,v1,v0 time: 9
+Instruction lw v1,0(v0) time: 10
+Instruction lw v0,4(sp) time: 11
+Instruction nop time: 12
+Instruction addiu a0,v0,-1 time: 13
+Instruction lui v0,0x40 time: 14
+Instruction sll a0,a0,0x2 time: 15
+Instruction addiu v0,v0,4592 time: 16
+Instruction addu v0,a0,v0 time: 17
+Instruction lw v0,0(v0) time: 18
+Instruction nop time: 19
+Instruction sltu v0,v1,v0 time: 20
+Instruction bnez v0,4000e0 time: 21
+Instruction nop time: 22
+Instruction lw v0,0(sp) time: 103
+Instruction nop time: 104
+Instruction addiu v0,v0,1 time: 105
+Instruction sw v0,0(sp) time: 106
+Instruction lw v0,0(sp) time: 103
+Instruction nop time: 104
+Instruction addiu v0,v0,1 time: 105
+Instruction sw v0,0(sp) time: 106
+Instruction lw v0,0(sp) time: 213
+Instruction nop time: 214
+Instruction slti v0,v0,11 time: 215
+Instruction bnez v0,4000d0 time: 216
+Instruction nop time: 228
+Instruction lw v0,0(sp) time: 103
+Instruction nop time: 104
+Instruction slti v0,v0,11 time: 105
+Instruction bnez v0,4000d0 time: 106
+Instruction nop time: 107
+Instruction li v0,1 time: 4
+Instruction jr ra time: 5
+Instruction addiu sp,sp,16 time: 6
+Instruction li v0,1 time: 4
+Instruction jr ra time: 5
+Instruction addiu sp,sp,16 time: 6
+Instruction addiu sp,sp,-16 time: 114
+Instruction lui v0,0x40 time: 115
+Instruction sw zero,4592(v0) time: 126
+Instruction lui v0,0x40 time: 127
+Instruction addiu v0,v0,4592 time: 128
+Instruction li v1,11 time: 129
+Instruction sw v1,4(v0) time: 130
+Instruction lui v0,0x40 time: 131
+Instruction addiu v0,v0,4592 time: 132
+Instruction li v1,10 time: 133
+Instruction sw v1,8(v0) time: 244
+Instruction lui v0,0x40 time: 245
+Instruction addiu v0,v0,4592 time: 246
+Instruction li v1,9 time: 247
+Instruction sw v1,12(v0) time: 248
+Instruction lui v0,0x40 time: 249
+Instruction addiu v0,v0,4592 time: 250
+Instruction li v1,8 time: 251
+Instruction sw v1,16(v0) time: 262
+Instruction lui v0,0x40 time: 263
+Instruction addiu v0,v0,4592 time: 264
+Instruction li v1,7 time: 265
+Instruction sw v1,20(v0) time: 266
+Instruction lui v0,0x40 time: 267
+Instruction addiu v0,v0,4592 time: 268
+Instruction li v1,6 time: 269
+Instruction sw v1,24(v0) time: 380
+Instruction lui v0,0x40 time: 381
+Instruction addiu v0,v0,4592 time: 382
+Instruction li v1,5 time: 383
+Instruction sw v1,28(v0) time: 384
+Instruction lui v0,0x40 time: 385
+Instruction addiu v0,v0,4592 time: 386
+Instruction li v1,4 time: 387
+Instruction sw v1,32(v0) time: 398
+Instruction lui v0,0x40 time: 399
+Instruction addiu v0,v0,4592 time: 400
+Instruction li v1,3 time: 401
+Instruction sw v1,36(v0) time: 402
+Instruction lui v0,0x40 time: 403
+Instruction addiu v0,v0,4592 time: 404
+Instruction li v1,2 time: 405
+Instruction sw v1,40(v0) time: 516
+Instruction li v0,2 time: 517
+Instruction j 4001d0 time: 518
+Instruction sw v0,0(sp) time: 519
+Instruction lw v0,0(sp) time: 630
+Instruction nop time: 631
+Instruction slti v0,v0,11 time: 632
+Instruction bnez v0,4000d0 time: 633
+Instruction nop time: 744
+Instruction addiu sp,sp,-16 time: 114
+Instruction lui v0,0x40 time: 115
+Instruction sw zero,4592(v0) time: 126
+Instruction lui v0,0x40 time: 127
+Instruction addiu v0,v0,4592 time: 128
+Instruction li v1,11 time: 129
+Instruction sw v1,4(v0) time: 130
+Instruction lui v0,0x40 time: 131
+Instruction addiu v0,v0,4592 time: 132
+Instruction li v1,10 time: 133
+Instruction sw v1,8(v0) time: 244
+Instruction lui v0,0x40 time: 245
+Instruction addiu v0,v0,4592 time: 246
+Instruction li v1,9 time: 247
+Instruction sw v1,12(v0) time: 248
+Instruction lui v0,0x40 time: 249
+Instruction addiu v0,v0,4592 time: 250
+Instruction li v1,8 time: 251
+Instruction sw v1,16(v0) time: 262
+Instruction lui v0,0x40 time: 263
+Instruction addiu v0,v0,4592 time: 264
+Instruction li v1,7 time: 265
+Instruction sw v1,20(v0) time: 266
+Instruction lui v0,0x40 time: 267
+Instruction addiu v0,v0,4592 time: 268
+Instruction li v1,6 time: 269
+Instruction sw v1,24(v0) time: 380
+Instruction lui v0,0x40 time: 381
+Instruction addiu v0,v0,4592 time: 382
+Instruction li v1,5 time: 383
+Instruction sw v1,28(v0) time: 384
+Instruction lui v0,0x40 time: 385
+Instruction addiu v0,v0,4592 time: 386
+Instruction li v1,4 time: 387
+Instruction sw v1,32(v0) time: 398
+Instruction lui v0,0x40 time: 399
+Instruction addiu v0,v0,4592 time: 400
+Instruction li v1,3 time: 401
+Instruction sw v1,36(v0) time: 402
+Instruction lui v0,0x40 time: 403
+Instruction addiu v0,v0,4592 time: 404
+Instruction li v1,2 time: 405
+Instruction sw v1,40(v0) time: 516
+Instruction li v0,2 time: 517
+Instruction j 4001d0 time: 518
+Instruction sw v0,0(sp) time: 519
+Instruction lw v0,0(sp) time: 520
+Instruction nop time: 521
+Instruction slti v0,v0,11 time: 522
+Instruction bnez v0,4000d0 time: 523
+Instruction nop time: 524
+Instruction addiu sp,sp,-16 time: 114
+Instruction lui v0,0x40 time: 115
+Instruction sw zero,4592(v0) time: 126
+Instruction lui v0,0x40 time: 127
+Instruction addiu v0,v0,4592 time: 128
+Instruction li v1,11 time: 129
+Instruction sw v1,4(v0) time: 130
+Instruction lui v0,0x40 time: 131
+Instruction addiu v0,v0,4592 time: 132
+Instruction li v1,10 time: 133
+Instruction sw v1,8(v0) time: 244
+Instruction lui v0,0x40 time: 245
+Instruction addiu v0,v0,4592 time: 246
+Instruction li v1,9 time: 247
+Instruction sw v1,12(v0) time: 248
+Instruction lui v0,0x40 time: 249
+Instruction addiu v0,v0,4592 time: 250
+Instruction li v1,8 time: 251
+Instruction sw v1,16(v0) time: 262
+Instruction lui v0,0x40 time: 263
+Instruction addiu v0,v0,4592 time: 264
+Instruction li v1,7 time: 265
+Instruction sw v1,20(v0) time: 266
+Instruction lui v0,0x40 time: 267
+Instruction addiu v0,v0,4592 time: 268
+Instruction li v1,6 time: 269
+Instruction sw v1,24(v0) time: 380
+Instruction lui v0,0x40 time: 381
+Instruction addiu v0,v0,4592 time: 382
+Instruction li v1,5 time: 383
+Instruction sw v1,28(v0) time: 384
+Instruction lui v0,0x40 time: 385
+Instruction addiu v0,v0,4592 time: 386
+Instruction li v1,4 time: 387
+Instruction sw v1,32(v0) time: 398
+Instruction lui v0,0x40 time: 399
+Instruction addiu v0,v0,4592 time: 400
+Instruction li v1,3 time: 401
+Instruction sw v1,36(v0) time: 402
+Instruction lui v0,0x40 time: 403
+Instruction addiu v0,v0,4592 time: 404
+Instruction li v1,2 time: 405
+Instruction sw v1,40(v0) time: 516
+Instruction li v0,2 time: 517
+Instruction j 4001d0 time: 518
+Instruction sw v0,0(sp) time: 519
+Instruction lw v0,0(sp) time: 630
+Instruction nop time: 631
+Instruction slti v0,v0,11 time: 632
+Instruction bnez v0,4000d0 time: 633
+Instruction nop time: 744
+Instruction addiu sp,sp,-16 time: 114
+Instruction lui v0,0x40 time: 115
+Instruction sw zero,4592(v0) time: 126
+Instruction lui v0,0x40 time: 127
+Instruction addiu v0,v0,4592 time: 128
+Instruction li v1,11 time: 129
+Instruction sw v1,4(v0) time: 130
+Instruction lui v0,0x40 time: 131
+Instruction addiu v0,v0,4592 time: 132
+Instruction li v1,10 time: 133
+Instruction sw v1,8(v0) time: 244
+Instruction lui v0,0x40 time: 245
+Instruction addiu v0,v0,4592 time: 246
+Instruction li v1,9 time: 247
+Instruction sw v1,12(v0) time: 248
+Instruction lui v0,0x40 time: 249
+Instruction addiu v0,v0,4592 time: 250
+Instruction li v1,8 time: 251
+Instruction sw v1,16(v0) time: 262
+Instruction lui v0,0x40 time: 263
+Instruction addiu v0,v0,4592 time: 264
+Instruction li v1,7 time: 265
+Instruction sw v1,20(v0) time: 266
+Instruction lui v0,0x40 time: 267
+Instruction addiu v0,v0,4592 time: 268
+Instruction li v1,6 time: 269
+Instruction sw v1,24(v0) time: 380
+Instruction lui v0,0x40 time: 381
+Instruction addiu v0,v0,4592 time: 382
+Instruction li v1,5 time: 383
+Instruction sw v1,28(v0) time: 384
+Instruction lui v0,0x40 time: 385
+Instruction addiu v0,v0,4592 time: 386
+Instruction li v1,4 time: 387
+Instruction sw v1,32(v0) time: 398
+Instruction lui v0,0x40 time: 399
+Instruction addiu v0,v0,4592 time: 400
+Instruction li v1,3 time: 401
+Instruction sw v1,36(v0) time: 402
+Instruction lui v0,0x40 time: 403
+Instruction addiu v0,v0,4592 time: 404
+Instruction li v1,2 time: 405
+Instruction sw v1,40(v0) time: 516
+Instruction li v0,2 time: 517
+Instruction j 4001d0 time: 518
+Instruction sw v0,0(sp) time: 519
+Instruction lw v0,0(sp) time: 520
+Instruction nop time: 521
+Instruction slti v0,v0,11 time: 522
+Instruction bnez v0,4000d0 time: 523
+Instruction nop time: 524
+Instruction lw v0,0(sp) time: 103
+Instruction nop time: 104
+Instruction j 400174 time: 105
+Instruction sw v0,4(sp) time: 106
+Instruction lui v0,0x40 time: 118
+Instruction lw v1,4(sp) time: 119
+Instruction nop time: 120
+Instruction sll v1,v1,0x2 time: 231
+Instruction addiu v0,v0,4592 time: 232
+Instruction addu v0,v1,v0 time: 233
+Instruction lw v1,0(v0) time: 234
+Instruction lw v0,4(sp) time: 235
+Instruction nop time: 236
+Instruction addiu a0,v0,-1 time: 237
+Instruction lui v0,0x40 time: 238
+Instruction sll a0,a0,0x2 time: 349
+Instruction addiu v0,v0,4592 time: 350
+Instruction addu v0,a0,v0 time: 351
+Instruction lw v0,0(v0) time: 352
+Instruction nop time: 353
+Instruction sltu v0,v1,v0 time: 354
+Instruction bnez v0,4000e0 time: 355
+Instruction nop time: 356
+Instruction lw v0,0(sp) time: 103
+Instruction nop time: 104
+Instruction j 400174 time: 105
+Instruction sw v0,4(sp) time: 106
+Instruction lui v0,0x40 time: 107
+Instruction lw v1,4(sp) time: 108
+Instruction nop time: 109
+Instruction sll v1,v1,0x2 time: 110
+Instruction addiu v0,v0,4592 time: 111
+Instruction addu v0,v1,v0 time: 112
+Instruction lw v1,0(v0) time: 113
+Instruction lw v0,4(sp) time: 114
+Instruction nop time: 115
+Instruction addiu a0,v0,-1 time: 116
+Instruction lui v0,0x40 time: 117
+Instruction sll a0,a0,0x2 time: 118
+Instruction addiu v0,v0,4592 time: 119
+Instruction addu v0,a0,v0 time: 120
+Instruction lw v0,0(v0) time: 121
+Instruction nop time: 122
+Instruction sltu v0,v1,v0 time: 123
+Instruction bnez v0,4000e0 time: 124
+Instruction nop time: 125
+Instruction lw v0,0(sp) time: 103
+Instruction nop time: 104
+Instruction j 400174 time: 105
+Instruction sw v0,4(sp) time: 106
+Instruction lui v0,0x40 time: 118
+Instruction lw v1,4(sp) time: 119
+Instruction nop time: 120
+Instruction sll v1,v1,0x2 time: 231
+Instruction addiu v0,v0,4592 time: 232
+Instruction addu v0,v1,v0 time: 233
+Instruction lw v1,0(v0) time: 234
+Instruction lw v0,4(sp) time: 235
+Instruction nop time: 236
+Instruction addiu a0,v0,-1 time: 237
+Instruction lui v0,0x40 time: 238
+Instruction sll a0,a0,0x2 time: 349
+Instruction addiu v0,v0,4592 time: 350
+Instruction addu v0,a0,v0 time: 351
+Instruction lw v0,0(v0) time: 352
+Instruction nop time: 353
+Instruction sltu v0,v1,v0 time: 354
+Instruction bnez v0,4000e0 time: 355
+Instruction nop time: 356
+Instruction lw v0,0(sp) time: 103
+Instruction nop time: 104
+Instruction j 400174 time: 105
+Instruction sw v0,4(sp) time: 106
+Instruction lui v0,0x40 time: 107
+Instruction lw v1,4(sp) time: 108
+Instruction nop time: 109
+Instruction sll v1,v1,0x2 time: 110
+Instruction addiu v0,v0,4592 time: 111
+Instruction addu v0,v1,v0 time: 112
+Instruction lw v1,0(v0) time: 113
+Instruction lw v0,4(sp) time: 114
+Instruction nop time: 115
+Instruction addiu a0,v0,-1 time: 116
+Instruction lui v0,0x40 time: 117
+Instruction sll a0,a0,0x2 time: 118
+Instruction addiu v0,v0,4592 time: 119
+Instruction addu v0,a0,v0 time: 120
+Instruction lw v0,0(v0) time: 121
+Instruction nop time: 122
+Instruction sltu v0,v1,v0 time: 123
+Instruction bnez v0,4000e0 time: 124
+Instruction nop time: 125
+Instruction lui v0,0x40 time: 14
+Instruction lw v1,4(sp) time: 15
+Instruction nop time: 16
+Instruction sll v1,v1,0x2 time: 17
+Instruction addiu v0,v0,4592 time: 18
+Instruction addu v0,v1,v0 time: 19
+Instruction lw v0,0(v0) time: 20
+Instruction nop time: 21
+Instruction sw v0,8(sp) time: 132
+Instruction lw v0,4(sp) time: 133
+Instruction nop time: 134
+Instruction addiu v1,v0,-1 time: 135
+Instruction lui v0,0x40 time: 136
+Instruction sll v1,v1,0x2 time: 137
+Instruction addiu v0,v0,4592 time: 138
+Instruction addu v0,v1,v0 time: 139
+Instruction lw v1,0(v0) time: 250
+Instruction lui v0,0x40 time: 251
+Instruction lw a0,4(sp) time: 252
+Instruction nop time: 253
+Instruction sll a0,a0,0x2 time: 254
+Instruction addiu v0,v0,4592 time: 255
+Instruction addu v0,a0,v0 time: 256
+Instruction sw v1,0(v0) time: 257
+Instruction lw v0,4(sp) time: 368
+Instruction nop time: 369
+Instruction addiu a0,v0,-1 time: 370
+Instruction lw v1,8(sp) time: 371
+Instruction lui v0,0x40 time: 372
+Instruction sll a0,a0,0x2 time: 373
+Instruction addiu v0,v0,4592 time: 374
+Instruction addu v0,a0,v0 time: 375
+Instruction sw v1,0(v0) time: 376
+Instruction lw v0,4(sp) time: 377
+Instruction nop time: 378
+Instruction addiu v0,v0,-1 time: 379
+Instruction sw v0,4(sp) time: 380
+Instruction lui v0,0x40 time: 491
+Instruction lw v1,4(sp) time: 492
+Instruction nop time: 493
+Instruction sll v1,v1,0x2 time: 604
+Instruction addiu v0,v0,4592 time: 605
+Instruction addu v0,v1,v0 time: 606
+Instruction lw v1,0(v0) time: 607
+Instruction lw v0,4(sp) time: 608
+Instruction nop time: 609
+Instruction addiu a0,v0,-1 time: 610
+Instruction lui v0,0x40 time: 611
+Instruction sll a0,a0,0x2 time: 722
+Instruction addiu v0,v0,4592 time: 723
+Instruction addu v0,a0,v0 time: 724
+Instruction lw v0,0(v0) time: 725
+Instruction nop time: 726
+Instruction sltu v0,v1,v0 time: 727
+Instruction bnez v0,4000e0 time: 728
+Instruction nop time: 729
+Instruction lui v0,0x40 time: 14
+Instruction lw v1,4(sp) time: 15
+Instruction nop time: 16
+Instruction sll v1,v1,0x2 time: 17
+Instruction addiu v0,v0,4592 time: 18
+Instruction addu v0,v1,v0 time: 19
+Instruction lw v0,0(v0) time: 20
+Instruction nop time: 21
+Instruction sw v0,8(sp) time: 132
+Instruction lw v0,4(sp) time: 133
+Instruction nop time: 134
+Instruction addiu v1,v0,-1 time: 135
+Instruction lui v0,0x40 time: 136
+Instruction sll v1,v1,0x2 time: 137
+Instruction addiu v0,v0,4592 time: 138
+Instruction addu v0,v1,v0 time: 139
+Instruction lw v1,0(v0) time: 250
+Instruction lui v0,0x40 time: 251
+Instruction lw a0,4(sp) time: 252
+Instruction nop time: 253
+Instruction sll a0,a0,0x2 time: 254
+Instruction addiu v0,v0,4592 time: 255
+Instruction addu v0,a0,v0 time: 256
+Instruction sw v1,0(v0) time: 257
+Instruction lw v0,4(sp) time: 368
+Instruction nop time: 369
+Instruction addiu a0,v0,-1 time: 370
+Instruction lw v1,8(sp) time: 371
+Instruction lui v0,0x40 time: 372
+Instruction sll a0,a0,0x2 time: 373
+Instruction addiu v0,v0,4592 time: 374
+Instruction addu v0,a0,v0 time: 375
+Instruction sw v1,0(v0) time: 376
+Instruction lw v0,4(sp) time: 377
+Instruction nop time: 378
+Instruction addiu v0,v0,-1 time: 379
+Instruction sw v0,4(sp) time: 380
+Instruction lui v0,0x40 time: 381
+Instruction lw v1,4(sp) time: 382
+Instruction nop time: 383
+Instruction sll v1,v1,0x2 time: 384
+Instruction addiu v0,v0,4592 time: 385
+Instruction addu v0,v1,v0 time: 386
+Instruction lw v1,0(v0) time: 387
+Instruction lw v0,4(sp) time: 388
+Instruction nop time: 389
+Instruction addiu a0,v0,-1 time: 390
+Instruction lui v0,0x40 time: 391
+Instruction sll a0,a0,0x2 time: 392
+Instruction addiu v0,v0,4592 time: 393
+Instruction addu v0,a0,v0 time: 394
+Instruction lw v0,0(v0) time: 395
+Instruction nop time: 396
+Instruction sltu v0,v1,v0 time: 397
+Instruction bnez v0,4000e0 time: 398
+Instruction nop time: 399
+Instruction lui v0,0x40 time: 4
+Instruction lw v1,4(sp) time: 5
+Instruction nop time: 6
+Instruction sll v1,v1,0x2 time: 7
+Instruction addiu v0,v0,4592 time: 8
+Instruction addu v0,v1,v0 time: 9
+Instruction lw v0,0(v0) time: 10
+Instruction nop time: 11
+Instruction sw v0,8(sp) time: 12
+Instruction lw v0,4(sp) time: 13
+Instruction nop time: 14
+Instruction addiu v1,v0,-1 time: 15
+Instruction lui v0,0x40 time: 16
+Instruction sll v1,v1,0x2 time: 17
+Instruction addiu v0,v0,4592 time: 18
+Instruction addu v0,v1,v0 time: 19
+Instruction lw v1,0(v0) time: 20
+Instruction lui v0,0x40 time: 21
+Instruction lw a0,4(sp) time: 22
+Instruction nop time: 23
+Instruction sll a0,a0,0x2 time: 24
+Instruction addiu v0,v0,4592 time: 25
+Instruction addu v0,a0,v0 time: 26
+Instruction sw v1,0(v0) time: 27
+Instruction lw v0,4(sp) time: 28
+Instruction nop time: 29
+Instruction addiu a0,v0,-1 time: 30
+Instruction lw v1,8(sp) time: 31
+Instruction lui v0,0x40 time: 32
+Instruction sll a0,a0,0x2 time: 33
+Instruction addiu v0,v0,4592 time: 34
+Instruction addu v0,a0,v0 time: 35
+Instruction sw v1,0(v0) time: 36
+Instruction lw v0,4(sp) time: 37
+Instruction nop time: 38
+Instruction addiu v0,v0,-1 time: 39
+Instruction sw v0,4(sp) time: 40
+Instruction lui v0,0x40 time: 151
+Instruction lw v1,4(sp) time: 152
+Instruction nop time: 153
+Instruction sll v1,v1,0x2 time: 264
+Instruction addiu v0,v0,4592 time: 265
+Instruction addu v0,v1,v0 time: 266
+Instruction lw v1,0(v0) time: 267
+Instruction lw v0,4(sp) time: 268
+Instruction nop time: 269
+Instruction addiu a0,v0,-1 time: 270
+Instruction lui v0,0x40 time: 271
+Instruction sll a0,a0,0x2 time: 382
+Instruction addiu v0,v0,4592 time: 383
+Instruction addu v0,a0,v0 time: 384
+Instruction lw v0,0(v0) time: 385
+Instruction nop time: 386
+Instruction sltu v0,v1,v0 time: 387
+Instruction bnez v0,4000e0 time: 388
+Instruction nop time: 389
+Instruction lui v0,0x40 time: 4
+Instruction lw v1,4(sp) time: 5
+Instruction nop time: 6
+Instruction sll v1,v1,0x2 time: 7
+Instruction addiu v0,v0,4592 time: 8
+Instruction addu v0,v1,v0 time: 9
+Instruction lw v0,0(v0) time: 10
+Instruction nop time: 11
+Instruction sw v0,8(sp) time: 12
+Instruction lw v0,4(sp) time: 13
+Instruction nop time: 14
+Instruction addiu v1,v0,-1 time: 15
+Instruction lui v0,0x40 time: 16
+Instruction sll v1,v1,0x2 time: 17
+Instruction addiu v0,v0,4592 time: 18
+Instruction addu v0,v1,v0 time: 19
+Instruction lw v1,0(v0) time: 20
+Instruction lui v0,0x40 time: 21
+Instruction lw a0,4(sp) time: 22
+Instruction nop time: 23
+Instruction sll a0,a0,0x2 time: 24
+Instruction addiu v0,v0,4592 time: 25
+Instruction addu v0,a0,v0 time: 26
+Instruction sw v1,0(v0) time: 27
+Instruction lw v0,4(sp) time: 28
+Instruction nop time: 29
+Instruction addiu a0,v0,-1 time: 30
+Instruction lw v1,8(sp) time: 31
+Instruction lui v0,0x40 time: 32
+Instruction sll a0,a0,0x2 time: 33
+Instruction addiu v0,v0,4592 time: 34
+Instruction addu v0,a0,v0 time: 35
+Instruction sw v1,0(v0) time: 36
+Instruction lw v0,4(sp) time: 37
+Instruction nop time: 38
+Instruction addiu v0,v0,-1 time: 39
+Instruction sw v0,4(sp) time: 40
+Instruction lui v0,0x40 time: 41
+Instruction lw v1,4(sp) time: 42
+Instruction nop time: 43
+Instruction sll v1,v1,0x2 time: 44
+Instruction addiu v0,v0,4592 time: 45
+Instruction addu v0,v1,v0 time: 46
+Instruction lw v1,0(v0) time: 47
+Instruction lw v0,4(sp) time: 48
+Instruction nop time: 49
+Instruction addiu a0,v0,-1 time: 50
+Instruction lui v0,0x40 time: 51
+Instruction sll a0,a0,0x2 time: 52
+Instruction addiu v0,v0,4592 time: 53
+Instruction addu v0,a0,v0 time: 54
+Instruction lw v0,0(v0) time: 55
+Instruction nop time: 56
+Instruction sltu v0,v1,v0 time: 57
+Instruction bnez v0,4000e0 time: 58
+Instruction nop time: 59
+Instruction lui v0,0x40 time: 114
+Instruction lw v1,4(sp) time: 115
+Instruction nop time: 116
+Instruction sll v1,v1,0x2 time: 227
+Instruction addiu v0,v0,4592 time: 228
+Instruction addu v0,v1,v0 time: 229
+Instruction lw v1,0(v0) time: 230
+Instruction lw v0,4(sp) time: 231
+Instruction nop time: 232
+Instruction addiu a0,v0,-1 time: 233
+Instruction lui v0,0x40 time: 234
+Instruction sll a0,a0,0x2 time: 345
+Instruction addiu v0,v0,4592 time: 346
+Instruction addu v0,a0,v0 time: 347
+Instruction lw v0,0(v0) time: 348
+Instruction nop time: 349
+Instruction sltu v0,v1,v0 time: 350
+Instruction bnez v0,4000e0 time: 351
+Instruction nop time: 352
+Instruction lui v0,0x40 time: 363
+Instruction lw v1,4(sp) time: 364
+Instruction nop time: 365
+Instruction sll v1,v1,0x2 time: 366
+Instruction addiu v0,v0,4592 time: 367
+Instruction addu v0,v1,v0 time: 368
+Instruction lw v0,0(v0) time: 369
+Instruction nop time: 370
+Instruction sw v0,8(sp) time: 481
+Instruction lw v0,4(sp) time: 482
+Instruction nop time: 483
+Instruction addiu v1,v0,-1 time: 484
+Instruction lui v0,0x40 time: 485
+Instruction sll v1,v1,0x2 time: 486
+Instruction addiu v0,v0,4592 time: 487
+Instruction addu v0,v1,v0 time: 488
+Instruction lw v1,0(v0) time: 599
+Instruction lui v0,0x40 time: 600
+Instruction lw a0,4(sp) time: 601
+Instruction nop time: 602
+Instruction sll a0,a0,0x2 time: 603
+Instruction addiu v0,v0,4592 time: 604
+Instruction addu v0,a0,v0 time: 605
+Instruction sw v1,0(v0) time: 606
+Instruction lw v0,4(sp) time: 717
+Instruction nop time: 718
+Instruction addiu a0,v0,-1 time: 719
+Instruction lw v1,8(sp) time: 720
+Instruction lui v0,0x40 time: 721
+Instruction sll a0,a0,0x2 time: 722
+Instruction addiu v0,v0,4592 time: 723
+Instruction addu v0,a0,v0 time: 724
+Instruction sw v1,0(v0) time: 725
+Instruction lw v0,4(sp) time: 726
+Instruction nop time: 727
+Instruction addiu v0,v0,-1 time: 728
+Instruction sw v0,4(sp) time: 729
+Instruction lui v0,0x40 time: 114
+Instruction lw v1,4(sp) time: 115
+Instruction nop time: 116
+Instruction sll v1,v1,0x2 time: 227
+Instruction addiu v0,v0,4592 time: 228
+Instruction addu v0,v1,v0 time: 229
+Instruction lw v1,0(v0) time: 230
+Instruction lw v0,4(sp) time: 231
+Instruction nop time: 232
+Instruction addiu a0,v0,-1 time: 233
+Instruction lui v0,0x40 time: 234
+Instruction sll a0,a0,0x2 time: 345
+Instruction addiu v0,v0,4592 time: 346
+Instruction addu v0,a0,v0 time: 347
+Instruction lw v0,0(v0) time: 348
+Instruction nop time: 349
+Instruction sltu v0,v1,v0 time: 350
+Instruction bnez v0,4000e0 time: 351
+Instruction nop time: 352
+Instruction lui v0,0x40 time: 353
+Instruction lw v1,4(sp) time: 354
+Instruction nop time: 355
+Instruction sll v1,v1,0x2 time: 356
+Instruction addiu v0,v0,4592 time: 357
+Instruction addu v0,v1,v0 time: 358
+Instruction lw v0,0(v0) time: 359
+Instruction nop time: 360
+Instruction sw v0,8(sp) time: 361
+Instruction lw v0,4(sp) time: 362
+Instruction nop time: 363
+Instruction addiu v1,v0,-1 time: 364
+Instruction lui v0,0x40 time: 365
+Instruction sll v1,v1,0x2 time: 366
+Instruction addiu v0,v0,4592 time: 367
+Instruction addu v0,v1,v0 time: 368
+Instruction lw v1,0(v0) time: 369
+Instruction lui v0,0x40 time: 370
+Instruction lw a0,4(sp) time: 371
+Instruction nop time: 372
+Instruction sll a0,a0,0x2 time: 373
+Instruction addiu v0,v0,4592 time: 374
+Instruction addu v0,a0,v0 time: 375
+Instruction sw v1,0(v0) time: 376
+Instruction lw v0,4(sp) time: 377
+Instruction nop time: 378
+Instruction addiu a0,v0,-1 time: 379
+Instruction lw v1,8(sp) time: 380
+Instruction lui v0,0x40 time: 381
+Instruction sll a0,a0,0x2 time: 382
+Instruction addiu v0,v0,4592 time: 383
+Instruction addu v0,a0,v0 time: 384
+Instruction sw v1,0(v0) time: 385
+Instruction lw v0,4(sp) time: 386
+Instruction nop time: 387
+Instruction addiu v0,v0,-1 time: 388
+Instruction sw v0,4(sp) time: 389
+Instruction lui v0,0x40 time: 4
+Instruction lw v1,4(sp) time: 5
+Instruction nop time: 6
+Instruction sll v1,v1,0x2 time: 7
+Instruction addiu v0,v0,4592 time: 8
+Instruction addu v0,v1,v0 time: 9
+Instruction lw v1,0(v0) time: 10
+Instruction lw v0,4(sp) time: 11
+Instruction nop time: 12
+Instruction addiu a0,v0,-1 time: 13
+Instruction lui v0,0x40 time: 14
+Instruction sll a0,a0,0x2 time: 15
+Instruction addiu v0,v0,4592 time: 16
+Instruction addu v0,a0,v0 time: 17
+Instruction lw v0,0(v0) time: 18
+Instruction nop time: 19
+Instruction sltu v0,v1,v0 time: 20
+Instruction bnez v0,4000e0 time: 21
+Instruction nop time: 22
+Instruction lui v0,0x40 time: 33
+Instruction lw v1,4(sp) time: 34
+Instruction nop time: 35
+Instruction sll v1,v1,0x2 time: 36
+Instruction addiu v0,v0,4592 time: 37
+Instruction addu v0,v1,v0 time: 38
+Instruction lw v0,0(v0) time: 39
+Instruction nop time: 40
+Instruction sw v0,8(sp) time: 151
+Instruction lw v0,4(sp) time: 152
+Instruction nop time: 153
+Instruction addiu v1,v0,-1 time: 154
+Instruction lui v0,0x40 time: 155
+Instruction sll v1,v1,0x2 time: 156
+Instruction addiu v0,v0,4592 time: 157
+Instruction addu v0,v1,v0 time: 158
+Instruction lw v1,0(v0) time: 269
+Instruction lui v0,0x40 time: 270
+Instruction lw a0,4(sp) time: 271
+Instruction nop time: 272
+Instruction sll a0,a0,0x2 time: 273
+Instruction addiu v0,v0,4592 time: 274
+Instruction addu v0,a0,v0 time: 275
+Instruction sw v1,0(v0) time: 276
+Instruction lw v0,4(sp) time: 387
+Instruction nop time: 388
+Instruction addiu a0,v0,-1 time: 389
+Instruction lw v1,8(sp) time: 390
+Instruction lui v0,0x40 time: 391
+Instruction sll a0,a0,0x2 time: 392
+Instruction addiu v0,v0,4592 time: 393
+Instruction addu v0,a0,v0 time: 394
+Instruction sw v1,0(v0) time: 395
+Instruction lw v0,4(sp) time: 396
+Instruction nop time: 397
+Instruction addiu v0,v0,-1 time: 398
+Instruction sw v0,4(sp) time: 399
+Instruction lui v0,0x40 time: 4
+Instruction lw v1,4(sp) time: 5
+Instruction nop time: 6
+Instruction sll v1,v1,0x2 time: 7
+Instruction addiu v0,v0,4592 time: 8
+Instruction addu v0,v1,v0 time: 9
+Instruction lw v1,0(v0) time: 10
+Instruction lw v0,4(sp) time: 11
+Instruction nop time: 12
+Instruction addiu a0,v0,-1 time: 13
+Instruction lui v0,0x40 time: 14
+Instruction sll a0,a0,0x2 time: 15
+Instruction addiu v0,v0,4592 time: 16
+Instruction addu v0,a0,v0 time: 17
+Instruction lw v0,0(v0) time: 18
+Instruction nop time: 19
+Instruction sltu v0,v1,v0 time: 20
+Instruction bnez v0,4000e0 time: 21
+Instruction nop time: 22
+Instruction lui v0,0x40 time: 23
+Instruction lw v1,4(sp) time: 24
+Instruction nop time: 25
+Instruction sll v1,v1,0x2 time: 26
+Instruction addiu v0,v0,4592 time: 27
+Instruction addu v0,v1,v0 time: 28
+Instruction lw v0,0(v0) time: 29
+Instruction nop time: 30
+Instruction sw v0,8(sp) time: 31
+Instruction lw v0,4(sp) time: 32
+Instruction nop time: 33
+Instruction addiu v1,v0,-1 time: 34
+Instruction lui v0,0x40 time: 35
+Instruction sll v1,v1,0x2 time: 36
+Instruction addiu v0,v0,4592 time: 37
+Instruction addu v0,v1,v0 time: 38
+Instruction lw v1,0(v0) time: 39
+Instruction lui v0,0x40 time: 40
+Instruction lw a0,4(sp) time: 41
+Instruction nop time: 42
+Instruction sll a0,a0,0x2 time: 43
+Instruction addiu v0,v0,4592 time: 44
+Instruction addu v0,a0,v0 time: 45
+Instruction sw v1,0(v0) time: 46
+Instruction lw v0,4(sp) time: 47
+Instruction nop time: 48
+Instruction addiu a0,v0,-1 time: 49
+Instruction lw v1,8(sp) time: 50
+Instruction lui v0,0x40 time: 51
+Instruction sll a0,a0,0x2 time: 52
+Instruction addiu v0,v0,4592 time: 53
+Instruction addu v0,a0,v0 time: 54
+Instruction sw v1,0(v0) time: 55
+Instruction lw v0,4(sp) time: 56
+Instruction nop time: 57
+Instruction addiu v0,v0,-1 time: 58
+Instruction sw v0,4(sp) time: 59
+Instruction lui v0,0x40 time: 114
+Instruction lw v1,4(sp) time: 115
+Instruction nop time: 116
+Instruction sll v1,v1,0x2 time: 227
+Instruction addiu v0,v0,4592 time: 228
+Instruction addu v0,v1,v0 time: 229
+Instruction lw v1,0(v0) time: 230
+Instruction lw v0,4(sp) time: 231
+Instruction nop time: 232
+Instruction addiu a0,v0,-1 time: 233
+Instruction lui v0,0x40 time: 234
+Instruction sll a0,a0,0x2 time: 345
+Instruction addiu v0,v0,4592 time: 346
+Instruction addu v0,a0,v0 time: 347
+Instruction lw v0,0(v0) time: 348
+Instruction nop time: 349
+Instruction sltu v0,v1,v0 time: 350
+Instruction bnez v0,4000e0 time: 351
+Instruction nop time: 352
+Instruction lw v0,0(sp) time: 353
+Instruction nop time: 354
+Instruction addiu v0,v0,1 time: 355
+Instruction sw v0,0(sp) time: 356
+Instruction lui v0,0x40 time: 114
+Instruction lw v1,4(sp) time: 115
+Instruction nop time: 116
+Instruction sll v1,v1,0x2 time: 227
+Instruction addiu v0,v0,4592 time: 228
+Instruction addu v0,v1,v0 time: 229
+Instruction lw v1,0(v0) time: 230
+Instruction lw v0,4(sp) time: 231
+Instruction nop time: 232
+Instruction addiu a0,v0,-1 time: 233
+Instruction lui v0,0x40 time: 234
+Instruction sll a0,a0,0x2 time: 345
+Instruction addiu v0,v0,4592 time: 346
+Instruction addu v0,a0,v0 time: 347
+Instruction lw v0,0(v0) time: 348
+Instruction nop time: 349
+Instruction sltu v0,v1,v0 time: 350
+Instruction bnez v0,4000e0 time: 351
+Instruction nop time: 352
+Instruction lw v0,0(sp) time: 353
+Instruction nop time: 354
+Instruction addiu v0,v0,1 time: 355
+Instruction sw v0,0(sp) time: 356
+Instruction lui v0,0x40 time: 4
+Instruction lw v1,4(sp) time: 5
+Instruction nop time: 6
+Instruction sll v1,v1,0x2 time: 7
+Instruction addiu v0,v0,4592 time: 8
+Instruction addu v0,v1,v0 time: 9
+Instruction lw v1,0(v0) time: 10
+Instruction lw v0,4(sp) time: 11
+Instruction nop time: 12
+Instruction addiu a0,v0,-1 time: 13
+Instruction lui v0,0x40 time: 14
+Instruction sll a0,a0,0x2 time: 15
+Instruction addiu v0,v0,4592 time: 16
+Instruction addu v0,a0,v0 time: 17
+Instruction lw v0,0(v0) time: 18
+Instruction nop time: 19
+Instruction sltu v0,v1,v0 time: 20
+Instruction bnez v0,4000e0 time: 21
+Instruction nop time: 22
+Instruction lw v0,0(sp) time: 23
+Instruction nop time: 24
+Instruction addiu v0,v0,1 time: 25
+Instruction sw v0,0(sp) time: 26
+Instruction lui v0,0x40 time: 4
+Instruction lw v1,4(sp) time: 5
+Instruction nop time: 6
+Instruction sll v1,v1,0x2 time: 7
+Instruction addiu v0,v0,4592 time: 8
+Instruction addu v0,v1,v0 time: 9
+Instruction lw v1,0(v0) time: 10
+Instruction lw v0,4(sp) time: 11
+Instruction nop time: 12
+Instruction addiu a0,v0,-1 time: 13
+Instruction lui v0,0x40 time: 14
+Instruction sll a0,a0,0x2 time: 15
+Instruction addiu v0,v0,4592 time: 16
+Instruction addu v0,a0,v0 time: 17
+Instruction lw v0,0(v0) time: 18
+Instruction nop time: 19
+Instruction sltu v0,v1,v0 time: 20
+Instruction bnez v0,4000e0 time: 21
+Instruction nop time: 22
+Instruction lw v0,0(sp) time: 23
+Instruction nop time: 24
+Instruction addiu v0,v0,1 time: 25
+Instruction sw v0,0(sp) time: 26
+Instruction lw v0,0(sp) time: 103
+Instruction nop time: 104
+Instruction addiu v0,v0,1 time: 105
+Instruction sw v0,0(sp) time: 106
+Instruction lw v0,0(sp) time: 118
+Instruction nop time: 119
+Instruction slti v0,v0,11 time: 120
+Instruction bnez v0,4000d0 time: 121
+Instruction nop time: 232
+Instruction lw v0,0(sp) time: 103
+Instruction nop time: 104
+Instruction addiu v0,v0,1 time: 105
+Instruction sw v0,0(sp) time: 106
+Instruction lw v0,0(sp) time: 107
+Instruction nop time: 108
+Instruction slti v0,v0,11 time: 109
+Instruction bnez v0,4000d0 time: 110
+Instruction nop time: 111
+Instruction lw v0,0(sp) time: 103
+Instruction nop time: 104
+Instruction addiu v0,v0,1 time: 105
+Instruction sw v0,0(sp) time: 106
+Instruction lw v0,0(sp) time: 118
+Instruction nop time: 119
+Instruction slti v0,v0,11 time: 120
+Instruction bnez v0,4000d0 time: 121
+Instruction nop time: 232
+Instruction lw v0,0(sp) time: 103
+Instruction nop time: 104
+Instruction addiu v0,v0,1 time: 105
+Instruction sw v0,0(sp) time: 106
+Instruction lw v0,0(sp) time: 107
+Instruction nop time: 108
+Instruction slti v0,v0,11 time: 109
+Instruction bnez v0,4000d0 time: 110
+Instruction nop time: 111
+Instruction lw v0,0(sp) time: 213
+Instruction nop time: 214
+Instruction slti v0,v0,11 time: 215
+Instruction bnez v0,4000d0 time: 216
+Instruction nop time: 228
+Instruction lw v0,0(sp) time: 229
+Instruction nop time: 230
+Instruction j 400174 time: 231
+Instruction sw v0,4(sp) time: 232
+Instruction lw v0,0(sp) time: 213
+Instruction nop time: 214
+Instruction slti v0,v0,11 time: 215
+Instruction bnez v0,4000d0 time: 216
+Instruction nop time: 228
+Instruction lw v0,0(sp) time: 229
+Instruction nop time: 230
+Instruction j 400174 time: 231
+Instruction sw v0,4(sp) time: 232
+Instruction lw v0,0(sp) time: 103
+Instruction nop time: 104
+Instruction slti v0,v0,11 time: 105
+Instruction bnez v0,4000d0 time: 106
+Instruction nop time: 107
+Instruction lw v0,0(sp) time: 108
+Instruction nop time: 109
+Instruction j 400174 time: 110
+Instruction sw v0,4(sp) time: 111
+Instruction lw v0,0(sp) time: 103
+Instruction nop time: 104
+Instruction slti v0,v0,11 time: 105
+Instruction bnez v0,4000d0 time: 106
+Instruction nop time: 107
+Instruction lw v0,0(sp) time: 108
+Instruction nop time: 109
+Instruction j 400174 time: 110
+Instruction sw v0,4(sp) time: 111
+Instruction lw v0,0(sp) time: 213
+Instruction nop time: 214
+Instruction slti v0,v0,11 time: 215
+Instruction bnez v0,4000d0 time: 216
+Instruction nop time: 228
+Instruction li v0,1 time: 229
+Instruction jr ra time: 230
+Instruction addiu sp,sp,16 time: 231
+Instruction lw v0,0(sp) time: 213
+Instruction nop time: 214
+Instruction slti v0,v0,11 time: 215
+Instruction bnez v0,4000d0 time: 216
+Instruction nop time: 228
+Instruction li v0,1 time: 229
+Instruction jr ra time: 230
+Instruction addiu sp,sp,16 time: 231
+Instruction lw v0,0(sp) time: 103
+Instruction nop time: 104
+Instruction slti v0,v0,11 time: 105
+Instruction bnez v0,4000d0 time: 106
+Instruction nop time: 107
+Instruction li v0,1 time: 108
+Instruction jr ra time: 109
+Instruction addiu sp,sp,16 time: 110
+Instruction lw v0,0(sp) time: 103
+Instruction nop time: 104
+Instruction slti v0,v0,11 time: 105
+Instruction bnez v0,4000d0 time: 106
+Instruction nop time: 107
+Instruction li v0,1 time: 108
+Instruction jr ra time: 109
+Instruction addiu sp,sp,16 time: 110
+*** IPET analysis, the DATA CACHE is ignored in the PIPELINE analysis.
+IPET method: PIPELINE_ICACHE_DCACHE
+
+L1	type ICACHE	references 5974	hits 5958	misses 16	
+L1	type DCACHE	references 1271	hits 1262	misses 9	
+L2	type ICACHE	references 16	hits 4	misses 12	
+L2	type DCACHE	references 9	hits 0	misses 9	
+****************************************
+CFG of name main
+1 end nodes
+------------------------------
+Basic block node
+Node address 400018
+Node instructions
+    addiu sp,sp,-16	 address 400018
+    lui v0,0x40	 address 40001c
+    sw zero,4592(v0)	 address 400020
+    lui v0,0x40	 address 400024
+    addiu v0,v0,4592	 address 400028
+    li v1,11	 address 40002c
+    sw v1,4(v0)	 address 400030
+    lui v0,0x40	 address 400034
+    addiu v0,v0,4592	 address 400038
+    li v1,10	 address 40003c
+    sw v1,8(v0)	 address 400040
+    lui v0,0x40	 address 400044
+    addiu v0,v0,4592	 address 400048
+    li v1,9	 address 40004c
+    sw v1,12(v0)	 address 400050
+    lui v0,0x40	 address 400054
+    addiu v0,v0,4592	 address 400058
+    li v1,8	 address 40005c
+    sw v1,16(v0)	 address 400060
+    lui v0,0x40	 address 400064
+    addiu v0,v0,4592	 address 400068
+    li v1,7	 address 40006c
+    sw v1,20(v0)	 address 400070
+    lui v0,0x40	 address 400074
+    addiu v0,v0,4592	 address 400078
+    li v1,6	 address 40007c
+    sw v1,24(v0)	 address 400080
+    lui v0,0x40	 address 400084
+    addiu v0,v0,4592	 address 400088
+    li v1,5	 address 40008c
+    sw v1,28(v0)	 address 400090
+    lui v0,0x40	 address 400094
+    addiu v0,v0,4592	 address 400098
+    li v1,4	 address 40009c
+    sw v1,32(v0)	 address 4000a0
+    lui v0,0x40	 address 4000a4
+    addiu v0,v0,4592	 address 4000a8
+    li v1,3	 address 4000ac
+    sw v1,36(v0)	 address 4000b0
+    lui v0,0x40	 address 4000b4
+    addiu v0,v0,4592	 address 4000b8
+    li v1,2	 address 4000bc
+    sw v1,40(v0)	 address 4000c0
+    li v0,2	 address 4000c4
+    j 4001d0	 address 4000c8
+    sw v0,0(sp)	 address 4000cc
+Successors
+    Basic block of address 4001d0
+No predecessors
+------------------------------
+Basic block node
+Node address 4000d0
+Node instructions
+    lw v0,0(sp)	 address 4000d0
+    nop	 address 4000d4
+    j 400174	 address 4000d8
+    sw v0,4(sp)	 address 4000dc
+Successors
+    Basic block of address 400174
+Predecessors
+    Basic block of address 4001d0
+------------------------------
+Basic block node
+Node address 4000e0
+Node instructions
+    lui v0,0x40	 address 4000e0
+    lw v1,4(sp)	 address 4000e4
+    nop	 address 4000e8
+    sll v1,v1,0x2	 address 4000ec
+    addiu v0,v0,4592	 address 4000f0
+    addu v0,v1,v0	 address 4000f4
+    lw v0,0(v0)	 address 4000f8
+    nop	 address 4000fc
+    sw v0,8(sp)	 address 400100
+    lw v0,4(sp)	 address 400104
+    nop	 address 400108
+    addiu v1,v0,-1	 address 40010c
+    lui v0,0x40	 address 400110
+    sll v1,v1,0x2	 address 400114
+    addiu v0,v0,4592	 address 400118
+    addu v0,v1,v0	 address 40011c
+    lw v1,0(v0)	 address 400120
+    lui v0,0x40	 address 400124
+    lw a0,4(sp)	 address 400128
+    nop	 address 40012c
+    sll a0,a0,0x2	 address 400130
+    addiu v0,v0,4592	 address 400134
+    addu v0,a0,v0	 address 400138
+    sw v1,0(v0)	 address 40013c
+    lw v0,4(sp)	 address 400140
+    nop	 address 400144
+    addiu a0,v0,-1	 address 400148
+    lw v1,8(sp)	 address 40014c
+    lui v0,0x40	 address 400150
+    sll a0,a0,0x2	 address 400154
+    addiu v0,v0,4592	 address 400158
+    addu v0,a0,v0	 address 40015c
+    sw v1,0(v0)	 address 400160
+    lw v0,4(sp)	 address 400164
+    nop	 address 400168
+    addiu v0,v0,-1	 address 40016c
+    sw v0,4(sp)	 address 400170
+Successors
+    Basic block of address 400174
+Predecessors
+    Basic block of address 400174
+------------------------------
+Basic block node
+Node address 400174
+Node instructions
+    lui v0,0x40	 address 400174
+    lw v1,4(sp)	 address 400178
+    nop	 address 40017c
+    sll v1,v1,0x2	 address 400180
+    addiu v0,v0,4592	 address 400184
+    addu v0,v1,v0	 address 400188
+    lw v1,0(v0)	 address 40018c
+    lw v0,4(sp)	 address 400190
+    nop	 address 400194
+    addiu a0,v0,-1	 address 400198
+    lui v0,0x40	 address 40019c
+    sll a0,a0,0x2	 address 4001a0
+    addiu v0,v0,4592	 address 4001a4
+    addu v0,a0,v0	 address 4001a8
+    lw v0,0(v0)	 address 4001ac
+    nop	 address 4001b0
+    sltu v0,v1,v0	 address 4001b4
+    bnez v0,4000e0	 address 4001b8
+    nop	 address 4001bc
+Successors
+    Basic block of address 4000e0
+    Basic block of address 4001c0
+Predecessors
+    Basic block of address 4000d0
+    Basic block of address 4000e0
+------------------------------
+Basic block node
+Node address 4001c0
+Node instructions
+    lw v0,0(sp)	 address 4001c0
+    nop	 address 4001c4
+    addiu v0,v0,1	 address 4001c8
+    sw v0,0(sp)	 address 4001cc
+Successors
+    Basic block of address 4001d0
+Predecessors
+    Basic block of address 400174
+------------------------------
+Basic block node
+Node address 4001d0
+Node instructions
+    lw v0,0(sp)	 address 4001d0
+    nop	 address 4001d4
+    slti v0,v0,11	 address 4001d8
+    bnez v0,4000d0	 address 4001dc
+    nop	 address 4001e0
+Successors
+    Basic block of address 4000d0
+    Basic block of address 4001e4
+Predecessors
+    Basic block of address 400018
+    Basic block of address 4001c0
+------------------------------
+Basic block node
+Node address 4001e4
+Node instructions
+    li v0,1	 address 4001e4
+    jr ra	 address 4001e8
+    addiu sp,sp,16	 address 4001ec
+No successors
+Predecessors
+    Basic block of address 4001d0
+WCET: 7337

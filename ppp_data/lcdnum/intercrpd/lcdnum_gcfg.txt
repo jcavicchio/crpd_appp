@@ -1,0 +1,120 @@
+JCCfg (0,num_to_lcd,584)
+{
+    JCSectionNode (0x400018,0,3,0,3,BasicBlock,None,24)
+    JCSectionNode (0x400030,1,11,1,11,BasicBlock,None,20)
+    JCSectionNode (0x40003c,2,15,2,15,BasicBlock,None,16)
+    JCSectionNode (0x40004c,3,20,3,20,BasicBlock,None,20)
+    JCSectionNode (0x400058,4,24,4,24,BasicBlock,None,16)
+    JCSectionNode (0x400068,5,29,5,29,BasicBlock,None,20)
+    JCSectionNode (0x400074,6,33,6,33,BasicBlock,None,16)
+    JCSectionNode (0x400084,7,38,7,38,BasicBlock,None,20)
+    JCSectionNode (0x400090,8,42,8,42,BasicBlock,None,16)
+    JCSectionNode (0x4000a0,9,47,9,47,BasicBlock,None,20)
+    JCSectionNode (0x4000ac,10,51,10,51,BasicBlock,None,16)
+    JCSectionNode (0x4000bc,11,56,11,56,BasicBlock,None,20)
+    JCSectionNode (0x4000c8,12,60,12,60,BasicBlock,None,16)
+    JCSectionNode (0x4000d8,13,65,13,65,BasicBlock,None,20)
+    JCSectionNode (0x4000e4,14,69,14,69,BasicBlock,None,16)
+    JCSectionNode (0x4000f4,15,74,15,74,BasicBlock,None,20)
+    JCSectionNode (0x400100,16,78,16,78,BasicBlock,None,16)
+    JCSectionNode (0x400110,17,83,17,83,BasicBlock,None,20)
+    JCSectionNode (0x40011c,18,87,18,87,BasicBlock,None,16)
+    JCSectionNode (0x40012c,19,92,19,92,BasicBlock,None,20)
+    JCSectionNode (0x400138,20,96,20,96,BasicBlock,None,16)
+    JCSectionNode (0x400148,21,101,21,101,BasicBlock,None,20)
+    JCSectionNode (0x400154,22,105,22,105,BasicBlock,None,16)
+    JCSectionNode (0x400164,23,110,23,110,BasicBlock,None,20)
+    JCSectionNode (0x400170,24,114,24,114,BasicBlock,None,16)
+    JCSectionNode (0x400180,25,119,25,119,BasicBlock,None,20)
+    JCSectionNode (0x40018c,26,123,26,123,BasicBlock,None,16)
+    JCSectionNode (0x40019c,27,128,27,128,BasicBlock,None,20)
+    JCSectionNode (0x4001a8,28,132,28,132,BasicBlock,None,16)
+    JCSectionNode (0x4001b8,29,137,29,137,BasicBlock,None,20)
+    JCConditionalNode (0x4001c4,0,JCConditionalNode0,43,JCConditionalNode0,36)
+    {
+        JCSectionNode (0x4001c4,30,141,30,141,BasicBlock,None,16)
+        {
+            JCSectionNode (0x4001d4,31,146,31,146,BasicBlock,None,12)
+        }
+        {
+            JCSectionNode (0x4001e0,32,150,32,150,BasicBlock,None,4)
+        }
+        JCSectionNode (0x4001e4,33,4,33,4,BasicBlock,None,8)
+    }
+}
+JCCfg (1,main,7036)
+{
+    JCSectionNode (0x4001ec,34,203,34,203,BasicBlock,None,16)
+    JCLoopNode (0x400250,0,253,41,253,10,7020)
+    {
+        JCConditionalNode (0x400250,2,JCConditionalNode2,49,JCConditionalNode2,702)
+        {
+            JCSectionNode (0x400250,39,234,39,234,BasicBlock,None,20)
+            {
+                JCSectionNode (0x400264,40,204,40,204,BasicBlock,None,20)
+            }
+            {
+                JCBlockNode (0x4001fc,1,JCBlockNode1,48,JCBlockNode1,678)
+                {
+                    JCConditionalNode (0x4001fc,1,JCConditionalNode1,45,JCConditionalNode1,674)
+                    {
+                        JCSectionNode (0x4001fc,35,209,35,209,BasicBlock,None,32)
+                        {
+                            JCBlockNode (0x40021c,0,JCBlockNode0,42,JCBlockNode0,620)
+                            {
+                                JCFunctionNode (0x40021c,0,JCFunctionNode0,46,JCFunctionNode0,620)
+                                {
+                                    JCSectionNode (0x40021c,36,218,36,218,FunctionCall,num_to_lcd,32)
+                                        JCSectionNode (0x400018,0,3,0,3,BasicBlock,None,24)
+                                        JCSectionNode (0x400030,1,11,1,11,BasicBlock,None,20)
+                                        JCSectionNode (0x40003c,2,15,2,15,BasicBlock,None,16)
+                                        JCSectionNode (0x40004c,3,20,3,20,BasicBlock,None,20)
+                                        JCSectionNode (0x400058,4,24,4,24,BasicBlock,None,16)
+                                        JCSectionNode (0x400068,5,29,5,29,BasicBlock,None,20)
+                                        JCSectionNode (0x400074,6,33,6,33,BasicBlock,None,16)
+                                        JCSectionNode (0x400084,7,38,7,38,BasicBlock,None,20)
+                                        JCSectionNode (0x400090,8,42,8,42,BasicBlock,None,16)
+                                        JCSectionNode (0x4000a0,9,47,9,47,BasicBlock,None,20)
+                                        JCSectionNode (0x4000ac,10,51,10,51,BasicBlock,None,16)
+                                        JCSectionNode (0x4000bc,11,56,11,56,BasicBlock,None,20)
+                                        JCSectionNode (0x4000c8,12,60,12,60,BasicBlock,None,16)
+                                        JCSectionNode (0x4000d8,13,65,13,65,BasicBlock,None,20)
+                                        JCSectionNode (0x4000e4,14,69,14,69,BasicBlock,None,16)
+                                        JCSectionNode (0x4000f4,15,74,15,74,BasicBlock,None,20)
+                                        JCSectionNode (0x400100,16,78,16,78,BasicBlock,None,16)
+                                        JCSectionNode (0x400110,17,83,17,83,BasicBlock,None,20)
+                                        JCSectionNode (0x40011c,18,87,18,87,BasicBlock,None,16)
+                                        JCSectionNode (0x40012c,19,92,19,92,BasicBlock,None,20)
+                                        JCSectionNode (0x400138,20,96,20,96,BasicBlock,None,16)
+                                        JCSectionNode (0x400148,21,101,21,101,BasicBlock,None,20)
+                                        JCSectionNode (0x400154,22,105,22,105,BasicBlock,None,16)
+                                        JCSectionNode (0x400164,23,110,23,110,BasicBlock,None,20)
+                                        JCSectionNode (0x400170,24,114,24,114,BasicBlock,None,16)
+                                        JCSectionNode (0x400180,25,119,25,119,BasicBlock,None,20)
+                                        JCSectionNode (0x40018c,26,123,26,123,BasicBlock,None,16)
+                                        JCSectionNode (0x40019c,27,128,27,128,BasicBlock,None,20)
+                                        JCSectionNode (0x4001a8,28,132,28,132,BasicBlock,None,16)
+                                        JCSectionNode (0x4001b8,29,137,29,137,BasicBlock,None,20)
+                                        JCConditionalNode (0x4001c4,0,JCConditionalNode0,43,JCConditionalNode0,36)
+                                        {
+                                            JCSectionNode (0x4001c4,30,141,30,141,BasicBlock,None,16)
+                                            {
+                                                JCSectionNode (0x4001d4,31,146,31,146,BasicBlock,None,12)
+                                            }
+                                            {
+                                                JCSectionNode (0x4001e0,32,150,32,150,BasicBlock,None,4)
+                                            }
+                                            JCSectionNode (0x4001e4,33,4,33,4,BasicBlock,None,8)
+                                        }
+                                }
+                            }
+                        }
+                        JCSectionNode (0x400240,38,229,38,229,BasicBlock,None,22)
+                    }
+                    JCSectionNode (0x4002ec,41,JCSectionNode41,44,JCSectionNode41,BasicBlock,None,4)
+                }
+            }
+            JCSectionNode (0x4002f0,42,JCSectionNode42,47,JCSectionNode42,BasicBlock,None,4)
+        }
+    }
+}

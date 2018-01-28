@@ -1,0 +1,8 @@
+<CFG name="fdct">
+  <LOOP maxiter="8">
+  </LOOP>
+  <LOOP maxiter="8">
+  </LOOP>
+</CFG>
+<CFG name="main">
+</CFG>

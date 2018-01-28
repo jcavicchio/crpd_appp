@@ -1,0 +1,55 @@
+
+/tmp/simple:     file format elf32-bigmips
+
+SYMBOL TABLE:
+00400000 l    d  .reginfo	00000000 .reginfo
+00400018 l    d  .text	00000000 .text
+00000000 l    d  .pdr	00000000 .pdr
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .gnu.attributes	00000000 .gnu.attributes
+00000010 l    d  .mdebug.abi32	00000000 .mdebug.abi32
+00000000 l    df *ABS*	00000000 simple.c
+00401074 g       .text	00000000 _fdata
+00409070 g       *ABS*	00000000 _gp
+00400018 g       .text	00000000 _ftext
+00401074 g       *ABS*	00000000 __bss_start
+00400018 g     F .text	0000005c main
+00401074 g       *ABS*	00000000 _edata
+00401074 g       *ABS*	00000000 _end
+00401074 g       *ABS*	00000000 _fbss
+
+
+
+Disassembly of section .text:
+
+00400018 <main>:
+  400018:	27bdfff0 	addiu	sp,sp,-16
+  40001c:	8fa20000 	lw	v0,0(sp)
+  400020:	00000000 	nop
+  400024:	00021040 	sll	v0,v0,0x1
+  400028:	00021880 	sll	v1,v0,0x2
+  40002c:	00431821 	addu	v1,v0,v1
+  400030:	8fa20004 	lw	v0,4(sp)
+  400034:	00000000 	nop
+  400038:	00621021 	addu	v0,v1,v0
+  40003c:	2442ffff 	addiu	v0,v0,-1
+  400040:	afa20000 	sw	v0,0(sp)
+  400044:	afa00008 	sw	zero,8(sp)
+  400048:	8fa20004 	lw	v0,4(sp)
+  40004c:	00000000 	nop
+  400050:	24420001 	addiu	v0,v0,1
+  400054:	afa20004 	sw	v0,4(sp)
+  400058:	8fa20000 	lw	v0,0(sp)
+  40005c:	00000000 	nop
+  400060:	2442ffff 	addiu	v0,v0,-1
+  400064:	afa20000 	sw	v0,0(sp)
+  400068:	27bd0010 	addiu	sp,sp,16
+  40006c:	03e00008 	jr	ra
+  400070:	00000000 	nop

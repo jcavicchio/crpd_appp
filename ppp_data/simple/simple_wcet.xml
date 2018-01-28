@@ -1,0 +1,95 @@
+!DOCTYPE PROGRAM SYSTEM 'cfglib.dtd'>
+<PROGRAM   id ="1"   name="simple"   entry="0" >
+<INSTRUCTION id="3" code="addiu sp,sp,-16" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="4" code="lw v0,0(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="5" code="nop" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="6" code="sll v0,v0,0x1" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="7" code="sll v1,v0,0x2" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="8" code="addu v1,v0,v1" time="129">
+</INSTRUCTION>
+<INSTRUCTION id="9" code="lw v0,4(sp)" time="130">
+</INSTRUCTION>
+<INSTRUCTION id="10" code="nop" time="131">
+</INSTRUCTION>
+<INSTRUCTION id="11" code="addu v0,v1,v0" time="132">
+</INSTRUCTION>
+<INSTRUCTION id="12" code="addiu v0,v0,-1" time="133">
+</INSTRUCTION>
+<INSTRUCTION id="13" code="sw v0,0(sp)" time="244">
+</INSTRUCTION>
+<INSTRUCTION id="14" code="sw zero,8(sp)" time="245">
+</INSTRUCTION>
+<INSTRUCTION id="15" code="lw v0,4(sp)" time="246">
+</INSTRUCTION>
+<INSTRUCTION id="16" code="nop" time="247">
+</INSTRUCTION>
+<INSTRUCTION id="17" code="addiu v0,v0,1" time="248">
+</INSTRUCTION>
+<INSTRUCTION id="18" code="sw v0,4(sp)" time="249">
+</INSTRUCTION>
+<INSTRUCTION id="19" code="lw v0,0(sp)" time="250">
+</INSTRUCTION>
+<INSTRUCTION id="20" code="nop" time="251">
+</INSTRUCTION>
+<INSTRUCTION id="21" code="addiu v0,v0,-1" time="262">
+</INSTRUCTION>
+<INSTRUCTION id="22" code="sw v0,0(sp)" time="263">
+</INSTRUCTION>
+<INSTRUCTION id="23" code="addiu sp,sp,16" time="264">
+</INSTRUCTION>
+<INSTRUCTION id="24" code="jr ra" time="265">
+</INSTRUCTION>
+<INSTRUCTION id="25" code="nop" time="266">
+</INSTRUCTION>
+<INSTRUCTION id="3" code="addiu sp,sp,-16" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="4" code="lw v0,0(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="5" code="nop" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="6" code="sll v0,v0,0x1" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="7" code="sll v1,v0,0x2" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="8" code="addu v1,v0,v1" time="129">
+</INSTRUCTION>
+<INSTRUCTION id="9" code="lw v0,4(sp)" time="130">
+</INSTRUCTION>
+<INSTRUCTION id="10" code="nop" time="131">
+</INSTRUCTION>
+<INSTRUCTION id="11" code="addu v0,v1,v0" time="132">
+</INSTRUCTION>
+<INSTRUCTION id="12" code="addiu v0,v0,-1" time="133">
+</INSTRUCTION>
+<INSTRUCTION id="13" code="sw v0,0(sp)" time="244">
+</INSTRUCTION>
+<INSTRUCTION id="14" code="sw zero,8(sp)" time="245">
+</INSTRUCTION>
+<INSTRUCTION id="15" code="lw v0,4(sp)" time="246">
+</INSTRUCTION>
+<INSTRUCTION id="16" code="nop" time="247">
+</INSTRUCTION>
+<INSTRUCTION id="17" code="addiu v0,v0,1" time="248">
+</INSTRUCTION>
+<INSTRUCTION id="18" code="sw v0,4(sp)" time="249">
+</INSTRUCTION>
+<INSTRUCTION id="19" code="lw v0,0(sp)" time="250">
+</INSTRUCTION>
+<INSTRUCTION id="20" code="nop" time="251">
+</INSTRUCTION>
+<INSTRUCTION id="21" code="addiu v0,v0,-1" time="262">
+</INSTRUCTION>
+<INSTRUCTION id="22" code="sw v0,0(sp)" time="263">
+</INSTRUCTION>
+<INSTRUCTION id="23" code="addiu sp,sp,16" time="264">
+</INSTRUCTION>
+<INSTRUCTION id="24" code="jr ra" time="265">
+</INSTRUCTION>
+<INSTRUCTION id="25" code="nop" time="266">
+</INSTRUCTION>
+</PROGRAM>

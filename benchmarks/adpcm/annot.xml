@@ -1,0 +1,70 @@
+<CFG name="my_abs">
+</CFG>
+<CFG name="my_fabs">
+</CFG>
+<CFG name="my_sin">
+  <LOOP maxiter="50">
+  </LOOP>
+  <LOOP maxiter="50">
+  </LOOP>
+  <LOOP maxiter="1000">
+  </LOOP>
+</CFG>
+<CFG name="my_cos">
+</CFG>
+<CFG name="encode">
+  <LOOP maxiter="10">
+  </LOOP>
+  <LOOP maxiter="22">
+  </LOOP>
+</CFG>
+<CFG name="decode">
+  <LOOP maxiter="10">
+  </LOOP>
+  <LOOP maxiter="10">
+  </LOOP>
+</CFG>
+<CFG name="reset">
+  <LOOP maxiter="6">
+  </LOOP>
+  <LOOP maxiter="6">
+  </LOOP>
+  <LOOP maxiter="23">
+  </LOOP>
+  <LOOP maxiter="11">
+  </LOOP>
+</CFG>
+<CFG name="filtez">
+  <LOOP maxiter="6">
+  </LOOP>
+</CFG>
+<CFG name="filtep">
+</CFG>
+<CFG name="quantl">
+  <LOOP maxiter="30">
+  </LOOP>
+</CFG>
+<CFG name="logscl">
+</CFG>
+<CFG name="scalel">
+</CFG>
+<CFG name="upzero">
+  <LOOP maxiter="6">
+  </LOOP>
+  <LOOP maxiter="6">
+  </LOOP>
+</CFG>
+<CFG name="uppol2">
+</CFG>
+<CFG name="uppol1">
+</CFG>
+<CFG name="logsch">
+</CFG>
+<CFG name="main">
+  <LOOP maxiter="3">
+  </LOOP>
+  <LOOP maxiter="4">
+  </LOOP>
+  <LOOP maxiter="4">
+  </LOOP>
+</CFG>

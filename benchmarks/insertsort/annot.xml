@@ -1,0 +1,6 @@
+<CFG name="main">
+  <LOOP maxiter="10">
+    <LOOP maxiter="10">
+    </LOOP>
+  </LOOP>
+</CFG>

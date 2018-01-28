@@ -1,0 +1,34 @@
+<CFG name="des">
+  <LOOP maxiter="32">
+  </LOOP>
+  <LOOP maxiter="28">
+  </LOOP>
+  <LOOP maxiter="16">
+  </LOOP>
+  <LOOP maxiter="32">
+  </LOOP>
+  <LOOP maxiter="16">
+  </LOOP>
+  <LOOP maxiter="32">
+  </LOOP>
+</CFG>
+<CFG name="getbit">
+</CFG>
+<CFG name="ks">
+  <LOOP maxiter="2">
+  </LOOP>
+  <LOOP maxiter="16">
+  </LOOP>
+</CFG>
+<CFG name="cyfun">
+  <LOOP maxiter="16">
+  </LOOP>
+  <LOOP maxiter="4">
+  </LOOP>
+  <LOOP maxiter="8">
+  </LOOP>
+  <LOOP maxiter="32">
+  </LOOP>
+</CFG>
+<CFG name="main">
+</CFG>

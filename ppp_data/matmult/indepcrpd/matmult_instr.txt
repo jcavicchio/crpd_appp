@@ -1,0 +1,532 @@
+JCBlockNode (0x400018,0,JCBlockNode0,44,JCBlockNode0,1762028)
+{
+    JCFunctionNode (0x400018,0,JCFunctionNode0,48,JCFunctionNode0,1762028)
+    {
+        JCSectionNode (0x400018,0,2,0,2,FunctionCall,InitSeed,,16)
+        {
+            JCInstruction (0x400018,0,addiu sp,sp,-24,4)
+            JCInstruction (0x40001c,1,sw ra,20(sp),4)
+            JCInstruction (0x400020,2,jal 400044,4)
+            JCInstruction (0x400024,3,nop,4)
+        }
+            JCSectionNode (0x400044,3,19,3,19,BasicBlock,None,,17)
+            {
+                JCInstruction (0x400044,11,sw zero,-32760(gp),9)
+                JCInstruction (0x400048,12,jr ra,4)
+                JCInstruction (0x40004c,13,nop,4)
+            }
+            JCFunctionNode (0x400028,1,JCFunctionNode1,49,JCFunctionNode1,1761995)
+            {
+                JCSectionNode (0x400028,1,8,1,8,FunctionCall,Test,,8)
+                {
+                    JCInstruction (0x400028,4,jal 400050,4)
+                    JCInstruction (0x40002c,5,nop,4)
+                }
+                    JCBlockNode (0x400050,1,JCBlockNode1,45,JCBlockNode1,1761968)
+                    {
+                        JCFunctionNode (0x400050,2,JCFunctionNode2,50,JCFunctionNode2,1761968)
+                        {
+                            JCSectionNode (0x400050,4,24,4,24,FunctionCall,InitializeA,,16)
+                            {
+                                JCInstruction (0x400050,14,addiu sp,sp,-24,4)
+                                JCInstruction (0x400054,15,sw ra,20(sp),4)
+                                JCInstruction (0x400058,16,jal 400080,4)
+                                JCInstruction (0x40005c,17,nop,4)
+                            }
+                                JCSectionNode (0x400080,8,44,8,44,BasicBlock,None,,16)
+                                {
+                                    JCInstruction (0x400080,26,addiu sp,sp,-32,4)
+                                    JCInstruction (0x400084,27,sw ra,28(sp),4)
+                                    JCInstruction (0x400088,28,j 40010c,4)
+                                    JCInstruction (0x40008c,29,sw zero,16(sp),4)
+                                }
+                                JCLoopNode (0x40010c,1,106,17,106,20,98240)
+                                {
+                                    JCConditionalNode (0x40010c,1,JCConditionalNode1,60,JCConditionalNode1,4912)
+                                    {
+                                        JCSectionNode (0x40010c,14,86,14,86,BasicBlock,None,,20)
+                                        {
+                                            JCInstruction (0x40010c,61,lw v0,16(sp),4)
+                                            JCInstruction (0x400110,62,nop,4)
+                                            JCInstruction (0x400114,63,slti v0,v0,20,4)
+                                            JCInstruction (0x400118,64,bnez v0,400090,4)
+                                            JCInstruction (0x40011c,65,nop,4)
+                                        }
+                                        {
+                                            JCSectionNode (0x400120,15,45,15,45,BasicBlock,None,,21)
+                                            {
+                                                JCInstruction (0x400120,66,lw ra,28(sp),9)
+                                                JCInstruction (0x400124,67,addiu sp,sp,32,4)
+                                                JCInstruction (0x400128,68,jr ra,4)
+                                                JCInstruction (0x40012c,69,nop,4)
+                                            }
+                                        }
+                                        {
+                                            JCBlockNode (0x400090,5,JCBlockNode5,59,JCBlockNode5,4888)
+                                            {
+                                                JCSectionNode (0x400090,9,50,9,50,BasicBlock,None,,8)
+                                                {
+                                                    JCInstruction (0x400090,30,j 4000e8,4)
+                                                    JCInstruction (0x400094,31,sw zero,20(sp),4)
+                                                }
+                                                JCLoopNode (0x4000e8,0,105,16,105,20,4880)
+                                                {
+                                                    JCConditionalNode (0x4000e8,4,JCConditionalNode4,73,JCConditionalNode4,244)
+                                                    {
+                                                        JCSectionNode (0x4000e8,12,75,12,75,BasicBlock,None,,20)
+                                                        {
+                                                            JCInstruction (0x4000e8,52,lw v0,20(sp),4)
+                                                            JCInstruction (0x4000ec,53,nop,4)
+                                                            JCInstruction (0x4000f0,54,slti v0,v0,20,4)
+                                                            JCInstruction (0x4000f4,55,bnez v0,400098,4)
+                                                            JCInstruction (0x4000f8,56,nop,4)
+                                                        }
+                                                        {
+                                                            JCSectionNode (0x4000fc,13,81,13,81,BasicBlock,None,,16)
+                                                            {
+                                                                JCInstruction (0x4000fc,57,lw v0,16(sp),4)
+                                                                JCInstruction (0x400100,58,nop,4)
+                                                                JCInstruction (0x400104,59,addiu v0,v0,1,4)
+                                                                JCInstruction (0x400108,60,sw v0,16(sp),4)
+                                                            }
+                                                        }
+                                                        {
+                                                            JCBlockNode (0x400098,4,JCBlockNode4,57,JCBlockNode4,220)
+                                                            {
+                                                                JCBlockNode (0x400098,2,JCBlockNode2,46,JCBlockNode2,220)
+                                                                {
+                                                                    JCFunctionNode (0x400098,5,JCFunctionNode5,53,JCFunctionNode5,220)
+                                                                    {
+                                                                        JCSectionNode (0x400098,10,53,10,53,FunctionCall,RandomInteger,,8)
+                                                                        {
+                                                                            JCInstruction (0x400098,32,jal 4001e0,4)
+                                                                            JCInstruction (0x40009c,33,nop,4)
+                                                                        }
+                                                                            JCConditionalNode (0x4001e0,0,JCConditionalNode0,55,JCConditionalNode0,68)
+                                                                            {
+                                                                                JCSectionNode (0x4001e0,24,172,28,172,BasicBlock,None,,44)
+                                                                                {
+                                                                                    JCInstruction (0x4001e0,114,lw v1,-32760(gp),4)
+                                                                                    JCInstruction (0x4001e4,115,nop,4)
+                                                                                    JCInstruction (0x4001e8,116,move v0,v1,4)
+                                                                                    JCInstruction (0x4001ec,117,sll v0,v0,0x2,4)
+                                                                                    JCInstruction (0x4001f0,118,sll a0,v0,0x5,4)
+                                                                                    JCInstruction (0x4001f4,119,addu v0,v0,a0,4)
+                                                                                    JCInstruction (0x4001f8,120,addu v0,v0,v1,4)
+                                                                                    JCInstruction (0x4001fc,121,addiu v1,v0,81,4)
+                                                                                    JCInstruction (0x400200,122,li v0,8095,4)
+                                                                                    JCInstruction (0x400204,123,bnez v0,400210,4)
+                                                                                    JCInstruction (0x400208,124,div zero,v1,v0,4)
+                                                                                }
+                                                                                {
+                                                                                    JCSectionNode (0x40020c,25,185,29,185,BasicBlock,None,,4)
+                                                                                    {
+                                                                                        JCInstruction (0x40020c,125,break 0x7,4)
+                                                                                    }
+                                                                                }
+                                                                                JCSectionNode (0x400210,26,173,30,173,BasicBlock,None,,20)
+                                                                                {
+                                                                                    JCInstruction (0x400210,126,mfhi v0,4)
+                                                                                    JCInstruction (0x400214,127,sw v0,-32760(gp),4)
+                                                                                    JCInstruction (0x400218,128,lw v0,-32760(gp),4)
+                                                                                    JCInstruction (0x40021c,129,jr ra,4)
+                                                                                    JCInstruction (0x400220,130,nop,4)
+                                                                                }
+                                                                            }
+                                                                            JCSectionNode (0x4000a0,11,56,11,56,BasicBlock,None,,72)
+                                                                            {
+                                                                                JCInstruction (0x4000a0,34,move v1,v0,4)
+                                                                                JCInstruction (0x4000a4,35,lui a1,0x40,4)
+                                                                                JCInstruction (0x4000a8,36,lw v0,16(sp),4)
+                                                                                JCInstruction (0x4000ac,37,nop,4)
+                                                                                JCInstruction (0x4000b0,38,sll v0,v0,0x2,4)
+                                                                                JCInstruction (0x4000b4,39,sll a0,v0,0x2,4)
+                                                                                JCInstruction (0x4000b8,40,addu v0,v0,a0,4)
+                                                                                JCInstruction (0x4000bc,41,lw a0,20(sp),4)
+                                                                                JCInstruction (0x4000c0,42,nop,4)
+                                                                                JCInstruction (0x4000c4,43,addu v0,v0,a0,4)
+                                                                                JCInstruction (0x4000c8,44,sll a0,v0,0x2,4)
+                                                                                JCInstruction (0x4000cc,45,addiu v0,a1,4972,4)
+                                                                                JCInstruction (0x4000d0,46,addu v0,a0,v0,4)
+                                                                                JCInstruction (0x4000d4,47,sw v1,0(v0),4)
+                                                                                JCInstruction (0x4000d8,48,lw v0,20(sp),4)
+                                                                                JCInstruction (0x4000dc,49,nop,4)
+                                                                                JCInstruction (0x4000e0,50,addiu v0,v0,1,4)
+                                                                                JCInstruction (0x4000e4,51,sw v0,20(sp),4)
+                                                                            }
+                                                                            JCSectionNode (0x400150,19,120,21,120,BasicBlock,None,,72)
+                                                                            {
+                                                                                JCInstruction (0x400150,78,move v1,v0,4)
+                                                                                JCInstruction (0x400154,79,lui a1,0x40,4)
+                                                                                JCInstruction (0x400158,80,lw v0,16(sp),4)
+                                                                                JCInstruction (0x40015c,81,nop,4)
+                                                                                JCInstruction (0x400160,82,sll v0,v0,0x2,4)
+                                                                                JCInstruction (0x400164,83,sll a0,v0,0x2,4)
+                                                                                JCInstruction (0x400168,84,addu v0,v0,a0,4)
+                                                                                JCInstruction (0x40016c,85,lw a0,20(sp),4)
+                                                                                JCInstruction (0x400170,86,nop,4)
+                                                                                JCInstruction (0x400174,87,addu v0,v0,a0,4)
+                                                                                JCInstruction (0x400178,88,sll a0,v0,0x2,4)
+                                                                                JCInstruction (0x40017c,89,addiu v0,a1,6572,4)
+                                                                                JCInstruction (0x400180,90,addu v0,a0,v0,4)
+                                                                                JCInstruction (0x400184,91,sw v1,0(v0),4)
+                                                                                JCInstruction (0x400188,92,lw v0,20(sp),4)
+                                                                                JCInstruction (0x40018c,93,nop,4)
+                                                                                JCInstruction (0x400190,94,addiu v0,v0,1,4)
+                                                                                JCInstruction (0x400194,95,sw v0,20(sp),4)
+                                                                            }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                        JCSectionNode (0x400364,37,JCSectionNode37,56,JCSectionNode37,BasicBlock,None,,4)
+                                                        {
+                                                            JCInstruction (0x400364,212,nop,4)
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        JCSectionNode (0x400368,38,JCSectionNode38,58,JCSectionNode38,BasicBlock,None,,4)
+                                        {
+                                            JCInstruction (0x400368,213,nop,4)
+                                        }
+                                    }
+                                }
+                                JCFunctionNode (0x400060,3,JCFunctionNode3,51,JCFunctionNode3,1663696)
+                                {
+                                    JCSectionNode (0x400060,5,30,5,30,FunctionCall,InitializeB,,8)
+                                    {
+                                        JCInstruction (0x400060,18,jal 400130,4)
+                                        JCInstruction (0x400064,19,nop,4)
+                                    }
+                                        JCSectionNode (0x400130,16,108,18,108,BasicBlock,None,,16)
+                                        {
+                                            JCInstruction (0x400130,70,addiu sp,sp,-32,4)
+                                            JCInstruction (0x400134,71,sw ra,28(sp),4)
+                                            JCInstruction (0x400138,72,j 4001bc,4)
+                                            JCInstruction (0x40013c,73,sw zero,16(sp),4)
+                                        }
+                                        JCLoopNode (0x4001bc,3,170,27,170,20,69560)
+                                        {
+                                            JCConditionalNode (0x4001bc,2,JCConditionalNode2,65,JCConditionalNode2,3478)
+                                            {
+                                                JCSectionNode (0x4001bc,22,150,24,150,BasicBlock,None,,23)
+                                                {
+                                                    JCInstruction (0x4001bc,105,lw v0,16(sp),7)
+                                                    JCInstruction (0x4001c0,106,nop,4)
+                                                    JCInstruction (0x4001c4,107,slti v0,v0,20,4)
+                                                    JCInstruction (0x4001c8,108,bnez v0,400140,4)
+                                                    JCInstruction (0x4001cc,109,nop,4)
+                                                }
+                                                {
+                                                    JCSectionNode (0x4001d0,23,109,25,109,BasicBlock,None,,16)
+                                                    {
+                                                        JCInstruction (0x4001d0,110,lw ra,28(sp),4)
+                                                        JCInstruction (0x4001d4,111,addiu sp,sp,32,4)
+                                                        JCInstruction (0x4001d8,112,jr ra,4)
+                                                        JCInstruction (0x4001dc,113,nop,4)
+                                                    }
+                                                }
+                                                {
+                                                    JCBlockNode (0x400140,7,JCBlockNode7,64,JCBlockNode7,3451)
+                                                    {
+                                                        JCSectionNode (0x400140,17,114,19,114,BasicBlock,None,,11)
+                                                        {
+                                                            JCInstruction (0x400140,74,j 400198,7)
+                                                            JCInstruction (0x400144,75,sw zero,20(sp),4)
+                                                        }
+                                                        JCLoopNode (0x400198,2,169,26,169,20,3440)
+                                                        {
+                                                            JCConditionalNode (0x400198,5,JCConditionalNode5,74,JCConditionalNode5,172)
+                                                            {
+                                                                JCSectionNode (0x400198,20,139,22,139,BasicBlock,None,,20)
+                                                                {
+                                                                    JCInstruction (0x400198,96,lw v0,20(sp),4)
+                                                                    JCInstruction (0x40019c,97,nop,4)
+                                                                    JCInstruction (0x4001a0,98,slti v0,v0,20,4)
+                                                                    JCInstruction (0x4001a4,99,bnez v0,400148,4)
+                                                                    JCInstruction (0x4001a8,100,nop,4)
+                                                                }
+                                                                {
+                                                                    JCSectionNode (0x4001ac,21,145,23,145,BasicBlock,None,,16)
+                                                                    {
+                                                                        JCInstruction (0x4001ac,101,lw v0,16(sp),4)
+                                                                        JCInstruction (0x4001b0,102,nop,4)
+                                                                        JCInstruction (0x4001b4,103,addiu v0,v0,1,4)
+                                                                        JCInstruction (0x4001b8,104,sw v0,16(sp),4)
+                                                                    }
+                                                                }
+                                                                {
+                                                                    JCBlockNode (0x400148,6,JCBlockNode6,62,JCBlockNode6,148)
+                                                                    {
+                                                                        JCBlockNode (0x400148,3,JCBlockNode3,47,JCBlockNode3,148)
+                                                                        {
+                                                                            JCFunctionNode (0x400148,6,JCFunctionNode6,54,JCFunctionNode6,148)
+                                                                            {
+                                                                                JCSectionNode (0x400148,18,117,20,117,FunctionCall,RandomInteger,,8)
+                                                                                {
+                                                                                    JCInstruction (0x400148,76,jal 4001e0,4)
+                                                                                    JCInstruction (0x40014c,77,nop,4)
+                                                                                }
+                                                                                    JCConditionalNode (0x4001e0,0,JCConditionalNode0,55,JCConditionalNode0,68)
+                                                                                    {
+                                                                                        JCSectionNode (0x4001e0,24,172,28,172,BasicBlock,None,,44)
+                                                                                        {
+                                                                                            JCInstruction (0x4001e0,114,lw v1,-32760(gp),4)
+                                                                                            JCInstruction (0x4001e4,115,nop,4)
+                                                                                            JCInstruction (0x4001e8,116,move v0,v1,4)
+                                                                                            JCInstruction (0x4001ec,117,sll v0,v0,0x2,4)
+                                                                                            JCInstruction (0x4001f0,118,sll a0,v0,0x5,4)
+                                                                                            JCInstruction (0x4001f4,119,addu v0,v0,a0,4)
+                                                                                            JCInstruction (0x4001f8,120,addu v0,v0,v1,4)
+                                                                                            JCInstruction (0x4001fc,121,addiu v1,v0,81,4)
+                                                                                            JCInstruction (0x400200,122,li v0,8095,4)
+                                                                                            JCInstruction (0x400204,123,bnez v0,400210,4)
+                                                                                            JCInstruction (0x400208,124,div zero,v1,v0,4)
+                                                                                        }
+                                                                                        {
+                                                                                            JCSectionNode (0x40020c,25,185,29,185,BasicBlock,None,,4)
+                                                                                            {
+                                                                                                JCInstruction (0x40020c,125,break 0x7,4)
+                                                                                            }
+                                                                                        }
+                                                                                        JCSectionNode (0x400210,26,173,30,173,BasicBlock,None,,20)
+                                                                                        {
+                                                                                            JCInstruction (0x400210,126,mfhi v0,4)
+                                                                                            JCInstruction (0x400214,127,sw v0,-32760(gp),4)
+                                                                                            JCInstruction (0x400218,128,lw v0,-32760(gp),4)
+                                                                                            JCInstruction (0x40021c,129,jr ra,4)
+                                                                                            JCInstruction (0x400220,130,nop,4)
+                                                                                        }
+                                                                                    }
+                                                                                    JCSectionNode (0x400150,19,120,21,120,BasicBlock,None,,72)
+                                                                                    {
+                                                                                        JCInstruction (0x400150,78,move v1,v0,4)
+                                                                                        JCInstruction (0x400154,79,lui a1,0x40,4)
+                                                                                        JCInstruction (0x400158,80,lw v0,16(sp),4)
+                                                                                        JCInstruction (0x40015c,81,nop,4)
+                                                                                        JCInstruction (0x400160,82,sll v0,v0,0x2,4)
+                                                                                        JCInstruction (0x400164,83,sll a0,v0,0x2,4)
+                                                                                        JCInstruction (0x400168,84,addu v0,v0,a0,4)
+                                                                                        JCInstruction (0x40016c,85,lw a0,20(sp),4)
+                                                                                        JCInstruction (0x400170,86,nop,4)
+                                                                                        JCInstruction (0x400174,87,addu v0,v0,a0,4)
+                                                                                        JCInstruction (0x400178,88,sll a0,v0,0x2,4)
+                                                                                        JCInstruction (0x40017c,89,addiu v0,a1,6572,4)
+                                                                                        JCInstruction (0x400180,90,addu v0,a0,v0,4)
+                                                                                        JCInstruction (0x400184,91,sw v1,0(v0),4)
+                                                                                        JCInstruction (0x400188,92,lw v0,20(sp),4)
+                                                                                        JCInstruction (0x40018c,93,nop,4)
+                                                                                        JCInstruction (0x400190,94,addiu v0,v0,1,4)
+                                                                                        JCInstruction (0x400194,95,sw v0,20(sp),4)
+                                                                                    }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                JCSectionNode (0x40036c,39,JCSectionNode39,61,JCSectionNode39,BasicBlock,None,,4)
+                                                                {
+                                                                    JCInstruction (0x40036c,214,nop,4)
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                JCSectionNode (0x400370,40,JCSectionNode40,63,JCSectionNode40,BasicBlock,None,,4)
+                                                {
+                                                    JCInstruction (0x400370,215,nop,4)
+                                                }
+                                            }
+                                        }
+                                        JCFunctionNode (0x400068,4,JCFunctionNode4,52,JCFunctionNode4,1594112)
+                                        {
+                                            JCSectionNode (0x400068,6,33,6,33,FunctionCall,Multiply,,8)
+                                            {
+                                                JCInstruction (0x400068,20,jal 400224,4)
+                                                JCInstruction (0x40006c,21,nop,4)
+                                            }
+                                                JCSectionNode (0x400224,27,196,31,196,BasicBlock,None,,24)
+                                                {
+                                                    JCInstruction (0x400224,131,addiu sp,sp,-16,4)
+                                                    JCInstruction (0x400228,132,sw s2,12(sp),4)
+                                                    JCInstruction (0x40022c,133,sw s1,8(sp),4)
+                                                    JCInstruction (0x400230,134,sw s0,4(sp),4)
+                                                    JCInstruction (0x400234,135,j 400348,4)
+                                                    JCInstruction (0x400238,136,move s0,zero,4)
+                                                }
+                                                JCLoopNode (0x400348,6,301,43,301,20,1594080)
+                                                {
+                                                    JCConditionalNode (0x400348,7,JCConditionalNode7,76,JCConditionalNode7,79704)
+                                                    {
+                                                        JCSectionNode (0x400348,35,278,39,278,BasicBlock,None,,12)
+                                                        {
+                                                            JCInstruction (0x400348,204,slti v0,s0,20,4)
+                                                            JCInstruction (0x40034c,205,bnez v0,40023c,4)
+                                                            JCInstruction (0x400350,206,nop,4)
+                                                        }
+                                                        {
+                                                            JCSectionNode (0x400354,36,197,40,197,BasicBlock,None,,27)
+                                                            {
+                                                                JCInstruction (0x400354,207,lw s2,12(sp),10)
+                                                                JCInstruction (0x400358,208,lw s1,8(sp),4)
+                                                                JCInstruction (0x40035c,209,lw s0,4(sp),4)
+                                                                JCInstruction (0x400360,210,jr ra,5)
+                                                                JCInstruction (0x400364,211,addiu sp,sp,16,4)
+                                                            }
+                                                        }
+                                                        {
+                                                            JCBlockNode (0x40023c,10,JCBlockNode10,72,JCBlockNode10,79688)
+                                                            {
+                                                                JCSectionNode (0x40023c,28,204,32,204,BasicBlock,None,,8)
+                                                                {
+                                                                    JCInstruction (0x40023c,137,j 400338,4)
+                                                                    JCInstruction (0x400240,138,move s1,zero,4)
+                                                                }
+                                                                JCLoopNode (0x400338,5,300,42,300,20,79680)
+                                                                {
+                                                                    JCConditionalNode (0x400338,3,JCConditionalNode3,70,JCConditionalNode3,3984)
+                                                                    {
+                                                                        JCSectionNode (0x400338,33,272,37,272,BasicBlock,None,,12)
+                                                                        {
+                                                                            JCInstruction (0x400338,200,slti v0,s1,20,4)
+                                                                            JCInstruction (0x40033c,201,bnez v0,400244,4)
+                                                                            JCInstruction (0x400340,202,nop,4)
+                                                                        }
+                                                                        {
+                                                                            JCSectionNode (0x400344,34,276,38,276,BasicBlock,None,,4)
+                                                                            {
+                                                                                JCInstruction (0x400344,203,addiu s0,s0,1,4)
+                                                                            }
+                                                                        }
+                                                                        {
+                                                                            JCBlockNode (0x400244,9,JCBlockNode9,69,JCBlockNode9,3968)
+                                                                            {
+                                                                                JCSectionNode (0x400244,29,207,33,207,BasicBlock,None,,48)
+                                                                                {
+                                                                                    JCInstruction (0x400244,139,lui a0,0x40,4)
+                                                                                    JCInstruction (0x400248,140,move v0,s0,4)
+                                                                                    JCInstruction (0x40024c,141,sll v0,v0,0x2,4)
+                                                                                    JCInstruction (0x400250,142,sll v1,v0,0x2,4)
+                                                                                    JCInstruction (0x400254,143,addu v0,v0,v1,4)
+                                                                                    JCInstruction (0x400258,144,addu v0,v0,s1,4)
+                                                                                    JCInstruction (0x40025c,145,sll v1,v0,0x2,4)
+                                                                                    JCInstruction (0x400260,146,addiu v0,a0,8172,4)
+                                                                                    JCInstruction (0x400264,147,addu v0,v1,v0,4)
+                                                                                    JCInstruction (0x400268,148,sw zero,0(v0),4)
+                                                                                    JCInstruction (0x40026c,149,j 400328,4)
+                                                                                    JCInstruction (0x400270,150,move s2,zero,4)
+                                                                                }
+                                                                                JCLoopNode (0x400328,4,299,41,299,20,3920)
+                                                                                {
+                                                                                    JCConditionalNode (0x400328,6,JCConditionalNode6,75,JCConditionalNode6,196)
+                                                                                    {
+                                                                                        JCSectionNode (0x400328,31,266,35,266,BasicBlock,None,,12)
+                                                                                        {
+                                                                                            JCInstruction (0x400328,196,slti v0,s2,20,4)
+                                                                                            JCInstruction (0x40032c,197,bnez v0,400274,4)
+                                                                                            JCInstruction (0x400330,198,nop,4)
+                                                                                        }
+                                                                                        {
+                                                                                            JCSectionNode (0x400334,32,270,36,270,BasicBlock,None,,4)
+                                                                                            {
+                                                                                                JCInstruction (0x400334,199,addiu s1,s1,1,4)
+                                                                                            }
+                                                                                        }
+                                                                                        {
+                                                                                            JCBlockNode (0x400274,8,JCBlockNode8,67,JCBlockNode8,180)
+                                                                                            {
+                                                                                                JCSectionNode (0x400274,30,220,34,220,BasicBlock,None,,180)
+                                                                                                {
+                                                                                                    JCInstruction (0x400274,151,lui a0,0x40,4)
+                                                                                                    JCInstruction (0x400278,152,move v0,s0,4)
+                                                                                                    JCInstruction (0x40027c,153,sll v0,v0,0x2,4)
+                                                                                                    JCInstruction (0x400280,154,sll v1,v0,0x2,4)
+                                                                                                    JCInstruction (0x400284,155,addu v0,v0,v1,4)
+                                                                                                    JCInstruction (0x400288,156,addu v0,v0,s1,4)
+                                                                                                    JCInstruction (0x40028c,157,sll v1,v0,0x2,4)
+                                                                                                    JCInstruction (0x400290,158,addiu v0,a0,8172,4)
+                                                                                                    JCInstruction (0x400294,159,addu v0,v1,v0,4)
+                                                                                                    JCInstruction (0x400298,160,lw v1,0(v0),4)
+                                                                                                    JCInstruction (0x40029c,161,lui a1,0x40,4)
+                                                                                                    JCInstruction (0x4002a0,162,move v0,s0,4)
+                                                                                                    JCInstruction (0x4002a4,163,sll v0,v0,0x2,4)
+                                                                                                    JCInstruction (0x4002a8,164,sll a0,v0,0x2,4)
+                                                                                                    JCInstruction (0x4002ac,165,addu v0,v0,a0,4)
+                                                                                                    JCInstruction (0x4002b0,166,addu v0,v0,s2,4)
+                                                                                                    JCInstruction (0x4002b4,167,sll a0,v0,0x2,4)
+                                                                                                    JCInstruction (0x4002b8,168,addiu v0,a1,4972,4)
+                                                                                                    JCInstruction (0x4002bc,169,addu v0,a0,v0,4)
+                                                                                                    JCInstruction (0x4002c0,170,lw a0,0(v0),4)
+                                                                                                    JCInstruction (0x4002c4,171,lui a2,0x40,4)
+                                                                                                    JCInstruction (0x4002c8,172,move v0,s2,4)
+                                                                                                    JCInstruction (0x4002cc,173,sll v0,v0,0x2,4)
+                                                                                                    JCInstruction (0x4002d0,174,sll a1,v0,0x2,4)
+                                                                                                    JCInstruction (0x4002d4,175,addu v0,v0,a1,4)
+                                                                                                    JCInstruction (0x4002d8,176,addu v0,v0,s1,4)
+                                                                                                    JCInstruction (0x4002dc,177,sll a1,v0,0x2,4)
+                                                                                                    JCInstruction (0x4002e0,178,addiu v0,a2,6572,4)
+                                                                                                    JCInstruction (0x4002e4,179,addu v0,a1,v0,4)
+                                                                                                    JCInstruction (0x4002e8,180,lw v0,0(v0),4)
+                                                                                                    JCInstruction (0x4002ec,181,nop,4)
+                                                                                                    JCInstruction (0x4002f0,182,mult a0,v0,4)
+                                                                                                    JCInstruction (0x4002f4,183,mflo v0,4)
+                                                                                                    JCInstruction (0x4002f8,184,addu v1,v1,v0,4)
+                                                                                                    JCInstruction (0x4002fc,185,lui a1,0x40,4)
+                                                                                                    JCInstruction (0x400300,186,move v0,s0,4)
+                                                                                                    JCInstruction (0x400304,187,sll v0,v0,0x2,4)
+                                                                                                    JCInstruction (0x400308,188,sll a0,v0,0x2,4)
+                                                                                                    JCInstruction (0x40030c,189,addu v0,v0,a0,4)
+                                                                                                    JCInstruction (0x400310,190,addu v0,v0,s1,4)
+                                                                                                    JCInstruction (0x400314,191,sll a0,v0,0x2,4)
+                                                                                                    JCInstruction (0x400318,192,addiu v0,a1,8172,4)
+                                                                                                    JCInstruction (0x40031c,193,addu v0,a0,v0,4)
+                                                                                                    JCInstruction (0x400320,194,sw v1,0(v0),4)
+                                                                                                    JCInstruction (0x400324,195,addiu s2,s2,1,4)
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                        JCSectionNode (0x400374,41,JCSectionNode41,66,JCSectionNode41,BasicBlock,None,,4)
+                                                                                        {
+                                                                                            JCInstruction (0x400374,216,nop,4)
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                        JCSectionNode (0x400378,42,JCSectionNode42,68,JCSectionNode42,BasicBlock,None,,4)
+                                                                        {
+                                                                            JCInstruction (0x400378,217,nop,4)
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                        JCSectionNode (0x40037c,43,JCSectionNode43,71,JCSectionNode43,BasicBlock,None,,4)
+                                                        {
+                                                            JCInstruction (0x40037c,218,nop,4)
+                                                        }
+                                                    }
+                                                }
+                                        }
+                                }
+                        }
+                    }
+                    JCSectionNode (0x400070,7,25,7,25,BasicBlock,None,,19)
+                    {
+                        JCInstruction (0x400070,22,lw ra,20(sp),7)
+                        JCInstruction (0x400074,23,addiu sp,sp,24,4)
+                        JCInstruction (0x400078,24,jr ra,4)
+                        JCInstruction (0x40007c,25,nop,4)
+                    }
+            }
+    }
+}
+JCSectionNode (0x400030,2,3,2,3,BasicBlock,None,,21)
+{
+    JCInstruction (0x400030,6,move v0,zero,5)
+    JCInstruction (0x400034,7,lw ra,20(sp),4)
+    JCInstruction (0x400038,8,addiu sp,sp,24,4)
+    JCInstruction (0x40003c,9,jr ra,4)
+    JCInstruction (0x400040,10,nop,4)
+}

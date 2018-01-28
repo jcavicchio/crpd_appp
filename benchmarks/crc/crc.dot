@@ -1,0 +1,97 @@
+digraph G {
+subgraph cluster_icrc1 {
+graph [label = "icrc1"];
+subgraph cluster_loop0xe043e0 {
+graph [label = "loop [8]"];
+node0xdf43d0 [label = "@0x4000b4 (BB)" ,color="green"];
+node0xdf38a0 [label = "@0x4000a4 (BB)"];
+node0xdf1470 [label = "@0x400070 (BB)"];
+node0xdf9220 [label = "@0x400060 (BB)"];
+node0xdf2dd0 [label = "@0x400094 (BB)"];
+}
+node0xdf6700 [label = "@0x400018 (BB)" ,color="blue"];
+node0xdf9220;
+node0xdf1470;
+node0xdf2dd0;
+node0xdf38a0;
+node0xdf43d0;
+node0xe038f0 [label = "@0x4000c8 (BB)"];
+}
+subgraph cluster_icrc {
+graph [label = "icrc"];
+subgraph cluster_loop0x101c2d0 {
+graph [label = "loop [255]"];
+node0xfff860 [label = "@0x4001ec (BB)" ,color="green"];
+node0xff7f60 [label = "@0x400144 (BB)"];
+node0xff6860 [label = "@0x400124 (Call icrc1)"];
+}
+subgraph cluster_loop0x101c3f0 {
+graph [label = "loop [42]"];
+node0x10137a0 [label = "@0x4003d0 (BB)" ,color="green"];
+node0x100f860 [label = "@0x400374 (BB)"];
+node0x1009ef0 [label = "@0x4002f0 (BB)"];
+node0x10092e0 [label = "@0x4002e0 (BB)"];
+node0x100d890 [label = "@0x400340 (BB)"];
+}
+node0xdf6570 [label = "@0x4000d4 (BB)" ,color="blue"];
+node0xff6160 [label = "@0x400114 (BB)"];
+node0xff6860;
+node0xff7f60;
+node0xfff860;
+node0xfffb50 [label = "@0x400200 (BB)"];
+node0x1000760 [label = "@0x400210 (BB)"];
+node0x1003690 [label = "@0x400250 (BB)"];
+node0x1003d90 [label = "@0x400260 (BB)"];
+node0x1008f60 [label = "@0x4002d4 (BB)"];
+node0x10092e0;
+node0x1009ef0;
+node0x100d890;
+node0x100f860;
+node0x10137a0;
+node0x10143a0 [label = "@0x4003e8 (BB)"];
+node0x1014e10 [label = "@0x4003f8 (BB)"];
+node0x10159a0 [label = "@0x400408 (BB)"];
+node0x101a990 [label = "@0x40047c (BB)"];
+}
+subgraph cluster_main {
+graph [label = "main"];
+node0xe05120 [label = "@0x400490 (Call icrc)" ,color="blue"];
+node0x101ef50 [label = "@0x4004d4 (Call icrc)"];
+node0x1024e40 [label = "@0x400558 (BB)"];
+}
+node0xdf6700 -> node0xdf43d0;
+node0xdf9220 -> node0xdf1470;
+node0xdf9220 -> node0xdf2dd0;
+node0xdf1470 -> node0xdf38a0;
+node0xdf2dd0 -> node0xdf38a0;
+node0xdf38a0 -> node0xdf43d0[color="red"];
+node0xdf43d0 -> node0xdf9220;
+node0xdf43d0 -> node0xe038f0;
+node0xdf6570 -> node0xff6160;
+node0xdf6570 -> node0xfffb50;
+node0xff6160 -> node0xfff860;
+node0xff6860 -> node0xff7f60;
+node0xff7f60 -> node0xfff860[color="red"];
+node0xfff860 -> node0xff6860;
+node0xfff860 -> node0xfffb50;
+node0xfffb50 -> node0x1000760;
+node0xfffb50 -> node0x1003690;
+node0x1000760 -> node0x1008f60;
+node0x1003690 -> node0x1003d90;
+node0x1003690 -> node0x1008f60;
+node0x1003d90 -> node0x1008f60;
+node0x1008f60 -> node0x10137a0;
+node0x10092e0 -> node0x1009ef0;
+node0x10092e0 -> node0x100d890;
+node0x1009ef0 -> node0x100f860;
+node0x100d890 -> node0x100f860;
+node0x100f860 -> node0x10137a0[color="red"];
+node0x10137a0 -> node0x10092e0;
+node0x10137a0 -> node0x10143a0;
+node0x10143a0 -> node0x1014e10;
+node0x10143a0 -> node0x10159a0;
+node0x1014e10 -> node0x101a990;
+node0x10159a0 -> node0x101a990;
+node0xe05120 -> node0x101ef50;
+node0x101ef50 -> node0x1024e40;
+}

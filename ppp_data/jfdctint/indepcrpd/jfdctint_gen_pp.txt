@@ -1,0 +1,1196 @@
+Process loop nodes: 0 milliseconds 0 seconds
+Sort all loop nodes: 0 milliseconds 0 seconds
+Process block nodes: 3 milliseconds 0 seconds
+--->processConditionalNodes(): Node ID 2 Name 359 Address 0x40059c Type BasicBlock Function None is a conditional node
+Section Node ID 2 Name 359 Address 0x40059c Type BasicBlock Function None WCET -1 CFG (0,jpeg_fdct_islow)
+Node ID 2 Name 359 Address 0x40059c Type BasicBlock Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET -1
+    Parent Node ID 7 Name 735 Address 0x40059c Type LoopNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Predecessors: (0,jpeg_fdct_islow,1,9,BasicBlock,0x400028,-1) 
+    Successors: (0,jpeg_fdct_islow,1,9,BasicBlock,0x400028,-1) (0,jpeg_fdct_islow,3,364,BasicBlock,0x4005ac,-1) 
+    Number of Instructions: 4
+    Instruction Cache States: 
+    Data Cache States: 
+processConditionalNodes(): Node ID 2 Name 359 Address 0x40059c Type BasicBlock Function None is a loop head node
+Loop ID 0 Name 735 address 0x40059c max iterations 8 WCET -1 CFG (0,jpeg_fdct_islow)
+    Nodes: (0,jpeg_fdct_islow,2,359,BasicBlock,0x40059c,-1) (0,jpeg_fdct_islow,1,9,BasicBlock,0x400028,-1) 
+    Head Node: 0x40059c: (0,jpeg_fdct_islow,2,359,BasicBlock,0x40059c,-1) 
+    Tail Node: 0x400028: (0,jpeg_fdct_islow,1,9,BasicBlock,0x400028,-1) 
+    Exit Nodes: (0,jpeg_fdct_islow,3,364,BasicBlock,0x4005ac,-1) 
+Node ID 7 Name 735 Address 0x40059c Type LoopNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET -1
+    Predecessors: (0,jpeg_fdct_islow,0,3,BasicBlock,0x400018,-1) 
+    Successors: 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+processConditionalNodes(): JCConditionalNode ID: 0 name JCConditionalNode0 created
+processConditionalNodes(): JCConditionalNode ID: 0 name JCConditionalNode0 set parent of conditional to 7 name 735 address 0x40059c
+Loop ID 0 Name 735 address 0x40059c max iterations 8 WCET -1 CFG (0,jpeg_fdct_islow)
+    Nodes: (0,jpeg_fdct_islow,2,359,BasicBlock,0x40059c,-1) (0,jpeg_fdct_islow,1,9,BasicBlock,0x400028,-1) 
+    Head Node: 0x40059c: (0,jpeg_fdct_islow,2,359,BasicBlock,0x40059c,-1) 
+    Tail Node: 0x400028: (0,jpeg_fdct_islow,1,9,BasicBlock,0x400028,-1) 
+    Exit Nodes: (0,jpeg_fdct_islow,3,364,BasicBlock,0x4005ac,-1) 
+Node ID 7 Name 735 Address 0x40059c Type LoopNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET -1
+    Predecessors: (0,jpeg_fdct_islow,0,3,BasicBlock,0x400018,-1) 
+    Successors: 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+processConditionalNodes(): Node ID 1 Name 9 Address 0x400028 Type BasicBlock Function None is a loop tail node
+processConditionalNodes(): JCConditionalNode ID: 0 name JCConditionalNode0 17 name JCConditionalNode0 address Null sorting nodes loop index is 0
+processConditionalNodes(): JCConditionalNode ID: 0 name JCConditionalNode0 adding conditional node to loop 0 name 735 address Null
+processConditionalNodes(): JCConditionalNode ID: 0 name JCConditionalNode0 predecessor node set to 2 name 359 address 0x40059c
+processConditionalNodes(): JCConditionalNode ID: 0 name JCConditionalNode0 parent of predecessor node set to conditional 2 name 359 address 0x40059c
+processConditionalNodes(): JCConditionalNode ID: 0 name JCConditionalNode0 conditional node added 1 name 9 address 0x400028
+processConditionalNodes(): JCConditionalNode ID: 0 name JCConditionalNode0 removing successor node 1 name 9 address 0x400028 from parent loop node 0 name 735 address 0x40059c
+processConditionalNodes(): JCConditionalNode ID: 0 name JCConditionalNode0 parent of conditional node set to conditional 1 name 9 address 0x400028
+processConditionalNodes(): JCConditionalNode ID: 0 name JCConditionalNode0 conditional node added 3 name 364 address 0x4005ac
+processConditionalNodes(): JCConditionalNode ID: 0 name JCConditionalNode0 parent of conditional node set to conditional 3 name 364 address 0x4005ac
+processConditionalNodes(): JCConditionalNode ID: 0 name JCConditionalNode0 successor node set to 8 name 736 address 0x400b34
+processConditionalNodes(): JCConditionalNode ID: 0 name JCConditionalNode0 parent of successor node set to conditional 8 name 736 address 0x400b34
+processConditionalNodes(): JCConditionalNode ID: 0 name JCConditionalNode0 considering predecessor node 1 name 9 address 0x400028 as a predecessor node predecessor
+processConditionalNodes(): JCConditionalNode ID: 0 name JCConditionalNode0 17 name JCConditionalNode0 address 0x40059c sorting nodes loop index is 0
+processConditionalNodes(): JCConditionalNode ID: 0 name JCConditionalNode0 17 name JCConditionalNode0 address 0x40059c adding conditional predecessors to loop node 0 name 735 address 0x40059c
+Conditional Node ID 0 Name JCConditionalNode0 WCET -1 CFG (0,jpeg_fdct_islow)
+    Predecessor Node ID 2 Name 359 Address 0x40059c Type BasicBlock Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Conditional Nodes: (0,jpeg_fdct_islow,1,9,BasicBlock,0x400028,-1) (0,jpeg_fdct_islow,3,364,BasicBlock,0x4005ac,-1) 
+    Successor Node ID 8 Name 736 Address 0x400b34 Type LoopNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+Node ID 17 Name JCConditionalNode0 Address 0x40059c Type ConditionalNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET -1
+    Parent Node ID 7 Name 735 Address 0x40059c Type LoopNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Predecessors: 
+    Successors: 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+--->processConditionalNodes(): Node ID 10 Name 745 Address 0x400b64 Type BasicBlock Function None is a conditional node
+Section Node ID 8 Name 745 Address 0x400b64 Type BasicBlock Function None WCET -1 CFG (1,main)
+Node ID 10 Name 745 Address 0x400b64 Type BasicBlock Function None WCET -1 CFG (1,main)
+    Parent CFG ID 1 Name main WCET -1
+    Parent Node ID 16 Name 797 Address 0x400bd0 Type LoopNode Function None WCET -1 CFG (1,main)
+    Predecessors: (1,main,13,775,BasicBlock,0x400bd0,-1) 
+    Successors: (1,main,11,757,BasicBlock,0x400b90,-1) (1,main,12,759,BasicBlock,0x400b94,-1) 
+    Number of Instructions: 11
+    Instruction Cache States: 
+    Data Cache States: 
+processConditionalNodes(): Node ID 12 Name 759 Address 0x400b94 Type BasicBlock Function None is a loop tail node
+processConditionalNodes(): JCSectionNode ID: 14 name JCSectionNode14 created
+processConditionalNodes(): JCSectionNode ID: 14 name JCSectionNode14 parent node set to 16 name 797 address 0x400bd0
+processConditionalNodes(): Node ID 13 Name 775 Address 0x400bd0 Type BasicBlock Function None is a loop head node
+processConditionalNodes(): JCSectionNode ID: 14 name JCSectionNode14 added to loop node 2 name 797 address 0x400bd0
+processConditionalNodes(): Instruction 762 address New created
+processConditionalNodes(): JCSectionNode ID: 14 name JCSectionNode14 adding successor node 13 name 775 address 0x400bd0
+processConditionalNodes(): JCSectionNode ID: 14 name JCSectionNode14 18 name JCSectionNode14 address New sorting nodes loop index is 4
+processConditionalNodes(): Last Successor Node ID: 12 name 759 removing successor node 13 name 775 address 0x400bd0
+processConditionalNodes(): Last Successor Node ID: 12 name 759 adding successor node 18 name JCSectionNode14 address New
+processConditionalNodes(): Last section node of last successor node ID 12 name 759 address 0x400b94 is a JCSectionNode last node ID 12 name 759 address 0x400b94
+processConditionalNodes(): adding instruction 750 address 0x400bd0 as a successor to instruction 762 address New
+processConditionalNodes(): removing instruction 750 address 0x400bd0 as a successor to instruction 749 address 0x400bcc
+processConditionalNodes(): adding instruction 762 address New as a successor to instruction 749 address 0x400bcc
+processConditionalNodes(): JCConditionalNode ID: 1 name JCConditionalNode1 created
+processConditionalNodes(): JCConditionalNode ID: 1 name JCConditionalNode1 set parent of conditional to 16 name 797 address 0x400bd0
+Loop ID 2 Name 797 address 0x400bd0 max iterations 64 WCET -1 CFG (1,main)
+    Nodes: (1,main,13,775,BasicBlock,0x400bd0,-1) (1,main,10,745,BasicBlock,0x400b64,-1) (1,main,11,757,BasicBlock,0x400b90,-1) (1,main,12,759,BasicBlock,0x400b94,-1) (1,main,18,JCSectionNode14,BasicBlock,New,-1) 
+    Head Node: 0x400bd0: (1,main,13,775,BasicBlock,0x400bd0,-1) 
+    Tail Node: 0x400b94: (1,main,12,759,BasicBlock,0x400b94,-1) 
+    Exit Nodes: (1,main,14,781,FunctionCall,0x400be4,-1) 
+Node ID 16 Name 797 Address 0x400bd0 Type LoopNode Function None WCET -1 CFG (1,main)
+    Parent CFG ID 1 Name main WCET -1
+    Predecessors: (1,main,9,737,BasicBlock,0x400b4c,-1) 
+    Successors: 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+processConditionalNodes(): JCConditionalNode ID: 1 name JCConditionalNode1 19 name JCConditionalNode1 address Null sorting nodes loop index is 1
+processConditionalNodes(): JCConditionalNode ID: 1 name JCConditionalNode1 adding conditional node to loop 2 name 797 address 0x400bd0
+processConditionalNodes(): JCConditionalNode ID: 1 name JCConditionalNode1 predecessor node set to 10 name 745 address 0x400b64
+processConditionalNodes(): JCConditionalNode ID: 1 name JCConditionalNode1 parent of predecessor node set to conditional 10 name 745 address 0x400b64
+processConditionalNodes(): JCConditionalNode ID: 1 name JCConditionalNode1 conditional node added 11 name 757 address 0x400b90
+processConditionalNodes(): JCConditionalNode ID: 1 name JCConditionalNode1 removing successor node 11 name 757 address 0x400b90 from parent loop node 2 name 797 address 0x400bd0
+processConditionalNodes(): JCConditionalNode ID: 1 name JCConditionalNode1 parent of conditional node set to conditional 11 name 757 address 0x400b90
+processConditionalNodes(): JCConditionalNode ID: 1 name JCConditionalNode1 successor node set to 12 name 759 address 0x400b94
+processConditionalNodes(): JCConditionalNode ID: 1 name JCConditionalNode1 removing last successor node 12 name 759 address 0x400b94 from parent loop node 2 name 797 address 0x400bd0
+processConditionalNodes(): JCConditionalNode ID: 1 name JCConditionalNode1 parent of successor node set to conditional 12 name 759 address 0x400b94
+processConditionalNodes(): JCConditionalNode ID: 1 name JCConditionalNode1 considering predecessor node 13 name 775 address 0x400bd0 as a predecessor node predecessor
+processConditionalNodes(): JCConditionalNode ID: 1 name JCConditionalNode1 adding predecessor node 13 name 775 address 0x400bd0 as a predecessor to the conditional node
+processConditionalNodes(): JCConditionalNode ID: 1 name JCConditionalNode1 removing predecessor node 13 name 775 address 0x400bd0 from the current node 10 name 745 address 0x400b64
+processConditionalNodes(): JCConditionalNode ID: 1 name JCConditionalNode1 adding successor node 18 name JCSectionNode14 address New as a successor to the conditional node
+processConditionalNodes(): JCConditionalNode ID: 1 name JCConditionalNode1 removing successor node 18 name JCSectionNode14 address New as a successor to last successor node 12 name 759 address 0x400b94
+processConditionalNodes(): JCConditionalNode ID: 1 name JCConditionalNode1 19 name JCConditionalNode1 address 0x400b64 sorting nodes loop index is 1
+processConditionalNodes(): JCSectionNode ID: 14 name JCSectionNode14 18 name JCSectionNode14 address New sorting nodes loop index is 2
+Section Node ID 14 Name JCSectionNode14 Address New Type BasicBlock Function None WCET -1 CFG (1,main)
+Node ID 18 Name JCSectionNode14 Address New Type BasicBlock Function None WCET -1 CFG (1,main)
+    Parent CFG ID 1 Name main WCET -1
+    Parent Node ID 16 Name 797 Address 0x400bd0 Type LoopNode Function None WCET -1 CFG (1,main)
+    Predecessors: (1,main,19,JCConditionalNode1,ConditionalNode,0x400b64,-1) 
+    Successors: (1,main,13,775,BasicBlock,0x400bd0,-1) 
+    Number of Instructions: 1
+    Instruction Cache States: 
+    Data Cache States: 
+Conditional Node ID 1 Name JCConditionalNode1 WCET -1 CFG (1,main)
+    Predecessor Node ID 10 Name 745 Address 0x400b64 Type BasicBlock Function None WCET -1 CFG (1,main)
+    Conditional Nodes: (1,main,11,757,BasicBlock,0x400b90,-1) 
+    Successor Node ID 12 Name 759 Address 0x400b94 Type BasicBlock Function None WCET -1 CFG (1,main)
+Node ID 19 Name JCConditionalNode1 Address 0x400b64 Type ConditionalNode Function None WCET -1 CFG (1,main)
+    Parent CFG ID 1 Name main WCET -1
+    Parent Node ID 16 Name 797 Address 0x400bd0 Type LoopNode Function None WCET -1 CFG (1,main)
+    Predecessors: (1,main,13,775,BasicBlock,0x400bd0,-1) 
+    Successors: (1,main,18,JCSectionNode14,BasicBlock,New,-1) 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+Process conditional nodes 1: 64 milliseconds 0 seconds
+processFunctionCalls(): JCFunctionNode ID: 0 name JCFunctionNode0 created
+processFunctionCalls(): JCFunctionNode ID: 0 name JCFunctionNode0 address 0x400be4 section node 781 function jpeg_fdct_islow address 0x400be4 added to function node
+processFunctionCalls(): JCFunctionNode ID: 0 name JCFunctionNode0 address 0x400be4 Node 14 name 781 address 0x400be4 removed as a successor to node 13 name 775 address 0x400bd0
+processFunctionCalls(): JCFunctionNode ID: 0 name JCFunctionNode0 address 0x400be4 predecessor node 13 name 775 address 0x400bd0 added as a predecessor to function node
+processFunctionCalls(): JCFunctionNode ID: 0 name JCFunctionNode0 address 0x400be4 function call node 781 function jpeg_fdct_islow address 0x400be4
+processFunctionCalls(): JCFunctionNode ID: 0 name JCFunctionNode0 address 0x400be4 found CFG jpeg_fdct_islow
+processFunctionCalls(): JCFunctionNode ID: 0 name JCFunctionNode0 address 0x400be4 first CFG node 3 address 0x400018
+processFunctionCalls(): JCFunctionNode ID: 0 name JCFunctionNode0 address 0x400be4 successor node 15 name 738 address 0x400bec added to successor node list
+processFunctionCalls(): JCFunctionNode ID: 0 name JCFunctionNode0 address 0x400be4 Node 14 name 781 address 0x400be4 removed as a predecessor to node 15 name 738 address 0x400bec
+processFunctionCalls(): JCFunctionNode ID: 0 name JCFunctionNode0 address 0x400be4 successor node 15 name 738 address 0x400bec added as a successor to function node
+processFunctionCalls(): JCFunctionNode ID: 0 name JCFunctionNode0 address 0x400be4 Instruction 783 removed as a predecessor to instruction 784
+processFunctionCalls(): JCFunctionNode ID: 0 name JCFunctionNode0 address 0x400be4 first node 0 name 3 address 0x400018 added as a successor to current node 14 name 781 address 0x400be4
+processFunctionCalls(): JCFunctionNode ID: 0 name JCFunctionNode0 address 0x400be4 Instruction 756 name 783 address 0x400be8 added as a predecessor to instruction 0 name 5 address 0x400018
+processFunctionCalls(): JCFunctionNode ID: 0 name JCFunctionNode0 address 0x400be4 CFG Exit Node 6 name 4 address 0x400b44 object type JCSectionNode set
+processFunctionCalls(): JCFunctionNode ID: 0 name JCFunctionNode0 address 0x400be4 Node 6 name 4 address 0x400b44 added as a predecessor to node 15 name 738 address 0x400bec
+processFunctionCalls(): JCFunctionNode ID: 0 name JCFunctionNode0 address 0x400be4 Instruction 716 name 726 address 0x400b48 added as a predecessor to instruction 757 name 784 address 0x400bec
+Function Node ID 0 Name JCFunctionNode0 WCET -1 CFG (1,main)
+    Nodes: (1,main,14,781,FunctionCall,0x400be4,-1) 
+Node ID 20 Name JCFunctionNode0 Address 0x400be4 Type FunctionNode Function None WCET -1 CFG (1,main)
+    Parent CFG ID 1 Name main WCET -1
+    Predecessors: (1,main,13,775,BasicBlock,0x400bd0,-1) 
+    Successors: (1,main,15,738,BasicBlock,0x400bec,-1) 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+Process function calls: 3 milliseconds 0 seconds
+Process successor conditional nodes: 0 milliseconds 0 seconds
+Process conditional nodes 2: 0 milliseconds 0 seconds
+Process common loop exit nodes: 0 milliseconds 0 seconds
+Process conditional nodes 3: 10 milliseconds 0 seconds
+Loop ID 1 Name 736 address 0x400b34 max iterations 8 WCET -1 CFG (0,jpeg_fdct_islow)
+    Nodes: (0,jpeg_fdct_islow,5,720,BasicBlock,0x400b34,-1) (0,jpeg_fdct_islow,4,368,BasicBlock,0x4005b8,-1) 
+    Head Node: 0x400b34: (0,jpeg_fdct_islow,5,720,BasicBlock,0x400b34,-1) 
+    Tail Node: 0x4005b8: (0,jpeg_fdct_islow,4,368,BasicBlock,0x4005b8,-1) 
+    Exit Nodes: (0,jpeg_fdct_islow,6,4,BasicBlock,0x400b44,-1) 
+Node ID 8 Name 736 Address 0x400b34 Type LoopNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET -1
+    Parent Node ID 17 Name JCConditionalNode0 Address 0x40059c Type ConditionalNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Predecessors: (0,jpeg_fdct_islow,3,364,BasicBlock,0x4005ac,-1) 
+    Successors: 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+processLoopExitNodes(): Processing Loop Exit Node ID: 6 name 4 address 0x400b44
+processLoopExitNodes(): Processing Loop Exit Head Node ID: 5 name 720 address 0x400b34
+processLoopExitNodes(): Node ID 5 Name 720 Address 0x400b34 Type BasicBlock Function None is a loop head node
+processLoopExitNodes(): Node ID 4 Name 368 Address 0x4005b8 Type BasicBlock Function None is a loop tail node
+processLoopExitNodes(): JCSectionNode ID: 15 name JCSectionNode15 created
+processLoopExitNodes(): JCSectionNode ID: 15 name JCSectionNode15 parent node set to null
+processLoopExitNodes(): Instruction 763 address New created
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 created
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 address Null parent node set to 8 name 736 address 0x400b34
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 address Null adding block node to loop 1 name 736 address 0x400b34
+processLoopExitNodes(): considering 4 name 368 address 0x4005b8
+processLoopExitNodes(): adding 4 name 368 address 0x4005b8 to block 0 name JCBlockNode0 address Null
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 address 0x4005b8 adding successor node 4 name 368 address 0x4005b8 to block
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 address 0x4005b8 adding block node to loop 1 name 736 address 0x400b34
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 address 0x4005b8 parent of successor node 4 name 368 address 0x4005b8 set to block
+processLoopExitNodes(): considering 6 name 4 address 0x400b44
+processLoopExitNodes(): considering 5 name 720 address 0x400b34
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 address 0x4005b8 removing successor node 4 name 368 address 0x4005b8 as a successor from loop exit head node 5 name 720 address 0x400b34
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 address 0x4005b8 removing successor node 4 name 368 address 0x4005b8 as a predecessor from loop exit head node 5 name 720 address 0x400b34
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 address 0x4005b8 removing loop exit head node 5 name 720 address 0x400b34 as a predecessor from successor node 4 name 368 address 0x4005b8
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 address 0x4005b8 adding block node as a successor to loop exit head node 5 name 720 address 0x400b34
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 22 name JCBlockNode0 address 0x4005b8 sorting nodes loop index is 1
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 address 0x4005b8 adding successor node 15 name 738 address 0x400bec as a successor to new section node 21 name JCSectionNode15 address New
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 address 0x4005b8 removing successor node 15 name 738 address 0x400bec as a successor from loop exit node 6 name 4 address 0x400b44
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 address 0x4005b8 adding new section node 21 name JCSectionNode15 address New as a successor to loop exit node 6 name 4 address 0x400b44
+JCCfg: updateCfgExitNode(): CFG Exit Node 21 name JCSectionNode15 address New object type JCSectionNode set
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 address 0x4005b8 adding new section node 21 name JCSectionNode15 address New as a successor to block
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 22 name JCBlockNode0 address 0x4005b8 sorting nodes loop index is 1
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 4 name 368 address 0x4005b8 sorting nodes block index is 0
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 4 name 368 address 0x4005b8 adding successor node 5 name 720 address 0x400b34 as a successor to block node 0 name JCBlockNode0 address 0x4005b8
+JCNode: Error removing predecessor node: 4 name 368 address 0x4005b8
+    Node ID 5 Name 720 Address 0x400b34 Type BasicBlock Function None WCET -1
+        Predecessors: (22,JCBlockNode0,0x4005b8,-1) 
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 4 name 368 address 0x4005b8 removing successor node 5 name 720 address 0x400b34 from node
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 address 0x4005b8 Last section node of loop exit node ID 6 name 4 address 0x400b44 is a JCSectionNode last node ID 6 name 4 address 0x400b44
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 address 0x4005b8 adding instruction 757 address 0x400bec as a successor to instruction 763 address New
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 address 0x4005b8 removing instruction 757 address 0x400bec as a successor to instruction 716 address 0x400b48
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 address 0x4005b8 adding instruction 763 address New as a successor to instruction 716 address 0x400b48
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 address 0x4005b8 Last section node of block node is a JCSectionNode last node ID 4 name 368 address 0x4005b8
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 address 0x4005b8 adding instruction2 763 name i763 address New as a successor to instruction 711 name benchmarkParser.JCInstruction@2986e62 address 0x400b34
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 address 0x4005b8 removing instruction2 711 address 0x400b34 as a successor to instruction 710 address 0x400b30
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 address 0x4005b8 adding instruction3 763 address New as a successor to instruction 710 address 0x400b30
+Block Node ID 0 Name JCBlockNode0 WCET -1 CFG (0,jpeg_fdct_islow)
+    Nodes: (0,jpeg_fdct_islow,4,368,BasicBlock,0x4005b8,-1) 
+Node ID 22 Name JCBlockNode0 Address 0x4005b8 Type BlockNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET -1
+    Parent Node ID 8 Name 736 Address 0x400b34 Type LoopNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Predecessors: (0,jpeg_fdct_islow,5,720,BasicBlock,0x400b34,-1) 
+    Successors: (0,jpeg_fdct_islow,21,JCSectionNode15,BasicBlock,New,-1) (0,jpeg_fdct_islow,5,720,BasicBlock,0x400b34,-1) 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+processLoopExitNodes(): JCBlockNode ID: 0 name JCBlockNode0 address 0x4005b8 checking loop exit predecessor node 5 name 720 address 0x400b34 for a conditional node structure
+Loop ID 1 Name 736 address 0x400b34 max iterations 8 WCET -1 CFG (0,jpeg_fdct_islow)
+    Nodes: (0,jpeg_fdct_islow,5,720,BasicBlock,0x400b34,-1) (0,jpeg_fdct_islow,22,JCBlockNode0,BlockNode,0x4005b8,-1) 
+    Head Node: 0x400b34: (0,jpeg_fdct_islow,5,720,BasicBlock,0x400b34,-1) 
+    Tail Node: 0x4005b8: (0,jpeg_fdct_islow,22,JCBlockNode0,BlockNode,0x4005b8,-1) 
+    Exit Nodes: (0,jpeg_fdct_islow,6,4,BasicBlock,0x400b44,-1) (0,jpeg_fdct_islow,21,JCSectionNode15,BasicBlock,New,-1) 
+Node ID 8 Name 736 Address 0x400b34 Type LoopNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET -1
+    Parent Node ID 17 Name JCConditionalNode0 Address 0x40059c Type ConditionalNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Predecessors: (0,jpeg_fdct_islow,3,364,BasicBlock,0x4005ac,-1) 
+    Successors: 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+Loop ID 2 Name 797 address 0x400bd0 max iterations 64 WCET -1 CFG (1,main)
+    Nodes: (1,main,13,775,BasicBlock,0x400bd0,-1) (1,main,19,JCConditionalNode1,ConditionalNode,0x400b64,-1) (1,main,18,JCSectionNode14,BasicBlock,New,-1) 
+    Head Node: 0x400bd0: (1,main,13,775,BasicBlock,0x400bd0,-1) 
+    Tail Node: 0x400b94: (1,main,12,759,BasicBlock,0x400b94,-1) 
+    Exit Nodes: (1,main,20,JCFunctionNode0,FunctionNode,0x400be4,-1) 
+Node ID 16 Name 797 Address 0x400bd0 Type LoopNode Function None WCET -1 CFG (1,main)
+    Parent CFG ID 1 Name main WCET -1
+    Predecessors: (1,main,9,737,BasicBlock,0x400b4c,-1) 
+    Successors: 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+processLoopExitNodes(): Processing Loop Exit Node ID: 20 name JCFunctionNode0 address 0x400be4
+processLoopExitNodes(): Processing Loop Exit Head Node ID: 13 name 775 address 0x400bd0
+processLoopExitNodes(): Node ID 13 Name 775 Address 0x400bd0 Type BasicBlock Function None is a loop head node
+processLoopExitNodes(): Node ID 12 Name 759 Address 0x400b94 Type BasicBlock Function None is a loop tail node
+processLoopExitNodes(): JCSectionNode ID: 16 name JCSectionNode16 created
+processLoopExitNodes(): JCSectionNode ID: 16 name JCSectionNode16 parent node set to null
+processLoopExitNodes(): Instruction 764 address New created
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 created
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 address Null parent node set to 16 name 797 address 0x400bd0
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 address Null adding block node to loop 2 name 797 address 0x400bd0
+processLoopExitNodes(): considering 19 name JCConditionalNode1 address 0x400b64
+processLoopExitNodes(): adding 19 name JCConditionalNode1 address 0x400b64 to block 1 name JCBlockNode1 address Null
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 address 0x400b64 adding successor node 19 name JCConditionalNode1 address 0x400b64 to block
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 address 0x400b64 adding block node to loop 2 name 797 address 0x400bd0
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 address 0x400b64 parent of successor node 19 name JCConditionalNode1 address 0x400b64 set to block
+processLoopExitNodes(): considering 20 name JCFunctionNode0 address 0x400be4
+processLoopExitNodes(): considering 18 name JCSectionNode14 address New
+processLoopExitNodes(): adding 18 name JCSectionNode14 address New to block 1 name JCBlockNode1 address 0x400b64
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 address 0x400b64 adding successor node 18 name JCSectionNode14 address New to block
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 address 0x400b64 adding block node to loop 2 name 797 address 0x400bd0
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 address 0x400b64 parent of successor node 18 name JCSectionNode14 address New set to block
+processLoopExitNodes(): considering 13 name 775 address 0x400bd0
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 address 0x400b64 removing successor node 19 name JCConditionalNode1 address 0x400b64 as a successor from loop exit head node 13 name 775 address 0x400bd0
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 address 0x400b64 removing loop exit head node 13 name 775 address 0x400bd0 as a predecessor from successor node 19 name JCConditionalNode1 address 0x400b64
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 address 0x400b64 removing successor node 18 name JCSectionNode14 address New as a predecessor from loop exit head node 13 name 775 address 0x400bd0
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 address 0x400b64 adding block node as a successor to loop exit head node 13 name 775 address 0x400bd0
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 24 name JCBlockNode1 address 0x400b64 sorting nodes loop index is 1
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 address 0x400b64 adding successor node 15 name 738 address 0x400bec as a successor to new section node 23 name JCSectionNode16 address New
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 address 0x400b64 removing successor node 15 name 738 address 0x400bec as a successor from loop exit node 20 name JCFunctionNode0 address 0x400be4
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 address 0x400b64 adding new section node 23 name JCSectionNode16 address New as a successor to loop exit node 20 name JCFunctionNode0 address 0x400be4
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 address 0x400b64 adding new section node 23 name JCSectionNode16 address New as a successor to block
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 24 name JCBlockNode1 address 0x400b64 sorting nodes loop index is 1
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 19 name JCConditionalNode1 address 0x400b64 sorting nodes block index is 0
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 18 name JCSectionNode14 address New sorting nodes block index is 1
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 18 name JCSectionNode14 address New adding successor node 13 name 775 address 0x400bd0 as a successor to block node 1 name JCBlockNode1 address 0x400b64
+JCNode: Error removing predecessor node: 18 name JCSectionNode14 address New
+    Node ID 13 Name 775 Address 0x400bd0 Type BasicBlock Function None WCET -1
+        Predecessors: (24,JCBlockNode1,0x400b64,-1) 
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 18 name JCSectionNode14 address New removing successor node 13 name 775 address 0x400bd0 from node
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 address 0x400b64 Last section node of function node ID 20 name JCFunctionNode0 address 0x400be4 is a JCSectionNode last node ID 21 name JCSectionNode15 address New
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 address 0x400b64 adding instruction 757 address 0x400bec as a successor to instruction 764 address New
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 address 0x400b64 removing instruction 757 address 0x400bec as a successor to instruction 763 address New
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 address 0x400b64 adding instruction 764 address New as a successor to instruction 763 address New
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 address 0x400b64 Last section node of block node is a JCSectionNode last node ID 18 name JCSectionNode14 address New
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 address 0x400b64 adding instruction2 764 name i764 address New as a successor to instruction 750 name benchmarkParser.JCInstruction@6576e542 address 0x400bd0
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 address 0x400b64 removing instruction2 750 address 0x400bd0 as a successor to instruction 762 address New
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 address 0x400b64 adding instruction3 764 address New as a successor to instruction 762 address New
+Block Node ID 1 Name JCBlockNode1 WCET -1 CFG (1,main)
+    Nodes: (1,main,19,JCConditionalNode1,ConditionalNode,0x400b64,-1) (1,main,18,JCSectionNode14,BasicBlock,New,-1) 
+Node ID 24 Name JCBlockNode1 Address 0x400b64 Type BlockNode Function None WCET -1 CFG (1,main)
+    Parent CFG ID 1 Name main WCET -1
+    Parent Node ID 16 Name 797 Address 0x400bd0 Type LoopNode Function None WCET -1 CFG (1,main)
+    Predecessors: (1,main,13,775,BasicBlock,0x400bd0,-1) 
+    Successors: (1,main,23,JCSectionNode16,BasicBlock,New,-1) (1,main,13,775,BasicBlock,0x400bd0,-1) 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+processLoopExitNodes(): JCBlockNode ID: 1 name JCBlockNode1 address 0x400b64 checking loop exit predecessor node 13 name 775 address 0x400bd0 for a conditional node structure
+Loop ID 2 Name 797 address 0x400bd0 max iterations 64 WCET -1 CFG (1,main)
+    Nodes: (1,main,13,775,BasicBlock,0x400bd0,-1) (1,main,24,JCBlockNode1,BlockNode,0x400b64,-1) 
+    Head Node: 0x400bd0: (1,main,13,775,BasicBlock,0x400bd0,-1) 
+    Tail Node: 0x400b94: (1,main,12,759,BasicBlock,0x400b94,-1) 
+    Exit Nodes: (1,main,20,JCFunctionNode0,FunctionNode,0x400be4,-1) (1,main,23,JCSectionNode16,BasicBlock,New,-1) 
+Node ID 16 Name 797 Address 0x400bd0 Type LoopNode Function None WCET -1 CFG (1,main)
+    Parent CFG ID 1 Name main WCET -1
+    Predecessors: (1,main,9,737,BasicBlock,0x400b4c,-1) 
+    Successors: 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+Process loop exit nodes: 34 milliseconds 0 seconds
+--->processConditionalNodes(): Node ID 5 Name 720 Address 0x400b34 Type BasicBlock Function None is a conditional node
+Section Node ID 5 Name 720 Address 0x400b34 Type BasicBlock Function None WCET -1 CFG (0,jpeg_fdct_islow)
+Node ID 5 Name 720 Address 0x400b34 Type BasicBlock Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET -1
+    Parent Node ID 8 Name 736 Address 0x400b34 Type LoopNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Predecessors: (0,jpeg_fdct_islow,22,JCBlockNode0,BlockNode,0x4005b8,-1) 
+    Successors: (0,jpeg_fdct_islow,6,4,BasicBlock,0x400b44,-1) (0,jpeg_fdct_islow,22,JCBlockNode0,BlockNode,0x4005b8,-1) 
+    Number of Instructions: 4
+    Instruction Cache States: 
+    Data Cache States: 
+processConditionalNodes(): Node ID 5 Name 720 Address 0x400b34 Type BasicBlock Function None is a loop head node
+Loop ID 1 Name 736 address 0x400b34 max iterations 8 WCET -1 CFG (0,jpeg_fdct_islow)
+    Nodes: (0,jpeg_fdct_islow,5,720,BasicBlock,0x400b34,-1) (0,jpeg_fdct_islow,22,JCBlockNode0,BlockNode,0x4005b8,-1) 
+    Head Node: 0x400b34: (0,jpeg_fdct_islow,5,720,BasicBlock,0x400b34,-1) 
+    Tail Node: 0x4005b8: (0,jpeg_fdct_islow,22,JCBlockNode0,BlockNode,0x4005b8,-1) 
+    Exit Nodes: (0,jpeg_fdct_islow,6,4,BasicBlock,0x400b44,-1) (0,jpeg_fdct_islow,21,JCSectionNode15,BasicBlock,New,-1) 
+Node ID 8 Name 736 Address 0x400b34 Type LoopNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET -1
+    Parent Node ID 17 Name JCConditionalNode0 Address 0x40059c Type ConditionalNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Predecessors: (0,jpeg_fdct_islow,3,364,BasicBlock,0x4005ac,-1) 
+    Successors: 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+processConditionalNodes(): JCConditionalNode ID: 2 name JCConditionalNode2 created
+processConditionalNodes(): JCConditionalNode ID: 2 name JCConditionalNode2 set parent of conditional to 8 name 736 address 0x400b34
+Loop ID 1 Name 736 address 0x400b34 max iterations 8 WCET -1 CFG (0,jpeg_fdct_islow)
+    Nodes: (0,jpeg_fdct_islow,5,720,BasicBlock,0x400b34,-1) (0,jpeg_fdct_islow,22,JCBlockNode0,BlockNode,0x4005b8,-1) 
+    Head Node: 0x400b34: (0,jpeg_fdct_islow,5,720,BasicBlock,0x400b34,-1) 
+    Tail Node: 0x4005b8: (0,jpeg_fdct_islow,22,JCBlockNode0,BlockNode,0x4005b8,-1) 
+    Exit Nodes: (0,jpeg_fdct_islow,6,4,BasicBlock,0x400b44,-1) (0,jpeg_fdct_islow,21,JCSectionNode15,BasicBlock,New,-1) 
+Node ID 8 Name 736 Address 0x400b34 Type LoopNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET -1
+    Parent Node ID 17 Name JCConditionalNode0 Address 0x40059c Type ConditionalNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Predecessors: (0,jpeg_fdct_islow,3,364,BasicBlock,0x4005ac,-1) 
+    Successors: 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+processConditionalNodes(): Node ID 22 Name JCBlockNode0 Address 0x4005b8 Type BlockNode Function None is a loop tail node
+processConditionalNodes(): JCConditionalNode ID: 2 name JCConditionalNode2 25 name JCConditionalNode2 address Null sorting nodes loop index is 0
+processConditionalNodes(): JCConditionalNode ID: 2 name JCConditionalNode2 adding conditional node to loop 1 name 736 address Null
+processConditionalNodes(): JCConditionalNode ID: 2 name JCConditionalNode2 predecessor node set to 5 name 720 address 0x400b34
+processConditionalNodes(): JCConditionalNode ID: 2 name JCConditionalNode2 parent of predecessor node set to conditional 5 name 720 address 0x400b34
+processConditionalNodes(): JCConditionalNode ID: 2 name JCConditionalNode2 conditional node added 6 name 4 address 0x400b44
+processConditionalNodes(): JCConditionalNode ID: 2 name JCConditionalNode2 parent of conditional node set to conditional 6 name 4 address 0x400b44
+processConditionalNodes(): JCConditionalNode ID: 2 name JCConditionalNode2 conditional node added 22 name JCBlockNode0 address 0x4005b8
+processConditionalNodes(): JCConditionalNode ID: 2 name JCConditionalNode2 removing successor node 22 name JCBlockNode0 address 0x4005b8 from parent loop node 1 name 736 address 0x400b34
+processConditionalNodes(): JCConditionalNode ID: 2 name JCConditionalNode2 parent of conditional node set to conditional 22 name JCBlockNode0 address 0x4005b8
+processConditionalNodes(): JCConditionalNode ID: 2 name JCConditionalNode2 successor node set to 21 name JCSectionNode15 address New
+processConditionalNodes(): JCConditionalNode ID: 2 name JCConditionalNode2 parent of successor node set to conditional 21 name JCSectionNode15 address New
+JCCfg: updateCfgExitNode(): CFG Exit Node 25 name JCConditionalNode2 address 0x400b34 object type JCConditionalNode set
+processConditionalNodes(): JCConditionalNode ID: 2 name JCConditionalNode2 considering predecessor node 22 name JCBlockNode0 address 0x4005b8 as a predecessor node predecessor
+JCCfg: updateCfgExitNode(): CFG Exit Node 8 name 736 address 0x400b34 object type JCLoopNode set
+processConditionalNodes(): JCConditionalNode ID: 2 name JCConditionalNode2 adding successor node 15 name 738 address 0x400bec as a successor to the conditional node
+processConditionalNodes(): JCConditionalNode ID: 2 name JCConditionalNode2 removing successor node 15 name 738 address 0x400bec as a successor to last successor node 21 name JCSectionNode15 address New
+processConditionalNodes(): JCConditionalNode ID: 2 name JCConditionalNode2 25 name JCConditionalNode2 address 0x400b34 sorting nodes loop index is 0
+processConditionalNodes(): JCConditionalNode ID: 2 name JCConditionalNode2 25 name JCConditionalNode2 address 0x400b34 adding conditional predecessors to loop node 1 name 736 address 0x400b34
+processConditionalNodes(): JCConditionalNode ID: 2 name JCConditionalNode2 25 name JCConditionalNode2 address 0x400b34 adding successor node 15 name 738 address 0x400bec as a successor to loop node 1 name 736 address 0x400b34
+processConditionalNodes(): JCConditionalNode ID: 2 name JCConditionalNode2 25 name JCConditionalNode2 address 0x400b34 removing successor node 15 name 738 address 0x400bec from node
+Conditional Node ID 2 Name JCConditionalNode2 WCET -1 CFG (0,jpeg_fdct_islow)
+    Predecessor Node ID 5 Name 720 Address 0x400b34 Type BasicBlock Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Conditional Nodes: (0,jpeg_fdct_islow,6,4,BasicBlock,0x400b44,-1) (0,jpeg_fdct_islow,22,JCBlockNode0,BlockNode,0x4005b8,-1) 
+    Successor Node ID 21 Name JCSectionNode15 Address New Type BasicBlock Function None WCET -1 CFG (0,jpeg_fdct_islow)
+Node ID 25 Name JCConditionalNode2 Address 0x400b34 Type ConditionalNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET -1
+    Parent Node ID 8 Name 736 Address 0x400b34 Type LoopNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Predecessors: 
+    Successors: 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+--->processConditionalNodes(): Node ID 13 Name 775 Address 0x400bd0 Type BasicBlock Function None is a conditional node
+Section Node ID 11 Name 775 Address 0x400bd0 Type BasicBlock Function None WCET -1 CFG (1,main)
+Node ID 13 Name 775 Address 0x400bd0 Type BasicBlock Function None WCET -1 CFG (1,main)
+    Parent CFG ID 1 Name main WCET -1
+    Parent Node ID 16 Name 797 Address 0x400bd0 Type LoopNode Function None WCET -1 CFG (1,main)
+    Predecessors: (1,main,24,JCBlockNode1,BlockNode,0x400b64,-1) 
+    Successors: (1,main,20,JCFunctionNode0,FunctionNode,0x400be4,-1) (1,main,24,JCBlockNode1,BlockNode,0x400b64,-1) 
+    Number of Instructions: 5
+    Instruction Cache States: 
+    Data Cache States: 
+processConditionalNodes(): Node ID 13 Name 775 Address 0x400bd0 Type BasicBlock Function None is a loop head node
+Loop ID 2 Name 797 address 0x400bd0 max iterations 64 WCET -1 CFG (1,main)
+    Nodes: (1,main,13,775,BasicBlock,0x400bd0,-1) (1,main,24,JCBlockNode1,BlockNode,0x400b64,-1) 
+    Head Node: 0x400bd0: (1,main,13,775,BasicBlock,0x400bd0,-1) 
+    Tail Node: 0x400b94: (1,main,12,759,BasicBlock,0x400b94,-1) 
+    Exit Nodes: (1,main,20,JCFunctionNode0,FunctionNode,0x400be4,-1) (1,main,23,JCSectionNode16,BasicBlock,New,-1) 
+Node ID 16 Name 797 Address 0x400bd0 Type LoopNode Function None WCET -1 CFG (1,main)
+    Parent CFG ID 1 Name main WCET -1
+    Predecessors: (1,main,9,737,BasicBlock,0x400b4c,-1) 
+    Successors: 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+processConditionalNodes(): JCConditionalNode ID: 3 name JCConditionalNode3 created
+processConditionalNodes(): JCConditionalNode ID: 3 name JCConditionalNode3 set parent of conditional to 16 name 797 address 0x400bd0
+Loop ID 2 Name 797 address 0x400bd0 max iterations 64 WCET -1 CFG (1,main)
+    Nodes: (1,main,13,775,BasicBlock,0x400bd0,-1) (1,main,24,JCBlockNode1,BlockNode,0x400b64,-1) 
+    Head Node: 0x400bd0: (1,main,13,775,BasicBlock,0x400bd0,-1) 
+    Tail Node: 0x400b94: (1,main,12,759,BasicBlock,0x400b94,-1) 
+    Exit Nodes: (1,main,20,JCFunctionNode0,FunctionNode,0x400be4,-1) (1,main,23,JCSectionNode16,BasicBlock,New,-1) 
+Node ID 16 Name 797 Address 0x400bd0 Type LoopNode Function None WCET -1 CFG (1,main)
+    Parent CFG ID 1 Name main WCET -1
+    Predecessors: (1,main,9,737,BasicBlock,0x400b4c,-1) 
+    Successors: 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+processConditionalNodes(): Node ID 12 Name 759 Address 0x400b94 Type BasicBlock Function None is a loop tail node
+processConditionalNodes(): JCConditionalNode ID: 3 name JCConditionalNode3 26 name JCConditionalNode3 address Null sorting nodes loop index is 0
+processConditionalNodes(): JCConditionalNode ID: 3 name JCConditionalNode3 adding conditional node to loop 2 name 797 address Null
+processConditionalNodes(): JCConditionalNode ID: 3 name JCConditionalNode3 predecessor node set to 13 name 775 address 0x400bd0
+processConditionalNodes(): JCConditionalNode ID: 3 name JCConditionalNode3 parent of predecessor node set to conditional 13 name 775 address 0x400bd0
+processConditionalNodes(): JCConditionalNode ID: 3 name JCConditionalNode3 conditional node added 20 name JCFunctionNode0 address 0x400be4
+processConditionalNodes(): JCConditionalNode ID: 3 name JCConditionalNode3 parent of conditional node set to conditional 20 name JCFunctionNode0 address 0x400be4
+processConditionalNodes(): JCConditionalNode ID: 3 name JCConditionalNode3 conditional node added 24 name JCBlockNode1 address 0x400b64
+processConditionalNodes(): JCConditionalNode ID: 3 name JCConditionalNode3 removing successor node 24 name JCBlockNode1 address 0x400b64 from parent loop node 2 name 797 address 0x400bd0
+processConditionalNodes(): JCConditionalNode ID: 3 name JCConditionalNode3 parent of conditional node set to conditional 24 name JCBlockNode1 address 0x400b64
+processConditionalNodes(): JCConditionalNode ID: 3 name JCConditionalNode3 successor node set to 23 name JCSectionNode16 address New
+processConditionalNodes(): JCConditionalNode ID: 3 name JCConditionalNode3 parent of successor node set to conditional 23 name JCSectionNode16 address New
+processConditionalNodes(): JCConditionalNode ID: 3 name JCConditionalNode3 considering predecessor node 24 name JCBlockNode1 address 0x400b64 as a predecessor node predecessor
+processConditionalNodes(): JCConditionalNode ID: 3 name JCConditionalNode3 adding successor node 15 name 738 address 0x400bec as a successor to loop node 2 name 797 address 0x400bd0
+processConditionalNodes(): JCConditionalNode ID: 3 name JCConditionalNode3 26 name JCConditionalNode3 address 0x400bd0 sorting nodes loop index is 0
+processConditionalNodes(): JCConditionalNode ID: 3 name JCConditionalNode3 26 name JCConditionalNode3 address 0x400bd0 adding conditional predecessors to loop node 2 name 797 address 0x400bd0
+processConditionalNodes(): JCConditionalNode ID: 3 name JCConditionalNode3 address 0x400bd0 removing successor node 15 name 738 address 0x400bec from conditional successor node 23 name JCSectionNode16 address New
+processConditionalNodes(): JCConditionalNode ID: 3 name JCConditionalNode3 adding successor node 15 name 738 address 0x400bec as a successor to the conditional node
+Conditional Node ID 3 Name JCConditionalNode3 WCET -1 CFG (1,main)
+    Predecessor Node ID 13 Name 775 Address 0x400bd0 Type BasicBlock Function None WCET -1 CFG (1,main)
+    Conditional Nodes: (1,main,20,JCFunctionNode0,FunctionNode,0x400be4,-1) (1,main,24,JCBlockNode1,BlockNode,0x400b64,-1) 
+    Successor Node ID 23 Name JCSectionNode16 Address New Type BasicBlock Function None WCET -1 CFG (1,main)
+Node ID 26 Name JCConditionalNode3 Address 0x400bd0 Type ConditionalNode Function None WCET -1 CFG (1,main)
+    Parent CFG ID 1 Name main WCET -1
+    Parent Node ID 16 Name 797 Address 0x400bd0 Type LoopNode Function None WCET -1 CFG (1,main)
+    Predecessors: 
+    Successors: (1,main,15,738,BasicBlock,0x400bec,-1) 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+Process conditional nodes 3: 41 milliseconds 0 seconds
+JCNode: Successor node (15) ID: 738 Address 0x400bec already in successor node list 
+    Node ID 16 Name 797 Address 0x400bd0 Type LoopNode Function None WCET -1
+        Successors: (15,738,0x400bec,-1) 
+JCNode: Predecessor node (16) ID: 797 Address 0x400bd0 already in predecessor node list 
+    Node ID 15 Name 738 Address 0x400bec Type BasicBlock Function None WCET -1
+        Predecessors: (8,736,0x400b34,-1) (16,797,0x400bd0,-1) 
+Process check loop exit nodes: 0 milliseconds 0 seconds
+Process new instruction addresses: 0 milliseconds 0 seconds
+BenchmarkCfgParser: Process New Instruction Addresses State
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Program ID 0 Name  Next Address 0x400c08
+    CFGs: (0,jpeg_fdct_islow) (1,main) 
+CFG ID 0 Name jpeg_fdct_islow WCET -1
+    Exit Node: (8,736,0x400b34,-1) 
+    Nodes: (0,3,0x400018,-1) (1,9,0x400028,-1) (2,359,0x40059c,-1) (3,364,0x4005ac,-1) (4,368,0x4005b8,-1) (5,720,0x400b34,-1) (6,4,0x400b44,-1) (7,735,0x40059c,-1) (8,736,0x400b34,-1) (17,JCConditionalNode0,0x40059c,-1) (21,JCSectionNode15,0x400c00,-1) (22,JCBlockNode0,0x4005b8,-1) (25,JCConditionalNode2,0x400b34,-1) 
+CFG ID 1 Name main WCET -1
+    Exit Node: 
+    Nodes: (9,737,0x400b4c,-1) (10,745,0x400b64,-1) (11,757,0x400b90,-1) (12,759,0x400b94,-1) (13,775,0x400bd0,-1) (14,781,0x400be4,-1) (15,738,0x400bec,-1) (16,797,0x400bd0,-1) (18,JCSectionNode14,0x400bfc,-1) (19,JCConditionalNode1,0x400b64,-1) (20,JCFunctionNode0,0x400be4,-1) (23,JCSectionNode16,0x400c04,-1) (24,JCBlockNode1,0x400b64,-1) (26,JCConditionalNode3,0x400bd0,-1) 
+Section Node ID 0 Name 3 Address 0x400018 Type BasicBlock Function None WCET -1 CFG (0,jpeg_fdct_islow)
+Node ID 0 Name 3 Address 0x400018 Type BasicBlock Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET -1
+    Predecessors: (1,main,14,781,FunctionCall,0x400be4,-1) 
+    Successors: (0,jpeg_fdct_islow,7,735,LoopNode,0x40059c,-1) 
+    Number of Instructions: 4
+    Instruction Cache States: 
+    Data Cache States: 
+Section Node ID 1 Name 9 Address 0x400028 Type BasicBlock Function None WCET -1 CFG (0,jpeg_fdct_islow)
+Node ID 1 Name 9 Address 0x400028 Type BasicBlock Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET -1
+    Parent Node ID 17 Name JCConditionalNode0 Address 0x40059c Type ConditionalNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Predecessors: (0,jpeg_fdct_islow,2,359,BasicBlock,0x40059c,-1) 
+    Successors: (0,jpeg_fdct_islow,2,359,BasicBlock,0x40059c,-1) 
+    Number of Instructions: 349
+    Instruction Cache States: 
+    Data Cache States: 
+Section Node ID 2 Name 359 Address 0x40059c Type BasicBlock Function None WCET -1 CFG (0,jpeg_fdct_islow)
+Node ID 2 Name 359 Address 0x40059c Type BasicBlock Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET -1
+    Parent Node ID 17 Name JCConditionalNode0 Address 0x40059c Type ConditionalNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Predecessors: (0,jpeg_fdct_islow,1,9,BasicBlock,0x400028,-1) 
+    Successors: (0,jpeg_fdct_islow,1,9,BasicBlock,0x400028,-1) (0,jpeg_fdct_islow,3,364,BasicBlock,0x4005ac,-1) 
+    Number of Instructions: 4
+    Instruction Cache States: 
+    Data Cache States: 
+Section Node ID 3 Name 364 Address 0x4005ac Type BasicBlock Function None WCET -1 CFG (0,jpeg_fdct_islow)
+Node ID 3 Name 364 Address 0x4005ac Type BasicBlock Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET -1
+    Parent Node ID 17 Name JCConditionalNode0 Address 0x40059c Type ConditionalNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Predecessors: (0,jpeg_fdct_islow,2,359,BasicBlock,0x40059c,-1) 
+    Successors: (0,jpeg_fdct_islow,8,736,LoopNode,0x400b34,-1) 
+    Number of Instructions: 3
+    Instruction Cache States: 
+    Data Cache States: 
+Section Node ID 4 Name 368 Address 0x4005b8 Type BasicBlock Function None WCET -1 CFG (0,jpeg_fdct_islow)
+Node ID 4 Name 368 Address 0x4005b8 Type BasicBlock Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET -1
+    Parent Node ID 22 Name JCBlockNode0 Address 0x4005b8 Type BlockNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Predecessors: 
+    Successors: 
+    Number of Instructions: 351
+    Instruction Cache States: 
+    Data Cache States: 
+Section Node ID 5 Name 720 Address 0x400b34 Type BasicBlock Function None WCET -1 CFG (0,jpeg_fdct_islow)
+Node ID 5 Name 720 Address 0x400b34 Type BasicBlock Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET -1
+    Parent Node ID 25 Name JCConditionalNode2 Address 0x400b34 Type ConditionalNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Predecessors: (0,jpeg_fdct_islow,22,JCBlockNode0,BlockNode,0x4005b8,-1) 
+    Successors: (0,jpeg_fdct_islow,6,4,BasicBlock,0x400b44,-1) (0,jpeg_fdct_islow,22,JCBlockNode0,BlockNode,0x4005b8,-1) 
+    Number of Instructions: 4
+    Instruction Cache States: 
+    Data Cache States: 
+Section Node ID 6 Name 4 Address 0x400b44 Type BasicBlock Function None WCET -1 CFG (0,jpeg_fdct_islow)
+Node ID 6 Name 4 Address 0x400b44 Type BasicBlock Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET -1
+    Parent Node ID 25 Name JCConditionalNode2 Address 0x400b34 Type ConditionalNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Predecessors: (0,jpeg_fdct_islow,5,720,BasicBlock,0x400b34,-1) 
+    Successors: (0,jpeg_fdct_islow,21,JCSectionNode15,BasicBlock,0x400c00,-1) 
+    Number of Instructions: 2
+    Instruction Cache States: 
+    Data Cache States: 
+Section Node ID 7 Name 737 Address 0x400b4c Type BasicBlock Function None WCET -1 CFG (1,main)
+Node ID 9 Name 737 Address 0x400b4c Type BasicBlock Function None WCET -1 CFG (1,main)
+    Parent CFG ID 1 Name main WCET -1
+    Predecessors: 
+    Successors: (1,main,16,797,LoopNode,0x400bd0,-1) 
+    Number of Instructions: 6
+    Instruction Cache States: 
+    Data Cache States: 
+Section Node ID 8 Name 745 Address 0x400b64 Type BasicBlock Function None WCET -1 CFG (1,main)
+Node ID 10 Name 745 Address 0x400b64 Type BasicBlock Function None WCET -1 CFG (1,main)
+    Parent CFG ID 1 Name main WCET -1
+    Parent Node ID 19 Name JCConditionalNode1 Address 0x400b64 Type ConditionalNode Function None WCET -1 CFG (1,main)
+    Predecessors: 
+    Successors: (1,main,11,757,BasicBlock,0x400b90,-1) (1,main,12,759,BasicBlock,0x400b94,-1) 
+    Number of Instructions: 11
+    Instruction Cache States: 
+    Data Cache States: 
+Section Node ID 9 Name 757 Address 0x400b90 Type BasicBlock Function None WCET -1 CFG (1,main)
+Node ID 11 Name 757 Address 0x400b90 Type BasicBlock Function None WCET -1 CFG (1,main)
+    Parent CFG ID 1 Name main WCET -1
+    Parent Node ID 19 Name JCConditionalNode1 Address 0x400b64 Type ConditionalNode Function None WCET -1 CFG (1,main)
+    Predecessors: (1,main,10,745,BasicBlock,0x400b64,-1) 
+    Successors: (1,main,12,759,BasicBlock,0x400b94,-1) 
+    Number of Instructions: 1
+    Instruction Cache States: 
+    Data Cache States: 
+Section Node ID 10 Name 759 Address 0x400b94 Type BasicBlock Function None WCET -1 CFG (1,main)
+Node ID 12 Name 759 Address 0x400b94 Type BasicBlock Function None WCET -1 CFG (1,main)
+    Parent CFG ID 1 Name main WCET -1
+    Parent Node ID 19 Name JCConditionalNode1 Address 0x400b64 Type ConditionalNode Function None WCET -1 CFG (1,main)
+    Predecessors: (1,main,10,745,BasicBlock,0x400b64,-1) (1,main,11,757,BasicBlock,0x400b90,-1) 
+    Successors: 
+    Number of Instructions: 15
+    Instruction Cache States: 
+    Data Cache States: 
+Section Node ID 11 Name 775 Address 0x400bd0 Type BasicBlock Function None WCET -1 CFG (1,main)
+Node ID 13 Name 775 Address 0x400bd0 Type BasicBlock Function None WCET -1 CFG (1,main)
+    Parent CFG ID 1 Name main WCET -1
+    Parent Node ID 26 Name JCConditionalNode3 Address 0x400bd0 Type ConditionalNode Function None WCET -1 CFG (1,main)
+    Predecessors: (1,main,24,JCBlockNode1,BlockNode,0x400b64,-1) 
+    Successors: (1,main,20,JCFunctionNode0,FunctionNode,0x400be4,-1) (1,main,24,JCBlockNode1,BlockNode,0x400b64,-1) 
+    Number of Instructions: 5
+    Instruction Cache States: 
+    Data Cache States: 
+Section Node ID 12 Name 781 Address 0x400be4 Type FunctionCall Function jpeg_fdct_islow WCET -1 CFG (1,main)
+Node ID 14 Name 781 Address 0x400be4 Type FunctionCall Function jpeg_fdct_islow WCET -1 CFG (1,main)
+    Parent CFG ID 1 Name main WCET -1
+    Parent Node ID 20 Name JCFunctionNode0 Address 0x400be4 Type FunctionNode Function None WCET -1 CFG (1,main)
+    Predecessors: 
+    Successors: (0,jpeg_fdct_islow,0,3,BasicBlock,0x400018,-1) 
+    Number of Instructions: 2
+    Instruction Cache States: 
+    Data Cache States: 
+Section Node ID 13 Name 738 Address 0x400bec Type BasicBlock Function None WCET -1 CFG (1,main)
+Node ID 15 Name 738 Address 0x400bec Type BasicBlock Function None WCET -1 CFG (1,main)
+    Parent CFG ID 1 Name main WCET -1
+    Predecessors: (0,jpeg_fdct_islow,8,736,LoopNode,0x400b34,-1) (1,main,16,797,LoopNode,0x400bd0,-1) 
+    Successors: 
+    Number of Instructions: 5
+    Instruction Cache States: 
+    Data Cache States: 
+Section Node ID 14 Name JCSectionNode14 Address 0x400bfc Type BasicBlock Function None WCET -1 CFG (1,main)
+Node ID 18 Name JCSectionNode14 Address 0x400bfc Type BasicBlock Function None WCET -1 CFG (1,main)
+    Parent CFG ID 1 Name main WCET -1
+    Parent Node ID 24 Name JCBlockNode1 Address 0x400b64 Type BlockNode Function None WCET -1 CFG (1,main)
+    Predecessors: (1,main,19,JCConditionalNode1,ConditionalNode,0x400b64,-1) 
+    Successors: 
+    Number of Instructions: 1
+    Instruction Cache States: 
+    Data Cache States: 
+Section Node ID 15 Name JCSectionNode15 Address 0x400c00 Type BasicBlock Function None WCET -1 CFG (0,jpeg_fdct_islow)
+Node ID 21 Name JCSectionNode15 Address 0x400c00 Type BasicBlock Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET -1
+    Parent Node ID 25 Name JCConditionalNode2 Address 0x400b34 Type ConditionalNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Predecessors: (0,jpeg_fdct_islow,6,4,BasicBlock,0x400b44,-1) (0,jpeg_fdct_islow,22,JCBlockNode0,BlockNode,0x4005b8,-1) 
+    Successors: 
+    Number of Instructions: 1
+    Instruction Cache States: 
+    Data Cache States: 
+Section Node ID 16 Name JCSectionNode16 Address 0x400c04 Type BasicBlock Function None WCET -1 CFG (1,main)
+Node ID 23 Name JCSectionNode16 Address 0x400c04 Type BasicBlock Function None WCET -1 CFG (1,main)
+    Parent CFG ID 1 Name main WCET -1
+    Parent Node ID 26 Name JCConditionalNode3 Address 0x400bd0 Type ConditionalNode Function None WCET -1 CFG (1,main)
+    Predecessors: (1,main,20,JCFunctionNode0,FunctionNode,0x400be4,-1) (1,main,24,JCBlockNode1,BlockNode,0x400b64,-1) 
+    Successors: 
+    Number of Instructions: 1
+    Instruction Cache States: 
+    Data Cache States: 
+Loop ID 0 Name 735 address 0x40059c max iterations 8 WCET -1 CFG (0,jpeg_fdct_islow)
+    Nodes: (0,jpeg_fdct_islow,17,JCConditionalNode0,ConditionalNode,0x40059c,-1) 
+    Head Node: 0x40059c: (0,jpeg_fdct_islow,17,JCConditionalNode0,ConditionalNode,0x40059c,-1) 
+    Tail Node: 0x400028: (0,jpeg_fdct_islow,1,9,BasicBlock,0x400028,-1) 
+    Exit Nodes: 
+Node ID 7 Name 735 Address 0x40059c Type LoopNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET -1
+    Predecessors: (0,jpeg_fdct_islow,0,3,BasicBlock,0x400018,-1) 
+    Successors: 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+Loop ID 1 Name 736 address 0x400b34 max iterations 8 WCET -1 CFG (0,jpeg_fdct_islow)
+    Nodes: (0,jpeg_fdct_islow,25,JCConditionalNode2,ConditionalNode,0x400b34,-1) 
+    Head Node: 0x400b34: (0,jpeg_fdct_islow,25,JCConditionalNode2,ConditionalNode,0x400b34,-1) 
+    Tail Node: 0x4005b8: (0,jpeg_fdct_islow,22,JCBlockNode0,BlockNode,0x4005b8,-1) 
+    Exit Nodes: 
+Node ID 8 Name 736 Address 0x400b34 Type LoopNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET -1
+    Parent Node ID 17 Name JCConditionalNode0 Address 0x40059c Type ConditionalNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Predecessors: (0,jpeg_fdct_islow,3,364,BasicBlock,0x4005ac,-1) 
+    Successors: (1,main,15,738,BasicBlock,0x400bec,-1) 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+Loop ID 2 Name 797 address 0x400bd0 max iterations 64 WCET -1 CFG (1,main)
+    Nodes: (1,main,26,JCConditionalNode3,ConditionalNode,0x400bd0,-1) 
+    Head Node: 0x400bd0: (1,main,26,JCConditionalNode3,ConditionalNode,0x400bd0,-1) 
+    Tail Node: 0x400b94: (1,main,12,759,BasicBlock,0x400b94,-1) 
+    Exit Nodes: 
+Node ID 16 Name 797 Address 0x400bd0 Type LoopNode Function None WCET -1 CFG (1,main)
+    Parent CFG ID 1 Name main WCET -1
+    Predecessors: (1,main,9,737,BasicBlock,0x400b4c,-1) 
+    Successors: (1,main,15,738,BasicBlock,0x400bec,-1) 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+Conditional Node ID 0 Name JCConditionalNode0 WCET -1 CFG (0,jpeg_fdct_islow)
+    Predecessor Node ID 2 Name 359 Address 0x40059c Type BasicBlock Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Conditional Nodes: (0,jpeg_fdct_islow,1,9,BasicBlock,0x400028,-1) (0,jpeg_fdct_islow,3,364,BasicBlock,0x4005ac,-1) 
+    Successor Node ID 8 Name 736 Address 0x400b34 Type LoopNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+Node ID 17 Name JCConditionalNode0 Address 0x40059c Type ConditionalNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET -1
+    Parent Node ID 7 Name 735 Address 0x40059c Type LoopNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Predecessors: 
+    Successors: 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+Conditional Node ID 1 Name JCConditionalNode1 WCET -1 CFG (1,main)
+    Predecessor Node ID 10 Name 745 Address 0x400b64 Type BasicBlock Function None WCET -1 CFG (1,main)
+    Conditional Nodes: (1,main,11,757,BasicBlock,0x400b90,-1) 
+    Successor Node ID 12 Name 759 Address 0x400b94 Type BasicBlock Function None WCET -1 CFG (1,main)
+Node ID 19 Name JCConditionalNode1 Address 0x400b64 Type ConditionalNode Function None WCET -1 CFG (1,main)
+    Parent CFG ID 1 Name main WCET -1
+    Parent Node ID 24 Name JCBlockNode1 Address 0x400b64 Type BlockNode Function None WCET -1 CFG (1,main)
+    Predecessors: 
+    Successors: (1,main,18,JCSectionNode14,BasicBlock,0x400bfc,-1) 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+Conditional Node ID 2 Name JCConditionalNode2 WCET -1 CFG (0,jpeg_fdct_islow)
+    Predecessor Node ID 5 Name 720 Address 0x400b34 Type BasicBlock Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Conditional Nodes: (0,jpeg_fdct_islow,6,4,BasicBlock,0x400b44,-1) (0,jpeg_fdct_islow,22,JCBlockNode0,BlockNode,0x4005b8,-1) 
+    Successor Node ID 21 Name JCSectionNode15 Address 0x400c00 Type BasicBlock Function None WCET -1 CFG (0,jpeg_fdct_islow)
+Node ID 25 Name JCConditionalNode2 Address 0x400b34 Type ConditionalNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET -1
+    Parent Node ID 8 Name 736 Address 0x400b34 Type LoopNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Predecessors: 
+    Successors: 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+Conditional Node ID 3 Name JCConditionalNode3 WCET -1 CFG (1,main)
+    Predecessor Node ID 13 Name 775 Address 0x400bd0 Type BasicBlock Function None WCET -1 CFG (1,main)
+    Conditional Nodes: (1,main,20,JCFunctionNode0,FunctionNode,0x400be4,-1) (1,main,24,JCBlockNode1,BlockNode,0x400b64,-1) 
+    Successor Node ID 23 Name JCSectionNode16 Address 0x400c04 Type BasicBlock Function None WCET -1 CFG (1,main)
+Node ID 26 Name JCConditionalNode3 Address 0x400bd0 Type ConditionalNode Function None WCET -1 CFG (1,main)
+    Parent CFG ID 1 Name main WCET -1
+    Parent Node ID 16 Name 797 Address 0x400bd0 Type LoopNode Function None WCET -1 CFG (1,main)
+    Predecessors: 
+    Successors: 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+Block Node ID 0 Name JCBlockNode0 WCET -1 CFG (0,jpeg_fdct_islow)
+    Nodes: (0,jpeg_fdct_islow,4,368,BasicBlock,0x4005b8,-1) 
+Node ID 22 Name JCBlockNode0 Address 0x4005b8 Type BlockNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET -1
+    Parent Node ID 25 Name JCConditionalNode2 Address 0x400b34 Type ConditionalNode Function None WCET -1 CFG (0,jpeg_fdct_islow)
+    Predecessors: (0,jpeg_fdct_islow,5,720,BasicBlock,0x400b34,-1) 
+    Successors: (0,jpeg_fdct_islow,21,JCSectionNode15,BasicBlock,0x400c00,-1) (0,jpeg_fdct_islow,5,720,BasicBlock,0x400b34,-1) 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+Block Node ID 1 Name JCBlockNode1 WCET -1 CFG (1,main)
+    Nodes: (1,main,19,JCConditionalNode1,ConditionalNode,0x400b64,-1) (1,main,18,JCSectionNode14,BasicBlock,0x400bfc,-1) 
+Node ID 24 Name JCBlockNode1 Address 0x400b64 Type BlockNode Function None WCET -1 CFG (1,main)
+    Parent CFG ID 1 Name main WCET -1
+    Parent Node ID 26 Name JCConditionalNode3 Address 0x400bd0 Type ConditionalNode Function None WCET -1 CFG (1,main)
+    Predecessors: (1,main,13,775,BasicBlock,0x400bd0,-1) 
+    Successors: (1,main,23,JCSectionNode16,BasicBlock,0x400c04,-1) (1,main,13,775,BasicBlock,0x400bd0,-1) 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+Function Node ID 0 Name JCFunctionNode0 WCET -1 CFG (1,main)
+    Nodes: (1,main,14,781,FunctionCall,0x400be4,-1) 
+Node ID 20 Name JCFunctionNode0 Address 0x400be4 Type FunctionNode Function None WCET -1 CFG (1,main)
+    Parent CFG ID 1 Name main WCET -1
+    Parent Node ID 26 Name JCConditionalNode3 Address 0x400bd0 Type ConditionalNode Function None WCET -1 CFG (1,main)
+    Predecessors: (1,main,13,775,BasicBlock,0x400bd0,-1) 
+    Successors: (1,main,23,JCSectionNode16,BasicBlock,0x400c04,-1) 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+
+Display CFG structure: 6 milliseconds 0 seconds
+Display CFG instructions: 113 milliseconds 0 seconds
+Benchmark parse CFG: 1899 milliseconds 1 seconds
+Compute NPR WCET Cost
+(1,main,9,737,0x400b4c,-1,BasicBlock,None)
+(1,main,13,775,0x400bd0,-1,BasicBlock,None)
+(1,main,14,781,0x400be4,-1,FunctionCall,jpeg_fdct_islow)
+(0,jpeg_fdct_islow,0,3,0x400018,-1,BasicBlock,None)
+(0,jpeg_fdct_islow,2,359,0x40059c,-1,BasicBlock,None)
+(0,jpeg_fdct_islow,1,9,0x400028,-1,BasicBlock,None)
+(0,jpeg_fdct_islow,3,364,0x4005ac,-1,BasicBlock,None)
+(0,jpeg_fdct_islow,5,720,0x400b34,-1,BasicBlock,None)
+(0,jpeg_fdct_islow,6,4,0x400b44,-1,BasicBlock,None)
+(0,jpeg_fdct_islow,4,368,0x4005b8,-1,BasicBlock,None)
+(0,jpeg_fdct_islow,21,JCSectionNode15,0x400c00,-1,BasicBlock,None)
+(1,main,10,745,0x400b64,-1,BasicBlock,None)
+(1,main,11,757,0x400b90,-1,BasicBlock,None)
+(1,main,12,759,0x400b94,-1,BasicBlock,None)
+(1,main,18,JCSectionNode14,0x400bfc,-1,BasicBlock,None)
+(1,main,23,JCSectionNode16,0x400c04,-1,BasicBlock,None)
+(1,main,15,738,0x400bec,-1,BasicBlock,None)
+Non preemptive WCET cost is 6583340
+Compute NPR WCET: 23 milliseconds 0 seconds
+Done Computing NPR WCET Cost
+WCET Cost Node List:
+(0,jpeg_fdct_islow,0,3,0x400018,16,BasicBlock,None)
+(1,main,9,737,0x400b4c,24,BasicBlock,None)
+(1,main,15,738,0x400bec,20,BasicBlock,None)
+End WCET Cost Node List:
+Compute WCET: 0 milliseconds 0 seconds
+Display WCET CFG structure: 1 milliseconds 0 seconds
+Display CFG instructions: 5 milliseconds 0 seconds
+Generate WCET CFG Grammar Structure Information: 2 milliseconds 0 seconds
+Benchmark parse WCET: 1055 milliseconds 1 seconds
+Cache State Node List:
+(1,main,9,737,0x400b4c,BasicBlock,None)
+(1,main,13,775,0x400bd0,BasicBlock,None)
+(1,main,14,781,0x400be4,FunctionCall,jpeg_fdct_islow)
+(0,jpeg_fdct_islow,0,3,0x400018,BasicBlock,None)
+(0,jpeg_fdct_islow,2,359,0x40059c,BasicBlock,None)
+(0,jpeg_fdct_islow,1,9,0x400028,BasicBlock,None)
+(0,jpeg_fdct_islow,3,364,0x4005ac,BasicBlock,None)
+(0,jpeg_fdct_islow,5,720,0x400b34,BasicBlock,None)
+(0,jpeg_fdct_islow,6,4,0x400b44,BasicBlock,None)
+(0,jpeg_fdct_islow,4,368,0x4005b8,BasicBlock,None)
+(0,jpeg_fdct_islow,21,JCSectionNode15,0x400c00,BasicBlock,None)
+(1,main,10,745,0x400b64,BasicBlock,None)
+(1,main,11,757,0x400b90,BasicBlock,None)
+(1,main,12,759,0x400b94,BasicBlock,None)
+(1,main,18,JCSectionNode14,0x400bfc,BasicBlock,None)
+(1,main,23,JCSectionNode16,0x400c04,BasicBlock,None)
+(1,main,15,738,0x400bec,BasicBlock,None)
+End Cache State Node List:
+Generate cache state list: 3 milliseconds 0 seconds
+Compute Cache State Node List:
+(1,main,9,737,0x400b4c,BasicBlock,None,No Predecessors,6/6)
+(1,main,13,775,0x400bd0,BasicBlock,None,Predecessors,5/5)
+(1,main,14,781,0x400be4,FunctionCall,jpeg_fdct_islow,Predecessors,2/2)
+(0,jpeg_fdct_islow,0,3,0x400018,BasicBlock,None,Predecessors,4/4)
+(0,jpeg_fdct_islow,2,359,0x40059c,BasicBlock,None,Predecessors,4/4)
+(0,jpeg_fdct_islow,1,9,0x400028,BasicBlock,None,Predecessors,349/349)
+(0,jpeg_fdct_islow,3,364,0x4005ac,BasicBlock,None,Predecessors,3/3)
+(0,jpeg_fdct_islow,5,720,0x400b34,BasicBlock,None,Predecessors,4/4)
+(0,jpeg_fdct_islow,6,4,0x400b44,BasicBlock,None,Predecessors,2/2)
+(0,jpeg_fdct_islow,4,368,0x4005b8,BasicBlock,None,Predecessors,351/351)
+(0,jpeg_fdct_islow,21,JCSectionNode15,0x400c00,BasicBlock,None,Predecessors,1/1)
+(1,main,10,745,0x400b64,BasicBlock,None,Predecessors,11/11)
+(1,main,11,757,0x400b90,BasicBlock,None,Predecessors,1/1)
+(1,main,12,759,0x400b94,BasicBlock,None,Predecessors,15/15)
+(1,main,18,JCSectionNode14,0x400bfc,BasicBlock,None,Predecessors,1/1)
+(1,main,23,JCSectionNode16,0x400c04,BasicBlock,None,Predecessors,1/1)
+(1,main,15,738,0x400bec,BasicBlock,None,Predecessors,5/5)
+Compute Missing Cache State Node List:
+End Compute Missing Cache State Node List:
+End Compute Cache State Node List:
+Compute cache state: 243 milliseconds 0 seconds
+BenchmarkCacheParser: Compute Cache State
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Program ID 0 Name  Next Address 0x400c08
+    CFGs: (0,jpeg_fdct_islow) (1,main) 
+CFG ID 0 Name jpeg_fdct_islow WCET 102832
+    Exit Node: (8,736,0x400b34,11440) 
+    Nodes: (0,3,0x400018,16) (1,9,0x400028,1396) (2,359,0x40059c,16) (3,364,0x4005ac,12) (4,368,0x4005b8,1404) (5,720,0x400b34,22) (6,4,0x400b44,8) (7,735,0x40059c,102816) (8,736,0x400b34,11440) (17,JCConditionalNode0,0x40059c,12852) (21,JCSectionNode15,0x400c00,4) (22,JCBlockNode0,0x4005b8,1404) (25,JCConditionalNode2,0x400b34,1430) 
+CFG ID 1 Name main WCET 6583340
+    Exit Node: 
+    Nodes: (9,737,0x400b4c,24) (10,745,0x400b64,44) (11,757,0x400b90,4) (12,759,0x400b94,60) (13,775,0x400bd0,20) (14,781,0x400be4,8) (15,738,0x400bec,20) (16,797,0x400bd0,6583296) (18,JCSectionNode14,0x400bfc,4) (19,JCConditionalNode1,0x400b64,108) (20,JCFunctionNode0,0x400be4,102840) (23,JCSectionNode16,0x400c04,4) (24,JCBlockNode1,0x400b64,112) (26,JCConditionalNode3,0x400bd0,102864) 
+Section Node ID 0 Name 3 Address 0x400018 Type BasicBlock Function None WCET 16 CFG (0,jpeg_fdct_islow)
+Node ID 0 Name 3 Address 0x400018 Type BasicBlock Function None WCET 16 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET 102832
+    Predecessors: (1,main,14,781,FunctionCall,0x400be4,8) 
+    Successors: (0,jpeg_fdct_islow,7,735,LoopNode,0x40059c,102816) 
+    Number of Instructions: 4
+    Instruction Cache States: 
+        Cache Memory ID 23 Address 0x400024
+            Cache Lines: (0,0x400000) (1,0x400020) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,<empty>) (13,<empty>) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,<empty>) (26,0x400b40) (27,0x400b60) (28,<empty>) (29,<empty>) (30,0x400bc0) (31,0x400be0) 
+    Data Cache States: 
+        Cache Memory ID 24 Address 0x7fffdf98
+            Cache Lines: (0,<empty>) (1,<empty>) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,<empty>) (13,<empty>) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,<empty>) (26,<empty>) (27,<empty>) (28,0x7fffdf80) (29,<empty>) (30,<empty>) (31,0x7fffdfe0) 
+Section Node ID 1 Name 9 Address 0x400028 Type BasicBlock Function None WCET 1396 CFG (0,jpeg_fdct_islow)
+Node ID 1 Name 9 Address 0x400028 Type BasicBlock Function None WCET 1396 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET 102832
+    Parent Node ID 17 Name JCConditionalNode0 Address 0x40059c Type ConditionalNode Function None WCET 12852 CFG (0,jpeg_fdct_islow)
+    Predecessors: (0,jpeg_fdct_islow,2,359,BasicBlock,0x40059c,16) 
+    Successors: (0,jpeg_fdct_islow,2,359,BasicBlock,0x40059c,16) 
+    Number of Instructions: 349
+    Instruction Cache States: 
+        Cache Memory ID 378 Address 0x400598
+            Cache Lines: (0,0x400400) (1,0x400420) (2,0x400440) (3,0x400460) (4,0x400480) (5,0x4004a0) (6,0x4004c0) (7,0x4004e0) (8,0x400500) (9,0x400520) (10,0x400540) (11,0x400560) (12,0x400580) (13,0x4001a0) (14,0x4001c0) (15,0x4001e0) (16,0x400200) (17,0x400220) (18,0x400240) (19,0x400260) (20,0x400280) (21,0x4002a0) (22,0x4002c0) (23,0x4002e0) (24,0x400300) (25,0x400320) (26,0x400340) (27,0x400360) (28,0x400380) (29,0x4003a0) (30,0x4003c0) (31,0x4003e0) 
+    Data Cache States: 
+        Cache Memory ID 484 Address 0x7fffdf98
+            Cache Lines: (0,0x401c00) (1,<empty>) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,<empty>) (13,<empty>) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,<empty>) (26,<empty>) (27,<empty>) (28,0x7fffdf80) (29,0x7fffdfa0) (30,0x7fffdfc0) (31,0x7fffdfe0) 
+Section Node ID 2 Name 359 Address 0x40059c Type BasicBlock Function None WCET 16 CFG (0,jpeg_fdct_islow)
+Node ID 2 Name 359 Address 0x40059c Type BasicBlock Function None WCET 16 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET 102832
+    Parent Node ID 17 Name JCConditionalNode0 Address 0x40059c Type ConditionalNode Function None WCET 12852 CFG (0,jpeg_fdct_islow)
+    Predecessors: (0,jpeg_fdct_islow,1,9,BasicBlock,0x400028,1396) 
+    Successors: (0,jpeg_fdct_islow,1,9,BasicBlock,0x400028,1396) (0,jpeg_fdct_islow,3,364,BasicBlock,0x4005ac,12) 
+    Number of Instructions: 4
+    Instruction Cache States: 
+        Cache Memory ID 28 Address 0x4005a8
+            Cache Lines: (0,0x400000) (1,0x400020) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,0x400580) (13,0x4005a0) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,<empty>) (26,0x400b40) (27,0x400b60) (28,<empty>) (29,<empty>) (30,0x400bc0) (31,0x400be0) 
+    Data Cache States: 
+        Cache Memory ID 29 Address 0x7fffdf98
+            Cache Lines: (0,<empty>) (1,<empty>) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,<empty>) (13,<empty>) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,<empty>) (26,<empty>) (27,<empty>) (28,0x7fffdf80) (29,<empty>) (30,<empty>) (31,0x7fffdfe0) 
+Section Node ID 3 Name 364 Address 0x4005ac Type BasicBlock Function None WCET 12 CFG (0,jpeg_fdct_islow)
+Node ID 3 Name 364 Address 0x4005ac Type BasicBlock Function None WCET 12 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET 102832
+    Parent Node ID 17 Name JCConditionalNode0 Address 0x40059c Type ConditionalNode Function None WCET 12852 CFG (0,jpeg_fdct_islow)
+    Predecessors: (0,jpeg_fdct_islow,2,359,BasicBlock,0x40059c,16) 
+    Successors: (0,jpeg_fdct_islow,8,736,LoopNode,0x400b34,11440) 
+    Number of Instructions: 3
+    Instruction Cache States: 
+        Cache Memory ID 487 Address 0x4005b4
+            Cache Lines: (0,0x400000) (1,0x400020) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,0x400580) (13,0x4005a0) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,<empty>) (26,0x400b40) (27,0x400b60) (28,<empty>) (29,<empty>) (30,0x400bc0) (31,0x400be0) 
+    Data Cache States: 
+        Cache Memory ID 488 Address 0x7fffdf98
+            Cache Lines: (0,<empty>) (1,<empty>) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,<empty>) (13,<empty>) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,<empty>) (26,<empty>) (27,<empty>) (28,0x7fffdf80) (29,<empty>) (30,<empty>) (31,0x7fffdfe0) 
+Section Node ID 4 Name 368 Address 0x4005b8 Type BasicBlock Function None WCET 1404 CFG (0,jpeg_fdct_islow)
+Node ID 4 Name 368 Address 0x4005b8 Type BasicBlock Function None WCET 1404 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET 102832
+    Parent Node ID 22 Name JCBlockNode0 Address 0x4005b8 Type BlockNode Function None WCET 1404 CFG (0,jpeg_fdct_islow)
+    Predecessors: 
+    Successors: 
+    Number of Instructions: 351
+    Instruction Cache States: 
+        Cache Memory ID 846 Address 0x400b30
+            Cache Lines: (0,0x400800) (1,0x400820) (2,0x400840) (3,0x400860) (4,0x400880) (5,0x4008a0) (6,0x4008c0) (7,0x4008e0) (8,0x400900) (9,0x400920) (10,0x400940) (11,0x400960) (12,0x400980) (13,0x4009a0) (14,0x4009c0) (15,0x4009e0) (16,0x400a00) (17,0x400a20) (18,0x400a40) (19,0x400a60) (20,0x400a80) (21,0x400aa0) (22,0x400ac0) (23,0x400ae0) (24,0x400b00) (25,0x400b20) (26,0x400740) (27,0x400760) (28,0x400780) (29,0x4007a0) (30,0x4007c0) (31,0x4007e0) 
+    Data Cache States: 
+        Cache Memory ID 952 Address 0x7fffdf98
+            Cache Lines: (0,0x401c00) (1,0x401c20) (2,0x401c40) (3,0x401c60) (4,0x401c80) (5,0x401ca0) (6,0x401cc0) (7,0x401ce0) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,<empty>) (13,<empty>) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,<empty>) (26,<empty>) (27,<empty>) (28,0x7fffdf80) (29,0x7fffdfa0) (30,0x7fffdfc0) (31,0x7fffdfe0) 
+Section Node ID 5 Name 720 Address 0x400b34 Type BasicBlock Function None WCET 22 CFG (0,jpeg_fdct_islow)
+Node ID 5 Name 720 Address 0x400b34 Type BasicBlock Function None WCET 22 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET 102832
+    Parent Node ID 25 Name JCConditionalNode2 Address 0x400b34 Type ConditionalNode Function None WCET 1430 CFG (0,jpeg_fdct_islow)
+    Predecessors: (0,jpeg_fdct_islow,22,JCBlockNode0,BlockNode,0x4005b8,1404) 
+    Successors: (0,jpeg_fdct_islow,6,4,BasicBlock,0x400b44,8) (0,jpeg_fdct_islow,22,JCBlockNode0,BlockNode,0x4005b8,1404) 
+    Number of Instructions: 4
+    Instruction Cache States: 
+        Cache Memory ID 492 Address 0x400b40
+            Cache Lines: (0,0x400000) (1,0x400020) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,0x400580) (13,0x4005a0) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,0x400b20) (26,0x400b40) (27,0x400b60) (28,<empty>) (29,<empty>) (30,0x400bc0) (31,0x400be0) 
+    Data Cache States: 
+        Cache Memory ID 493 Address 0x7fffdf98
+            Cache Lines: (0,<empty>) (1,<empty>) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,<empty>) (13,<empty>) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,<empty>) (26,<empty>) (27,<empty>) (28,0x7fffdf80) (29,<empty>) (30,<empty>) (31,0x7fffdfe0) 
+Section Node ID 6 Name 4 Address 0x400b44 Type BasicBlock Function None WCET 8 CFG (0,jpeg_fdct_islow)
+Node ID 6 Name 4 Address 0x400b44 Type BasicBlock Function None WCET 8 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET 102832
+    Parent Node ID 25 Name JCConditionalNode2 Address 0x400b34 Type ConditionalNode Function None WCET 1430 CFG (0,jpeg_fdct_islow)
+    Predecessors: (0,jpeg_fdct_islow,5,720,BasicBlock,0x400b34,22) 
+    Successors: (0,jpeg_fdct_islow,21,JCSectionNode15,BasicBlock,0x400c00,4) 
+    Number of Instructions: 2
+    Instruction Cache States: 
+        Cache Memory ID 495 Address 0x400b48
+            Cache Lines: (0,0x400000) (1,0x400020) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,0x400580) (13,0x4005a0) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,0x400b20) (26,0x400b40) (27,0x400b60) (28,<empty>) (29,<empty>) (30,0x400bc0) (31,0x400be0) 
+    Data Cache States: 
+        Cache Memory ID 493 Address 0x7fffdf98
+            Cache Lines: (0,<empty>) (1,<empty>) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,<empty>) (13,<empty>) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,<empty>) (26,<empty>) (27,<empty>) (28,0x7fffdf80) (29,<empty>) (30,<empty>) (31,0x7fffdfe0) 
+Section Node ID 7 Name 737 Address 0x400b4c Type BasicBlock Function None WCET 24 CFG (1,main)
+Node ID 9 Name 737 Address 0x400b4c Type BasicBlock Function None WCET 24 CFG (1,main)
+    Parent CFG ID 1 Name main WCET 6583340
+    Predecessors: 
+    Successors: (1,main,16,797,LoopNode,0x400bd0,6583296) 
+    Number of Instructions: 6
+    Instruction Cache States: 
+    Data Cache States: 
+        Cache Memory ID 11 Address 0x7fffdff0
+            Cache Lines: (0,<empty>) (1,<empty>) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,<empty>) (13,<empty>) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,<empty>) (26,<empty>) (27,<empty>) (28,<empty>) (29,<empty>) (30,<empty>) (31,0x7fffdfe0) 
+Section Node ID 8 Name 745 Address 0x400b64 Type BasicBlock Function None WCET 44 CFG (1,main)
+Node ID 10 Name 745 Address 0x400b64 Type BasicBlock Function None WCET 44 CFG (1,main)
+    Parent CFG ID 1 Name main WCET 6583340
+    Parent Node ID 19 Name JCConditionalNode1 Address 0x400b64 Type ConditionalNode Function None WCET 108 CFG (1,main)
+    Predecessors: 
+    Successors: (1,main,11,757,BasicBlock,0x400b90,4) (1,main,12,759,BasicBlock,0x400b94,60) 
+    Number of Instructions: 11
+    Instruction Cache States: 
+        Cache Memory ID 966 Address 0x400b8c
+            Cache Lines: (0,<empty>) (1,<empty>) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,<empty>) (13,<empty>) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,<empty>) (26,0x400b40) (27,0x400b60) (28,0x400b80) (29,<empty>) (30,0x400bc0) (31,0x400be0) 
+    Data Cache States: 
+        Cache Memory ID 967 Address 0x7fffdff4
+            Cache Lines: (0,<empty>) (1,<empty>) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,<empty>) (13,<empty>) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,<empty>) (26,<empty>) (27,<empty>) (28,<empty>) (29,<empty>) (30,<empty>) (31,0x7fffdfe0) 
+Section Node ID 9 Name 757 Address 0x400b90 Type BasicBlock Function None WCET 4 CFG (1,main)
+Node ID 11 Name 757 Address 0x400b90 Type BasicBlock Function None WCET 4 CFG (1,main)
+    Parent CFG ID 1 Name main WCET 6583340
+    Parent Node ID 19 Name JCConditionalNode1 Address 0x400b64 Type ConditionalNode Function None WCET 108 CFG (1,main)
+    Predecessors: (1,main,10,745,BasicBlock,0x400b64,44) 
+    Successors: (1,main,12,759,BasicBlock,0x400b94,60) 
+    Number of Instructions: 1
+    Instruction Cache States: 
+        Cache Memory ID 968 Address 0x400b90
+            Cache Lines: (0,<empty>) (1,<empty>) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,<empty>) (13,<empty>) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,<empty>) (26,0x400b40) (27,0x400b60) (28,0x400b80) (29,<empty>) (30,0x400bc0) (31,0x400be0) 
+    Data Cache States: 
+        Cache Memory ID 967 Address 0x7fffdff4
+            Cache Lines: (0,<empty>) (1,<empty>) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,<empty>) (13,<empty>) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,<empty>) (26,<empty>) (27,<empty>) (28,<empty>) (29,<empty>) (30,<empty>) (31,0x7fffdfe0) 
+Section Node ID 10 Name 759 Address 0x400b94 Type BasicBlock Function None WCET 60 CFG (1,main)
+Node ID 12 Name 759 Address 0x400b94 Type BasicBlock Function None WCET 60 CFG (1,main)
+    Parent CFG ID 1 Name main WCET 6583340
+    Parent Node ID 19 Name JCConditionalNode1 Address 0x400b64 Type ConditionalNode Function None WCET 108 CFG (1,main)
+    Predecessors: (1,main,10,745,BasicBlock,0x400b64,44) (1,main,11,757,BasicBlock,0x400b90,4) 
+    Successors: 
+    Number of Instructions: 15
+    Instruction Cache States: 
+        Cache Memory ID 983 Address 0x400bcc
+            Cache Lines: (0,<empty>) (1,<empty>) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,<empty>) (13,<empty>) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,<empty>) (26,0x400b40) (27,0x400b60) (28,0x400b80) (29,0x400ba0) (30,0x400bc0) (31,0x400be0) 
+    Data Cache States: 
+        Cache Memory ID 989 Address 0x7fffdff0
+            Cache Lines: (0,0x401c00) (1,<empty>) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,<empty>) (13,<empty>) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,<empty>) (26,<empty>) (27,<empty>) (28,<empty>) (29,<empty>) (30,<empty>) (31,0x7fffdfe0) 
+Section Node ID 11 Name 775 Address 0x400bd0 Type BasicBlock Function None WCET 20 CFG (1,main)
+Node ID 13 Name 775 Address 0x400bd0 Type BasicBlock Function None WCET 20 CFG (1,main)
+    Parent CFG ID 1 Name main WCET 6583340
+    Parent Node ID 26 Name JCConditionalNode3 Address 0x400bd0 Type ConditionalNode Function None WCET 102864 CFG (1,main)
+    Predecessors: (1,main,24,JCBlockNode1,BlockNode,0x400b64,112) 
+    Successors: (1,main,20,JCFunctionNode0,FunctionNode,0x400be4,102840) (1,main,24,JCBlockNode1,BlockNode,0x400b64,112) 
+    Number of Instructions: 5
+    Instruction Cache States: 
+        Cache Memory ID 16 Address 0x400be0
+            Cache Lines: (0,<empty>) (1,<empty>) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,<empty>) (13,<empty>) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,<empty>) (26,0x400b40) (27,0x400b60) (28,<empty>) (29,<empty>) (30,0x400bc0) (31,0x400be0) 
+    Data Cache States: 
+        Cache Memory ID 17 Address 0x7fffdff0
+            Cache Lines: (0,<empty>) (1,<empty>) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,<empty>) (13,<empty>) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,<empty>) (26,<empty>) (27,<empty>) (28,<empty>) (29,<empty>) (30,<empty>) (31,0x7fffdfe0) 
+Section Node ID 12 Name 781 Address 0x400be4 Type FunctionCall Function jpeg_fdct_islow WCET 8 CFG (1,main)
+Node ID 14 Name 781 Address 0x400be4 Type FunctionCall Function jpeg_fdct_islow WCET 8 CFG (1,main)
+    Parent CFG ID 1 Name main WCET 6583340
+    Parent Node ID 20 Name JCFunctionNode0 Address 0x400be4 Type FunctionNode Function None WCET 102840 CFG (1,main)
+    Predecessors: 
+    Successors: (0,jpeg_fdct_islow,0,3,BasicBlock,0x400018,16) 
+    Number of Instructions: 2
+    Instruction Cache States: 
+        Cache Memory ID 19 Address 0x400be8
+            Cache Lines: (0,<empty>) (1,<empty>) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,<empty>) (13,<empty>) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,<empty>) (26,0x400b40) (27,0x400b60) (28,<empty>) (29,<empty>) (30,0x400bc0) (31,0x400be0) 
+    Data Cache States: 
+        Cache Memory ID 17 Address 0x7fffdff0
+            Cache Lines: (0,<empty>) (1,<empty>) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,<empty>) (13,<empty>) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,<empty>) (26,<empty>) (27,<empty>) (28,<empty>) (29,<empty>) (30,<empty>) (31,0x7fffdfe0) 
+Section Node ID 13 Name 738 Address 0x400bec Type BasicBlock Function None WCET 20 CFG (1,main)
+Node ID 15 Name 738 Address 0x400bec Type BasicBlock Function None WCET 20 CFG (1,main)
+    Parent CFG ID 1 Name main WCET 6583340
+    Predecessors: (0,jpeg_fdct_islow,8,736,LoopNode,0x400b34,11440) (1,main,16,797,LoopNode,0x400bd0,6583296) 
+    Successors: 
+    Number of Instructions: 5
+    Instruction Cache States: 
+        Cache Memory ID 1023 Address 0x400bfc
+            Cache Lines: (0,0x400c00) (1,0x400020) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,0x400580) (13,0x4005a0) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,0x400b20) (26,0x400b40) (27,0x400b60) (28,<empty>) (29,<empty>) (30,0x400bc0) (31,0x400be0) 
+    Data Cache States: 
+        Cache Memory ID 1049 Address 0x7fffdffc
+            Cache Lines: (0,<empty>) (1,<empty>) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,<empty>) (13,<empty>) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,<empty>) (26,<empty>) (27,<empty>) (28,0x7fffdf80) (29,<empty>) (30,<empty>) (31,0x7fffdfe0) 
+Section Node ID 14 Name JCSectionNode14 Address 0x400bfc Type BasicBlock Function None WCET 4 CFG (1,main)
+Node ID 18 Name JCSectionNode14 Address 0x400bfc Type BasicBlock Function None WCET 4 CFG (1,main)
+    Parent CFG ID 1 Name main WCET 6583340
+    Parent Node ID 24 Name JCBlockNode1 Address 0x400b64 Type BlockNode Function None WCET 112 CFG (1,main)
+    Predecessors: (1,main,19,JCConditionalNode1,ConditionalNode,0x400b64,108) 
+    Successors: 
+    Number of Instructions: 1
+    Instruction Cache States: 
+        Cache Memory ID 1011 Address 0x400bfc
+            Cache Lines: (0,<empty>) (1,<empty>) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,<empty>) (13,<empty>) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,<empty>) (26,0x400b40) (27,0x400b60) (28,0x400b80) (29,0x400ba0) (30,0x400bc0) (31,0x400be0) 
+    Data Cache States: 
+        Cache Memory ID 989 Address 0x7fffdff0
+            Cache Lines: (0,0x401c00) (1,<empty>) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,<empty>) (13,<empty>) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,<empty>) (26,<empty>) (27,<empty>) (28,<empty>) (29,<empty>) (30,<empty>) (31,0x7fffdfe0) 
+Section Node ID 15 Name JCSectionNode15 Address 0x400c00 Type BasicBlock Function None WCET 4 CFG (0,jpeg_fdct_islow)
+Node ID 21 Name JCSectionNode15 Address 0x400c00 Type BasicBlock Function None WCET 4 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET 102832
+    Parent Node ID 25 Name JCConditionalNode2 Address 0x400b34 Type ConditionalNode Function None WCET 1430 CFG (0,jpeg_fdct_islow)
+    Predecessors: (0,jpeg_fdct_islow,6,4,BasicBlock,0x400b44,8) (0,jpeg_fdct_islow,22,JCBlockNode0,BlockNode,0x4005b8,1404) 
+    Successors: 
+    Number of Instructions: 1
+    Instruction Cache States: 
+        Cache Memory ID 953 Address 0x400c00
+            Cache Lines: (0,0x400c00) (1,0x400020) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,0x400580) (13,0x4005a0) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,0x400b20) (26,0x400b40) (27,0x400b60) (28,<empty>) (29,<empty>) (30,0x400bc0) (31,0x400be0) 
+    Data Cache States: 
+        Cache Memory ID 493 Address 0x7fffdf98
+            Cache Lines: (0,<empty>) (1,<empty>) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,<empty>) (13,<empty>) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,<empty>) (26,<empty>) (27,<empty>) (28,0x7fffdf80) (29,<empty>) (30,<empty>) (31,0x7fffdfe0) 
+Section Node ID 16 Name JCSectionNode16 Address 0x400c04 Type BasicBlock Function None WCET 4 CFG (1,main)
+Node ID 23 Name JCSectionNode16 Address 0x400c04 Type BasicBlock Function None WCET 4 CFG (1,main)
+    Parent CFG ID 1 Name main WCET 6583340
+    Parent Node ID 26 Name JCConditionalNode3 Address 0x400bd0 Type ConditionalNode Function None WCET 102864 CFG (1,main)
+    Predecessors: (1,main,20,JCFunctionNode0,FunctionNode,0x400be4,102840) (1,main,24,JCBlockNode1,BlockNode,0x400b64,112) 
+    Successors: 
+    Number of Instructions: 1
+    Instruction Cache States: 
+        Cache Memory ID 1013 Address 0x400c04
+            Cache Lines: (0,0x400c00) (1,0x400020) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,0x400580) (13,0x4005a0) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,0x400b20) (26,0x400b40) (27,0x400b60) (28,<empty>) (29,<empty>) (30,0x400bc0) (31,0x400be0) 
+    Data Cache States: 
+        Cache Memory ID 493 Address 0x7fffdf98
+            Cache Lines: (0,<empty>) (1,<empty>) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,<empty>) (13,<empty>) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,<empty>) (26,<empty>) (27,<empty>) (28,0x7fffdf80) (29,<empty>) (30,<empty>) (31,0x7fffdfe0) 
+Loop ID 0 Name 735 address 0x40059c max iterations 8 WCET 102816 CFG (0,jpeg_fdct_islow)
+    Nodes: (0,jpeg_fdct_islow,17,JCConditionalNode0,ConditionalNode,0x40059c,12852) 
+    Head Node: 0x40059c: (0,jpeg_fdct_islow,17,JCConditionalNode0,ConditionalNode,0x40059c,12852) 
+    Tail Node: 0x400028: (0,jpeg_fdct_islow,1,9,BasicBlock,0x400028,1396) 
+    Exit Nodes: 
+Node ID 7 Name 735 Address 0x40059c Type LoopNode Function None WCET 102816 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET 102832
+    Predecessors: (0,jpeg_fdct_islow,0,3,BasicBlock,0x400018,16) 
+    Successors: 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+Loop ID 1 Name 736 address 0x400b34 max iterations 8 WCET 11440 CFG (0,jpeg_fdct_islow)
+    Nodes: (0,jpeg_fdct_islow,25,JCConditionalNode2,ConditionalNode,0x400b34,1430) 
+    Head Node: 0x400b34: (0,jpeg_fdct_islow,25,JCConditionalNode2,ConditionalNode,0x400b34,1430) 
+    Tail Node: 0x4005b8: (0,jpeg_fdct_islow,22,JCBlockNode0,BlockNode,0x4005b8,1404) 
+    Exit Nodes: 
+Node ID 8 Name 736 Address 0x400b34 Type LoopNode Function None WCET 11440 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET 102832
+    Parent Node ID 17 Name JCConditionalNode0 Address 0x40059c Type ConditionalNode Function None WCET 12852 CFG (0,jpeg_fdct_islow)
+    Predecessors: (0,jpeg_fdct_islow,3,364,BasicBlock,0x4005ac,12) 
+    Successors: (1,main,15,738,BasicBlock,0x400bec,20) 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+Loop ID 2 Name 797 address 0x400bd0 max iterations 64 WCET 6583296 CFG (1,main)
+    Nodes: (1,main,26,JCConditionalNode3,ConditionalNode,0x400bd0,102864) 
+    Head Node: 0x400bd0: (1,main,26,JCConditionalNode3,ConditionalNode,0x400bd0,102864) 
+    Tail Node: 0x400b94: (1,main,12,759,BasicBlock,0x400b94,60) 
+    Exit Nodes: 
+Node ID 16 Name 797 Address 0x400bd0 Type LoopNode Function None WCET 6583296 CFG (1,main)
+    Parent CFG ID 1 Name main WCET 6583340
+    Predecessors: (1,main,9,737,BasicBlock,0x400b4c,24) 
+    Successors: (1,main,15,738,BasicBlock,0x400bec,20) 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+Conditional Node ID 0 Name JCConditionalNode0 WCET 12852 CFG (0,jpeg_fdct_islow)
+    Predecessor Node ID 2 Name 359 Address 0x40059c Type BasicBlock Function None WCET 16 CFG (0,jpeg_fdct_islow)
+    Conditional Nodes: (0,jpeg_fdct_islow,1,9,BasicBlock,0x400028,1396) (0,jpeg_fdct_islow,3,364,BasicBlock,0x4005ac,12) 
+    Successor Node ID 8 Name 736 Address 0x400b34 Type LoopNode Function None WCET 11440 CFG (0,jpeg_fdct_islow)
+Node ID 17 Name JCConditionalNode0 Address 0x40059c Type ConditionalNode Function None WCET 12852 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET 102832
+    Parent Node ID 7 Name 735 Address 0x40059c Type LoopNode Function None WCET 102816 CFG (0,jpeg_fdct_islow)
+    Predecessors: 
+    Successors: 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+Conditional Node ID 1 Name JCConditionalNode1 WCET 108 CFG (1,main)
+    Predecessor Node ID 10 Name 745 Address 0x400b64 Type BasicBlock Function None WCET 44 CFG (1,main)
+    Conditional Nodes: (1,main,11,757,BasicBlock,0x400b90,4) 
+    Successor Node ID 12 Name 759 Address 0x400b94 Type BasicBlock Function None WCET 60 CFG (1,main)
+Node ID 19 Name JCConditionalNode1 Address 0x400b64 Type ConditionalNode Function None WCET 108 CFG (1,main)
+    Parent CFG ID 1 Name main WCET 6583340
+    Parent Node ID 24 Name JCBlockNode1 Address 0x400b64 Type BlockNode Function None WCET 112 CFG (1,main)
+    Predecessors: 
+    Successors: (1,main,18,JCSectionNode14,BasicBlock,0x400bfc,4) 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+Conditional Node ID 2 Name JCConditionalNode2 WCET 1430 CFG (0,jpeg_fdct_islow)
+    Predecessor Node ID 5 Name 720 Address 0x400b34 Type BasicBlock Function None WCET 22 CFG (0,jpeg_fdct_islow)
+    Conditional Nodes: (0,jpeg_fdct_islow,6,4,BasicBlock,0x400b44,8) (0,jpeg_fdct_islow,22,JCBlockNode0,BlockNode,0x4005b8,1404) 
+    Successor Node ID 21 Name JCSectionNode15 Address 0x400c00 Type BasicBlock Function None WCET 4 CFG (0,jpeg_fdct_islow)
+Node ID 25 Name JCConditionalNode2 Address 0x400b34 Type ConditionalNode Function None WCET 1430 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET 102832
+    Parent Node ID 8 Name 736 Address 0x400b34 Type LoopNode Function None WCET 11440 CFG (0,jpeg_fdct_islow)
+    Predecessors: 
+    Successors: 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+Conditional Node ID 3 Name JCConditionalNode3 WCET 102864 CFG (1,main)
+    Predecessor Node ID 13 Name 775 Address 0x400bd0 Type BasicBlock Function None WCET 20 CFG (1,main)
+    Conditional Nodes: (1,main,20,JCFunctionNode0,FunctionNode,0x400be4,102840) (1,main,24,JCBlockNode1,BlockNode,0x400b64,112) 
+    Successor Node ID 23 Name JCSectionNode16 Address 0x400c04 Type BasicBlock Function None WCET 4 CFG (1,main)
+Node ID 26 Name JCConditionalNode3 Address 0x400bd0 Type ConditionalNode Function None WCET 102864 CFG (1,main)
+    Parent CFG ID 1 Name main WCET 6583340
+    Parent Node ID 16 Name 797 Address 0x400bd0 Type LoopNode Function None WCET 6583296 CFG (1,main)
+    Predecessors: 
+    Successors: 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+Block Node ID 0 Name JCBlockNode0 WCET 1404 CFG (0,jpeg_fdct_islow)
+    Nodes: (0,jpeg_fdct_islow,4,368,BasicBlock,0x4005b8,1404) 
+Node ID 22 Name JCBlockNode0 Address 0x4005b8 Type BlockNode Function None WCET 1404 CFG (0,jpeg_fdct_islow)
+    Parent CFG ID 0 Name jpeg_fdct_islow WCET 102832
+    Parent Node ID 25 Name JCConditionalNode2 Address 0x400b34 Type ConditionalNode Function None WCET 1430 CFG (0,jpeg_fdct_islow)
+    Predecessors: (0,jpeg_fdct_islow,5,720,BasicBlock,0x400b34,22) 
+    Successors: (0,jpeg_fdct_islow,21,JCSectionNode15,BasicBlock,0x400c00,4) (0,jpeg_fdct_islow,5,720,BasicBlock,0x400b34,22) 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+Block Node ID 1 Name JCBlockNode1 WCET 112 CFG (1,main)
+    Nodes: (1,main,19,JCConditionalNode1,ConditionalNode,0x400b64,108) (1,main,18,JCSectionNode14,BasicBlock,0x400bfc,4) 
+Node ID 24 Name JCBlockNode1 Address 0x400b64 Type BlockNode Function None WCET 112 CFG (1,main)
+    Parent CFG ID 1 Name main WCET 6583340
+    Parent Node ID 26 Name JCConditionalNode3 Address 0x400bd0 Type ConditionalNode Function None WCET 102864 CFG (1,main)
+    Predecessors: (1,main,13,775,BasicBlock,0x400bd0,20) 
+    Successors: (1,main,23,JCSectionNode16,BasicBlock,0x400c04,4) (1,main,13,775,BasicBlock,0x400bd0,20) 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+Function Node ID 0 Name JCFunctionNode0 WCET 102840 CFG (1,main)
+    Nodes: (1,main,14,781,FunctionCall,0x400be4,8) 
+Node ID 20 Name JCFunctionNode0 Address 0x400be4 Type FunctionNode Function None WCET 102840 CFG (1,main)
+    Parent CFG ID 1 Name main WCET 6583340
+    Parent Node ID 26 Name JCConditionalNode3 Address 0x400bd0 Type ConditionalNode Function None WCET 102864 CFG (1,main)
+    Predecessors: (1,main,13,775,BasicBlock,0x400bd0,20) 
+    Successors: (1,main,23,JCSectionNode16,BasicBlock,0x400c04,4) 
+    Number of Instructions: 0
+    Instruction Cache States: 
+    Data Cache States: 
+
+Computing UCBs
+computeUCBs: Number of instructions is 765
+Compute UCBs: 6585875 milliseconds 6585 seconds
+Done computing UCBs
+Compute Preemption Cost Matrix
+Compute Preemption Cost Matrix: 6577947 milliseconds 6577 seconds
+Done Computing Preemption Cost Matrix
+The number of CFG nodes is 47
+Compute Grammar Node Count: 8 milliseconds 0 seconds
+Generate Preemption Cost Grammar: 482 milliseconds 0 seconds
+Generate CFG Grammar: 4 milliseconds 0 seconds
+Generate CFG Grammar Structure Information: 1 milliseconds 0 seconds
+Maximum task UCB Count is 1825
+Compute Maximum UCB Count: 1 milliseconds 0 seconds
+Generate Linear Block List: 0 milliseconds 0 seconds
+Generate Linear Cost Matrices: 59 milliseconds 0 seconds
+Benchmark parse cache: 13164898 milliseconds 13164 seconds
+Benchmark parsing overall: 13167853 milliseconds 13167 seconds

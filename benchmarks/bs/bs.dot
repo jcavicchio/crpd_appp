@@ -1,0 +1,41 @@
+digraph G {
+subgraph cluster_main {
+graph [label = "main"];
+node0x1611100 [label = "@0x400018 (Call binary_search)" ,color="blue"];
+node0x160ea00 [label = "@0x40002c (BB)"];
+}
+subgraph cluster_binary_search {
+graph [label = "binary_search"];
+subgraph cluster_loop0x16a4b10 {
+graph [label = "loop [4]"];
+node0x16a2c40 [label = "@0x40013c (BB)" ,color="green"];
+node0x16a2080 [label = "@0x40012c (BB)"];
+node0x1614d60 [label = "@0x4000a4 (BB)"];
+node0x1611e50 [label = "@0x400060 (BB)"];
+node0x16275d0 [label = "@0x400108 (BB)"];
+node0x1625540 [label = "@0x4000d8 (BB)"];
+node0x16a16c0 [label = "@0x40011c (BB)"];
+}
+node0x160f1b0 [label = "@0x400040 (BB)" ,color="blue"];
+node0x1611e50;
+node0x1614d60;
+node0x1625540;
+node0x16275d0;
+node0x16a16c0;
+node0x16a2080;
+node0x16a2c40;
+node0x16a3d00 [label = "@0x400154 (BB)"];
+}
+node0x1611100 -> node0x160ea00;
+node0x160f1b0 -> node0x16a2c40;
+node0x1611e50 -> node0x1614d60;
+node0x1611e50 -> node0x1625540;
+node0x1614d60 -> node0x16a2080;
+node0x1625540 -> node0x16275d0;
+node0x1625540 -> node0x16a16c0;
+node0x16275d0 -> node0x16a2080;
+node0x16a16c0 -> node0x16a2080;
+node0x16a2080 -> node0x16a2c40[color="red"];
+node0x16a2c40 -> node0x1611e50;
+node0x16a2c40 -> node0x16a3d00;
+}

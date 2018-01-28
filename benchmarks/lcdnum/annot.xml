@@ -1,0 +1,6 @@
+<CFG name="num_to_lcd">
+</CFG>
+<CFG name="main">
+  <LOOP maxiter="10">
+  </LOOP>
+</CFG>

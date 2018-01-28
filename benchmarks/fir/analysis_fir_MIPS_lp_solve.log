@@ -1,0 +1,11 @@
+Heptane version 1.0
+Reading configuration file
+Executing from configuration file
+
+*** Begin analysis for entry point: main
+[INFO]	ICacheAnalysis: MUST done: 0.004728
+[INFO]	ICacheAnalysis: PS done: 0.004453
+[INFO]	ICacheAnalysis: MAY done: 0.006408
+[INFO]	ICacheAnalysis: MUST done: 0.009448
+[INFO]	ICacheAnalysis: PS done: 0.003631
+[INFO]	ICacheAnalysis: MAY done: 0.010401

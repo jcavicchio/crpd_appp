@@ -1,0 +1,48 @@
+JCCfg (0,fib,3860)
+{
+    JCSectionNode (0x400018,0,3,0,3,BasicBlock,None,32)
+    JCLoopNode (0x400074,0,54,5,54,29,3828)
+    {
+        JCConditionalNode (0x400074,0,JCConditionalNode0,11,JCConditionalNode0,132)
+        {
+            JCSectionNode (0x400074,2,29,2,29,BasicBlock,None,20)
+            {
+                JCSectionNode (0x4000a0,4,4,4,4,BasicBlock,None,24)
+            }
+            {
+                JCBlockNode (0x400088,0,JCBlockNode0,10,JCBlockNode0,108)
+                {
+                    JCSectionNode (0x400088,3,35,3,35,BasicBlock,None,48)
+                    JCSectionNode (0x400038,1,13,1,13,BasicBlock,None,60)
+                }
+            }
+            JCSectionNode (0x4000e4,7,JCSectionNode7,9,JCSectionNode7,BasicBlock,None,4)
+        }
+    }
+}
+JCCfg (1,main,3888)
+{
+    JCFunctionNode (0x4000b8,0,JCFunctionNode0,8,JCFunctionNode0,3908)
+    {
+        JCSectionNode (0x4000b8,5,55,6,55,FunctionCall,fib,28)
+            JCSectionNode (0x400018,0,3,0,3,BasicBlock,None,32)
+            JCLoopNode (0x400074,0,54,5,54,29,3828)
+            {
+                JCConditionalNode (0x400074,0,JCConditionalNode0,11,JCConditionalNode0,132)
+                {
+                    JCSectionNode (0x400074,2,29,2,29,BasicBlock,None,20)
+                    {
+                        JCSectionNode (0x4000a0,4,4,4,4,BasicBlock,None,24)
+                    }
+                    {
+                        JCBlockNode (0x400088,0,JCBlockNode0,10,JCBlockNode0,108)
+                        {
+                            JCSectionNode (0x400088,3,35,3,35,BasicBlock,None,48)
+                            JCSectionNode (0x400038,1,13,1,13,BasicBlock,None,60)
+                        }
+                    }
+                    JCSectionNode (0x4000e4,7,JCSectionNode7,9,JCSectionNode7,BasicBlock,None,4)
+                }
+            }
+    }
+}

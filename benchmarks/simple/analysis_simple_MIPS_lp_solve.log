@@ -1,0 +1,104 @@
+Heptane version 1.0
+Reading configuration file
+Executing from configuration file
+
+*** Begin analysis for entry point: main
+[INFO]	ICacheAnalysis: MUST done: 0.000431
+[INFO]	ICacheAnalysis: PS done: 4.2e-05
+[INFO]	ICacheAnalysis: MAY done: 0.000287
+[INFO]	ICacheAnalysis: MUST done: 0.000604
+[INFO]	ICacheAnalysis: PS done: 7.7e-05
+[INFO]	ICacheAnalysis: MAY done: 0.000259
+[INFO]	DcacheAnalysis: MUST done: 0.000526
+[INFO]	DcacheAnalysis: PS done: 3.9e-05
+[INFO]	DcacheAnalysis: MAY done: 0.000327
+[INFO]	DcacheAnalysis: MUST done: 0.000421
+[INFO]	DcacheAnalysis: PS done: 3.4e-05
+[INFO]	DcacheAnalysis: MAY done: 0.000275
+ Pipeline analysis architecture: MIPS
+Instruction addiu sp,sp,-16 time: 114
+Instruction lw v0,0(sp) time: 115
+Instruction nop time: 126
+Instruction sll v0,v0,0x1 time: 127
+Instruction sll v1,v0,0x2 time: 128
+Instruction addu v1,v0,v1 time: 129
+Instruction lw v0,4(sp) time: 130
+Instruction nop time: 131
+Instruction addu v0,v1,v0 time: 132
+Instruction addiu v0,v0,-1 time: 133
+Instruction sw v0,0(sp) time: 244
+Instruction sw zero,8(sp) time: 245
+Instruction lw v0,4(sp) time: 246
+Instruction nop time: 247
+Instruction addiu v0,v0,1 time: 248
+Instruction sw v0,4(sp) time: 249
+Instruction lw v0,0(sp) time: 250
+Instruction nop time: 251
+Instruction addiu v0,v0,-1 time: 262
+Instruction sw v0,0(sp) time: 263
+Instruction addiu sp,sp,16 time: 264
+Instruction jr ra time: 265
+Instruction nop time: 266
+Instruction addiu sp,sp,-16 time: 114
+Instruction lw v0,0(sp) time: 115
+Instruction nop time: 126
+Instruction sll v0,v0,0x1 time: 127
+Instruction sll v1,v0,0x2 time: 128
+Instruction addu v1,v0,v1 time: 129
+Instruction lw v0,4(sp) time: 130
+Instruction nop time: 131
+Instruction addu v0,v1,v0 time: 132
+Instruction addiu v0,v0,-1 time: 133
+Instruction sw v0,0(sp) time: 244
+Instruction sw zero,8(sp) time: 245
+Instruction lw v0,4(sp) time: 246
+Instruction nop time: 247
+Instruction addiu v0,v0,1 time: 248
+Instruction sw v0,4(sp) time: 249
+Instruction lw v0,0(sp) time: 250
+Instruction nop time: 251
+Instruction addiu v0,v0,-1 time: 262
+Instruction sw v0,0(sp) time: 263
+Instruction addiu sp,sp,16 time: 264
+Instruction jr ra time: 265
+Instruction nop time: 266
+*** IPET analysis, the DATA CACHE is ignored in the PIPELINE analysis.
+IPET method: PIPELINE_ICACHE_DCACHE
+
+L1	type ICACHE	references 23	hits 19	misses 4	
+L1	type DCACHE	references 4	hits 3	misses 1	
+L2	type ICACHE	references 4	hits 2	misses 2	
+L2	type DCACHE	references 1	hits 0	misses 1	
+****************************************
+CFG of name main
+1 end nodes
+------------------------------
+Basic block node
+Node address 400018
+Node instructions
+    addiu sp,sp,-16	 address 400018
+    lw v0,0(sp)	 address 40001c
+    nop	 address 400020
+    sll v0,v0,0x1	 address 400024
+    sll v1,v0,0x2	 address 400028
+    addu v1,v0,v1	 address 40002c
+    lw v0,4(sp)	 address 400030
+    nop	 address 400034
+    addu v0,v1,v0	 address 400038
+    addiu v0,v0,-1	 address 40003c
+    sw v0,0(sp)	 address 400040
+    sw zero,8(sp)	 address 400044
+    lw v0,4(sp)	 address 400048
+    nop	 address 40004c
+    addiu v0,v0,1	 address 400050
+    sw v0,4(sp)	 address 400054
+    lw v0,0(sp)	 address 400058
+    nop	 address 40005c
+    addiu v0,v0,-1	 address 400060
+    sw v0,0(sp)	 address 400064
+    addiu sp,sp,16	 address 400068
+    jr ra	 address 40006c
+    nop	 address 400070
+No successors
+No predecessors
+WCET: 266

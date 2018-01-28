@@ -1,0 +1,4799 @@
+<!DOCTYPE PROGRAM SYSTEM 'cfglib.dtd'>
+<PROGRAM   id ="1"   name="sqrt"   entry="0" >
+<INSTRUCTION id="5" code="swc1 $f12,0(sp)" time="213">
+</INSTRUCTION>
+<INSTRUCTION id="6" code="lw v1,0(sp)" time="214">
+</INSTRUCTION>
+<INSTRUCTION id="7" code="move v0,zero" time="226">
+</INSTRUCTION>
+<INSTRUCTION id="8" code="mtc1 v1,$f0" time="227">
+</INSTRUCTION>
+<INSTRUCTION id="9" code="mtc1 v0,$f2" time="228">
+</INSTRUCTION>
+<INSTRUCTION id="10" code="nop" time="229">
+</INSTRUCTION>
+<INSTRUCTION id="11" code="c.lt.s $f0,$f2" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="12" code="nop" time="231">
+</INSTRUCTION>
+<INSTRUCTION id="13" code="bc1f 400054" time="232">
+</INSTRUCTION>
+<INSTRUCTION id="14" code="nop" time="233">
+</INSTRUCTION>
+<INSTRUCTION id="5" code="swc1 $f12,0(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="6" code="lw v1,0(sp)" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="7" code="move v0,zero" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="8" code="mtc1 v1,$f0" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="9" code="mtc1 v0,$f2" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="10" code="nop" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="11" code="c.lt.s $f0,$f2" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="12" code="nop" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="13" code="bc1f 400054" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="14" code="nop" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="16" code="lw v1,0(sp)" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="17" code="lui v0,0x8000" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="18" code="xor v0,v1,v0" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="19" code="j 40005c" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="20" code="nop" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="16" code="lw v1,0(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="17" code="lui v0,0x8000" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="18" code="xor v0,v1,v0" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="19" code="j 40005c" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="20" code="nop" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="22" code="lw v0,0(sp)" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="23" code="nop" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="22" code="lw v0,0(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="23" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="24" code="mtc1 v0,$f0" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="25" code="jr ra" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="26" code="nop" time="6">
+</INSTRUCTION>
+<INSTRUCTION id="24" code="mtc1 v0,$f0" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="25" code="jr ra" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="26" code="nop" time="6">
+</INSTRUCTION>
+<INSTRUCTION id="5" code="swc1 $f12,0(sp)" time="213">
+</INSTRUCTION>
+<INSTRUCTION id="6" code="lw v1,0(sp)" time="214">
+</INSTRUCTION>
+<INSTRUCTION id="7" code="move v0,zero" time="226">
+</INSTRUCTION>
+<INSTRUCTION id="8" code="mtc1 v1,$f0" time="227">
+</INSTRUCTION>
+<INSTRUCTION id="9" code="mtc1 v0,$f2" time="228">
+</INSTRUCTION>
+<INSTRUCTION id="10" code="nop" time="229">
+</INSTRUCTION>
+<INSTRUCTION id="11" code="c.lt.s $f0,$f2" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="12" code="nop" time="231">
+</INSTRUCTION>
+<INSTRUCTION id="13" code="bc1f 400054" time="232">
+</INSTRUCTION>
+<INSTRUCTION id="14" code="nop" time="233">
+</INSTRUCTION>
+<INSTRUCTION id="16" code="lw v1,0(sp)" time="244">
+</INSTRUCTION>
+<INSTRUCTION id="17" code="lui v0,0x8000" time="245">
+</INSTRUCTION>
+<INSTRUCTION id="18" code="xor v0,v1,v0" time="246">
+</INSTRUCTION>
+<INSTRUCTION id="19" code="j 40005c" time="247">
+</INSTRUCTION>
+<INSTRUCTION id="20" code="nop" time="248">
+</INSTRUCTION>
+<INSTRUCTION id="5" code="swc1 $f12,0(sp)" time="213">
+</INSTRUCTION>
+<INSTRUCTION id="6" code="lw v1,0(sp)" time="214">
+</INSTRUCTION>
+<INSTRUCTION id="7" code="move v0,zero" time="226">
+</INSTRUCTION>
+<INSTRUCTION id="8" code="mtc1 v1,$f0" time="227">
+</INSTRUCTION>
+<INSTRUCTION id="9" code="mtc1 v0,$f2" time="228">
+</INSTRUCTION>
+<INSTRUCTION id="10" code="nop" time="229">
+</INSTRUCTION>
+<INSTRUCTION id="11" code="c.lt.s $f0,$f2" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="12" code="nop" time="231">
+</INSTRUCTION>
+<INSTRUCTION id="13" code="bc1f 400054" time="232">
+</INSTRUCTION>
+<INSTRUCTION id="14" code="nop" time="233">
+</INSTRUCTION>
+<INSTRUCTION id="16" code="lw v1,0(sp)" time="234">
+</INSTRUCTION>
+<INSTRUCTION id="17" code="lui v0,0x8000" time="235">
+</INSTRUCTION>
+<INSTRUCTION id="18" code="xor v0,v1,v0" time="236">
+</INSTRUCTION>
+<INSTRUCTION id="19" code="j 40005c" time="237">
+</INSTRUCTION>
+<INSTRUCTION id="20" code="nop" time="238">
+</INSTRUCTION>
+<INSTRUCTION id="5" code="swc1 $f12,0(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="6" code="lw v1,0(sp)" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="7" code="move v0,zero" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="8" code="mtc1 v1,$f0" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="9" code="mtc1 v0,$f2" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="10" code="nop" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="11" code="c.lt.s $f0,$f2" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="12" code="nop" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="13" code="bc1f 400054" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="14" code="nop" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="16" code="lw v1,0(sp)" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="17" code="lui v0,0x8000" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="18" code="xor v0,v1,v0" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="19" code="j 40005c" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="20" code="nop" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="5" code="swc1 $f12,0(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="6" code="lw v1,0(sp)" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="7" code="move v0,zero" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="8" code="mtc1 v1,$f0" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="9" code="mtc1 v0,$f2" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="10" code="nop" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="11" code="c.lt.s $f0,$f2" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="12" code="nop" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="13" code="bc1f 400054" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="14" code="nop" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="16" code="lw v1,0(sp)" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="17" code="lui v0,0x8000" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="18" code="xor v0,v1,v0" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="19" code="j 40005c" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="20" code="nop" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="5" code="swc1 $f12,0(sp)" time="213">
+</INSTRUCTION>
+<INSTRUCTION id="6" code="lw v1,0(sp)" time="214">
+</INSTRUCTION>
+<INSTRUCTION id="7" code="move v0,zero" time="226">
+</INSTRUCTION>
+<INSTRUCTION id="8" code="mtc1 v1,$f0" time="227">
+</INSTRUCTION>
+<INSTRUCTION id="9" code="mtc1 v0,$f2" time="228">
+</INSTRUCTION>
+<INSTRUCTION id="10" code="nop" time="229">
+</INSTRUCTION>
+<INSTRUCTION id="11" code="c.lt.s $f0,$f2" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="12" code="nop" time="231">
+</INSTRUCTION>
+<INSTRUCTION id="13" code="bc1f 400054" time="232">
+</INSTRUCTION>
+<INSTRUCTION id="14" code="nop" time="233">
+</INSTRUCTION>
+<INSTRUCTION id="22" code="lw v0,0(sp)" time="244">
+</INSTRUCTION>
+<INSTRUCTION id="23" code="nop" time="245">
+</INSTRUCTION>
+<INSTRUCTION id="5" code="swc1 $f12,0(sp)" time="213">
+</INSTRUCTION>
+<INSTRUCTION id="6" code="lw v1,0(sp)" time="214">
+</INSTRUCTION>
+<INSTRUCTION id="7" code="move v0,zero" time="226">
+</INSTRUCTION>
+<INSTRUCTION id="8" code="mtc1 v1,$f0" time="227">
+</INSTRUCTION>
+<INSTRUCTION id="9" code="mtc1 v0,$f2" time="228">
+</INSTRUCTION>
+<INSTRUCTION id="10" code="nop" time="229">
+</INSTRUCTION>
+<INSTRUCTION id="11" code="c.lt.s $f0,$f2" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="12" code="nop" time="231">
+</INSTRUCTION>
+<INSTRUCTION id="13" code="bc1f 400054" time="232">
+</INSTRUCTION>
+<INSTRUCTION id="14" code="nop" time="233">
+</INSTRUCTION>
+<INSTRUCTION id="22" code="lw v0,0(sp)" time="234">
+</INSTRUCTION>
+<INSTRUCTION id="23" code="nop" time="235">
+</INSTRUCTION>
+<INSTRUCTION id="5" code="swc1 $f12,0(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="6" code="lw v1,0(sp)" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="7" code="move v0,zero" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="8" code="mtc1 v1,$f0" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="9" code="mtc1 v0,$f2" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="10" code="nop" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="11" code="c.lt.s $f0,$f2" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="12" code="nop" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="13" code="bc1f 400054" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="14" code="nop" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="22" code="lw v0,0(sp)" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="23" code="nop" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="5" code="swc1 $f12,0(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="6" code="lw v1,0(sp)" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="7" code="move v0,zero" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="8" code="mtc1 v1,$f0" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="9" code="mtc1 v0,$f2" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="10" code="nop" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="11" code="c.lt.s $f0,$f2" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="12" code="nop" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="13" code="bc1f 400054" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="14" code="nop" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="22" code="lw v0,0(sp)" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="23" code="nop" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="16" code="lw v1,0(sp)" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="17" code="lui v0,0x8000" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="18" code="xor v0,v1,v0" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="19" code="j 40005c" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="20" code="nop" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="24" code="mtc1 v0,$f0" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="25" code="jr ra" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="26" code="nop" time="120">
+</INSTRUCTION>
+<INSTRUCTION id="16" code="lw v1,0(sp)" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="17" code="lui v0,0x8000" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="18" code="xor v0,v1,v0" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="19" code="j 40005c" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="20" code="nop" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="24" code="mtc1 v0,$f0" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="25" code="jr ra" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="26" code="nop" time="120">
+</INSTRUCTION>
+<INSTRUCTION id="16" code="lw v1,0(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="17" code="lui v0,0x8000" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="18" code="xor v0,v1,v0" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="19" code="j 40005c" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="20" code="nop" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="24" code="mtc1 v0,$f0" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="25" code="jr ra" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="26" code="nop" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="16" code="lw v1,0(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="17" code="lui v0,0x8000" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="18" code="xor v0,v1,v0" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="19" code="j 40005c" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="20" code="nop" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="24" code="mtc1 v0,$f0" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="25" code="jr ra" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="26" code="nop" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="22" code="lw v0,0(sp)" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="23" code="nop" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="24" code="mtc1 v0,$f0" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="25" code="jr ra" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="26" code="nop" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="22" code="lw v0,0(sp)" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="23" code="nop" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="24" code="mtc1 v0,$f0" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="25" code="jr ra" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="26" code="nop" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="22" code="lw v0,0(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="23" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="24" code="mtc1 v0,$f0" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="25" code="jr ra" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="26" code="nop" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="22" code="lw v0,0(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="23" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="24" code="mtc1 v0,$f0" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="25" code="jr ra" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="26" code="nop" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="35" code="addiu sp,sp,-64" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="36" code="sw ra,60(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="37" code="swc1 $f12,64(sp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="38" code="lw v1,64(sp)" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="39" code="lw v0,-32760(gp)" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="40" code="mtc1 v1,$f0" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="41" code="mtc1 v0,$f2" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="42" code="nop" time="231">
+</INSTRUCTION>
+<INSTRUCTION id="43" code="div.s $f0,$f0,$f2" time="232">
+</INSTRUCTION>
+<INSTRUCTION id="44" code="mfc1 v0,$f0" time="233">
+</INSTRUCTION>
+<INSTRUCTION id="45" code="nop" time="234">
+</INSTRUCTION>
+<INSTRUCTION id="46" code="sw v0,16(sp)" time="235">
+</INSTRUCTION>
+<INSTRUCTION id="47" code="lw v1,-32748(gp)" time="236">
+</INSTRUCTION>
+<INSTRUCTION id="48" code="lw v0,-32752(gp)" time="237">
+</INSTRUCTION>
+<INSTRUCTION id="49" code="sw v1,36(sp)" time="248">
+</INSTRUCTION>
+<INSTRUCTION id="50" code="sw v0,32(sp)" time="249">
+</INSTRUCTION>
+<INSTRUCTION id="51" code="sw zero,24(sp)" time="250">
+</INSTRUCTION>
+<INSTRUCTION id="52" code="lw v1,64(sp)" time="251">
+</INSTRUCTION>
+<INSTRUCTION id="53" code="move v0,zero" time="252">
+</INSTRUCTION>
+<INSTRUCTION id="54" code="mtc1 v1,$f0" time="253">
+</INSTRUCTION>
+<INSTRUCTION id="55" code="mtc1 v0,$f2" time="254">
+</INSTRUCTION>
+<INSTRUCTION id="56" code="nop" time="255">
+</INSTRUCTION>
+<INSTRUCTION id="57" code="c.eq.s $f0,$f2" time="366">
+</INSTRUCTION>
+<INSTRUCTION id="58" code="nop" time="367">
+</INSTRUCTION>
+<INSTRUCTION id="59" code="bc1f 4000d8" time="368">
+</INSTRUCTION>
+<INSTRUCTION id="60" code="nop" time="369">
+</INSTRUCTION>
+<INSTRUCTION id="35" code="addiu sp,sp,-64" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="36" code="sw ra,60(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="37" code="swc1 $f12,64(sp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="38" code="lw v1,64(sp)" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="39" code="lw v0,-32760(gp)" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="40" code="mtc1 v1,$f0" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="41" code="mtc1 v0,$f2" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="42" code="nop" time="231">
+</INSTRUCTION>
+<INSTRUCTION id="43" code="div.s $f0,$f0,$f2" time="232">
+</INSTRUCTION>
+<INSTRUCTION id="44" code="mfc1 v0,$f0" time="233">
+</INSTRUCTION>
+<INSTRUCTION id="45" code="nop" time="234">
+</INSTRUCTION>
+<INSTRUCTION id="46" code="sw v0,16(sp)" time="235">
+</INSTRUCTION>
+<INSTRUCTION id="47" code="lw v1,-32748(gp)" time="236">
+</INSTRUCTION>
+<INSTRUCTION id="48" code="lw v0,-32752(gp)" time="237">
+</INSTRUCTION>
+<INSTRUCTION id="49" code="sw v1,36(sp)" time="248">
+</INSTRUCTION>
+<INSTRUCTION id="50" code="sw v0,32(sp)" time="249">
+</INSTRUCTION>
+<INSTRUCTION id="51" code="sw zero,24(sp)" time="250">
+</INSTRUCTION>
+<INSTRUCTION id="52" code="lw v1,64(sp)" time="251">
+</INSTRUCTION>
+<INSTRUCTION id="53" code="move v0,zero" time="252">
+</INSTRUCTION>
+<INSTRUCTION id="54" code="mtc1 v1,$f0" time="253">
+</INSTRUCTION>
+<INSTRUCTION id="55" code="mtc1 v0,$f2" time="254">
+</INSTRUCTION>
+<INSTRUCTION id="56" code="nop" time="255">
+</INSTRUCTION>
+<INSTRUCTION id="57" code="c.eq.s $f0,$f2" time="366">
+</INSTRUCTION>
+<INSTRUCTION id="58" code="nop" time="367">
+</INSTRUCTION>
+<INSTRUCTION id="59" code="bc1f 4000d8" time="368">
+</INSTRUCTION>
+<INSTRUCTION id="60" code="nop" time="369">
+</INSTRUCTION>
+<INSTRUCTION id="62" code="j 4002d8" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="63" code="sw zero,16(sp)" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="62" code="j 4002d8" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="63" code="sw zero,16(sp)" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="65" code="li v0,1" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="66" code="j 4002c4" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="67" code="sw v0,20(sp)" time="16">
+</INSTRUCTION>
+<INSTRUCTION id="65" code="li v0,1" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="66" code="j 4002c4" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="67" code="sw v0,20(sp)" time="16">
+</INSTRUCTION>
+<INSTRUCTION id="69" code="lw v0,24(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="70" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="71" code="bnez v0,4002b4" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="72" code="nop" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="69" code="lw v0,24(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="70" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="71" code="bnez v0,4002b4" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="72" code="nop" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="74" code="lw v1,16(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="75" code="lw v0,16(sp)" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="76" code="mtc1 v1,$f0" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="77" code="mtc1 v0,$f2" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="78" code="nop" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="79" code="mul.s $f0,$f0,$f2" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="80" code="mfc1 v0,$f0" time="120">
+</INSTRUCTION>
+<INSTRUCTION id="81" code="lw v1,64(sp)" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="82" code="nop" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="83" code="mtc1 v1,$f0" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="84" code="mtc1 v0,$f2" time="124">
+</INSTRUCTION>
+<INSTRUCTION id="85" code="nop" time="235">
+</INSTRUCTION>
+<INSTRUCTION id="86" code="sub.s $f0,$f0,$f2" time="236">
+</INSTRUCTION>
+<INSTRUCTION id="87" code="mfc1 v0,$f0" time="237">
+</INSTRUCTION>
+<INSTRUCTION id="88" code="nop" time="238">
+</INSTRUCTION>
+<INSTRUCTION id="89" code="mtc1 v0,$f0" time="239">
+</INSTRUCTION>
+<INSTRUCTION id="90" code="nop" time="240">
+</INSTRUCTION>
+<INSTRUCTION id="91" code="cvt.d.s $f0,$f0" time="241">
+</INSTRUCTION>
+<INSTRUCTION id="92" code="mfc1 a1,$f0" time="242">
+</INSTRUCTION>
+<INSTRUCTION id="93" code="mfc1 a0,$f1" time="353">
+</INSTRUCTION>
+<INSTRUCTION id="94" code="lw v0,16(sp)" time="354">
+</INSTRUCTION>
+<INSTRUCTION id="95" code="nop" time="355">
+</INSTRUCTION>
+<INSTRUCTION id="96" code="mtc1 v0,$f2" time="356">
+</INSTRUCTION>
+<INSTRUCTION id="97" code="nop" time="357">
+</INSTRUCTION>
+<INSTRUCTION id="98" code="cvt.d.s $f2,$f2" time="358">
+</INSTRUCTION>
+<INSTRUCTION id="99" code="mfc1 v1,$f2" time="359">
+</INSTRUCTION>
+<INSTRUCTION id="100" code="mfc1 v0,$f3" time="360">
+</INSTRUCTION>
+<INSTRUCTION id="101" code="mtc1 v1,$f0" time="471">
+</INSTRUCTION>
+<INSTRUCTION id="102" code="mtc1 v0,$f1" time="472">
+</INSTRUCTION>
+<INSTRUCTION id="103" code="mtc1 v1,$f2" time="473">
+</INSTRUCTION>
+<INSTRUCTION id="104" code="mtc1 v0,$f3" time="474">
+</INSTRUCTION>
+<INSTRUCTION id="105" code="nop" time="475">
+</INSTRUCTION>
+<INSTRUCTION id="106" code="add.d $f0,$f0,$f2" time="476">
+</INSTRUCTION>
+<INSTRUCTION id="107" code="mfc1 v1,$f0" time="477">
+</INSTRUCTION>
+<INSTRUCTION id="108" code="mfc1 v0,$f1" time="478">
+</INSTRUCTION>
+<INSTRUCTION id="109" code="mtc1 a1,$f0" time="589">
+</INSTRUCTION>
+<INSTRUCTION id="110" code="mtc1 a0,$f1" time="590">
+</INSTRUCTION>
+<INSTRUCTION id="111" code="mtc1 v1,$f2" time="591">
+</INSTRUCTION>
+<INSTRUCTION id="112" code="mtc1 v0,$f3" time="592">
+</INSTRUCTION>
+<INSTRUCTION id="113" code="nop" time="593">
+</INSTRUCTION>
+<INSTRUCTION id="114" code="div.d $f0,$f0,$f2" time="594">
+</INSTRUCTION>
+<INSTRUCTION id="115" code="mfc1 v1,$f0" time="595">
+</INSTRUCTION>
+<INSTRUCTION id="116" code="mfc1 v0,$f1" time="596">
+</INSTRUCTION>
+<INSTRUCTION id="117" code="mtc1 v1,$f0" time="707">
+</INSTRUCTION>
+<INSTRUCTION id="118" code="mtc1 v0,$f1" time="708">
+</INSTRUCTION>
+<INSTRUCTION id="119" code="nop" time="709">
+</INSTRUCTION>
+<INSTRUCTION id="120" code="cvt.s.d $f0,$f0" time="710">
+</INSTRUCTION>
+<INSTRUCTION id="121" code="mfc1 v0,$f0" time="711">
+</INSTRUCTION>
+<INSTRUCTION id="122" code="nop" time="712">
+</INSTRUCTION>
+<INSTRUCTION id="123" code="sw v0,40(sp)" time="713">
+</INSTRUCTION>
+<INSTRUCTION id="124" code="lw v1,16(sp)" time="714">
+</INSTRUCTION>
+<INSTRUCTION id="125" code="lw v0,40(sp)" time="825">
+</INSTRUCTION>
+<INSTRUCTION id="126" code="mtc1 v1,$f2" time="826">
+</INSTRUCTION>
+<INSTRUCTION id="127" code="mtc1 v0,$f0" time="827">
+</INSTRUCTION>
+<INSTRUCTION id="128" code="nop" time="828">
+</INSTRUCTION>
+<INSTRUCTION id="129" code="add.s $f2,$f2,$f0" time="829">
+</INSTRUCTION>
+<INSTRUCTION id="130" code="mfc1 v0,$f2" time="830">
+</INSTRUCTION>
+<INSTRUCTION id="131" code="nop" time="831">
+</INSTRUCTION>
+<INSTRUCTION id="132" code="sw v0,16(sp)" time="832">
+</INSTRUCTION>
+<INSTRUCTION id="133" code="lw v1,16(sp)" time="943">
+</INSTRUCTION>
+<INSTRUCTION id="134" code="lw v0,16(sp)" time="944">
+</INSTRUCTION>
+<INSTRUCTION id="135" code="mtc1 v1,$f2" time="945">
+</INSTRUCTION>
+<INSTRUCTION id="136" code="mtc1 v0,$f0" time="946">
+</INSTRUCTION>
+<INSTRUCTION id="137" code="nop" time="947">
+</INSTRUCTION>
+<INSTRUCTION id="138" code="mul.s $f2,$f2,$f0" time="948">
+</INSTRUCTION>
+<INSTRUCTION id="139" code="mfc1 v0,$f2" time="949">
+</INSTRUCTION>
+<INSTRUCTION id="140" code="lw v1,64(sp)" time="950">
+</INSTRUCTION>
+<INSTRUCTION id="141" code="nop" time="1061">
+</INSTRUCTION>
+<INSTRUCTION id="142" code="mtc1 v1,$f2" time="1062">
+</INSTRUCTION>
+<INSTRUCTION id="143" code="mtc1 v0,$f0" time="1063">
+</INSTRUCTION>
+<INSTRUCTION id="144" code="nop" time="1064">
+</INSTRUCTION>
+<INSTRUCTION id="145" code="sub.s $f2,$f2,$f0" time="1065">
+</INSTRUCTION>
+<INSTRUCTION id="146" code="mfc1 v0,$f2" time="1066">
+</INSTRUCTION>
+<INSTRUCTION id="147" code="nop" time="1067">
+</INSTRUCTION>
+<INSTRUCTION id="148" code="mtc1 v0,$f2" time="1068">
+</INSTRUCTION>
+<INSTRUCTION id="149" code="nop" time="1179">
+</INSTRUCTION>
+<INSTRUCTION id="150" code="cvt.d.s $f2,$f2" time="1180">
+</INSTRUCTION>
+<INSTRUCTION id="151" code="mfc1 v1,$f2" time="1181">
+</INSTRUCTION>
+<INSTRUCTION id="152" code="mfc1 v0,$f3" time="1182">
+</INSTRUCTION>
+<INSTRUCTION id="153" code="sw v1,52(sp)" time="1183">
+</INSTRUCTION>
+<INSTRUCTION id="154" code="sw v0,48(sp)" time="1184">
+</INSTRUCTION>
+<INSTRUCTION id="155" code="lw v1,52(sp)" time="1185">
+</INSTRUCTION>
+<INSTRUCTION id="156" code="lw v0,48(sp)" time="1186">
+</INSTRUCTION>
+<INSTRUCTION id="157" code="mtc1 v1,$f0" time="1297">
+</INSTRUCTION>
+<INSTRUCTION id="158" code="mtc1 v0,$f1" time="1298">
+</INSTRUCTION>
+<INSTRUCTION id="159" code="nop" time="1299">
+</INSTRUCTION>
+<INSTRUCTION id="160" code="cvt.s.d $f0,$f0" time="1300">
+</INSTRUCTION>
+<INSTRUCTION id="161" code="mfc1 v0,$f0" time="1301">
+</INSTRUCTION>
+<INSTRUCTION id="162" code="nop" time="1302">
+</INSTRUCTION>
+<INSTRUCTION id="163" code="mtc1 v0,$f12" time="1303">
+</INSTRUCTION>
+<INSTRUCTION id="164" code="jal 400018" time="1304">
+</INSTRUCTION>
+<INSTRUCTION id="165" code="nop" time="1415">
+</INSTRUCTION>
+<INSTRUCTION id="74" code="lw v1,16(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="75" code="lw v0,16(sp)" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="76" code="mtc1 v1,$f0" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="77" code="mtc1 v0,$f2" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="78" code="nop" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="79" code="mul.s $f0,$f0,$f2" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="80" code="mfc1 v0,$f0" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="81" code="lw v1,64(sp)" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="82" code="nop" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="83" code="mtc1 v1,$f0" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="84" code="mtc1 v0,$f2" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="85" code="nop" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="86" code="sub.s $f0,$f0,$f2" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="87" code="mfc1 v0,$f0" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="88" code="nop" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="89" code="mtc1 v0,$f0" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="90" code="nop" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="91" code="cvt.d.s $f0,$f0" time="120">
+</INSTRUCTION>
+<INSTRUCTION id="92" code="mfc1 a1,$f0" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="93" code="mfc1 a0,$f1" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="94" code="lw v0,16(sp)" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="95" code="nop" time="124">
+</INSTRUCTION>
+<INSTRUCTION id="96" code="mtc1 v0,$f2" time="125">
+</INSTRUCTION>
+<INSTRUCTION id="97" code="nop" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="98" code="cvt.d.s $f2,$f2" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="99" code="mfc1 v1,$f2" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="100" code="mfc1 v0,$f3" time="129">
+</INSTRUCTION>
+<INSTRUCTION id="101" code="mtc1 v1,$f0" time="130">
+</INSTRUCTION>
+<INSTRUCTION id="102" code="mtc1 v0,$f1" time="131">
+</INSTRUCTION>
+<INSTRUCTION id="103" code="mtc1 v1,$f2" time="132">
+</INSTRUCTION>
+<INSTRUCTION id="104" code="mtc1 v0,$f3" time="133">
+</INSTRUCTION>
+<INSTRUCTION id="105" code="nop" time="134">
+</INSTRUCTION>
+<INSTRUCTION id="106" code="add.d $f0,$f0,$f2" time="135">
+</INSTRUCTION>
+<INSTRUCTION id="107" code="mfc1 v1,$f0" time="136">
+</INSTRUCTION>
+<INSTRUCTION id="108" code="mfc1 v0,$f1" time="137">
+</INSTRUCTION>
+<INSTRUCTION id="109" code="mtc1 a1,$f0" time="138">
+</INSTRUCTION>
+<INSTRUCTION id="110" code="mtc1 a0,$f1" time="139">
+</INSTRUCTION>
+<INSTRUCTION id="111" code="mtc1 v1,$f2" time="140">
+</INSTRUCTION>
+<INSTRUCTION id="112" code="mtc1 v0,$f3" time="141">
+</INSTRUCTION>
+<INSTRUCTION id="113" code="nop" time="142">
+</INSTRUCTION>
+<INSTRUCTION id="114" code="div.d $f0,$f0,$f2" time="143">
+</INSTRUCTION>
+<INSTRUCTION id="115" code="mfc1 v1,$f0" time="144">
+</INSTRUCTION>
+<INSTRUCTION id="116" code="mfc1 v0,$f1" time="145">
+</INSTRUCTION>
+<INSTRUCTION id="117" code="mtc1 v1,$f0" time="146">
+</INSTRUCTION>
+<INSTRUCTION id="118" code="mtc1 v0,$f1" time="147">
+</INSTRUCTION>
+<INSTRUCTION id="119" code="nop" time="148">
+</INSTRUCTION>
+<INSTRUCTION id="120" code="cvt.s.d $f0,$f0" time="149">
+</INSTRUCTION>
+<INSTRUCTION id="121" code="mfc1 v0,$f0" time="150">
+</INSTRUCTION>
+<INSTRUCTION id="122" code="nop" time="151">
+</INSTRUCTION>
+<INSTRUCTION id="123" code="sw v0,40(sp)" time="152">
+</INSTRUCTION>
+<INSTRUCTION id="124" code="lw v1,16(sp)" time="153">
+</INSTRUCTION>
+<INSTRUCTION id="125" code="lw v0,40(sp)" time="154">
+</INSTRUCTION>
+<INSTRUCTION id="126" code="mtc1 v1,$f2" time="155">
+</INSTRUCTION>
+<INSTRUCTION id="127" code="mtc1 v0,$f0" time="156">
+</INSTRUCTION>
+<INSTRUCTION id="128" code="nop" time="157">
+</INSTRUCTION>
+<INSTRUCTION id="129" code="add.s $f2,$f2,$f0" time="158">
+</INSTRUCTION>
+<INSTRUCTION id="130" code="mfc1 v0,$f2" time="159">
+</INSTRUCTION>
+<INSTRUCTION id="131" code="nop" time="160">
+</INSTRUCTION>
+<INSTRUCTION id="132" code="sw v0,16(sp)" time="161">
+</INSTRUCTION>
+<INSTRUCTION id="133" code="lw v1,16(sp)" time="162">
+</INSTRUCTION>
+<INSTRUCTION id="134" code="lw v0,16(sp)" time="163">
+</INSTRUCTION>
+<INSTRUCTION id="135" code="mtc1 v1,$f2" time="164">
+</INSTRUCTION>
+<INSTRUCTION id="136" code="mtc1 v0,$f0" time="165">
+</INSTRUCTION>
+<INSTRUCTION id="137" code="nop" time="166">
+</INSTRUCTION>
+<INSTRUCTION id="138" code="mul.s $f2,$f2,$f0" time="167">
+</INSTRUCTION>
+<INSTRUCTION id="139" code="mfc1 v0,$f2" time="168">
+</INSTRUCTION>
+<INSTRUCTION id="140" code="lw v1,64(sp)" time="169">
+</INSTRUCTION>
+<INSTRUCTION id="141" code="nop" time="170">
+</INSTRUCTION>
+<INSTRUCTION id="142" code="mtc1 v1,$f2" time="171">
+</INSTRUCTION>
+<INSTRUCTION id="143" code="mtc1 v0,$f0" time="172">
+</INSTRUCTION>
+<INSTRUCTION id="144" code="nop" time="173">
+</INSTRUCTION>
+<INSTRUCTION id="145" code="sub.s $f2,$f2,$f0" time="174">
+</INSTRUCTION>
+<INSTRUCTION id="146" code="mfc1 v0,$f2" time="175">
+</INSTRUCTION>
+<INSTRUCTION id="147" code="nop" time="176">
+</INSTRUCTION>
+<INSTRUCTION id="148" code="mtc1 v0,$f2" time="177">
+</INSTRUCTION>
+<INSTRUCTION id="149" code="nop" time="178">
+</INSTRUCTION>
+<INSTRUCTION id="150" code="cvt.d.s $f2,$f2" time="179">
+</INSTRUCTION>
+<INSTRUCTION id="151" code="mfc1 v1,$f2" time="180">
+</INSTRUCTION>
+<INSTRUCTION id="152" code="mfc1 v0,$f3" time="181">
+</INSTRUCTION>
+<INSTRUCTION id="153" code="sw v1,52(sp)" time="182">
+</INSTRUCTION>
+<INSTRUCTION id="154" code="sw v0,48(sp)" time="183">
+</INSTRUCTION>
+<INSTRUCTION id="155" code="lw v1,52(sp)" time="184">
+</INSTRUCTION>
+<INSTRUCTION id="156" code="lw v0,48(sp)" time="185">
+</INSTRUCTION>
+<INSTRUCTION id="157" code="mtc1 v1,$f0" time="186">
+</INSTRUCTION>
+<INSTRUCTION id="158" code="mtc1 v0,$f1" time="187">
+</INSTRUCTION>
+<INSTRUCTION id="159" code="nop" time="188">
+</INSTRUCTION>
+<INSTRUCTION id="160" code="cvt.s.d $f0,$f0" time="189">
+</INSTRUCTION>
+<INSTRUCTION id="161" code="mfc1 v0,$f0" time="190">
+</INSTRUCTION>
+<INSTRUCTION id="162" code="nop" time="191">
+</INSTRUCTION>
+<INSTRUCTION id="163" code="mtc1 v0,$f12" time="192">
+</INSTRUCTION>
+<INSTRUCTION id="164" code="jal 400018" time="193">
+</INSTRUCTION>
+<INSTRUCTION id="165" code="nop" time="194">
+</INSTRUCTION>
+<INSTRUCTION id="167" code="mfc1 v0,$f0" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="168" code="nop" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="169" code="mtc1 v0,$f2" time="6">
+</INSTRUCTION>
+<INSTRUCTION id="170" code="nop" time="7">
+</INSTRUCTION>
+<INSTRUCTION id="171" code="cvt.d.s $f2,$f2" time="8">
+</INSTRUCTION>
+<INSTRUCTION id="172" code="mfc1 a1,$f2" time="9">
+</INSTRUCTION>
+<INSTRUCTION id="173" code="mfc1 a0,$f3" time="10">
+</INSTRUCTION>
+<INSTRUCTION id="174" code="lw v1,36(sp)" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="175" code="lw v0,32(sp)" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="176" code="mtc1 a1,$f0" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="177" code="mtc1 a0,$f1" time="124">
+</INSTRUCTION>
+<INSTRUCTION id="178" code="mtc1 v1,$f2" time="125">
+</INSTRUCTION>
+<INSTRUCTION id="179" code="mtc1 v0,$f3" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="180" code="nop" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="181" code="c.le.d $f0,$f2" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="182" code="nop" time="239">
+</INSTRUCTION>
+<INSTRUCTION id="183" code="bc1f 4002b4" time="240">
+</INSTRUCTION>
+<INSTRUCTION id="184" code="nop" time="241">
+</INSTRUCTION>
+<INSTRUCTION id="167" code="mfc1 v0,$f0" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="168" code="nop" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="169" code="mtc1 v0,$f2" time="6">
+</INSTRUCTION>
+<INSTRUCTION id="170" code="nop" time="7">
+</INSTRUCTION>
+<INSTRUCTION id="171" code="cvt.d.s $f2,$f2" time="8">
+</INSTRUCTION>
+<INSTRUCTION id="172" code="mfc1 a1,$f2" time="9">
+</INSTRUCTION>
+<INSTRUCTION id="173" code="mfc1 a0,$f3" time="10">
+</INSTRUCTION>
+<INSTRUCTION id="174" code="lw v1,36(sp)" time="11">
+</INSTRUCTION>
+<INSTRUCTION id="175" code="lw v0,32(sp)" time="12">
+</INSTRUCTION>
+<INSTRUCTION id="176" code="mtc1 a1,$f0" time="13">
+</INSTRUCTION>
+<INSTRUCTION id="177" code="mtc1 a0,$f1" time="14">
+</INSTRUCTION>
+<INSTRUCTION id="178" code="mtc1 v1,$f2" time="15">
+</INSTRUCTION>
+<INSTRUCTION id="179" code="mtc1 v0,$f3" time="16">
+</INSTRUCTION>
+<INSTRUCTION id="180" code="nop" time="17">
+</INSTRUCTION>
+<INSTRUCTION id="181" code="c.le.d $f0,$f2" time="18">
+</INSTRUCTION>
+<INSTRUCTION id="182" code="nop" time="19">
+</INSTRUCTION>
+<INSTRUCTION id="183" code="bc1f 4002b4" time="20">
+</INSTRUCTION>
+<INSTRUCTION id="184" code="nop" time="21">
+</INSTRUCTION>
+<INSTRUCTION id="186" code="li v0,1" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="187" code="sw v0,24(sp)" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="186" code="li v0,1" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="187" code="sw v0,24(sp)" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="189" code="lw v0,20(sp)" time="213">
+</INSTRUCTION>
+<INSTRUCTION id="190" code="nop" time="214">
+</INSTRUCTION>
+<INSTRUCTION id="191" code="addiu v0,v0,1" time="215">
+</INSTRUCTION>
+<INSTRUCTION id="192" code="sw v0,20(sp)" time="216">
+</INSTRUCTION>
+<INSTRUCTION id="189" code="lw v0,20(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="190" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="191" code="addiu v0,v0,1" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="192" code="sw v0,20(sp)" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="194" code="lw v0,20(sp)" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="195" code="nop" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="196" code="slti v0,v0,20" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="197" code="bnez v0,4000e4" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="198" code="nop" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="194" code="lw v0,20(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="195" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="196" code="slti v0,v0,20" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="197" code="bnez v0,4000e4" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="198" code="nop" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="199" code="lw v0,16(sp)" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="200" code="nop" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="201" code="mtc1 v0,$f0" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="202" code="lw ra,60(sp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="203" code="addiu sp,sp,64" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="204" code="jr ra" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="205" code="nop" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="199" code="lw v0,16(sp)" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="200" code="nop" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="201" code="mtc1 v0,$f0" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="202" code="lw ra,60(sp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="203" code="addiu sp,sp,64" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="204" code="jr ra" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="205" code="nop" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="35" code="addiu sp,sp,-64" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="36" code="sw ra,60(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="37" code="swc1 $f12,64(sp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="38" code="lw v1,64(sp)" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="39" code="lw v0,-32760(gp)" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="40" code="mtc1 v1,$f0" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="41" code="mtc1 v0,$f2" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="42" code="nop" time="231">
+</INSTRUCTION>
+<INSTRUCTION id="43" code="div.s $f0,$f0,$f2" time="232">
+</INSTRUCTION>
+<INSTRUCTION id="44" code="mfc1 v0,$f0" time="233">
+</INSTRUCTION>
+<INSTRUCTION id="45" code="nop" time="234">
+</INSTRUCTION>
+<INSTRUCTION id="46" code="sw v0,16(sp)" time="235">
+</INSTRUCTION>
+<INSTRUCTION id="47" code="lw v1,-32748(gp)" time="236">
+</INSTRUCTION>
+<INSTRUCTION id="48" code="lw v0,-32752(gp)" time="237">
+</INSTRUCTION>
+<INSTRUCTION id="49" code="sw v1,36(sp)" time="248">
+</INSTRUCTION>
+<INSTRUCTION id="50" code="sw v0,32(sp)" time="249">
+</INSTRUCTION>
+<INSTRUCTION id="51" code="sw zero,24(sp)" time="250">
+</INSTRUCTION>
+<INSTRUCTION id="52" code="lw v1,64(sp)" time="251">
+</INSTRUCTION>
+<INSTRUCTION id="53" code="move v0,zero" time="252">
+</INSTRUCTION>
+<INSTRUCTION id="54" code="mtc1 v1,$f0" time="253">
+</INSTRUCTION>
+<INSTRUCTION id="55" code="mtc1 v0,$f2" time="254">
+</INSTRUCTION>
+<INSTRUCTION id="56" code="nop" time="255">
+</INSTRUCTION>
+<INSTRUCTION id="57" code="c.eq.s $f0,$f2" time="366">
+</INSTRUCTION>
+<INSTRUCTION id="58" code="nop" time="367">
+</INSTRUCTION>
+<INSTRUCTION id="59" code="bc1f 4000d8" time="368">
+</INSTRUCTION>
+<INSTRUCTION id="60" code="nop" time="369">
+</INSTRUCTION>
+<INSTRUCTION id="62" code="j 4002d8" time="370">
+</INSTRUCTION>
+<INSTRUCTION id="63" code="sw zero,16(sp)" time="371">
+</INSTRUCTION>
+<INSTRUCTION id="35" code="addiu sp,sp,-64" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="36" code="sw ra,60(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="37" code="swc1 $f12,64(sp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="38" code="lw v1,64(sp)" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="39" code="lw v0,-32760(gp)" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="40" code="mtc1 v1,$f0" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="41" code="mtc1 v0,$f2" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="42" code="nop" time="231">
+</INSTRUCTION>
+<INSTRUCTION id="43" code="div.s $f0,$f0,$f2" time="232">
+</INSTRUCTION>
+<INSTRUCTION id="44" code="mfc1 v0,$f0" time="233">
+</INSTRUCTION>
+<INSTRUCTION id="45" code="nop" time="234">
+</INSTRUCTION>
+<INSTRUCTION id="46" code="sw v0,16(sp)" time="235">
+</INSTRUCTION>
+<INSTRUCTION id="47" code="lw v1,-32748(gp)" time="236">
+</INSTRUCTION>
+<INSTRUCTION id="48" code="lw v0,-32752(gp)" time="237">
+</INSTRUCTION>
+<INSTRUCTION id="49" code="sw v1,36(sp)" time="248">
+</INSTRUCTION>
+<INSTRUCTION id="50" code="sw v0,32(sp)" time="249">
+</INSTRUCTION>
+<INSTRUCTION id="51" code="sw zero,24(sp)" time="250">
+</INSTRUCTION>
+<INSTRUCTION id="52" code="lw v1,64(sp)" time="251">
+</INSTRUCTION>
+<INSTRUCTION id="53" code="move v0,zero" time="252">
+</INSTRUCTION>
+<INSTRUCTION id="54" code="mtc1 v1,$f0" time="253">
+</INSTRUCTION>
+<INSTRUCTION id="55" code="mtc1 v0,$f2" time="254">
+</INSTRUCTION>
+<INSTRUCTION id="56" code="nop" time="255">
+</INSTRUCTION>
+<INSTRUCTION id="57" code="c.eq.s $f0,$f2" time="366">
+</INSTRUCTION>
+<INSTRUCTION id="58" code="nop" time="367">
+</INSTRUCTION>
+<INSTRUCTION id="59" code="bc1f 4000d8" time="368">
+</INSTRUCTION>
+<INSTRUCTION id="60" code="nop" time="369">
+</INSTRUCTION>
+<INSTRUCTION id="62" code="j 4002d8" time="370">
+</INSTRUCTION>
+<INSTRUCTION id="63" code="sw zero,16(sp)" time="371">
+</INSTRUCTION>
+<INSTRUCTION id="35" code="addiu sp,sp,-64" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="36" code="sw ra,60(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="37" code="swc1 $f12,64(sp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="38" code="lw v1,64(sp)" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="39" code="lw v0,-32760(gp)" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="40" code="mtc1 v1,$f0" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="41" code="mtc1 v0,$f2" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="42" code="nop" time="231">
+</INSTRUCTION>
+<INSTRUCTION id="43" code="div.s $f0,$f0,$f2" time="232">
+</INSTRUCTION>
+<INSTRUCTION id="44" code="mfc1 v0,$f0" time="233">
+</INSTRUCTION>
+<INSTRUCTION id="45" code="nop" time="234">
+</INSTRUCTION>
+<INSTRUCTION id="46" code="sw v0,16(sp)" time="235">
+</INSTRUCTION>
+<INSTRUCTION id="47" code="lw v1,-32748(gp)" time="236">
+</INSTRUCTION>
+<INSTRUCTION id="48" code="lw v0,-32752(gp)" time="237">
+</INSTRUCTION>
+<INSTRUCTION id="49" code="sw v1,36(sp)" time="248">
+</INSTRUCTION>
+<INSTRUCTION id="50" code="sw v0,32(sp)" time="249">
+</INSTRUCTION>
+<INSTRUCTION id="51" code="sw zero,24(sp)" time="250">
+</INSTRUCTION>
+<INSTRUCTION id="52" code="lw v1,64(sp)" time="251">
+</INSTRUCTION>
+<INSTRUCTION id="53" code="move v0,zero" time="252">
+</INSTRUCTION>
+<INSTRUCTION id="54" code="mtc1 v1,$f0" time="253">
+</INSTRUCTION>
+<INSTRUCTION id="55" code="mtc1 v0,$f2" time="254">
+</INSTRUCTION>
+<INSTRUCTION id="56" code="nop" time="255">
+</INSTRUCTION>
+<INSTRUCTION id="57" code="c.eq.s $f0,$f2" time="366">
+</INSTRUCTION>
+<INSTRUCTION id="58" code="nop" time="367">
+</INSTRUCTION>
+<INSTRUCTION id="59" code="bc1f 4000d8" time="368">
+</INSTRUCTION>
+<INSTRUCTION id="60" code="nop" time="369">
+</INSTRUCTION>
+<INSTRUCTION id="62" code="j 4002d8" time="370">
+</INSTRUCTION>
+<INSTRUCTION id="63" code="sw zero,16(sp)" time="371">
+</INSTRUCTION>
+<INSTRUCTION id="35" code="addiu sp,sp,-64" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="36" code="sw ra,60(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="37" code="swc1 $f12,64(sp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="38" code="lw v1,64(sp)" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="39" code="lw v0,-32760(gp)" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="40" code="mtc1 v1,$f0" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="41" code="mtc1 v0,$f2" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="42" code="nop" time="231">
+</INSTRUCTION>
+<INSTRUCTION id="43" code="div.s $f0,$f0,$f2" time="232">
+</INSTRUCTION>
+<INSTRUCTION id="44" code="mfc1 v0,$f0" time="233">
+</INSTRUCTION>
+<INSTRUCTION id="45" code="nop" time="234">
+</INSTRUCTION>
+<INSTRUCTION id="46" code="sw v0,16(sp)" time="235">
+</INSTRUCTION>
+<INSTRUCTION id="47" code="lw v1,-32748(gp)" time="236">
+</INSTRUCTION>
+<INSTRUCTION id="48" code="lw v0,-32752(gp)" time="237">
+</INSTRUCTION>
+<INSTRUCTION id="49" code="sw v1,36(sp)" time="248">
+</INSTRUCTION>
+<INSTRUCTION id="50" code="sw v0,32(sp)" time="249">
+</INSTRUCTION>
+<INSTRUCTION id="51" code="sw zero,24(sp)" time="250">
+</INSTRUCTION>
+<INSTRUCTION id="52" code="lw v1,64(sp)" time="251">
+</INSTRUCTION>
+<INSTRUCTION id="53" code="move v0,zero" time="252">
+</INSTRUCTION>
+<INSTRUCTION id="54" code="mtc1 v1,$f0" time="253">
+</INSTRUCTION>
+<INSTRUCTION id="55" code="mtc1 v0,$f2" time="254">
+</INSTRUCTION>
+<INSTRUCTION id="56" code="nop" time="255">
+</INSTRUCTION>
+<INSTRUCTION id="57" code="c.eq.s $f0,$f2" time="366">
+</INSTRUCTION>
+<INSTRUCTION id="58" code="nop" time="367">
+</INSTRUCTION>
+<INSTRUCTION id="59" code="bc1f 4000d8" time="368">
+</INSTRUCTION>
+<INSTRUCTION id="60" code="nop" time="369">
+</INSTRUCTION>
+<INSTRUCTION id="62" code="j 4002d8" time="370">
+</INSTRUCTION>
+<INSTRUCTION id="63" code="sw zero,16(sp)" time="371">
+</INSTRUCTION>
+<INSTRUCTION id="35" code="addiu sp,sp,-64" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="36" code="sw ra,60(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="37" code="swc1 $f12,64(sp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="38" code="lw v1,64(sp)" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="39" code="lw v0,-32760(gp)" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="40" code="mtc1 v1,$f0" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="41" code="mtc1 v0,$f2" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="42" code="nop" time="231">
+</INSTRUCTION>
+<INSTRUCTION id="43" code="div.s $f0,$f0,$f2" time="232">
+</INSTRUCTION>
+<INSTRUCTION id="44" code="mfc1 v0,$f0" time="233">
+</INSTRUCTION>
+<INSTRUCTION id="45" code="nop" time="234">
+</INSTRUCTION>
+<INSTRUCTION id="46" code="sw v0,16(sp)" time="235">
+</INSTRUCTION>
+<INSTRUCTION id="47" code="lw v1,-32748(gp)" time="236">
+</INSTRUCTION>
+<INSTRUCTION id="48" code="lw v0,-32752(gp)" time="237">
+</INSTRUCTION>
+<INSTRUCTION id="49" code="sw v1,36(sp)" time="248">
+</INSTRUCTION>
+<INSTRUCTION id="50" code="sw v0,32(sp)" time="249">
+</INSTRUCTION>
+<INSTRUCTION id="51" code="sw zero,24(sp)" time="250">
+</INSTRUCTION>
+<INSTRUCTION id="52" code="lw v1,64(sp)" time="251">
+</INSTRUCTION>
+<INSTRUCTION id="53" code="move v0,zero" time="252">
+</INSTRUCTION>
+<INSTRUCTION id="54" code="mtc1 v1,$f0" time="253">
+</INSTRUCTION>
+<INSTRUCTION id="55" code="mtc1 v0,$f2" time="254">
+</INSTRUCTION>
+<INSTRUCTION id="56" code="nop" time="255">
+</INSTRUCTION>
+<INSTRUCTION id="57" code="c.eq.s $f0,$f2" time="366">
+</INSTRUCTION>
+<INSTRUCTION id="58" code="nop" time="367">
+</INSTRUCTION>
+<INSTRUCTION id="59" code="bc1f 4000d8" time="368">
+</INSTRUCTION>
+<INSTRUCTION id="60" code="nop" time="369">
+</INSTRUCTION>
+<INSTRUCTION id="65" code="li v0,1" time="370">
+</INSTRUCTION>
+<INSTRUCTION id="66" code="j 4002c4" time="371">
+</INSTRUCTION>
+<INSTRUCTION id="67" code="sw v0,20(sp)" time="382">
+</INSTRUCTION>
+<INSTRUCTION id="35" code="addiu sp,sp,-64" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="36" code="sw ra,60(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="37" code="swc1 $f12,64(sp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="38" code="lw v1,64(sp)" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="39" code="lw v0,-32760(gp)" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="40" code="mtc1 v1,$f0" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="41" code="mtc1 v0,$f2" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="42" code="nop" time="231">
+</INSTRUCTION>
+<INSTRUCTION id="43" code="div.s $f0,$f0,$f2" time="232">
+</INSTRUCTION>
+<INSTRUCTION id="44" code="mfc1 v0,$f0" time="233">
+</INSTRUCTION>
+<INSTRUCTION id="45" code="nop" time="234">
+</INSTRUCTION>
+<INSTRUCTION id="46" code="sw v0,16(sp)" time="235">
+</INSTRUCTION>
+<INSTRUCTION id="47" code="lw v1,-32748(gp)" time="236">
+</INSTRUCTION>
+<INSTRUCTION id="48" code="lw v0,-32752(gp)" time="237">
+</INSTRUCTION>
+<INSTRUCTION id="49" code="sw v1,36(sp)" time="248">
+</INSTRUCTION>
+<INSTRUCTION id="50" code="sw v0,32(sp)" time="249">
+</INSTRUCTION>
+<INSTRUCTION id="51" code="sw zero,24(sp)" time="250">
+</INSTRUCTION>
+<INSTRUCTION id="52" code="lw v1,64(sp)" time="251">
+</INSTRUCTION>
+<INSTRUCTION id="53" code="move v0,zero" time="252">
+</INSTRUCTION>
+<INSTRUCTION id="54" code="mtc1 v1,$f0" time="253">
+</INSTRUCTION>
+<INSTRUCTION id="55" code="mtc1 v0,$f2" time="254">
+</INSTRUCTION>
+<INSTRUCTION id="56" code="nop" time="255">
+</INSTRUCTION>
+<INSTRUCTION id="57" code="c.eq.s $f0,$f2" time="366">
+</INSTRUCTION>
+<INSTRUCTION id="58" code="nop" time="367">
+</INSTRUCTION>
+<INSTRUCTION id="59" code="bc1f 4000d8" time="368">
+</INSTRUCTION>
+<INSTRUCTION id="60" code="nop" time="369">
+</INSTRUCTION>
+<INSTRUCTION id="65" code="li v0,1" time="370">
+</INSTRUCTION>
+<INSTRUCTION id="66" code="j 4002c4" time="371">
+</INSTRUCTION>
+<INSTRUCTION id="67" code="sw v0,20(sp)" time="382">
+</INSTRUCTION>
+<INSTRUCTION id="35" code="addiu sp,sp,-64" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="36" code="sw ra,60(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="37" code="swc1 $f12,64(sp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="38" code="lw v1,64(sp)" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="39" code="lw v0,-32760(gp)" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="40" code="mtc1 v1,$f0" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="41" code="mtc1 v0,$f2" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="42" code="nop" time="231">
+</INSTRUCTION>
+<INSTRUCTION id="43" code="div.s $f0,$f0,$f2" time="232">
+</INSTRUCTION>
+<INSTRUCTION id="44" code="mfc1 v0,$f0" time="233">
+</INSTRUCTION>
+<INSTRUCTION id="45" code="nop" time="234">
+</INSTRUCTION>
+<INSTRUCTION id="46" code="sw v0,16(sp)" time="235">
+</INSTRUCTION>
+<INSTRUCTION id="47" code="lw v1,-32748(gp)" time="236">
+</INSTRUCTION>
+<INSTRUCTION id="48" code="lw v0,-32752(gp)" time="237">
+</INSTRUCTION>
+<INSTRUCTION id="49" code="sw v1,36(sp)" time="248">
+</INSTRUCTION>
+<INSTRUCTION id="50" code="sw v0,32(sp)" time="249">
+</INSTRUCTION>
+<INSTRUCTION id="51" code="sw zero,24(sp)" time="250">
+</INSTRUCTION>
+<INSTRUCTION id="52" code="lw v1,64(sp)" time="251">
+</INSTRUCTION>
+<INSTRUCTION id="53" code="move v0,zero" time="252">
+</INSTRUCTION>
+<INSTRUCTION id="54" code="mtc1 v1,$f0" time="253">
+</INSTRUCTION>
+<INSTRUCTION id="55" code="mtc1 v0,$f2" time="254">
+</INSTRUCTION>
+<INSTRUCTION id="56" code="nop" time="255">
+</INSTRUCTION>
+<INSTRUCTION id="57" code="c.eq.s $f0,$f2" time="366">
+</INSTRUCTION>
+<INSTRUCTION id="58" code="nop" time="367">
+</INSTRUCTION>
+<INSTRUCTION id="59" code="bc1f 4000d8" time="368">
+</INSTRUCTION>
+<INSTRUCTION id="60" code="nop" time="369">
+</INSTRUCTION>
+<INSTRUCTION id="65" code="li v0,1" time="370">
+</INSTRUCTION>
+<INSTRUCTION id="66" code="j 4002c4" time="371">
+</INSTRUCTION>
+<INSTRUCTION id="67" code="sw v0,20(sp)" time="382">
+</INSTRUCTION>
+<INSTRUCTION id="35" code="addiu sp,sp,-64" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="36" code="sw ra,60(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="37" code="swc1 $f12,64(sp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="38" code="lw v1,64(sp)" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="39" code="lw v0,-32760(gp)" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="40" code="mtc1 v1,$f0" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="41" code="mtc1 v0,$f2" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="42" code="nop" time="231">
+</INSTRUCTION>
+<INSTRUCTION id="43" code="div.s $f0,$f0,$f2" time="232">
+</INSTRUCTION>
+<INSTRUCTION id="44" code="mfc1 v0,$f0" time="233">
+</INSTRUCTION>
+<INSTRUCTION id="45" code="nop" time="234">
+</INSTRUCTION>
+<INSTRUCTION id="46" code="sw v0,16(sp)" time="235">
+</INSTRUCTION>
+<INSTRUCTION id="47" code="lw v1,-32748(gp)" time="236">
+</INSTRUCTION>
+<INSTRUCTION id="48" code="lw v0,-32752(gp)" time="237">
+</INSTRUCTION>
+<INSTRUCTION id="49" code="sw v1,36(sp)" time="248">
+</INSTRUCTION>
+<INSTRUCTION id="50" code="sw v0,32(sp)" time="249">
+</INSTRUCTION>
+<INSTRUCTION id="51" code="sw zero,24(sp)" time="250">
+</INSTRUCTION>
+<INSTRUCTION id="52" code="lw v1,64(sp)" time="251">
+</INSTRUCTION>
+<INSTRUCTION id="53" code="move v0,zero" time="252">
+</INSTRUCTION>
+<INSTRUCTION id="54" code="mtc1 v1,$f0" time="253">
+</INSTRUCTION>
+<INSTRUCTION id="55" code="mtc1 v0,$f2" time="254">
+</INSTRUCTION>
+<INSTRUCTION id="56" code="nop" time="255">
+</INSTRUCTION>
+<INSTRUCTION id="57" code="c.eq.s $f0,$f2" time="366">
+</INSTRUCTION>
+<INSTRUCTION id="58" code="nop" time="367">
+</INSTRUCTION>
+<INSTRUCTION id="59" code="bc1f 4000d8" time="368">
+</INSTRUCTION>
+<INSTRUCTION id="60" code="nop" time="369">
+</INSTRUCTION>
+<INSTRUCTION id="65" code="li v0,1" time="370">
+</INSTRUCTION>
+<INSTRUCTION id="66" code="j 4002c4" time="371">
+</INSTRUCTION>
+<INSTRUCTION id="67" code="sw v0,20(sp)" time="382">
+</INSTRUCTION>
+<INSTRUCTION id="62" code="j 4002d8" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="63" code="sw zero,16(sp)" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="199" code="lw v0,16(sp)" time="16">
+</INSTRUCTION>
+<INSTRUCTION id="200" code="nop" time="17">
+</INSTRUCTION>
+<INSTRUCTION id="201" code="mtc1 v0,$f0" time="18">
+</INSTRUCTION>
+<INSTRUCTION id="202" code="lw ra,60(sp)" time="19">
+</INSTRUCTION>
+<INSTRUCTION id="203" code="addiu sp,sp,64" time="20">
+</INSTRUCTION>
+<INSTRUCTION id="204" code="jr ra" time="21">
+</INSTRUCTION>
+<INSTRUCTION id="205" code="nop" time="22">
+</INSTRUCTION>
+<INSTRUCTION id="62" code="j 4002d8" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="63" code="sw zero,16(sp)" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="199" code="lw v0,16(sp)" time="16">
+</INSTRUCTION>
+<INSTRUCTION id="200" code="nop" time="17">
+</INSTRUCTION>
+<INSTRUCTION id="201" code="mtc1 v0,$f0" time="18">
+</INSTRUCTION>
+<INSTRUCTION id="202" code="lw ra,60(sp)" time="19">
+</INSTRUCTION>
+<INSTRUCTION id="203" code="addiu sp,sp,64" time="20">
+</INSTRUCTION>
+<INSTRUCTION id="204" code="jr ra" time="21">
+</INSTRUCTION>
+<INSTRUCTION id="205" code="nop" time="22">
+</INSTRUCTION>
+<INSTRUCTION id="62" code="j 4002d8" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="63" code="sw zero,16(sp)" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="199" code="lw v0,16(sp)" time="16">
+</INSTRUCTION>
+<INSTRUCTION id="200" code="nop" time="17">
+</INSTRUCTION>
+<INSTRUCTION id="201" code="mtc1 v0,$f0" time="18">
+</INSTRUCTION>
+<INSTRUCTION id="202" code="lw ra,60(sp)" time="19">
+</INSTRUCTION>
+<INSTRUCTION id="203" code="addiu sp,sp,64" time="20">
+</INSTRUCTION>
+<INSTRUCTION id="204" code="jr ra" time="21">
+</INSTRUCTION>
+<INSTRUCTION id="205" code="nop" time="22">
+</INSTRUCTION>
+<INSTRUCTION id="62" code="j 4002d8" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="63" code="sw zero,16(sp)" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="199" code="lw v0,16(sp)" time="16">
+</INSTRUCTION>
+<INSTRUCTION id="200" code="nop" time="17">
+</INSTRUCTION>
+<INSTRUCTION id="201" code="mtc1 v0,$f0" time="18">
+</INSTRUCTION>
+<INSTRUCTION id="202" code="lw ra,60(sp)" time="19">
+</INSTRUCTION>
+<INSTRUCTION id="203" code="addiu sp,sp,64" time="20">
+</INSTRUCTION>
+<INSTRUCTION id="204" code="jr ra" time="21">
+</INSTRUCTION>
+<INSTRUCTION id="205" code="nop" time="22">
+</INSTRUCTION>
+<INSTRUCTION id="65" code="li v0,1" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="66" code="j 4002c4" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="67" code="sw v0,20(sp)" time="16">
+</INSTRUCTION>
+<INSTRUCTION id="194" code="lw v0,20(sp)" time="27">
+</INSTRUCTION>
+<INSTRUCTION id="195" code="nop" time="28">
+</INSTRUCTION>
+<INSTRUCTION id="196" code="slti v0,v0,20" time="29">
+</INSTRUCTION>
+<INSTRUCTION id="197" code="bnez v0,4000e4" time="30">
+</INSTRUCTION>
+<INSTRUCTION id="198" code="nop" time="31">
+</INSTRUCTION>
+<INSTRUCTION id="65" code="li v0,1" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="66" code="j 4002c4" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="67" code="sw v0,20(sp)" time="16">
+</INSTRUCTION>
+<INSTRUCTION id="194" code="lw v0,20(sp)" time="17">
+</INSTRUCTION>
+<INSTRUCTION id="195" code="nop" time="18">
+</INSTRUCTION>
+<INSTRUCTION id="196" code="slti v0,v0,20" time="19">
+</INSTRUCTION>
+<INSTRUCTION id="197" code="bnez v0,4000e4" time="20">
+</INSTRUCTION>
+<INSTRUCTION id="198" code="nop" time="21">
+</INSTRUCTION>
+<INSTRUCTION id="65" code="li v0,1" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="66" code="j 4002c4" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="67" code="sw v0,20(sp)" time="16">
+</INSTRUCTION>
+<INSTRUCTION id="194" code="lw v0,20(sp)" time="27">
+</INSTRUCTION>
+<INSTRUCTION id="195" code="nop" time="28">
+</INSTRUCTION>
+<INSTRUCTION id="196" code="slti v0,v0,20" time="29">
+</INSTRUCTION>
+<INSTRUCTION id="197" code="bnez v0,4000e4" time="30">
+</INSTRUCTION>
+<INSTRUCTION id="198" code="nop" time="31">
+</INSTRUCTION>
+<INSTRUCTION id="65" code="li v0,1" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="66" code="j 4002c4" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="67" code="sw v0,20(sp)" time="16">
+</INSTRUCTION>
+<INSTRUCTION id="194" code="lw v0,20(sp)" time="17">
+</INSTRUCTION>
+<INSTRUCTION id="195" code="nop" time="18">
+</INSTRUCTION>
+<INSTRUCTION id="196" code="slti v0,v0,20" time="19">
+</INSTRUCTION>
+<INSTRUCTION id="197" code="bnez v0,4000e4" time="20">
+</INSTRUCTION>
+<INSTRUCTION id="198" code="nop" time="21">
+</INSTRUCTION>
+<INSTRUCTION id="69" code="lw v0,24(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="70" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="71" code="bnez v0,4002b4" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="72" code="nop" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="74" code="lw v1,16(sp)" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="75" code="lw v0,16(sp)" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="76" code="mtc1 v1,$f0" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="77" code="mtc1 v0,$f2" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="78" code="nop" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="79" code="mul.s $f0,$f0,$f2" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="80" code="mfc1 v0,$f0" time="124">
+</INSTRUCTION>
+<INSTRUCTION id="81" code="lw v1,64(sp)" time="125">
+</INSTRUCTION>
+<INSTRUCTION id="82" code="nop" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="83" code="mtc1 v1,$f0" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="84" code="mtc1 v0,$f2" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="85" code="nop" time="239">
+</INSTRUCTION>
+<INSTRUCTION id="86" code="sub.s $f0,$f0,$f2" time="240">
+</INSTRUCTION>
+<INSTRUCTION id="87" code="mfc1 v0,$f0" time="241">
+</INSTRUCTION>
+<INSTRUCTION id="88" code="nop" time="242">
+</INSTRUCTION>
+<INSTRUCTION id="89" code="mtc1 v0,$f0" time="243">
+</INSTRUCTION>
+<INSTRUCTION id="90" code="nop" time="244">
+</INSTRUCTION>
+<INSTRUCTION id="91" code="cvt.d.s $f0,$f0" time="245">
+</INSTRUCTION>
+<INSTRUCTION id="92" code="mfc1 a1,$f0" time="246">
+</INSTRUCTION>
+<INSTRUCTION id="93" code="mfc1 a0,$f1" time="357">
+</INSTRUCTION>
+<INSTRUCTION id="94" code="lw v0,16(sp)" time="358">
+</INSTRUCTION>
+<INSTRUCTION id="95" code="nop" time="359">
+</INSTRUCTION>
+<INSTRUCTION id="96" code="mtc1 v0,$f2" time="360">
+</INSTRUCTION>
+<INSTRUCTION id="97" code="nop" time="361">
+</INSTRUCTION>
+<INSTRUCTION id="98" code="cvt.d.s $f2,$f2" time="362">
+</INSTRUCTION>
+<INSTRUCTION id="99" code="mfc1 v1,$f2" time="363">
+</INSTRUCTION>
+<INSTRUCTION id="100" code="mfc1 v0,$f3" time="364">
+</INSTRUCTION>
+<INSTRUCTION id="101" code="mtc1 v1,$f0" time="475">
+</INSTRUCTION>
+<INSTRUCTION id="102" code="mtc1 v0,$f1" time="476">
+</INSTRUCTION>
+<INSTRUCTION id="103" code="mtc1 v1,$f2" time="477">
+</INSTRUCTION>
+<INSTRUCTION id="104" code="mtc1 v0,$f3" time="478">
+</INSTRUCTION>
+<INSTRUCTION id="105" code="nop" time="479">
+</INSTRUCTION>
+<INSTRUCTION id="106" code="add.d $f0,$f0,$f2" time="480">
+</INSTRUCTION>
+<INSTRUCTION id="107" code="mfc1 v1,$f0" time="481">
+</INSTRUCTION>
+<INSTRUCTION id="108" code="mfc1 v0,$f1" time="482">
+</INSTRUCTION>
+<INSTRUCTION id="109" code="mtc1 a1,$f0" time="593">
+</INSTRUCTION>
+<INSTRUCTION id="110" code="mtc1 a0,$f1" time="594">
+</INSTRUCTION>
+<INSTRUCTION id="111" code="mtc1 v1,$f2" time="595">
+</INSTRUCTION>
+<INSTRUCTION id="112" code="mtc1 v0,$f3" time="596">
+</INSTRUCTION>
+<INSTRUCTION id="113" code="nop" time="597">
+</INSTRUCTION>
+<INSTRUCTION id="114" code="div.d $f0,$f0,$f2" time="598">
+</INSTRUCTION>
+<INSTRUCTION id="115" code="mfc1 v1,$f0" time="599">
+</INSTRUCTION>
+<INSTRUCTION id="116" code="mfc1 v0,$f1" time="600">
+</INSTRUCTION>
+<INSTRUCTION id="117" code="mtc1 v1,$f0" time="711">
+</INSTRUCTION>
+<INSTRUCTION id="118" code="mtc1 v0,$f1" time="712">
+</INSTRUCTION>
+<INSTRUCTION id="119" code="nop" time="713">
+</INSTRUCTION>
+<INSTRUCTION id="120" code="cvt.s.d $f0,$f0" time="714">
+</INSTRUCTION>
+<INSTRUCTION id="121" code="mfc1 v0,$f0" time="715">
+</INSTRUCTION>
+<INSTRUCTION id="122" code="nop" time="716">
+</INSTRUCTION>
+<INSTRUCTION id="123" code="sw v0,40(sp)" time="717">
+</INSTRUCTION>
+<INSTRUCTION id="124" code="lw v1,16(sp)" time="718">
+</INSTRUCTION>
+<INSTRUCTION id="125" code="lw v0,40(sp)" time="829">
+</INSTRUCTION>
+<INSTRUCTION id="126" code="mtc1 v1,$f2" time="830">
+</INSTRUCTION>
+<INSTRUCTION id="127" code="mtc1 v0,$f0" time="831">
+</INSTRUCTION>
+<INSTRUCTION id="128" code="nop" time="832">
+</INSTRUCTION>
+<INSTRUCTION id="129" code="add.s $f2,$f2,$f0" time="833">
+</INSTRUCTION>
+<INSTRUCTION id="130" code="mfc1 v0,$f2" time="834">
+</INSTRUCTION>
+<INSTRUCTION id="131" code="nop" time="835">
+</INSTRUCTION>
+<INSTRUCTION id="132" code="sw v0,16(sp)" time="836">
+</INSTRUCTION>
+<INSTRUCTION id="133" code="lw v1,16(sp)" time="947">
+</INSTRUCTION>
+<INSTRUCTION id="134" code="lw v0,16(sp)" time="948">
+</INSTRUCTION>
+<INSTRUCTION id="135" code="mtc1 v1,$f2" time="949">
+</INSTRUCTION>
+<INSTRUCTION id="136" code="mtc1 v0,$f0" time="950">
+</INSTRUCTION>
+<INSTRUCTION id="137" code="nop" time="951">
+</INSTRUCTION>
+<INSTRUCTION id="138" code="mul.s $f2,$f2,$f0" time="952">
+</INSTRUCTION>
+<INSTRUCTION id="139" code="mfc1 v0,$f2" time="953">
+</INSTRUCTION>
+<INSTRUCTION id="140" code="lw v1,64(sp)" time="954">
+</INSTRUCTION>
+<INSTRUCTION id="141" code="nop" time="1065">
+</INSTRUCTION>
+<INSTRUCTION id="142" code="mtc1 v1,$f2" time="1066">
+</INSTRUCTION>
+<INSTRUCTION id="143" code="mtc1 v0,$f0" time="1067">
+</INSTRUCTION>
+<INSTRUCTION id="144" code="nop" time="1068">
+</INSTRUCTION>
+<INSTRUCTION id="145" code="sub.s $f2,$f2,$f0" time="1069">
+</INSTRUCTION>
+<INSTRUCTION id="146" code="mfc1 v0,$f2" time="1070">
+</INSTRUCTION>
+<INSTRUCTION id="147" code="nop" time="1071">
+</INSTRUCTION>
+<INSTRUCTION id="148" code="mtc1 v0,$f2" time="1072">
+</INSTRUCTION>
+<INSTRUCTION id="149" code="nop" time="1183">
+</INSTRUCTION>
+<INSTRUCTION id="150" code="cvt.d.s $f2,$f2" time="1184">
+</INSTRUCTION>
+<INSTRUCTION id="151" code="mfc1 v1,$f2" time="1185">
+</INSTRUCTION>
+<INSTRUCTION id="152" code="mfc1 v0,$f3" time="1186">
+</INSTRUCTION>
+<INSTRUCTION id="153" code="sw v1,52(sp)" time="1187">
+</INSTRUCTION>
+<INSTRUCTION id="154" code="sw v0,48(sp)" time="1188">
+</INSTRUCTION>
+<INSTRUCTION id="155" code="lw v1,52(sp)" time="1189">
+</INSTRUCTION>
+<INSTRUCTION id="156" code="lw v0,48(sp)" time="1190">
+</INSTRUCTION>
+<INSTRUCTION id="157" code="mtc1 v1,$f0" time="1301">
+</INSTRUCTION>
+<INSTRUCTION id="158" code="mtc1 v0,$f1" time="1302">
+</INSTRUCTION>
+<INSTRUCTION id="159" code="nop" time="1303">
+</INSTRUCTION>
+<INSTRUCTION id="160" code="cvt.s.d $f0,$f0" time="1304">
+</INSTRUCTION>
+<INSTRUCTION id="161" code="mfc1 v0,$f0" time="1305">
+</INSTRUCTION>
+<INSTRUCTION id="162" code="nop" time="1306">
+</INSTRUCTION>
+<INSTRUCTION id="163" code="mtc1 v0,$f12" time="1307">
+</INSTRUCTION>
+<INSTRUCTION id="164" code="jal 400018" time="1308">
+</INSTRUCTION>
+<INSTRUCTION id="165" code="nop" time="1419">
+</INSTRUCTION>
+<INSTRUCTION id="69" code="lw v0,24(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="70" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="71" code="bnez v0,4002b4" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="72" code="nop" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="74" code="lw v1,16(sp)" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="75" code="lw v0,16(sp)" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="76" code="mtc1 v1,$f0" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="77" code="mtc1 v0,$f2" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="78" code="nop" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="79" code="mul.s $f0,$f0,$f2" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="80" code="mfc1 v0,$f0" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="81" code="lw v1,64(sp)" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="82" code="nop" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="83" code="mtc1 v1,$f0" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="84" code="mtc1 v0,$f2" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="85" code="nop" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="86" code="sub.s $f0,$f0,$f2" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="87" code="mfc1 v0,$f0" time="120">
+</INSTRUCTION>
+<INSTRUCTION id="88" code="nop" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="89" code="mtc1 v0,$f0" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="90" code="nop" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="91" code="cvt.d.s $f0,$f0" time="124">
+</INSTRUCTION>
+<INSTRUCTION id="92" code="mfc1 a1,$f0" time="125">
+</INSTRUCTION>
+<INSTRUCTION id="93" code="mfc1 a0,$f1" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="94" code="lw v0,16(sp)" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="95" code="nop" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="96" code="mtc1 v0,$f2" time="129">
+</INSTRUCTION>
+<INSTRUCTION id="97" code="nop" time="130">
+</INSTRUCTION>
+<INSTRUCTION id="98" code="cvt.d.s $f2,$f2" time="131">
+</INSTRUCTION>
+<INSTRUCTION id="99" code="mfc1 v1,$f2" time="132">
+</INSTRUCTION>
+<INSTRUCTION id="100" code="mfc1 v0,$f3" time="133">
+</INSTRUCTION>
+<INSTRUCTION id="101" code="mtc1 v1,$f0" time="134">
+</INSTRUCTION>
+<INSTRUCTION id="102" code="mtc1 v0,$f1" time="135">
+</INSTRUCTION>
+<INSTRUCTION id="103" code="mtc1 v1,$f2" time="136">
+</INSTRUCTION>
+<INSTRUCTION id="104" code="mtc1 v0,$f3" time="137">
+</INSTRUCTION>
+<INSTRUCTION id="105" code="nop" time="138">
+</INSTRUCTION>
+<INSTRUCTION id="106" code="add.d $f0,$f0,$f2" time="139">
+</INSTRUCTION>
+<INSTRUCTION id="107" code="mfc1 v1,$f0" time="140">
+</INSTRUCTION>
+<INSTRUCTION id="108" code="mfc1 v0,$f1" time="141">
+</INSTRUCTION>
+<INSTRUCTION id="109" code="mtc1 a1,$f0" time="142">
+</INSTRUCTION>
+<INSTRUCTION id="110" code="mtc1 a0,$f1" time="143">
+</INSTRUCTION>
+<INSTRUCTION id="111" code="mtc1 v1,$f2" time="144">
+</INSTRUCTION>
+<INSTRUCTION id="112" code="mtc1 v0,$f3" time="145">
+</INSTRUCTION>
+<INSTRUCTION id="113" code="nop" time="146">
+</INSTRUCTION>
+<INSTRUCTION id="114" code="div.d $f0,$f0,$f2" time="147">
+</INSTRUCTION>
+<INSTRUCTION id="115" code="mfc1 v1,$f0" time="148">
+</INSTRUCTION>
+<INSTRUCTION id="116" code="mfc1 v0,$f1" time="149">
+</INSTRUCTION>
+<INSTRUCTION id="117" code="mtc1 v1,$f0" time="150">
+</INSTRUCTION>
+<INSTRUCTION id="118" code="mtc1 v0,$f1" time="151">
+</INSTRUCTION>
+<INSTRUCTION id="119" code="nop" time="152">
+</INSTRUCTION>
+<INSTRUCTION id="120" code="cvt.s.d $f0,$f0" time="153">
+</INSTRUCTION>
+<INSTRUCTION id="121" code="mfc1 v0,$f0" time="154">
+</INSTRUCTION>
+<INSTRUCTION id="122" code="nop" time="155">
+</INSTRUCTION>
+<INSTRUCTION id="123" code="sw v0,40(sp)" time="156">
+</INSTRUCTION>
+<INSTRUCTION id="124" code="lw v1,16(sp)" time="157">
+</INSTRUCTION>
+<INSTRUCTION id="125" code="lw v0,40(sp)" time="158">
+</INSTRUCTION>
+<INSTRUCTION id="126" code="mtc1 v1,$f2" time="159">
+</INSTRUCTION>
+<INSTRUCTION id="127" code="mtc1 v0,$f0" time="160">
+</INSTRUCTION>
+<INSTRUCTION id="128" code="nop" time="161">
+</INSTRUCTION>
+<INSTRUCTION id="129" code="add.s $f2,$f2,$f0" time="162">
+</INSTRUCTION>
+<INSTRUCTION id="130" code="mfc1 v0,$f2" time="163">
+</INSTRUCTION>
+<INSTRUCTION id="131" code="nop" time="164">
+</INSTRUCTION>
+<INSTRUCTION id="132" code="sw v0,16(sp)" time="165">
+</INSTRUCTION>
+<INSTRUCTION id="133" code="lw v1,16(sp)" time="166">
+</INSTRUCTION>
+<INSTRUCTION id="134" code="lw v0,16(sp)" time="167">
+</INSTRUCTION>
+<INSTRUCTION id="135" code="mtc1 v1,$f2" time="168">
+</INSTRUCTION>
+<INSTRUCTION id="136" code="mtc1 v0,$f0" time="169">
+</INSTRUCTION>
+<INSTRUCTION id="137" code="nop" time="170">
+</INSTRUCTION>
+<INSTRUCTION id="138" code="mul.s $f2,$f2,$f0" time="171">
+</INSTRUCTION>
+<INSTRUCTION id="139" code="mfc1 v0,$f2" time="172">
+</INSTRUCTION>
+<INSTRUCTION id="140" code="lw v1,64(sp)" time="173">
+</INSTRUCTION>
+<INSTRUCTION id="141" code="nop" time="174">
+</INSTRUCTION>
+<INSTRUCTION id="142" code="mtc1 v1,$f2" time="175">
+</INSTRUCTION>
+<INSTRUCTION id="143" code="mtc1 v0,$f0" time="176">
+</INSTRUCTION>
+<INSTRUCTION id="144" code="nop" time="177">
+</INSTRUCTION>
+<INSTRUCTION id="145" code="sub.s $f2,$f2,$f0" time="178">
+</INSTRUCTION>
+<INSTRUCTION id="146" code="mfc1 v0,$f2" time="179">
+</INSTRUCTION>
+<INSTRUCTION id="147" code="nop" time="180">
+</INSTRUCTION>
+<INSTRUCTION id="148" code="mtc1 v0,$f2" time="181">
+</INSTRUCTION>
+<INSTRUCTION id="149" code="nop" time="182">
+</INSTRUCTION>
+<INSTRUCTION id="150" code="cvt.d.s $f2,$f2" time="183">
+</INSTRUCTION>
+<INSTRUCTION id="151" code="mfc1 v1,$f2" time="184">
+</INSTRUCTION>
+<INSTRUCTION id="152" code="mfc1 v0,$f3" time="185">
+</INSTRUCTION>
+<INSTRUCTION id="153" code="sw v1,52(sp)" time="186">
+</INSTRUCTION>
+<INSTRUCTION id="154" code="sw v0,48(sp)" time="187">
+</INSTRUCTION>
+<INSTRUCTION id="155" code="lw v1,52(sp)" time="188">
+</INSTRUCTION>
+<INSTRUCTION id="156" code="lw v0,48(sp)" time="189">
+</INSTRUCTION>
+<INSTRUCTION id="157" code="mtc1 v1,$f0" time="190">
+</INSTRUCTION>
+<INSTRUCTION id="158" code="mtc1 v0,$f1" time="191">
+</INSTRUCTION>
+<INSTRUCTION id="159" code="nop" time="192">
+</INSTRUCTION>
+<INSTRUCTION id="160" code="cvt.s.d $f0,$f0" time="193">
+</INSTRUCTION>
+<INSTRUCTION id="161" code="mfc1 v0,$f0" time="194">
+</INSTRUCTION>
+<INSTRUCTION id="162" code="nop" time="195">
+</INSTRUCTION>
+<INSTRUCTION id="163" code="mtc1 v0,$f12" time="196">
+</INSTRUCTION>
+<INSTRUCTION id="164" code="jal 400018" time="197">
+</INSTRUCTION>
+<INSTRUCTION id="165" code="nop" time="198">
+</INSTRUCTION>
+<INSTRUCTION id="69" code="lw v0,24(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="70" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="71" code="bnez v0,4002b4" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="72" code="nop" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="74" code="lw v1,16(sp)" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="75" code="lw v0,16(sp)" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="76" code="mtc1 v1,$f0" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="77" code="mtc1 v0,$f2" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="78" code="nop" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="79" code="mul.s $f0,$f0,$f2" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="80" code="mfc1 v0,$f0" time="124">
+</INSTRUCTION>
+<INSTRUCTION id="81" code="lw v1,64(sp)" time="125">
+</INSTRUCTION>
+<INSTRUCTION id="82" code="nop" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="83" code="mtc1 v1,$f0" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="84" code="mtc1 v0,$f2" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="85" code="nop" time="239">
+</INSTRUCTION>
+<INSTRUCTION id="86" code="sub.s $f0,$f0,$f2" time="240">
+</INSTRUCTION>
+<INSTRUCTION id="87" code="mfc1 v0,$f0" time="241">
+</INSTRUCTION>
+<INSTRUCTION id="88" code="nop" time="242">
+</INSTRUCTION>
+<INSTRUCTION id="89" code="mtc1 v0,$f0" time="243">
+</INSTRUCTION>
+<INSTRUCTION id="90" code="nop" time="244">
+</INSTRUCTION>
+<INSTRUCTION id="91" code="cvt.d.s $f0,$f0" time="245">
+</INSTRUCTION>
+<INSTRUCTION id="92" code="mfc1 a1,$f0" time="246">
+</INSTRUCTION>
+<INSTRUCTION id="93" code="mfc1 a0,$f1" time="357">
+</INSTRUCTION>
+<INSTRUCTION id="94" code="lw v0,16(sp)" time="358">
+</INSTRUCTION>
+<INSTRUCTION id="95" code="nop" time="359">
+</INSTRUCTION>
+<INSTRUCTION id="96" code="mtc1 v0,$f2" time="360">
+</INSTRUCTION>
+<INSTRUCTION id="97" code="nop" time="361">
+</INSTRUCTION>
+<INSTRUCTION id="98" code="cvt.d.s $f2,$f2" time="362">
+</INSTRUCTION>
+<INSTRUCTION id="99" code="mfc1 v1,$f2" time="363">
+</INSTRUCTION>
+<INSTRUCTION id="100" code="mfc1 v0,$f3" time="364">
+</INSTRUCTION>
+<INSTRUCTION id="101" code="mtc1 v1,$f0" time="475">
+</INSTRUCTION>
+<INSTRUCTION id="102" code="mtc1 v0,$f1" time="476">
+</INSTRUCTION>
+<INSTRUCTION id="103" code="mtc1 v1,$f2" time="477">
+</INSTRUCTION>
+<INSTRUCTION id="104" code="mtc1 v0,$f3" time="478">
+</INSTRUCTION>
+<INSTRUCTION id="105" code="nop" time="479">
+</INSTRUCTION>
+<INSTRUCTION id="106" code="add.d $f0,$f0,$f2" time="480">
+</INSTRUCTION>
+<INSTRUCTION id="107" code="mfc1 v1,$f0" time="481">
+</INSTRUCTION>
+<INSTRUCTION id="108" code="mfc1 v0,$f1" time="482">
+</INSTRUCTION>
+<INSTRUCTION id="109" code="mtc1 a1,$f0" time="593">
+</INSTRUCTION>
+<INSTRUCTION id="110" code="mtc1 a0,$f1" time="594">
+</INSTRUCTION>
+<INSTRUCTION id="111" code="mtc1 v1,$f2" time="595">
+</INSTRUCTION>
+<INSTRUCTION id="112" code="mtc1 v0,$f3" time="596">
+</INSTRUCTION>
+<INSTRUCTION id="113" code="nop" time="597">
+</INSTRUCTION>
+<INSTRUCTION id="114" code="div.d $f0,$f0,$f2" time="598">
+</INSTRUCTION>
+<INSTRUCTION id="115" code="mfc1 v1,$f0" time="599">
+</INSTRUCTION>
+<INSTRUCTION id="116" code="mfc1 v0,$f1" time="600">
+</INSTRUCTION>
+<INSTRUCTION id="117" code="mtc1 v1,$f0" time="711">
+</INSTRUCTION>
+<INSTRUCTION id="118" code="mtc1 v0,$f1" time="712">
+</INSTRUCTION>
+<INSTRUCTION id="119" code="nop" time="713">
+</INSTRUCTION>
+<INSTRUCTION id="120" code="cvt.s.d $f0,$f0" time="714">
+</INSTRUCTION>
+<INSTRUCTION id="121" code="mfc1 v0,$f0" time="715">
+</INSTRUCTION>
+<INSTRUCTION id="122" code="nop" time="716">
+</INSTRUCTION>
+<INSTRUCTION id="123" code="sw v0,40(sp)" time="717">
+</INSTRUCTION>
+<INSTRUCTION id="124" code="lw v1,16(sp)" time="718">
+</INSTRUCTION>
+<INSTRUCTION id="125" code="lw v0,40(sp)" time="829">
+</INSTRUCTION>
+<INSTRUCTION id="126" code="mtc1 v1,$f2" time="830">
+</INSTRUCTION>
+<INSTRUCTION id="127" code="mtc1 v0,$f0" time="831">
+</INSTRUCTION>
+<INSTRUCTION id="128" code="nop" time="832">
+</INSTRUCTION>
+<INSTRUCTION id="129" code="add.s $f2,$f2,$f0" time="833">
+</INSTRUCTION>
+<INSTRUCTION id="130" code="mfc1 v0,$f2" time="834">
+</INSTRUCTION>
+<INSTRUCTION id="131" code="nop" time="835">
+</INSTRUCTION>
+<INSTRUCTION id="132" code="sw v0,16(sp)" time="836">
+</INSTRUCTION>
+<INSTRUCTION id="133" code="lw v1,16(sp)" time="947">
+</INSTRUCTION>
+<INSTRUCTION id="134" code="lw v0,16(sp)" time="948">
+</INSTRUCTION>
+<INSTRUCTION id="135" code="mtc1 v1,$f2" time="949">
+</INSTRUCTION>
+<INSTRUCTION id="136" code="mtc1 v0,$f0" time="950">
+</INSTRUCTION>
+<INSTRUCTION id="137" code="nop" time="951">
+</INSTRUCTION>
+<INSTRUCTION id="138" code="mul.s $f2,$f2,$f0" time="952">
+</INSTRUCTION>
+<INSTRUCTION id="139" code="mfc1 v0,$f2" time="953">
+</INSTRUCTION>
+<INSTRUCTION id="140" code="lw v1,64(sp)" time="954">
+</INSTRUCTION>
+<INSTRUCTION id="141" code="nop" time="1065">
+</INSTRUCTION>
+<INSTRUCTION id="142" code="mtc1 v1,$f2" time="1066">
+</INSTRUCTION>
+<INSTRUCTION id="143" code="mtc1 v0,$f0" time="1067">
+</INSTRUCTION>
+<INSTRUCTION id="144" code="nop" time="1068">
+</INSTRUCTION>
+<INSTRUCTION id="145" code="sub.s $f2,$f2,$f0" time="1069">
+</INSTRUCTION>
+<INSTRUCTION id="146" code="mfc1 v0,$f2" time="1070">
+</INSTRUCTION>
+<INSTRUCTION id="147" code="nop" time="1071">
+</INSTRUCTION>
+<INSTRUCTION id="148" code="mtc1 v0,$f2" time="1072">
+</INSTRUCTION>
+<INSTRUCTION id="149" code="nop" time="1183">
+</INSTRUCTION>
+<INSTRUCTION id="150" code="cvt.d.s $f2,$f2" time="1184">
+</INSTRUCTION>
+<INSTRUCTION id="151" code="mfc1 v1,$f2" time="1185">
+</INSTRUCTION>
+<INSTRUCTION id="152" code="mfc1 v0,$f3" time="1186">
+</INSTRUCTION>
+<INSTRUCTION id="153" code="sw v1,52(sp)" time="1187">
+</INSTRUCTION>
+<INSTRUCTION id="154" code="sw v0,48(sp)" time="1188">
+</INSTRUCTION>
+<INSTRUCTION id="155" code="lw v1,52(sp)" time="1189">
+</INSTRUCTION>
+<INSTRUCTION id="156" code="lw v0,48(sp)" time="1190">
+</INSTRUCTION>
+<INSTRUCTION id="157" code="mtc1 v1,$f0" time="1301">
+</INSTRUCTION>
+<INSTRUCTION id="158" code="mtc1 v0,$f1" time="1302">
+</INSTRUCTION>
+<INSTRUCTION id="159" code="nop" time="1303">
+</INSTRUCTION>
+<INSTRUCTION id="160" code="cvt.s.d $f0,$f0" time="1304">
+</INSTRUCTION>
+<INSTRUCTION id="161" code="mfc1 v0,$f0" time="1305">
+</INSTRUCTION>
+<INSTRUCTION id="162" code="nop" time="1306">
+</INSTRUCTION>
+<INSTRUCTION id="163" code="mtc1 v0,$f12" time="1307">
+</INSTRUCTION>
+<INSTRUCTION id="164" code="jal 400018" time="1308">
+</INSTRUCTION>
+<INSTRUCTION id="165" code="nop" time="1419">
+</INSTRUCTION>
+<INSTRUCTION id="69" code="lw v0,24(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="70" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="71" code="bnez v0,4002b4" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="72" code="nop" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="74" code="lw v1,16(sp)" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="75" code="lw v0,16(sp)" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="76" code="mtc1 v1,$f0" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="77" code="mtc1 v0,$f2" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="78" code="nop" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="79" code="mul.s $f0,$f0,$f2" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="80" code="mfc1 v0,$f0" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="81" code="lw v1,64(sp)" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="82" code="nop" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="83" code="mtc1 v1,$f0" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="84" code="mtc1 v0,$f2" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="85" code="nop" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="86" code="sub.s $f0,$f0,$f2" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="87" code="mfc1 v0,$f0" time="120">
+</INSTRUCTION>
+<INSTRUCTION id="88" code="nop" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="89" code="mtc1 v0,$f0" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="90" code="nop" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="91" code="cvt.d.s $f0,$f0" time="124">
+</INSTRUCTION>
+<INSTRUCTION id="92" code="mfc1 a1,$f0" time="125">
+</INSTRUCTION>
+<INSTRUCTION id="93" code="mfc1 a0,$f1" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="94" code="lw v0,16(sp)" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="95" code="nop" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="96" code="mtc1 v0,$f2" time="129">
+</INSTRUCTION>
+<INSTRUCTION id="97" code="nop" time="130">
+</INSTRUCTION>
+<INSTRUCTION id="98" code="cvt.d.s $f2,$f2" time="131">
+</INSTRUCTION>
+<INSTRUCTION id="99" code="mfc1 v1,$f2" time="132">
+</INSTRUCTION>
+<INSTRUCTION id="100" code="mfc1 v0,$f3" time="133">
+</INSTRUCTION>
+<INSTRUCTION id="101" code="mtc1 v1,$f0" time="134">
+</INSTRUCTION>
+<INSTRUCTION id="102" code="mtc1 v0,$f1" time="135">
+</INSTRUCTION>
+<INSTRUCTION id="103" code="mtc1 v1,$f2" time="136">
+</INSTRUCTION>
+<INSTRUCTION id="104" code="mtc1 v0,$f3" time="137">
+</INSTRUCTION>
+<INSTRUCTION id="105" code="nop" time="138">
+</INSTRUCTION>
+<INSTRUCTION id="106" code="add.d $f0,$f0,$f2" time="139">
+</INSTRUCTION>
+<INSTRUCTION id="107" code="mfc1 v1,$f0" time="140">
+</INSTRUCTION>
+<INSTRUCTION id="108" code="mfc1 v0,$f1" time="141">
+</INSTRUCTION>
+<INSTRUCTION id="109" code="mtc1 a1,$f0" time="142">
+</INSTRUCTION>
+<INSTRUCTION id="110" code="mtc1 a0,$f1" time="143">
+</INSTRUCTION>
+<INSTRUCTION id="111" code="mtc1 v1,$f2" time="144">
+</INSTRUCTION>
+<INSTRUCTION id="112" code="mtc1 v0,$f3" time="145">
+</INSTRUCTION>
+<INSTRUCTION id="113" code="nop" time="146">
+</INSTRUCTION>
+<INSTRUCTION id="114" code="div.d $f0,$f0,$f2" time="147">
+</INSTRUCTION>
+<INSTRUCTION id="115" code="mfc1 v1,$f0" time="148">
+</INSTRUCTION>
+<INSTRUCTION id="116" code="mfc1 v0,$f1" time="149">
+</INSTRUCTION>
+<INSTRUCTION id="117" code="mtc1 v1,$f0" time="150">
+</INSTRUCTION>
+<INSTRUCTION id="118" code="mtc1 v0,$f1" time="151">
+</INSTRUCTION>
+<INSTRUCTION id="119" code="nop" time="152">
+</INSTRUCTION>
+<INSTRUCTION id="120" code="cvt.s.d $f0,$f0" time="153">
+</INSTRUCTION>
+<INSTRUCTION id="121" code="mfc1 v0,$f0" time="154">
+</INSTRUCTION>
+<INSTRUCTION id="122" code="nop" time="155">
+</INSTRUCTION>
+<INSTRUCTION id="123" code="sw v0,40(sp)" time="156">
+</INSTRUCTION>
+<INSTRUCTION id="124" code="lw v1,16(sp)" time="157">
+</INSTRUCTION>
+<INSTRUCTION id="125" code="lw v0,40(sp)" time="158">
+</INSTRUCTION>
+<INSTRUCTION id="126" code="mtc1 v1,$f2" time="159">
+</INSTRUCTION>
+<INSTRUCTION id="127" code="mtc1 v0,$f0" time="160">
+</INSTRUCTION>
+<INSTRUCTION id="128" code="nop" time="161">
+</INSTRUCTION>
+<INSTRUCTION id="129" code="add.s $f2,$f2,$f0" time="162">
+</INSTRUCTION>
+<INSTRUCTION id="130" code="mfc1 v0,$f2" time="163">
+</INSTRUCTION>
+<INSTRUCTION id="131" code="nop" time="164">
+</INSTRUCTION>
+<INSTRUCTION id="132" code="sw v0,16(sp)" time="165">
+</INSTRUCTION>
+<INSTRUCTION id="133" code="lw v1,16(sp)" time="166">
+</INSTRUCTION>
+<INSTRUCTION id="134" code="lw v0,16(sp)" time="167">
+</INSTRUCTION>
+<INSTRUCTION id="135" code="mtc1 v1,$f2" time="168">
+</INSTRUCTION>
+<INSTRUCTION id="136" code="mtc1 v0,$f0" time="169">
+</INSTRUCTION>
+<INSTRUCTION id="137" code="nop" time="170">
+</INSTRUCTION>
+<INSTRUCTION id="138" code="mul.s $f2,$f2,$f0" time="171">
+</INSTRUCTION>
+<INSTRUCTION id="139" code="mfc1 v0,$f2" time="172">
+</INSTRUCTION>
+<INSTRUCTION id="140" code="lw v1,64(sp)" time="173">
+</INSTRUCTION>
+<INSTRUCTION id="141" code="nop" time="174">
+</INSTRUCTION>
+<INSTRUCTION id="142" code="mtc1 v1,$f2" time="175">
+</INSTRUCTION>
+<INSTRUCTION id="143" code="mtc1 v0,$f0" time="176">
+</INSTRUCTION>
+<INSTRUCTION id="144" code="nop" time="177">
+</INSTRUCTION>
+<INSTRUCTION id="145" code="sub.s $f2,$f2,$f0" time="178">
+</INSTRUCTION>
+<INSTRUCTION id="146" code="mfc1 v0,$f2" time="179">
+</INSTRUCTION>
+<INSTRUCTION id="147" code="nop" time="180">
+</INSTRUCTION>
+<INSTRUCTION id="148" code="mtc1 v0,$f2" time="181">
+</INSTRUCTION>
+<INSTRUCTION id="149" code="nop" time="182">
+</INSTRUCTION>
+<INSTRUCTION id="150" code="cvt.d.s $f2,$f2" time="183">
+</INSTRUCTION>
+<INSTRUCTION id="151" code="mfc1 v1,$f2" time="184">
+</INSTRUCTION>
+<INSTRUCTION id="152" code="mfc1 v0,$f3" time="185">
+</INSTRUCTION>
+<INSTRUCTION id="153" code="sw v1,52(sp)" time="186">
+</INSTRUCTION>
+<INSTRUCTION id="154" code="sw v0,48(sp)" time="187">
+</INSTRUCTION>
+<INSTRUCTION id="155" code="lw v1,52(sp)" time="188">
+</INSTRUCTION>
+<INSTRUCTION id="156" code="lw v0,48(sp)" time="189">
+</INSTRUCTION>
+<INSTRUCTION id="157" code="mtc1 v1,$f0" time="190">
+</INSTRUCTION>
+<INSTRUCTION id="158" code="mtc1 v0,$f1" time="191">
+</INSTRUCTION>
+<INSTRUCTION id="159" code="nop" time="192">
+</INSTRUCTION>
+<INSTRUCTION id="160" code="cvt.s.d $f0,$f0" time="193">
+</INSTRUCTION>
+<INSTRUCTION id="161" code="mfc1 v0,$f0" time="194">
+</INSTRUCTION>
+<INSTRUCTION id="162" code="nop" time="195">
+</INSTRUCTION>
+<INSTRUCTION id="163" code="mtc1 v0,$f12" time="196">
+</INSTRUCTION>
+<INSTRUCTION id="164" code="jal 400018" time="197">
+</INSTRUCTION>
+<INSTRUCTION id="165" code="nop" time="198">
+</INSTRUCTION>
+<INSTRUCTION id="69" code="lw v0,24(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="70" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="71" code="bnez v0,4002b4" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="72" code="nop" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="189" code="lw v0,20(sp)" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="190" code="nop" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="191" code="addiu v0,v0,1" time="120">
+</INSTRUCTION>
+<INSTRUCTION id="192" code="sw v0,20(sp)" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="69" code="lw v0,24(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="70" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="71" code="bnez v0,4002b4" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="72" code="nop" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="189" code="lw v0,20(sp)" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="190" code="nop" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="191" code="addiu v0,v0,1" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="192" code="sw v0,20(sp)" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="69" code="lw v0,24(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="70" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="71" code="bnez v0,4002b4" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="72" code="nop" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="189" code="lw v0,20(sp)" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="190" code="nop" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="191" code="addiu v0,v0,1" time="120">
+</INSTRUCTION>
+<INSTRUCTION id="192" code="sw v0,20(sp)" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="69" code="lw v0,24(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="70" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="71" code="bnez v0,4002b4" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="72" code="nop" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="189" code="lw v0,20(sp)" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="190" code="nop" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="191" code="addiu v0,v0,1" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="192" code="sw v0,20(sp)" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="74" code="lw v1,16(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="75" code="lw v0,16(sp)" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="76" code="mtc1 v1,$f0" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="77" code="mtc1 v0,$f2" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="78" code="nop" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="79" code="mul.s $f0,$f0,$f2" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="80" code="mfc1 v0,$f0" time="120">
+</INSTRUCTION>
+<INSTRUCTION id="81" code="lw v1,64(sp)" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="82" code="nop" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="83" code="mtc1 v1,$f0" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="84" code="mtc1 v0,$f2" time="124">
+</INSTRUCTION>
+<INSTRUCTION id="85" code="nop" time="235">
+</INSTRUCTION>
+<INSTRUCTION id="86" code="sub.s $f0,$f0,$f2" time="236">
+</INSTRUCTION>
+<INSTRUCTION id="87" code="mfc1 v0,$f0" time="237">
+</INSTRUCTION>
+<INSTRUCTION id="88" code="nop" time="238">
+</INSTRUCTION>
+<INSTRUCTION id="89" code="mtc1 v0,$f0" time="239">
+</INSTRUCTION>
+<INSTRUCTION id="90" code="nop" time="240">
+</INSTRUCTION>
+<INSTRUCTION id="91" code="cvt.d.s $f0,$f0" time="241">
+</INSTRUCTION>
+<INSTRUCTION id="92" code="mfc1 a1,$f0" time="242">
+</INSTRUCTION>
+<INSTRUCTION id="93" code="mfc1 a0,$f1" time="353">
+</INSTRUCTION>
+<INSTRUCTION id="94" code="lw v0,16(sp)" time="354">
+</INSTRUCTION>
+<INSTRUCTION id="95" code="nop" time="355">
+</INSTRUCTION>
+<INSTRUCTION id="96" code="mtc1 v0,$f2" time="356">
+</INSTRUCTION>
+<INSTRUCTION id="97" code="nop" time="357">
+</INSTRUCTION>
+<INSTRUCTION id="98" code="cvt.d.s $f2,$f2" time="358">
+</INSTRUCTION>
+<INSTRUCTION id="99" code="mfc1 v1,$f2" time="359">
+</INSTRUCTION>
+<INSTRUCTION id="100" code="mfc1 v0,$f3" time="360">
+</INSTRUCTION>
+<INSTRUCTION id="101" code="mtc1 v1,$f0" time="471">
+</INSTRUCTION>
+<INSTRUCTION id="102" code="mtc1 v0,$f1" time="472">
+</INSTRUCTION>
+<INSTRUCTION id="103" code="mtc1 v1,$f2" time="473">
+</INSTRUCTION>
+<INSTRUCTION id="104" code="mtc1 v0,$f3" time="474">
+</INSTRUCTION>
+<INSTRUCTION id="105" code="nop" time="475">
+</INSTRUCTION>
+<INSTRUCTION id="106" code="add.d $f0,$f0,$f2" time="476">
+</INSTRUCTION>
+<INSTRUCTION id="107" code="mfc1 v1,$f0" time="477">
+</INSTRUCTION>
+<INSTRUCTION id="108" code="mfc1 v0,$f1" time="478">
+</INSTRUCTION>
+<INSTRUCTION id="109" code="mtc1 a1,$f0" time="589">
+</INSTRUCTION>
+<INSTRUCTION id="110" code="mtc1 a0,$f1" time="590">
+</INSTRUCTION>
+<INSTRUCTION id="111" code="mtc1 v1,$f2" time="591">
+</INSTRUCTION>
+<INSTRUCTION id="112" code="mtc1 v0,$f3" time="592">
+</INSTRUCTION>
+<INSTRUCTION id="113" code="nop" time="593">
+</INSTRUCTION>
+<INSTRUCTION id="114" code="div.d $f0,$f0,$f2" time="594">
+</INSTRUCTION>
+<INSTRUCTION id="115" code="mfc1 v1,$f0" time="595">
+</INSTRUCTION>
+<INSTRUCTION id="116" code="mfc1 v0,$f1" time="596">
+</INSTRUCTION>
+<INSTRUCTION id="117" code="mtc1 v1,$f0" time="707">
+</INSTRUCTION>
+<INSTRUCTION id="118" code="mtc1 v0,$f1" time="708">
+</INSTRUCTION>
+<INSTRUCTION id="119" code="nop" time="709">
+</INSTRUCTION>
+<INSTRUCTION id="120" code="cvt.s.d $f0,$f0" time="710">
+</INSTRUCTION>
+<INSTRUCTION id="121" code="mfc1 v0,$f0" time="711">
+</INSTRUCTION>
+<INSTRUCTION id="122" code="nop" time="712">
+</INSTRUCTION>
+<INSTRUCTION id="123" code="sw v0,40(sp)" time="713">
+</INSTRUCTION>
+<INSTRUCTION id="124" code="lw v1,16(sp)" time="714">
+</INSTRUCTION>
+<INSTRUCTION id="125" code="lw v0,40(sp)" time="825">
+</INSTRUCTION>
+<INSTRUCTION id="126" code="mtc1 v1,$f2" time="826">
+</INSTRUCTION>
+<INSTRUCTION id="127" code="mtc1 v0,$f0" time="827">
+</INSTRUCTION>
+<INSTRUCTION id="128" code="nop" time="828">
+</INSTRUCTION>
+<INSTRUCTION id="129" code="add.s $f2,$f2,$f0" time="829">
+</INSTRUCTION>
+<INSTRUCTION id="130" code="mfc1 v0,$f2" time="830">
+</INSTRUCTION>
+<INSTRUCTION id="131" code="nop" time="831">
+</INSTRUCTION>
+<INSTRUCTION id="132" code="sw v0,16(sp)" time="832">
+</INSTRUCTION>
+<INSTRUCTION id="133" code="lw v1,16(sp)" time="943">
+</INSTRUCTION>
+<INSTRUCTION id="134" code="lw v0,16(sp)" time="944">
+</INSTRUCTION>
+<INSTRUCTION id="135" code="mtc1 v1,$f2" time="945">
+</INSTRUCTION>
+<INSTRUCTION id="136" code="mtc1 v0,$f0" time="946">
+</INSTRUCTION>
+<INSTRUCTION id="137" code="nop" time="947">
+</INSTRUCTION>
+<INSTRUCTION id="138" code="mul.s $f2,$f2,$f0" time="948">
+</INSTRUCTION>
+<INSTRUCTION id="139" code="mfc1 v0,$f2" time="949">
+</INSTRUCTION>
+<INSTRUCTION id="140" code="lw v1,64(sp)" time="950">
+</INSTRUCTION>
+<INSTRUCTION id="141" code="nop" time="1061">
+</INSTRUCTION>
+<INSTRUCTION id="142" code="mtc1 v1,$f2" time="1062">
+</INSTRUCTION>
+<INSTRUCTION id="143" code="mtc1 v0,$f0" time="1063">
+</INSTRUCTION>
+<INSTRUCTION id="144" code="nop" time="1064">
+</INSTRUCTION>
+<INSTRUCTION id="145" code="sub.s $f2,$f2,$f0" time="1065">
+</INSTRUCTION>
+<INSTRUCTION id="146" code="mfc1 v0,$f2" time="1066">
+</INSTRUCTION>
+<INSTRUCTION id="147" code="nop" time="1067">
+</INSTRUCTION>
+<INSTRUCTION id="148" code="mtc1 v0,$f2" time="1068">
+</INSTRUCTION>
+<INSTRUCTION id="149" code="nop" time="1179">
+</INSTRUCTION>
+<INSTRUCTION id="150" code="cvt.d.s $f2,$f2" time="1180">
+</INSTRUCTION>
+<INSTRUCTION id="151" code="mfc1 v1,$f2" time="1181">
+</INSTRUCTION>
+<INSTRUCTION id="152" code="mfc1 v0,$f3" time="1182">
+</INSTRUCTION>
+<INSTRUCTION id="153" code="sw v1,52(sp)" time="1183">
+</INSTRUCTION>
+<INSTRUCTION id="154" code="sw v0,48(sp)" time="1184">
+</INSTRUCTION>
+<INSTRUCTION id="155" code="lw v1,52(sp)" time="1185">
+</INSTRUCTION>
+<INSTRUCTION id="156" code="lw v0,48(sp)" time="1186">
+</INSTRUCTION>
+<INSTRUCTION id="157" code="mtc1 v1,$f0" time="1297">
+</INSTRUCTION>
+<INSTRUCTION id="158" code="mtc1 v0,$f1" time="1298">
+</INSTRUCTION>
+<INSTRUCTION id="159" code="nop" time="1299">
+</INSTRUCTION>
+<INSTRUCTION id="160" code="cvt.s.d $f0,$f0" time="1300">
+</INSTRUCTION>
+<INSTRUCTION id="161" code="mfc1 v0,$f0" time="1301">
+</INSTRUCTION>
+<INSTRUCTION id="162" code="nop" time="1302">
+</INSTRUCTION>
+<INSTRUCTION id="163" code="mtc1 v0,$f12" time="1303">
+</INSTRUCTION>
+<INSTRUCTION id="164" code="jal 400018" time="1304">
+</INSTRUCTION>
+<INSTRUCTION id="165" code="nop" time="1415">
+</INSTRUCTION>
+<INSTRUCTION id="167" code="mfc1 v0,$f0" time="1416">
+</INSTRUCTION>
+<INSTRUCTION id="168" code="nop" time="1417">
+</INSTRUCTION>
+<INSTRUCTION id="169" code="mtc1 v0,$f2" time="1418">
+</INSTRUCTION>
+<INSTRUCTION id="170" code="nop" time="1419">
+</INSTRUCTION>
+<INSTRUCTION id="171" code="cvt.d.s $f2,$f2" time="1420">
+</INSTRUCTION>
+<INSTRUCTION id="172" code="mfc1 a1,$f2" time="1421">
+</INSTRUCTION>
+<INSTRUCTION id="173" code="mfc1 a0,$f3" time="1422">
+</INSTRUCTION>
+<INSTRUCTION id="174" code="lw v1,36(sp)" time="1533">
+</INSTRUCTION>
+<INSTRUCTION id="175" code="lw v0,32(sp)" time="1534">
+</INSTRUCTION>
+<INSTRUCTION id="176" code="mtc1 a1,$f0" time="1535">
+</INSTRUCTION>
+<INSTRUCTION id="177" code="mtc1 a0,$f1" time="1536">
+</INSTRUCTION>
+<INSTRUCTION id="178" code="mtc1 v1,$f2" time="1537">
+</INSTRUCTION>
+<INSTRUCTION id="179" code="mtc1 v0,$f3" time="1538">
+</INSTRUCTION>
+<INSTRUCTION id="180" code="nop" time="1539">
+</INSTRUCTION>
+<INSTRUCTION id="181" code="c.le.d $f0,$f2" time="1540">
+</INSTRUCTION>
+<INSTRUCTION id="182" code="nop" time="1651">
+</INSTRUCTION>
+<INSTRUCTION id="183" code="bc1f 4002b4" time="1652">
+</INSTRUCTION>
+<INSTRUCTION id="184" code="nop" time="1653">
+</INSTRUCTION>
+<INSTRUCTION id="74" code="lw v1,16(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="75" code="lw v0,16(sp)" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="76" code="mtc1 v1,$f0" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="77" code="mtc1 v0,$f2" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="78" code="nop" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="79" code="mul.s $f0,$f0,$f2" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="80" code="mfc1 v0,$f0" time="120">
+</INSTRUCTION>
+<INSTRUCTION id="81" code="lw v1,64(sp)" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="82" code="nop" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="83" code="mtc1 v1,$f0" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="84" code="mtc1 v0,$f2" time="124">
+</INSTRUCTION>
+<INSTRUCTION id="85" code="nop" time="235">
+</INSTRUCTION>
+<INSTRUCTION id="86" code="sub.s $f0,$f0,$f2" time="236">
+</INSTRUCTION>
+<INSTRUCTION id="87" code="mfc1 v0,$f0" time="237">
+</INSTRUCTION>
+<INSTRUCTION id="88" code="nop" time="238">
+</INSTRUCTION>
+<INSTRUCTION id="89" code="mtc1 v0,$f0" time="239">
+</INSTRUCTION>
+<INSTRUCTION id="90" code="nop" time="240">
+</INSTRUCTION>
+<INSTRUCTION id="91" code="cvt.d.s $f0,$f0" time="241">
+</INSTRUCTION>
+<INSTRUCTION id="92" code="mfc1 a1,$f0" time="242">
+</INSTRUCTION>
+<INSTRUCTION id="93" code="mfc1 a0,$f1" time="353">
+</INSTRUCTION>
+<INSTRUCTION id="94" code="lw v0,16(sp)" time="354">
+</INSTRUCTION>
+<INSTRUCTION id="95" code="nop" time="355">
+</INSTRUCTION>
+<INSTRUCTION id="96" code="mtc1 v0,$f2" time="356">
+</INSTRUCTION>
+<INSTRUCTION id="97" code="nop" time="357">
+</INSTRUCTION>
+<INSTRUCTION id="98" code="cvt.d.s $f2,$f2" time="358">
+</INSTRUCTION>
+<INSTRUCTION id="99" code="mfc1 v1,$f2" time="359">
+</INSTRUCTION>
+<INSTRUCTION id="100" code="mfc1 v0,$f3" time="360">
+</INSTRUCTION>
+<INSTRUCTION id="101" code="mtc1 v1,$f0" time="471">
+</INSTRUCTION>
+<INSTRUCTION id="102" code="mtc1 v0,$f1" time="472">
+</INSTRUCTION>
+<INSTRUCTION id="103" code="mtc1 v1,$f2" time="473">
+</INSTRUCTION>
+<INSTRUCTION id="104" code="mtc1 v0,$f3" time="474">
+</INSTRUCTION>
+<INSTRUCTION id="105" code="nop" time="475">
+</INSTRUCTION>
+<INSTRUCTION id="106" code="add.d $f0,$f0,$f2" time="476">
+</INSTRUCTION>
+<INSTRUCTION id="107" code="mfc1 v1,$f0" time="477">
+</INSTRUCTION>
+<INSTRUCTION id="108" code="mfc1 v0,$f1" time="478">
+</INSTRUCTION>
+<INSTRUCTION id="109" code="mtc1 a1,$f0" time="589">
+</INSTRUCTION>
+<INSTRUCTION id="110" code="mtc1 a0,$f1" time="590">
+</INSTRUCTION>
+<INSTRUCTION id="111" code="mtc1 v1,$f2" time="591">
+</INSTRUCTION>
+<INSTRUCTION id="112" code="mtc1 v0,$f3" time="592">
+</INSTRUCTION>
+<INSTRUCTION id="113" code="nop" time="593">
+</INSTRUCTION>
+<INSTRUCTION id="114" code="div.d $f0,$f0,$f2" time="594">
+</INSTRUCTION>
+<INSTRUCTION id="115" code="mfc1 v1,$f0" time="595">
+</INSTRUCTION>
+<INSTRUCTION id="116" code="mfc1 v0,$f1" time="596">
+</INSTRUCTION>
+<INSTRUCTION id="117" code="mtc1 v1,$f0" time="707">
+</INSTRUCTION>
+<INSTRUCTION id="118" code="mtc1 v0,$f1" time="708">
+</INSTRUCTION>
+<INSTRUCTION id="119" code="nop" time="709">
+</INSTRUCTION>
+<INSTRUCTION id="120" code="cvt.s.d $f0,$f0" time="710">
+</INSTRUCTION>
+<INSTRUCTION id="121" code="mfc1 v0,$f0" time="711">
+</INSTRUCTION>
+<INSTRUCTION id="122" code="nop" time="712">
+</INSTRUCTION>
+<INSTRUCTION id="123" code="sw v0,40(sp)" time="713">
+</INSTRUCTION>
+<INSTRUCTION id="124" code="lw v1,16(sp)" time="714">
+</INSTRUCTION>
+<INSTRUCTION id="125" code="lw v0,40(sp)" time="825">
+</INSTRUCTION>
+<INSTRUCTION id="126" code="mtc1 v1,$f2" time="826">
+</INSTRUCTION>
+<INSTRUCTION id="127" code="mtc1 v0,$f0" time="827">
+</INSTRUCTION>
+<INSTRUCTION id="128" code="nop" time="828">
+</INSTRUCTION>
+<INSTRUCTION id="129" code="add.s $f2,$f2,$f0" time="829">
+</INSTRUCTION>
+<INSTRUCTION id="130" code="mfc1 v0,$f2" time="830">
+</INSTRUCTION>
+<INSTRUCTION id="131" code="nop" time="831">
+</INSTRUCTION>
+<INSTRUCTION id="132" code="sw v0,16(sp)" time="832">
+</INSTRUCTION>
+<INSTRUCTION id="133" code="lw v1,16(sp)" time="943">
+</INSTRUCTION>
+<INSTRUCTION id="134" code="lw v0,16(sp)" time="944">
+</INSTRUCTION>
+<INSTRUCTION id="135" code="mtc1 v1,$f2" time="945">
+</INSTRUCTION>
+<INSTRUCTION id="136" code="mtc1 v0,$f0" time="946">
+</INSTRUCTION>
+<INSTRUCTION id="137" code="nop" time="947">
+</INSTRUCTION>
+<INSTRUCTION id="138" code="mul.s $f2,$f2,$f0" time="948">
+</INSTRUCTION>
+<INSTRUCTION id="139" code="mfc1 v0,$f2" time="949">
+</INSTRUCTION>
+<INSTRUCTION id="140" code="lw v1,64(sp)" time="950">
+</INSTRUCTION>
+<INSTRUCTION id="141" code="nop" time="1061">
+</INSTRUCTION>
+<INSTRUCTION id="142" code="mtc1 v1,$f2" time="1062">
+</INSTRUCTION>
+<INSTRUCTION id="143" code="mtc1 v0,$f0" time="1063">
+</INSTRUCTION>
+<INSTRUCTION id="144" code="nop" time="1064">
+</INSTRUCTION>
+<INSTRUCTION id="145" code="sub.s $f2,$f2,$f0" time="1065">
+</INSTRUCTION>
+<INSTRUCTION id="146" code="mfc1 v0,$f2" time="1066">
+</INSTRUCTION>
+<INSTRUCTION id="147" code="nop" time="1067">
+</INSTRUCTION>
+<INSTRUCTION id="148" code="mtc1 v0,$f2" time="1068">
+</INSTRUCTION>
+<INSTRUCTION id="149" code="nop" time="1179">
+</INSTRUCTION>
+<INSTRUCTION id="150" code="cvt.d.s $f2,$f2" time="1180">
+</INSTRUCTION>
+<INSTRUCTION id="151" code="mfc1 v1,$f2" time="1181">
+</INSTRUCTION>
+<INSTRUCTION id="152" code="mfc1 v0,$f3" time="1182">
+</INSTRUCTION>
+<INSTRUCTION id="153" code="sw v1,52(sp)" time="1183">
+</INSTRUCTION>
+<INSTRUCTION id="154" code="sw v0,48(sp)" time="1184">
+</INSTRUCTION>
+<INSTRUCTION id="155" code="lw v1,52(sp)" time="1185">
+</INSTRUCTION>
+<INSTRUCTION id="156" code="lw v0,48(sp)" time="1186">
+</INSTRUCTION>
+<INSTRUCTION id="157" code="mtc1 v1,$f0" time="1297">
+</INSTRUCTION>
+<INSTRUCTION id="158" code="mtc1 v0,$f1" time="1298">
+</INSTRUCTION>
+<INSTRUCTION id="159" code="nop" time="1299">
+</INSTRUCTION>
+<INSTRUCTION id="160" code="cvt.s.d $f0,$f0" time="1300">
+</INSTRUCTION>
+<INSTRUCTION id="161" code="mfc1 v0,$f0" time="1301">
+</INSTRUCTION>
+<INSTRUCTION id="162" code="nop" time="1302">
+</INSTRUCTION>
+<INSTRUCTION id="163" code="mtc1 v0,$f12" time="1303">
+</INSTRUCTION>
+<INSTRUCTION id="164" code="jal 400018" time="1304">
+</INSTRUCTION>
+<INSTRUCTION id="165" code="nop" time="1415">
+</INSTRUCTION>
+<INSTRUCTION id="167" code="mfc1 v0,$f0" time="1416">
+</INSTRUCTION>
+<INSTRUCTION id="168" code="nop" time="1417">
+</INSTRUCTION>
+<INSTRUCTION id="169" code="mtc1 v0,$f2" time="1418">
+</INSTRUCTION>
+<INSTRUCTION id="170" code="nop" time="1419">
+</INSTRUCTION>
+<INSTRUCTION id="171" code="cvt.d.s $f2,$f2" time="1420">
+</INSTRUCTION>
+<INSTRUCTION id="172" code="mfc1 a1,$f2" time="1421">
+</INSTRUCTION>
+<INSTRUCTION id="173" code="mfc1 a0,$f3" time="1422">
+</INSTRUCTION>
+<INSTRUCTION id="174" code="lw v1,36(sp)" time="1423">
+</INSTRUCTION>
+<INSTRUCTION id="175" code="lw v0,32(sp)" time="1424">
+</INSTRUCTION>
+<INSTRUCTION id="176" code="mtc1 a1,$f0" time="1425">
+</INSTRUCTION>
+<INSTRUCTION id="177" code="mtc1 a0,$f1" time="1426">
+</INSTRUCTION>
+<INSTRUCTION id="178" code="mtc1 v1,$f2" time="1427">
+</INSTRUCTION>
+<INSTRUCTION id="179" code="mtc1 v0,$f3" time="1428">
+</INSTRUCTION>
+<INSTRUCTION id="180" code="nop" time="1429">
+</INSTRUCTION>
+<INSTRUCTION id="181" code="c.le.d $f0,$f2" time="1430">
+</INSTRUCTION>
+<INSTRUCTION id="182" code="nop" time="1431">
+</INSTRUCTION>
+<INSTRUCTION id="183" code="bc1f 4002b4" time="1432">
+</INSTRUCTION>
+<INSTRUCTION id="184" code="nop" time="1433">
+</INSTRUCTION>
+<INSTRUCTION id="74" code="lw v1,16(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="75" code="lw v0,16(sp)" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="76" code="mtc1 v1,$f0" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="77" code="mtc1 v0,$f2" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="78" code="nop" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="79" code="mul.s $f0,$f0,$f2" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="80" code="mfc1 v0,$f0" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="81" code="lw v1,64(sp)" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="82" code="nop" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="83" code="mtc1 v1,$f0" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="84" code="mtc1 v0,$f2" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="85" code="nop" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="86" code="sub.s $f0,$f0,$f2" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="87" code="mfc1 v0,$f0" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="88" code="nop" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="89" code="mtc1 v0,$f0" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="90" code="nop" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="91" code="cvt.d.s $f0,$f0" time="120">
+</INSTRUCTION>
+<INSTRUCTION id="92" code="mfc1 a1,$f0" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="93" code="mfc1 a0,$f1" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="94" code="lw v0,16(sp)" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="95" code="nop" time="124">
+</INSTRUCTION>
+<INSTRUCTION id="96" code="mtc1 v0,$f2" time="125">
+</INSTRUCTION>
+<INSTRUCTION id="97" code="nop" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="98" code="cvt.d.s $f2,$f2" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="99" code="mfc1 v1,$f2" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="100" code="mfc1 v0,$f3" time="129">
+</INSTRUCTION>
+<INSTRUCTION id="101" code="mtc1 v1,$f0" time="130">
+</INSTRUCTION>
+<INSTRUCTION id="102" code="mtc1 v0,$f1" time="131">
+</INSTRUCTION>
+<INSTRUCTION id="103" code="mtc1 v1,$f2" time="132">
+</INSTRUCTION>
+<INSTRUCTION id="104" code="mtc1 v0,$f3" time="133">
+</INSTRUCTION>
+<INSTRUCTION id="105" code="nop" time="134">
+</INSTRUCTION>
+<INSTRUCTION id="106" code="add.d $f0,$f0,$f2" time="135">
+</INSTRUCTION>
+<INSTRUCTION id="107" code="mfc1 v1,$f0" time="136">
+</INSTRUCTION>
+<INSTRUCTION id="108" code="mfc1 v0,$f1" time="137">
+</INSTRUCTION>
+<INSTRUCTION id="109" code="mtc1 a1,$f0" time="138">
+</INSTRUCTION>
+<INSTRUCTION id="110" code="mtc1 a0,$f1" time="139">
+</INSTRUCTION>
+<INSTRUCTION id="111" code="mtc1 v1,$f2" time="140">
+</INSTRUCTION>
+<INSTRUCTION id="112" code="mtc1 v0,$f3" time="141">
+</INSTRUCTION>
+<INSTRUCTION id="113" code="nop" time="142">
+</INSTRUCTION>
+<INSTRUCTION id="114" code="div.d $f0,$f0,$f2" time="143">
+</INSTRUCTION>
+<INSTRUCTION id="115" code="mfc1 v1,$f0" time="144">
+</INSTRUCTION>
+<INSTRUCTION id="116" code="mfc1 v0,$f1" time="145">
+</INSTRUCTION>
+<INSTRUCTION id="117" code="mtc1 v1,$f0" time="146">
+</INSTRUCTION>
+<INSTRUCTION id="118" code="mtc1 v0,$f1" time="147">
+</INSTRUCTION>
+<INSTRUCTION id="119" code="nop" time="148">
+</INSTRUCTION>
+<INSTRUCTION id="120" code="cvt.s.d $f0,$f0" time="149">
+</INSTRUCTION>
+<INSTRUCTION id="121" code="mfc1 v0,$f0" time="150">
+</INSTRUCTION>
+<INSTRUCTION id="122" code="nop" time="151">
+</INSTRUCTION>
+<INSTRUCTION id="123" code="sw v0,40(sp)" time="152">
+</INSTRUCTION>
+<INSTRUCTION id="124" code="lw v1,16(sp)" time="153">
+</INSTRUCTION>
+<INSTRUCTION id="125" code="lw v0,40(sp)" time="154">
+</INSTRUCTION>
+<INSTRUCTION id="126" code="mtc1 v1,$f2" time="155">
+</INSTRUCTION>
+<INSTRUCTION id="127" code="mtc1 v0,$f0" time="156">
+</INSTRUCTION>
+<INSTRUCTION id="128" code="nop" time="157">
+</INSTRUCTION>
+<INSTRUCTION id="129" code="add.s $f2,$f2,$f0" time="158">
+</INSTRUCTION>
+<INSTRUCTION id="130" code="mfc1 v0,$f2" time="159">
+</INSTRUCTION>
+<INSTRUCTION id="131" code="nop" time="160">
+</INSTRUCTION>
+<INSTRUCTION id="132" code="sw v0,16(sp)" time="161">
+</INSTRUCTION>
+<INSTRUCTION id="133" code="lw v1,16(sp)" time="162">
+</INSTRUCTION>
+<INSTRUCTION id="134" code="lw v0,16(sp)" time="163">
+</INSTRUCTION>
+<INSTRUCTION id="135" code="mtc1 v1,$f2" time="164">
+</INSTRUCTION>
+<INSTRUCTION id="136" code="mtc1 v0,$f0" time="165">
+</INSTRUCTION>
+<INSTRUCTION id="137" code="nop" time="166">
+</INSTRUCTION>
+<INSTRUCTION id="138" code="mul.s $f2,$f2,$f0" time="167">
+</INSTRUCTION>
+<INSTRUCTION id="139" code="mfc1 v0,$f2" time="168">
+</INSTRUCTION>
+<INSTRUCTION id="140" code="lw v1,64(sp)" time="169">
+</INSTRUCTION>
+<INSTRUCTION id="141" code="nop" time="170">
+</INSTRUCTION>
+<INSTRUCTION id="142" code="mtc1 v1,$f2" time="171">
+</INSTRUCTION>
+<INSTRUCTION id="143" code="mtc1 v0,$f0" time="172">
+</INSTRUCTION>
+<INSTRUCTION id="144" code="nop" time="173">
+</INSTRUCTION>
+<INSTRUCTION id="145" code="sub.s $f2,$f2,$f0" time="174">
+</INSTRUCTION>
+<INSTRUCTION id="146" code="mfc1 v0,$f2" time="175">
+</INSTRUCTION>
+<INSTRUCTION id="147" code="nop" time="176">
+</INSTRUCTION>
+<INSTRUCTION id="148" code="mtc1 v0,$f2" time="177">
+</INSTRUCTION>
+<INSTRUCTION id="149" code="nop" time="178">
+</INSTRUCTION>
+<INSTRUCTION id="150" code="cvt.d.s $f2,$f2" time="179">
+</INSTRUCTION>
+<INSTRUCTION id="151" code="mfc1 v1,$f2" time="180">
+</INSTRUCTION>
+<INSTRUCTION id="152" code="mfc1 v0,$f3" time="181">
+</INSTRUCTION>
+<INSTRUCTION id="153" code="sw v1,52(sp)" time="182">
+</INSTRUCTION>
+<INSTRUCTION id="154" code="sw v0,48(sp)" time="183">
+</INSTRUCTION>
+<INSTRUCTION id="155" code="lw v1,52(sp)" time="184">
+</INSTRUCTION>
+<INSTRUCTION id="156" code="lw v0,48(sp)" time="185">
+</INSTRUCTION>
+<INSTRUCTION id="157" code="mtc1 v1,$f0" time="186">
+</INSTRUCTION>
+<INSTRUCTION id="158" code="mtc1 v0,$f1" time="187">
+</INSTRUCTION>
+<INSTRUCTION id="159" code="nop" time="188">
+</INSTRUCTION>
+<INSTRUCTION id="160" code="cvt.s.d $f0,$f0" time="189">
+</INSTRUCTION>
+<INSTRUCTION id="161" code="mfc1 v0,$f0" time="190">
+</INSTRUCTION>
+<INSTRUCTION id="162" code="nop" time="191">
+</INSTRUCTION>
+<INSTRUCTION id="163" code="mtc1 v0,$f12" time="192">
+</INSTRUCTION>
+<INSTRUCTION id="164" code="jal 400018" time="193">
+</INSTRUCTION>
+<INSTRUCTION id="165" code="nop" time="194">
+</INSTRUCTION>
+<INSTRUCTION id="167" code="mfc1 v0,$f0" time="195">
+</INSTRUCTION>
+<INSTRUCTION id="168" code="nop" time="196">
+</INSTRUCTION>
+<INSTRUCTION id="169" code="mtc1 v0,$f2" time="197">
+</INSTRUCTION>
+<INSTRUCTION id="170" code="nop" time="198">
+</INSTRUCTION>
+<INSTRUCTION id="171" code="cvt.d.s $f2,$f2" time="199">
+</INSTRUCTION>
+<INSTRUCTION id="172" code="mfc1 a1,$f2" time="200">
+</INSTRUCTION>
+<INSTRUCTION id="173" code="mfc1 a0,$f3" time="201">
+</INSTRUCTION>
+<INSTRUCTION id="174" code="lw v1,36(sp)" time="213">
+</INSTRUCTION>
+<INSTRUCTION id="175" code="lw v0,32(sp)" time="214">
+</INSTRUCTION>
+<INSTRUCTION id="176" code="mtc1 a1,$f0" time="215">
+</INSTRUCTION>
+<INSTRUCTION id="177" code="mtc1 a0,$f1" time="216">
+</INSTRUCTION>
+<INSTRUCTION id="178" code="mtc1 v1,$f2" time="217">
+</INSTRUCTION>
+<INSTRUCTION id="179" code="mtc1 v0,$f3" time="218">
+</INSTRUCTION>
+<INSTRUCTION id="180" code="nop" time="219">
+</INSTRUCTION>
+<INSTRUCTION id="181" code="c.le.d $f0,$f2" time="220">
+</INSTRUCTION>
+<INSTRUCTION id="182" code="nop" time="331">
+</INSTRUCTION>
+<INSTRUCTION id="183" code="bc1f 4002b4" time="332">
+</INSTRUCTION>
+<INSTRUCTION id="184" code="nop" time="333">
+</INSTRUCTION>
+<INSTRUCTION id="74" code="lw v1,16(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="75" code="lw v0,16(sp)" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="76" code="mtc1 v1,$f0" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="77" code="mtc1 v0,$f2" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="78" code="nop" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="79" code="mul.s $f0,$f0,$f2" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="80" code="mfc1 v0,$f0" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="81" code="lw v1,64(sp)" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="82" code="nop" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="83" code="mtc1 v1,$f0" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="84" code="mtc1 v0,$f2" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="85" code="nop" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="86" code="sub.s $f0,$f0,$f2" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="87" code="mfc1 v0,$f0" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="88" code="nop" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="89" code="mtc1 v0,$f0" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="90" code="nop" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="91" code="cvt.d.s $f0,$f0" time="120">
+</INSTRUCTION>
+<INSTRUCTION id="92" code="mfc1 a1,$f0" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="93" code="mfc1 a0,$f1" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="94" code="lw v0,16(sp)" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="95" code="nop" time="124">
+</INSTRUCTION>
+<INSTRUCTION id="96" code="mtc1 v0,$f2" time="125">
+</INSTRUCTION>
+<INSTRUCTION id="97" code="nop" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="98" code="cvt.d.s $f2,$f2" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="99" code="mfc1 v1,$f2" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="100" code="mfc1 v0,$f3" time="129">
+</INSTRUCTION>
+<INSTRUCTION id="101" code="mtc1 v1,$f0" time="130">
+</INSTRUCTION>
+<INSTRUCTION id="102" code="mtc1 v0,$f1" time="131">
+</INSTRUCTION>
+<INSTRUCTION id="103" code="mtc1 v1,$f2" time="132">
+</INSTRUCTION>
+<INSTRUCTION id="104" code="mtc1 v0,$f3" time="133">
+</INSTRUCTION>
+<INSTRUCTION id="105" code="nop" time="134">
+</INSTRUCTION>
+<INSTRUCTION id="106" code="add.d $f0,$f0,$f2" time="135">
+</INSTRUCTION>
+<INSTRUCTION id="107" code="mfc1 v1,$f0" time="136">
+</INSTRUCTION>
+<INSTRUCTION id="108" code="mfc1 v0,$f1" time="137">
+</INSTRUCTION>
+<INSTRUCTION id="109" code="mtc1 a1,$f0" time="138">
+</INSTRUCTION>
+<INSTRUCTION id="110" code="mtc1 a0,$f1" time="139">
+</INSTRUCTION>
+<INSTRUCTION id="111" code="mtc1 v1,$f2" time="140">
+</INSTRUCTION>
+<INSTRUCTION id="112" code="mtc1 v0,$f3" time="141">
+</INSTRUCTION>
+<INSTRUCTION id="113" code="nop" time="142">
+</INSTRUCTION>
+<INSTRUCTION id="114" code="div.d $f0,$f0,$f2" time="143">
+</INSTRUCTION>
+<INSTRUCTION id="115" code="mfc1 v1,$f0" time="144">
+</INSTRUCTION>
+<INSTRUCTION id="116" code="mfc1 v0,$f1" time="145">
+</INSTRUCTION>
+<INSTRUCTION id="117" code="mtc1 v1,$f0" time="146">
+</INSTRUCTION>
+<INSTRUCTION id="118" code="mtc1 v0,$f1" time="147">
+</INSTRUCTION>
+<INSTRUCTION id="119" code="nop" time="148">
+</INSTRUCTION>
+<INSTRUCTION id="120" code="cvt.s.d $f0,$f0" time="149">
+</INSTRUCTION>
+<INSTRUCTION id="121" code="mfc1 v0,$f0" time="150">
+</INSTRUCTION>
+<INSTRUCTION id="122" code="nop" time="151">
+</INSTRUCTION>
+<INSTRUCTION id="123" code="sw v0,40(sp)" time="152">
+</INSTRUCTION>
+<INSTRUCTION id="124" code="lw v1,16(sp)" time="153">
+</INSTRUCTION>
+<INSTRUCTION id="125" code="lw v0,40(sp)" time="154">
+</INSTRUCTION>
+<INSTRUCTION id="126" code="mtc1 v1,$f2" time="155">
+</INSTRUCTION>
+<INSTRUCTION id="127" code="mtc1 v0,$f0" time="156">
+</INSTRUCTION>
+<INSTRUCTION id="128" code="nop" time="157">
+</INSTRUCTION>
+<INSTRUCTION id="129" code="add.s $f2,$f2,$f0" time="158">
+</INSTRUCTION>
+<INSTRUCTION id="130" code="mfc1 v0,$f2" time="159">
+</INSTRUCTION>
+<INSTRUCTION id="131" code="nop" time="160">
+</INSTRUCTION>
+<INSTRUCTION id="132" code="sw v0,16(sp)" time="161">
+</INSTRUCTION>
+<INSTRUCTION id="133" code="lw v1,16(sp)" time="162">
+</INSTRUCTION>
+<INSTRUCTION id="134" code="lw v0,16(sp)" time="163">
+</INSTRUCTION>
+<INSTRUCTION id="135" code="mtc1 v1,$f2" time="164">
+</INSTRUCTION>
+<INSTRUCTION id="136" code="mtc1 v0,$f0" time="165">
+</INSTRUCTION>
+<INSTRUCTION id="137" code="nop" time="166">
+</INSTRUCTION>
+<INSTRUCTION id="138" code="mul.s $f2,$f2,$f0" time="167">
+</INSTRUCTION>
+<INSTRUCTION id="139" code="mfc1 v0,$f2" time="168">
+</INSTRUCTION>
+<INSTRUCTION id="140" code="lw v1,64(sp)" time="169">
+</INSTRUCTION>
+<INSTRUCTION id="141" code="nop" time="170">
+</INSTRUCTION>
+<INSTRUCTION id="142" code="mtc1 v1,$f2" time="171">
+</INSTRUCTION>
+<INSTRUCTION id="143" code="mtc1 v0,$f0" time="172">
+</INSTRUCTION>
+<INSTRUCTION id="144" code="nop" time="173">
+</INSTRUCTION>
+<INSTRUCTION id="145" code="sub.s $f2,$f2,$f0" time="174">
+</INSTRUCTION>
+<INSTRUCTION id="146" code="mfc1 v0,$f2" time="175">
+</INSTRUCTION>
+<INSTRUCTION id="147" code="nop" time="176">
+</INSTRUCTION>
+<INSTRUCTION id="148" code="mtc1 v0,$f2" time="177">
+</INSTRUCTION>
+<INSTRUCTION id="149" code="nop" time="178">
+</INSTRUCTION>
+<INSTRUCTION id="150" code="cvt.d.s $f2,$f2" time="179">
+</INSTRUCTION>
+<INSTRUCTION id="151" code="mfc1 v1,$f2" time="180">
+</INSTRUCTION>
+<INSTRUCTION id="152" code="mfc1 v0,$f3" time="181">
+</INSTRUCTION>
+<INSTRUCTION id="153" code="sw v1,52(sp)" time="182">
+</INSTRUCTION>
+<INSTRUCTION id="154" code="sw v0,48(sp)" time="183">
+</INSTRUCTION>
+<INSTRUCTION id="155" code="lw v1,52(sp)" time="184">
+</INSTRUCTION>
+<INSTRUCTION id="156" code="lw v0,48(sp)" time="185">
+</INSTRUCTION>
+<INSTRUCTION id="157" code="mtc1 v1,$f0" time="186">
+</INSTRUCTION>
+<INSTRUCTION id="158" code="mtc1 v0,$f1" time="187">
+</INSTRUCTION>
+<INSTRUCTION id="159" code="nop" time="188">
+</INSTRUCTION>
+<INSTRUCTION id="160" code="cvt.s.d $f0,$f0" time="189">
+</INSTRUCTION>
+<INSTRUCTION id="161" code="mfc1 v0,$f0" time="190">
+</INSTRUCTION>
+<INSTRUCTION id="162" code="nop" time="191">
+</INSTRUCTION>
+<INSTRUCTION id="163" code="mtc1 v0,$f12" time="192">
+</INSTRUCTION>
+<INSTRUCTION id="164" code="jal 400018" time="193">
+</INSTRUCTION>
+<INSTRUCTION id="165" code="nop" time="194">
+</INSTRUCTION>
+<INSTRUCTION id="167" code="mfc1 v0,$f0" time="195">
+</INSTRUCTION>
+<INSTRUCTION id="168" code="nop" time="196">
+</INSTRUCTION>
+<INSTRUCTION id="169" code="mtc1 v0,$f2" time="197">
+</INSTRUCTION>
+<INSTRUCTION id="170" code="nop" time="198">
+</INSTRUCTION>
+<INSTRUCTION id="171" code="cvt.d.s $f2,$f2" time="199">
+</INSTRUCTION>
+<INSTRUCTION id="172" code="mfc1 a1,$f2" time="200">
+</INSTRUCTION>
+<INSTRUCTION id="173" code="mfc1 a0,$f3" time="201">
+</INSTRUCTION>
+<INSTRUCTION id="174" code="lw v1,36(sp)" time="202">
+</INSTRUCTION>
+<INSTRUCTION id="175" code="lw v0,32(sp)" time="203">
+</INSTRUCTION>
+<INSTRUCTION id="176" code="mtc1 a1,$f0" time="204">
+</INSTRUCTION>
+<INSTRUCTION id="177" code="mtc1 a0,$f1" time="205">
+</INSTRUCTION>
+<INSTRUCTION id="178" code="mtc1 v1,$f2" time="206">
+</INSTRUCTION>
+<INSTRUCTION id="179" code="mtc1 v0,$f3" time="207">
+</INSTRUCTION>
+<INSTRUCTION id="180" code="nop" time="208">
+</INSTRUCTION>
+<INSTRUCTION id="181" code="c.le.d $f0,$f2" time="209">
+</INSTRUCTION>
+<INSTRUCTION id="182" code="nop" time="210">
+</INSTRUCTION>
+<INSTRUCTION id="183" code="bc1f 4002b4" time="211">
+</INSTRUCTION>
+<INSTRUCTION id="184" code="nop" time="212">
+</INSTRUCTION>
+<INSTRUCTION id="167" code="mfc1 v0,$f0" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="168" code="nop" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="169" code="mtc1 v0,$f2" time="6">
+</INSTRUCTION>
+<INSTRUCTION id="170" code="nop" time="7">
+</INSTRUCTION>
+<INSTRUCTION id="171" code="cvt.d.s $f2,$f2" time="8">
+</INSTRUCTION>
+<INSTRUCTION id="172" code="mfc1 a1,$f2" time="9">
+</INSTRUCTION>
+<INSTRUCTION id="173" code="mfc1 a0,$f3" time="10">
+</INSTRUCTION>
+<INSTRUCTION id="174" code="lw v1,36(sp)" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="175" code="lw v0,32(sp)" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="176" code="mtc1 a1,$f0" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="177" code="mtc1 a0,$f1" time="124">
+</INSTRUCTION>
+<INSTRUCTION id="178" code="mtc1 v1,$f2" time="125">
+</INSTRUCTION>
+<INSTRUCTION id="179" code="mtc1 v0,$f3" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="180" code="nop" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="181" code="c.le.d $f0,$f2" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="182" code="nop" time="239">
+</INSTRUCTION>
+<INSTRUCTION id="183" code="bc1f 4002b4" time="240">
+</INSTRUCTION>
+<INSTRUCTION id="184" code="nop" time="241">
+</INSTRUCTION>
+<INSTRUCTION id="186" code="li v0,1" time="242">
+</INSTRUCTION>
+<INSTRUCTION id="187" code="sw v0,24(sp)" time="243">
+</INSTRUCTION>
+<INSTRUCTION id="167" code="mfc1 v0,$f0" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="168" code="nop" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="169" code="mtc1 v0,$f2" time="6">
+</INSTRUCTION>
+<INSTRUCTION id="170" code="nop" time="7">
+</INSTRUCTION>
+<INSTRUCTION id="171" code="cvt.d.s $f2,$f2" time="8">
+</INSTRUCTION>
+<INSTRUCTION id="172" code="mfc1 a1,$f2" time="9">
+</INSTRUCTION>
+<INSTRUCTION id="173" code="mfc1 a0,$f3" time="10">
+</INSTRUCTION>
+<INSTRUCTION id="174" code="lw v1,36(sp)" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="175" code="lw v0,32(sp)" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="176" code="mtc1 a1,$f0" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="177" code="mtc1 a0,$f1" time="124">
+</INSTRUCTION>
+<INSTRUCTION id="178" code="mtc1 v1,$f2" time="125">
+</INSTRUCTION>
+<INSTRUCTION id="179" code="mtc1 v0,$f3" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="180" code="nop" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="181" code="c.le.d $f0,$f2" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="182" code="nop" time="239">
+</INSTRUCTION>
+<INSTRUCTION id="183" code="bc1f 4002b4" time="240">
+</INSTRUCTION>
+<INSTRUCTION id="184" code="nop" time="241">
+</INSTRUCTION>
+<INSTRUCTION id="186" code="li v0,1" time="242">
+</INSTRUCTION>
+<INSTRUCTION id="187" code="sw v0,24(sp)" time="243">
+</INSTRUCTION>
+<INSTRUCTION id="167" code="mfc1 v0,$f0" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="168" code="nop" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="169" code="mtc1 v0,$f2" time="6">
+</INSTRUCTION>
+<INSTRUCTION id="170" code="nop" time="7">
+</INSTRUCTION>
+<INSTRUCTION id="171" code="cvt.d.s $f2,$f2" time="8">
+</INSTRUCTION>
+<INSTRUCTION id="172" code="mfc1 a1,$f2" time="9">
+</INSTRUCTION>
+<INSTRUCTION id="173" code="mfc1 a0,$f3" time="10">
+</INSTRUCTION>
+<INSTRUCTION id="174" code="lw v1,36(sp)" time="11">
+</INSTRUCTION>
+<INSTRUCTION id="175" code="lw v0,32(sp)" time="12">
+</INSTRUCTION>
+<INSTRUCTION id="176" code="mtc1 a1,$f0" time="13">
+</INSTRUCTION>
+<INSTRUCTION id="177" code="mtc1 a0,$f1" time="14">
+</INSTRUCTION>
+<INSTRUCTION id="178" code="mtc1 v1,$f2" time="15">
+</INSTRUCTION>
+<INSTRUCTION id="179" code="mtc1 v0,$f3" time="16">
+</INSTRUCTION>
+<INSTRUCTION id="180" code="nop" time="17">
+</INSTRUCTION>
+<INSTRUCTION id="181" code="c.le.d $f0,$f2" time="18">
+</INSTRUCTION>
+<INSTRUCTION id="182" code="nop" time="19">
+</INSTRUCTION>
+<INSTRUCTION id="183" code="bc1f 4002b4" time="20">
+</INSTRUCTION>
+<INSTRUCTION id="184" code="nop" time="21">
+</INSTRUCTION>
+<INSTRUCTION id="186" code="li v0,1" time="22">
+</INSTRUCTION>
+<INSTRUCTION id="187" code="sw v0,24(sp)" time="23">
+</INSTRUCTION>
+<INSTRUCTION id="167" code="mfc1 v0,$f0" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="168" code="nop" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="169" code="mtc1 v0,$f2" time="6">
+</INSTRUCTION>
+<INSTRUCTION id="170" code="nop" time="7">
+</INSTRUCTION>
+<INSTRUCTION id="171" code="cvt.d.s $f2,$f2" time="8">
+</INSTRUCTION>
+<INSTRUCTION id="172" code="mfc1 a1,$f2" time="9">
+</INSTRUCTION>
+<INSTRUCTION id="173" code="mfc1 a0,$f3" time="10">
+</INSTRUCTION>
+<INSTRUCTION id="174" code="lw v1,36(sp)" time="11">
+</INSTRUCTION>
+<INSTRUCTION id="175" code="lw v0,32(sp)" time="12">
+</INSTRUCTION>
+<INSTRUCTION id="176" code="mtc1 a1,$f0" time="13">
+</INSTRUCTION>
+<INSTRUCTION id="177" code="mtc1 a0,$f1" time="14">
+</INSTRUCTION>
+<INSTRUCTION id="178" code="mtc1 v1,$f2" time="15">
+</INSTRUCTION>
+<INSTRUCTION id="179" code="mtc1 v0,$f3" time="16">
+</INSTRUCTION>
+<INSTRUCTION id="180" code="nop" time="17">
+</INSTRUCTION>
+<INSTRUCTION id="181" code="c.le.d $f0,$f2" time="18">
+</INSTRUCTION>
+<INSTRUCTION id="182" code="nop" time="19">
+</INSTRUCTION>
+<INSTRUCTION id="183" code="bc1f 4002b4" time="20">
+</INSTRUCTION>
+<INSTRUCTION id="184" code="nop" time="21">
+</INSTRUCTION>
+<INSTRUCTION id="186" code="li v0,1" time="22">
+</INSTRUCTION>
+<INSTRUCTION id="187" code="sw v0,24(sp)" time="23">
+</INSTRUCTION>
+<INSTRUCTION id="167" code="mfc1 v0,$f0" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="168" code="nop" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="169" code="mtc1 v0,$f2" time="6">
+</INSTRUCTION>
+<INSTRUCTION id="170" code="nop" time="7">
+</INSTRUCTION>
+<INSTRUCTION id="171" code="cvt.d.s $f2,$f2" time="8">
+</INSTRUCTION>
+<INSTRUCTION id="172" code="mfc1 a1,$f2" time="9">
+</INSTRUCTION>
+<INSTRUCTION id="173" code="mfc1 a0,$f3" time="10">
+</INSTRUCTION>
+<INSTRUCTION id="174" code="lw v1,36(sp)" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="175" code="lw v0,32(sp)" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="176" code="mtc1 a1,$f0" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="177" code="mtc1 a0,$f1" time="124">
+</INSTRUCTION>
+<INSTRUCTION id="178" code="mtc1 v1,$f2" time="125">
+</INSTRUCTION>
+<INSTRUCTION id="179" code="mtc1 v0,$f3" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="180" code="nop" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="181" code="c.le.d $f0,$f2" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="182" code="nop" time="239">
+</INSTRUCTION>
+<INSTRUCTION id="183" code="bc1f 4002b4" time="240">
+</INSTRUCTION>
+<INSTRUCTION id="184" code="nop" time="241">
+</INSTRUCTION>
+<INSTRUCTION id="189" code="lw v0,20(sp)" time="352">
+</INSTRUCTION>
+<INSTRUCTION id="190" code="nop" time="353">
+</INSTRUCTION>
+<INSTRUCTION id="191" code="addiu v0,v0,1" time="354">
+</INSTRUCTION>
+<INSTRUCTION id="192" code="sw v0,20(sp)" time="355">
+</INSTRUCTION>
+<INSTRUCTION id="167" code="mfc1 v0,$f0" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="168" code="nop" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="169" code="mtc1 v0,$f2" time="6">
+</INSTRUCTION>
+<INSTRUCTION id="170" code="nop" time="7">
+</INSTRUCTION>
+<INSTRUCTION id="171" code="cvt.d.s $f2,$f2" time="8">
+</INSTRUCTION>
+<INSTRUCTION id="172" code="mfc1 a1,$f2" time="9">
+</INSTRUCTION>
+<INSTRUCTION id="173" code="mfc1 a0,$f3" time="10">
+</INSTRUCTION>
+<INSTRUCTION id="174" code="lw v1,36(sp)" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="175" code="lw v0,32(sp)" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="176" code="mtc1 a1,$f0" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="177" code="mtc1 a0,$f1" time="124">
+</INSTRUCTION>
+<INSTRUCTION id="178" code="mtc1 v1,$f2" time="125">
+</INSTRUCTION>
+<INSTRUCTION id="179" code="mtc1 v0,$f3" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="180" code="nop" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="181" code="c.le.d $f0,$f2" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="182" code="nop" time="239">
+</INSTRUCTION>
+<INSTRUCTION id="183" code="bc1f 4002b4" time="240">
+</INSTRUCTION>
+<INSTRUCTION id="184" code="nop" time="241">
+</INSTRUCTION>
+<INSTRUCTION id="189" code="lw v0,20(sp)" time="242">
+</INSTRUCTION>
+<INSTRUCTION id="190" code="nop" time="243">
+</INSTRUCTION>
+<INSTRUCTION id="191" code="addiu v0,v0,1" time="244">
+</INSTRUCTION>
+<INSTRUCTION id="192" code="sw v0,20(sp)" time="245">
+</INSTRUCTION>
+<INSTRUCTION id="167" code="mfc1 v0,$f0" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="168" code="nop" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="169" code="mtc1 v0,$f2" time="6">
+</INSTRUCTION>
+<INSTRUCTION id="170" code="nop" time="7">
+</INSTRUCTION>
+<INSTRUCTION id="171" code="cvt.d.s $f2,$f2" time="8">
+</INSTRUCTION>
+<INSTRUCTION id="172" code="mfc1 a1,$f2" time="9">
+</INSTRUCTION>
+<INSTRUCTION id="173" code="mfc1 a0,$f3" time="10">
+</INSTRUCTION>
+<INSTRUCTION id="174" code="lw v1,36(sp)" time="11">
+</INSTRUCTION>
+<INSTRUCTION id="175" code="lw v0,32(sp)" time="12">
+</INSTRUCTION>
+<INSTRUCTION id="176" code="mtc1 a1,$f0" time="13">
+</INSTRUCTION>
+<INSTRUCTION id="177" code="mtc1 a0,$f1" time="14">
+</INSTRUCTION>
+<INSTRUCTION id="178" code="mtc1 v1,$f2" time="15">
+</INSTRUCTION>
+<INSTRUCTION id="179" code="mtc1 v0,$f3" time="16">
+</INSTRUCTION>
+<INSTRUCTION id="180" code="nop" time="17">
+</INSTRUCTION>
+<INSTRUCTION id="181" code="c.le.d $f0,$f2" time="18">
+</INSTRUCTION>
+<INSTRUCTION id="182" code="nop" time="19">
+</INSTRUCTION>
+<INSTRUCTION id="183" code="bc1f 4002b4" time="20">
+</INSTRUCTION>
+<INSTRUCTION id="184" code="nop" time="21">
+</INSTRUCTION>
+<INSTRUCTION id="189" code="lw v0,20(sp)" time="132">
+</INSTRUCTION>
+<INSTRUCTION id="190" code="nop" time="133">
+</INSTRUCTION>
+<INSTRUCTION id="191" code="addiu v0,v0,1" time="134">
+</INSTRUCTION>
+<INSTRUCTION id="192" code="sw v0,20(sp)" time="135">
+</INSTRUCTION>
+<INSTRUCTION id="167" code="mfc1 v0,$f0" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="168" code="nop" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="169" code="mtc1 v0,$f2" time="6">
+</INSTRUCTION>
+<INSTRUCTION id="170" code="nop" time="7">
+</INSTRUCTION>
+<INSTRUCTION id="171" code="cvt.d.s $f2,$f2" time="8">
+</INSTRUCTION>
+<INSTRUCTION id="172" code="mfc1 a1,$f2" time="9">
+</INSTRUCTION>
+<INSTRUCTION id="173" code="mfc1 a0,$f3" time="10">
+</INSTRUCTION>
+<INSTRUCTION id="174" code="lw v1,36(sp)" time="11">
+</INSTRUCTION>
+<INSTRUCTION id="175" code="lw v0,32(sp)" time="12">
+</INSTRUCTION>
+<INSTRUCTION id="176" code="mtc1 a1,$f0" time="13">
+</INSTRUCTION>
+<INSTRUCTION id="177" code="mtc1 a0,$f1" time="14">
+</INSTRUCTION>
+<INSTRUCTION id="178" code="mtc1 v1,$f2" time="15">
+</INSTRUCTION>
+<INSTRUCTION id="179" code="mtc1 v0,$f3" time="16">
+</INSTRUCTION>
+<INSTRUCTION id="180" code="nop" time="17">
+</INSTRUCTION>
+<INSTRUCTION id="181" code="c.le.d $f0,$f2" time="18">
+</INSTRUCTION>
+<INSTRUCTION id="182" code="nop" time="19">
+</INSTRUCTION>
+<INSTRUCTION id="183" code="bc1f 4002b4" time="20">
+</INSTRUCTION>
+<INSTRUCTION id="184" code="nop" time="21">
+</INSTRUCTION>
+<INSTRUCTION id="189" code="lw v0,20(sp)" time="22">
+</INSTRUCTION>
+<INSTRUCTION id="190" code="nop" time="23">
+</INSTRUCTION>
+<INSTRUCTION id="191" code="addiu v0,v0,1" time="24">
+</INSTRUCTION>
+<INSTRUCTION id="192" code="sw v0,20(sp)" time="25">
+</INSTRUCTION>
+<INSTRUCTION id="186" code="li v0,1" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="187" code="sw v0,24(sp)" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="189" code="lw v0,20(sp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="190" code="nop" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="191" code="addiu v0,v0,1" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="192" code="sw v0,20(sp)" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="186" code="li v0,1" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="187" code="sw v0,24(sp)" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="189" code="lw v0,20(sp)" time="6">
+</INSTRUCTION>
+<INSTRUCTION id="190" code="nop" time="7">
+</INSTRUCTION>
+<INSTRUCTION id="191" code="addiu v0,v0,1" time="8">
+</INSTRUCTION>
+<INSTRUCTION id="192" code="sw v0,20(sp)" time="9">
+</INSTRUCTION>
+<INSTRUCTION id="186" code="li v0,1" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="187" code="sw v0,24(sp)" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="189" code="lw v0,20(sp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="190" code="nop" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="191" code="addiu v0,v0,1" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="192" code="sw v0,20(sp)" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="186" code="li v0,1" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="187" code="sw v0,24(sp)" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="189" code="lw v0,20(sp)" time="6">
+</INSTRUCTION>
+<INSTRUCTION id="190" code="nop" time="7">
+</INSTRUCTION>
+<INSTRUCTION id="191" code="addiu v0,v0,1" time="8">
+</INSTRUCTION>
+<INSTRUCTION id="192" code="sw v0,20(sp)" time="9">
+</INSTRUCTION>
+<INSTRUCTION id="189" code="lw v0,20(sp)" time="213">
+</INSTRUCTION>
+<INSTRUCTION id="190" code="nop" time="214">
+</INSTRUCTION>
+<INSTRUCTION id="191" code="addiu v0,v0,1" time="215">
+</INSTRUCTION>
+<INSTRUCTION id="192" code="sw v0,20(sp)" time="216">
+</INSTRUCTION>
+<INSTRUCTION id="194" code="lw v0,20(sp)" time="217">
+</INSTRUCTION>
+<INSTRUCTION id="195" code="nop" time="218">
+</INSTRUCTION>
+<INSTRUCTION id="196" code="slti v0,v0,20" time="219">
+</INSTRUCTION>
+<INSTRUCTION id="197" code="bnez v0,4000e4" time="220">
+</INSTRUCTION>
+<INSTRUCTION id="198" code="nop" time="221">
+</INSTRUCTION>
+<INSTRUCTION id="189" code="lw v0,20(sp)" time="213">
+</INSTRUCTION>
+<INSTRUCTION id="190" code="nop" time="214">
+</INSTRUCTION>
+<INSTRUCTION id="191" code="addiu v0,v0,1" time="215">
+</INSTRUCTION>
+<INSTRUCTION id="192" code="sw v0,20(sp)" time="216">
+</INSTRUCTION>
+<INSTRUCTION id="194" code="lw v0,20(sp)" time="217">
+</INSTRUCTION>
+<INSTRUCTION id="195" code="nop" time="218">
+</INSTRUCTION>
+<INSTRUCTION id="196" code="slti v0,v0,20" time="219">
+</INSTRUCTION>
+<INSTRUCTION id="197" code="bnez v0,4000e4" time="220">
+</INSTRUCTION>
+<INSTRUCTION id="198" code="nop" time="221">
+</INSTRUCTION>
+<INSTRUCTION id="189" code="lw v0,20(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="190" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="191" code="addiu v0,v0,1" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="192" code="sw v0,20(sp)" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="194" code="lw v0,20(sp)" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="195" code="nop" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="196" code="slti v0,v0,20" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="197" code="bnez v0,4000e4" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="198" code="nop" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="189" code="lw v0,20(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="190" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="191" code="addiu v0,v0,1" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="192" code="sw v0,20(sp)" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="194" code="lw v0,20(sp)" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="195" code="nop" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="196" code="slti v0,v0,20" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="197" code="bnez v0,4000e4" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="198" code="nop" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="194" code="lw v0,20(sp)" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="195" code="nop" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="196" code="slti v0,v0,20" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="197" code="bnez v0,4000e4" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="198" code="nop" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="69" code="lw v0,24(sp)" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="70" code="nop" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="71" code="bnez v0,4002b4" time="120">
+</INSTRUCTION>
+<INSTRUCTION id="72" code="nop" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="194" code="lw v0,20(sp)" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="195" code="nop" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="196" code="slti v0,v0,20" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="197" code="bnez v0,4000e4" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="198" code="nop" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="69" code="lw v0,24(sp)" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="70" code="nop" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="71" code="bnez v0,4002b4" time="120">
+</INSTRUCTION>
+<INSTRUCTION id="72" code="nop" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="194" code="lw v0,20(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="195" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="196" code="slti v0,v0,20" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="197" code="bnez v0,4000e4" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="198" code="nop" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="69" code="lw v0,24(sp)" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="70" code="nop" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="71" code="bnez v0,4002b4" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="72" code="nop" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="194" code="lw v0,20(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="195" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="196" code="slti v0,v0,20" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="197" code="bnez v0,4000e4" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="198" code="nop" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="69" code="lw v0,24(sp)" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="70" code="nop" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="71" code="bnez v0,4002b4" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="72" code="nop" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="194" code="lw v0,20(sp)" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="195" code="nop" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="196" code="slti v0,v0,20" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="197" code="bnez v0,4000e4" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="198" code="nop" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="199" code="lw v0,16(sp)" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="200" code="nop" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="201" code="mtc1 v0,$f0" time="120">
+</INSTRUCTION>
+<INSTRUCTION id="202" code="lw ra,60(sp)" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="203" code="addiu sp,sp,64" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="204" code="jr ra" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="205" code="nop" time="124">
+</INSTRUCTION>
+<INSTRUCTION id="194" code="lw v0,20(sp)" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="195" code="nop" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="196" code="slti v0,v0,20" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="197" code="bnez v0,4000e4" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="198" code="nop" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="199" code="lw v0,16(sp)" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="200" code="nop" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="201" code="mtc1 v0,$f0" time="120">
+</INSTRUCTION>
+<INSTRUCTION id="202" code="lw ra,60(sp)" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="203" code="addiu sp,sp,64" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="204" code="jr ra" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="205" code="nop" time="124">
+</INSTRUCTION>
+<INSTRUCTION id="194" code="lw v0,20(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="195" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="196" code="slti v0,v0,20" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="197" code="bnez v0,4000e4" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="198" code="nop" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="199" code="lw v0,16(sp)" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="200" code="nop" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="201" code="mtc1 v0,$f0" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="202" code="lw ra,60(sp)" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="203" code="addiu sp,sp,64" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="204" code="jr ra" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="205" code="nop" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="194" code="lw v0,20(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="195" code="nop" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="196" code="slti v0,v0,20" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="197" code="bnez v0,4000e4" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="198" code="nop" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="199" code="lw v0,16(sp)" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="200" code="nop" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="201" code="mtc1 v0,$f0" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="202" code="lw ra,60(sp)" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="203" code="addiu sp,sp,64" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="204" code="jr ra" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="205" code="nop" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="223" code="addiu sp,sp,-24" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="224" code="sw ra,20(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="225" code="lw v0,-32744(gp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="226" code="nop" time="227">
+</INSTRUCTION>
+<INSTRUCTION id="227" code="mtc1 v0,$f12" time="228">
+</INSTRUCTION>
+<INSTRUCTION id="228" code="jal 400068" time="229">
+</INSTRUCTION>
+<INSTRUCTION id="229" code="nop" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="223" code="addiu sp,sp,-24" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="224" code="sw ra,20(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="225" code="lw v0,-32744(gp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="226" code="nop" time="227">
+</INSTRUCTION>
+<INSTRUCTION id="227" code="mtc1 v0,$f12" time="228">
+</INSTRUCTION>
+<INSTRUCTION id="228" code="jal 400068" time="229">
+</INSTRUCTION>
+<INSTRUCTION id="229" code="nop" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="230" code="move v0,zero" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="231" code="lw ra,20(sp)" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="232" code="addiu sp,sp,24" time="6">
+</INSTRUCTION>
+<INSTRUCTION id="233" code="jr ra" time="7">
+</INSTRUCTION>
+<INSTRUCTION id="234" code="nop" time="18">
+</INSTRUCTION>
+<INSTRUCTION id="230" code="move v0,zero" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="231" code="lw ra,20(sp)" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="232" code="addiu sp,sp,24" time="6">
+</INSTRUCTION>
+<INSTRUCTION id="233" code="jr ra" time="7">
+</INSTRUCTION>
+<INSTRUCTION id="234" code="nop" time="18">
+</INSTRUCTION>
+<INSTRUCTION id="223" code="addiu sp,sp,-24" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="224" code="sw ra,20(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="225" code="lw v0,-32744(gp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="226" code="nop" time="227">
+</INSTRUCTION>
+<INSTRUCTION id="227" code="mtc1 v0,$f12" time="228">
+</INSTRUCTION>
+<INSTRUCTION id="228" code="jal 400068" time="229">
+</INSTRUCTION>
+<INSTRUCTION id="229" code="nop" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="230" code="move v0,zero" time="231">
+</INSTRUCTION>
+<INSTRUCTION id="231" code="lw ra,20(sp)" time="232">
+</INSTRUCTION>
+<INSTRUCTION id="232" code="addiu sp,sp,24" time="233">
+</INSTRUCTION>
+<INSTRUCTION id="233" code="jr ra" time="234">
+</INSTRUCTION>
+<INSTRUCTION id="234" code="nop" time="245">
+</INSTRUCTION>
+<INSTRUCTION id="223" code="addiu sp,sp,-24" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="224" code="sw ra,20(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="225" code="lw v0,-32744(gp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="226" code="nop" time="227">
+</INSTRUCTION>
+<INSTRUCTION id="227" code="mtc1 v0,$f12" time="228">
+</INSTRUCTION>
+<INSTRUCTION id="228" code="jal 400068" time="229">
+</INSTRUCTION>
+<INSTRUCTION id="229" code="nop" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="230" code="move v0,zero" time="231">
+</INSTRUCTION>
+<INSTRUCTION id="231" code="lw ra,20(sp)" time="232">
+</INSTRUCTION>
+<INSTRUCTION id="232" code="addiu sp,sp,24" time="233">
+</INSTRUCTION>
+<INSTRUCTION id="233" code="jr ra" time="234">
+</INSTRUCTION>
+<INSTRUCTION id="234" code="nop" time="245">
+</INSTRUCTION>
+<INSTRUCTION id="223" code="addiu sp,sp,-24" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="224" code="sw ra,20(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="225" code="lw v0,-32744(gp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="226" code="nop" time="227">
+</INSTRUCTION>
+<INSTRUCTION id="227" code="mtc1 v0,$f12" time="228">
+</INSTRUCTION>
+<INSTRUCTION id="228" code="jal 400068" time="229">
+</INSTRUCTION>
+<INSTRUCTION id="229" code="nop" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="230" code="move v0,zero" time="231">
+</INSTRUCTION>
+<INSTRUCTION id="231" code="lw ra,20(sp)" time="232">
+</INSTRUCTION>
+<INSTRUCTION id="232" code="addiu sp,sp,24" time="233">
+</INSTRUCTION>
+<INSTRUCTION id="233" code="jr ra" time="234">
+</INSTRUCTION>
+<INSTRUCTION id="234" code="nop" time="245">
+</INSTRUCTION>
+<INSTRUCTION id="223" code="addiu sp,sp,-24" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="224" code="sw ra,20(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="225" code="lw v0,-32744(gp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="226" code="nop" time="227">
+</INSTRUCTION>
+<INSTRUCTION id="227" code="mtc1 v0,$f12" time="228">
+</INSTRUCTION>
+<INSTRUCTION id="228" code="jal 400068" time="229">
+</INSTRUCTION>
+<INSTRUCTION id="229" code="nop" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="230" code="move v0,zero" time="231">
+</INSTRUCTION>
+<INSTRUCTION id="231" code="lw ra,20(sp)" time="232">
+</INSTRUCTION>
+<INSTRUCTION id="232" code="addiu sp,sp,24" time="233">
+</INSTRUCTION>
+<INSTRUCTION id="233" code="jr ra" time="234">
+</INSTRUCTION>
+<INSTRUCTION id="234" code="nop" time="245">
+</INSTRUCTION>
+<INSTRUCTION id="74" code="lw v1,16(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="75" code="lw v0,16(sp)" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="76" code="mtc1 v1,$f0" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="77" code="mtc1 v0,$f2" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="78" code="nop" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="79" code="mul.s $f0,$f0,$f2" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="80" code="mfc1 v0,$f0" time="120">
+</INSTRUCTION>
+<INSTRUCTION id="81" code="lw v1,64(sp)" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="82" code="nop" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="83" code="mtc1 v1,$f0" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="84" code="mtc1 v0,$f2" time="124">
+</INSTRUCTION>
+<INSTRUCTION id="85" code="nop" time="235">
+</INSTRUCTION>
+<INSTRUCTION id="86" code="sub.s $f0,$f0,$f2" time="236">
+</INSTRUCTION>
+<INSTRUCTION id="87" code="mfc1 v0,$f0" time="237">
+</INSTRUCTION>
+<INSTRUCTION id="88" code="nop" time="238">
+</INSTRUCTION>
+<INSTRUCTION id="89" code="mtc1 v0,$f0" time="239">
+</INSTRUCTION>
+<INSTRUCTION id="90" code="nop" time="240">
+</INSTRUCTION>
+<INSTRUCTION id="91" code="cvt.d.s $f0,$f0" time="241">
+</INSTRUCTION>
+<INSTRUCTION id="92" code="mfc1 a1,$f0" time="242">
+</INSTRUCTION>
+<INSTRUCTION id="93" code="mfc1 a0,$f1" time="353">
+</INSTRUCTION>
+<INSTRUCTION id="94" code="lw v0,16(sp)" time="354">
+</INSTRUCTION>
+<INSTRUCTION id="95" code="nop" time="355">
+</INSTRUCTION>
+<INSTRUCTION id="96" code="mtc1 v0,$f2" time="356">
+</INSTRUCTION>
+<INSTRUCTION id="97" code="nop" time="357">
+</INSTRUCTION>
+<INSTRUCTION id="98" code="cvt.d.s $f2,$f2" time="358">
+</INSTRUCTION>
+<INSTRUCTION id="99" code="mfc1 v1,$f2" time="359">
+</INSTRUCTION>
+<INSTRUCTION id="100" code="mfc1 v0,$f3" time="360">
+</INSTRUCTION>
+<INSTRUCTION id="101" code="mtc1 v1,$f0" time="471">
+</INSTRUCTION>
+<INSTRUCTION id="102" code="mtc1 v0,$f1" time="472">
+</INSTRUCTION>
+<INSTRUCTION id="103" code="mtc1 v1,$f2" time="473">
+</INSTRUCTION>
+<INSTRUCTION id="104" code="mtc1 v0,$f3" time="474">
+</INSTRUCTION>
+<INSTRUCTION id="105" code="nop" time="475">
+</INSTRUCTION>
+<INSTRUCTION id="106" code="add.d $f0,$f0,$f2" time="476">
+</INSTRUCTION>
+<INSTRUCTION id="107" code="mfc1 v1,$f0" time="477">
+</INSTRUCTION>
+<INSTRUCTION id="108" code="mfc1 v0,$f1" time="478">
+</INSTRUCTION>
+<INSTRUCTION id="109" code="mtc1 a1,$f0" time="589">
+</INSTRUCTION>
+<INSTRUCTION id="110" code="mtc1 a0,$f1" time="590">
+</INSTRUCTION>
+<INSTRUCTION id="111" code="mtc1 v1,$f2" time="591">
+</INSTRUCTION>
+<INSTRUCTION id="112" code="mtc1 v0,$f3" time="592">
+</INSTRUCTION>
+<INSTRUCTION id="113" code="nop" time="593">
+</INSTRUCTION>
+<INSTRUCTION id="114" code="div.d $f0,$f0,$f2" time="594">
+</INSTRUCTION>
+<INSTRUCTION id="115" code="mfc1 v1,$f0" time="595">
+</INSTRUCTION>
+<INSTRUCTION id="116" code="mfc1 v0,$f1" time="596">
+</INSTRUCTION>
+<INSTRUCTION id="117" code="mtc1 v1,$f0" time="707">
+</INSTRUCTION>
+<INSTRUCTION id="118" code="mtc1 v0,$f1" time="708">
+</INSTRUCTION>
+<INSTRUCTION id="119" code="nop" time="709">
+</INSTRUCTION>
+<INSTRUCTION id="120" code="cvt.s.d $f0,$f0" time="710">
+</INSTRUCTION>
+<INSTRUCTION id="121" code="mfc1 v0,$f0" time="711">
+</INSTRUCTION>
+<INSTRUCTION id="122" code="nop" time="712">
+</INSTRUCTION>
+<INSTRUCTION id="123" code="sw v0,40(sp)" time="713">
+</INSTRUCTION>
+<INSTRUCTION id="124" code="lw v1,16(sp)" time="714">
+</INSTRUCTION>
+<INSTRUCTION id="125" code="lw v0,40(sp)" time="825">
+</INSTRUCTION>
+<INSTRUCTION id="126" code="mtc1 v1,$f2" time="826">
+</INSTRUCTION>
+<INSTRUCTION id="127" code="mtc1 v0,$f0" time="827">
+</INSTRUCTION>
+<INSTRUCTION id="128" code="nop" time="828">
+</INSTRUCTION>
+<INSTRUCTION id="129" code="add.s $f2,$f2,$f0" time="829">
+</INSTRUCTION>
+<INSTRUCTION id="130" code="mfc1 v0,$f2" time="830">
+</INSTRUCTION>
+<INSTRUCTION id="131" code="nop" time="831">
+</INSTRUCTION>
+<INSTRUCTION id="132" code="sw v0,16(sp)" time="832">
+</INSTRUCTION>
+<INSTRUCTION id="133" code="lw v1,16(sp)" time="943">
+</INSTRUCTION>
+<INSTRUCTION id="134" code="lw v0,16(sp)" time="944">
+</INSTRUCTION>
+<INSTRUCTION id="135" code="mtc1 v1,$f2" time="945">
+</INSTRUCTION>
+<INSTRUCTION id="136" code="mtc1 v0,$f0" time="946">
+</INSTRUCTION>
+<INSTRUCTION id="137" code="nop" time="947">
+</INSTRUCTION>
+<INSTRUCTION id="138" code="mul.s $f2,$f2,$f0" time="948">
+</INSTRUCTION>
+<INSTRUCTION id="139" code="mfc1 v0,$f2" time="949">
+</INSTRUCTION>
+<INSTRUCTION id="140" code="lw v1,64(sp)" time="950">
+</INSTRUCTION>
+<INSTRUCTION id="141" code="nop" time="1061">
+</INSTRUCTION>
+<INSTRUCTION id="142" code="mtc1 v1,$f2" time="1062">
+</INSTRUCTION>
+<INSTRUCTION id="143" code="mtc1 v0,$f0" time="1063">
+</INSTRUCTION>
+<INSTRUCTION id="144" code="nop" time="1064">
+</INSTRUCTION>
+<INSTRUCTION id="145" code="sub.s $f2,$f2,$f0" time="1065">
+</INSTRUCTION>
+<INSTRUCTION id="146" code="mfc1 v0,$f2" time="1066">
+</INSTRUCTION>
+<INSTRUCTION id="147" code="nop" time="1067">
+</INSTRUCTION>
+<INSTRUCTION id="148" code="mtc1 v0,$f2" time="1068">
+</INSTRUCTION>
+<INSTRUCTION id="149" code="nop" time="1179">
+</INSTRUCTION>
+<INSTRUCTION id="150" code="cvt.d.s $f2,$f2" time="1180">
+</INSTRUCTION>
+<INSTRUCTION id="151" code="mfc1 v1,$f2" time="1181">
+</INSTRUCTION>
+<INSTRUCTION id="152" code="mfc1 v0,$f3" time="1182">
+</INSTRUCTION>
+<INSTRUCTION id="153" code="sw v1,52(sp)" time="1183">
+</INSTRUCTION>
+<INSTRUCTION id="154" code="sw v0,48(sp)" time="1184">
+</INSTRUCTION>
+<INSTRUCTION id="155" code="lw v1,52(sp)" time="1185">
+</INSTRUCTION>
+<INSTRUCTION id="156" code="lw v0,48(sp)" time="1186">
+</INSTRUCTION>
+<INSTRUCTION id="157" code="mtc1 v1,$f0" time="1297">
+</INSTRUCTION>
+<INSTRUCTION id="158" code="mtc1 v0,$f1" time="1298">
+</INSTRUCTION>
+<INSTRUCTION id="159" code="nop" time="1299">
+</INSTRUCTION>
+<INSTRUCTION id="160" code="cvt.s.d $f0,$f0" time="1300">
+</INSTRUCTION>
+<INSTRUCTION id="161" code="mfc1 v0,$f0" time="1301">
+</INSTRUCTION>
+<INSTRUCTION id="162" code="nop" time="1302">
+</INSTRUCTION>
+<INSTRUCTION id="163" code="mtc1 v0,$f12" time="1303">
+</INSTRUCTION>
+<INSTRUCTION id="164" code="jal 400018" time="1304">
+</INSTRUCTION>
+<INSTRUCTION id="165" code="nop" time="1415">
+</INSTRUCTION>
+<INSTRUCTION id="5" code="swc1 $f12,0(sp)" time="1526">
+</INSTRUCTION>
+<INSTRUCTION id="6" code="lw v1,0(sp)" time="1527">
+</INSTRUCTION>
+<INSTRUCTION id="7" code="move v0,zero" time="1638">
+</INSTRUCTION>
+<INSTRUCTION id="8" code="mtc1 v1,$f0" time="1639">
+</INSTRUCTION>
+<INSTRUCTION id="9" code="mtc1 v0,$f2" time="1640">
+</INSTRUCTION>
+<INSTRUCTION id="10" code="nop" time="1641">
+</INSTRUCTION>
+<INSTRUCTION id="11" code="c.lt.s $f0,$f2" time="1642">
+</INSTRUCTION>
+<INSTRUCTION id="12" code="nop" time="1643">
+</INSTRUCTION>
+<INSTRUCTION id="13" code="bc1f 400054" time="1644">
+</INSTRUCTION>
+<INSTRUCTION id="14" code="nop" time="1645">
+</INSTRUCTION>
+<INSTRUCTION id="74" code="lw v1,16(sp)" time="103">
+</INSTRUCTION>
+<INSTRUCTION id="75" code="lw v0,16(sp)" time="104">
+</INSTRUCTION>
+<INSTRUCTION id="76" code="mtc1 v1,$f0" time="105">
+</INSTRUCTION>
+<INSTRUCTION id="77" code="mtc1 v0,$f2" time="106">
+</INSTRUCTION>
+<INSTRUCTION id="78" code="nop" time="107">
+</INSTRUCTION>
+<INSTRUCTION id="79" code="mul.s $f0,$f0,$f2" time="108">
+</INSTRUCTION>
+<INSTRUCTION id="80" code="mfc1 v0,$f0" time="109">
+</INSTRUCTION>
+<INSTRUCTION id="81" code="lw v1,64(sp)" time="110">
+</INSTRUCTION>
+<INSTRUCTION id="82" code="nop" time="111">
+</INSTRUCTION>
+<INSTRUCTION id="83" code="mtc1 v1,$f0" time="112">
+</INSTRUCTION>
+<INSTRUCTION id="84" code="mtc1 v0,$f2" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="85" code="nop" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="86" code="sub.s $f0,$f0,$f2" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="87" code="mfc1 v0,$f0" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="88" code="nop" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="89" code="mtc1 v0,$f0" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="90" code="nop" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="91" code="cvt.d.s $f0,$f0" time="120">
+</INSTRUCTION>
+<INSTRUCTION id="92" code="mfc1 a1,$f0" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="93" code="mfc1 a0,$f1" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="94" code="lw v0,16(sp)" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="95" code="nop" time="124">
+</INSTRUCTION>
+<INSTRUCTION id="96" code="mtc1 v0,$f2" time="125">
+</INSTRUCTION>
+<INSTRUCTION id="97" code="nop" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="98" code="cvt.d.s $f2,$f2" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="99" code="mfc1 v1,$f2" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="100" code="mfc1 v0,$f3" time="129">
+</INSTRUCTION>
+<INSTRUCTION id="101" code="mtc1 v1,$f0" time="130">
+</INSTRUCTION>
+<INSTRUCTION id="102" code="mtc1 v0,$f1" time="131">
+</INSTRUCTION>
+<INSTRUCTION id="103" code="mtc1 v1,$f2" time="132">
+</INSTRUCTION>
+<INSTRUCTION id="104" code="mtc1 v0,$f3" time="133">
+</INSTRUCTION>
+<INSTRUCTION id="105" code="nop" time="134">
+</INSTRUCTION>
+<INSTRUCTION id="106" code="add.d $f0,$f0,$f2" time="135">
+</INSTRUCTION>
+<INSTRUCTION id="107" code="mfc1 v1,$f0" time="136">
+</INSTRUCTION>
+<INSTRUCTION id="108" code="mfc1 v0,$f1" time="137">
+</INSTRUCTION>
+<INSTRUCTION id="109" code="mtc1 a1,$f0" time="138">
+</INSTRUCTION>
+<INSTRUCTION id="110" code="mtc1 a0,$f1" time="139">
+</INSTRUCTION>
+<INSTRUCTION id="111" code="mtc1 v1,$f2" time="140">
+</INSTRUCTION>
+<INSTRUCTION id="112" code="mtc1 v0,$f3" time="141">
+</INSTRUCTION>
+<INSTRUCTION id="113" code="nop" time="142">
+</INSTRUCTION>
+<INSTRUCTION id="114" code="div.d $f0,$f0,$f2" time="143">
+</INSTRUCTION>
+<INSTRUCTION id="115" code="mfc1 v1,$f0" time="144">
+</INSTRUCTION>
+<INSTRUCTION id="116" code="mfc1 v0,$f1" time="145">
+</INSTRUCTION>
+<INSTRUCTION id="117" code="mtc1 v1,$f0" time="146">
+</INSTRUCTION>
+<INSTRUCTION id="118" code="mtc1 v0,$f1" time="147">
+</INSTRUCTION>
+<INSTRUCTION id="119" code="nop" time="148">
+</INSTRUCTION>
+<INSTRUCTION id="120" code="cvt.s.d $f0,$f0" time="149">
+</INSTRUCTION>
+<INSTRUCTION id="121" code="mfc1 v0,$f0" time="150">
+</INSTRUCTION>
+<INSTRUCTION id="122" code="nop" time="151">
+</INSTRUCTION>
+<INSTRUCTION id="123" code="sw v0,40(sp)" time="152">
+</INSTRUCTION>
+<INSTRUCTION id="124" code="lw v1,16(sp)" time="153">
+</INSTRUCTION>
+<INSTRUCTION id="125" code="lw v0,40(sp)" time="154">
+</INSTRUCTION>
+<INSTRUCTION id="126" code="mtc1 v1,$f2" time="155">
+</INSTRUCTION>
+<INSTRUCTION id="127" code="mtc1 v0,$f0" time="156">
+</INSTRUCTION>
+<INSTRUCTION id="128" code="nop" time="157">
+</INSTRUCTION>
+<INSTRUCTION id="129" code="add.s $f2,$f2,$f0" time="158">
+</INSTRUCTION>
+<INSTRUCTION id="130" code="mfc1 v0,$f2" time="159">
+</INSTRUCTION>
+<INSTRUCTION id="131" code="nop" time="160">
+</INSTRUCTION>
+<INSTRUCTION id="132" code="sw v0,16(sp)" time="161">
+</INSTRUCTION>
+<INSTRUCTION id="133" code="lw v1,16(sp)" time="162">
+</INSTRUCTION>
+<INSTRUCTION id="134" code="lw v0,16(sp)" time="163">
+</INSTRUCTION>
+<INSTRUCTION id="135" code="mtc1 v1,$f2" time="164">
+</INSTRUCTION>
+<INSTRUCTION id="136" code="mtc1 v0,$f0" time="165">
+</INSTRUCTION>
+<INSTRUCTION id="137" code="nop" time="166">
+</INSTRUCTION>
+<INSTRUCTION id="138" code="mul.s $f2,$f2,$f0" time="167">
+</INSTRUCTION>
+<INSTRUCTION id="139" code="mfc1 v0,$f2" time="168">
+</INSTRUCTION>
+<INSTRUCTION id="140" code="lw v1,64(sp)" time="169">
+</INSTRUCTION>
+<INSTRUCTION id="141" code="nop" time="170">
+</INSTRUCTION>
+<INSTRUCTION id="142" code="mtc1 v1,$f2" time="171">
+</INSTRUCTION>
+<INSTRUCTION id="143" code="mtc1 v0,$f0" time="172">
+</INSTRUCTION>
+<INSTRUCTION id="144" code="nop" time="173">
+</INSTRUCTION>
+<INSTRUCTION id="145" code="sub.s $f2,$f2,$f0" time="174">
+</INSTRUCTION>
+<INSTRUCTION id="146" code="mfc1 v0,$f2" time="175">
+</INSTRUCTION>
+<INSTRUCTION id="147" code="nop" time="176">
+</INSTRUCTION>
+<INSTRUCTION id="148" code="mtc1 v0,$f2" time="177">
+</INSTRUCTION>
+<INSTRUCTION id="149" code="nop" time="178">
+</INSTRUCTION>
+<INSTRUCTION id="150" code="cvt.d.s $f2,$f2" time="179">
+</INSTRUCTION>
+<INSTRUCTION id="151" code="mfc1 v1,$f2" time="180">
+</INSTRUCTION>
+<INSTRUCTION id="152" code="mfc1 v0,$f3" time="181">
+</INSTRUCTION>
+<INSTRUCTION id="153" code="sw v1,52(sp)" time="182">
+</INSTRUCTION>
+<INSTRUCTION id="154" code="sw v0,48(sp)" time="183">
+</INSTRUCTION>
+<INSTRUCTION id="155" code="lw v1,52(sp)" time="184">
+</INSTRUCTION>
+<INSTRUCTION id="156" code="lw v0,48(sp)" time="185">
+</INSTRUCTION>
+<INSTRUCTION id="157" code="mtc1 v1,$f0" time="186">
+</INSTRUCTION>
+<INSTRUCTION id="158" code="mtc1 v0,$f1" time="187">
+</INSTRUCTION>
+<INSTRUCTION id="159" code="nop" time="188">
+</INSTRUCTION>
+<INSTRUCTION id="160" code="cvt.s.d $f0,$f0" time="189">
+</INSTRUCTION>
+<INSTRUCTION id="161" code="mfc1 v0,$f0" time="190">
+</INSTRUCTION>
+<INSTRUCTION id="162" code="nop" time="191">
+</INSTRUCTION>
+<INSTRUCTION id="163" code="mtc1 v0,$f12" time="192">
+</INSTRUCTION>
+<INSTRUCTION id="164" code="jal 400018" time="193">
+</INSTRUCTION>
+<INSTRUCTION id="165" code="nop" time="194">
+</INSTRUCTION>
+<INSTRUCTION id="5" code="swc1 $f12,0(sp)" time="195">
+</INSTRUCTION>
+<INSTRUCTION id="6" code="lw v1,0(sp)" time="196">
+</INSTRUCTION>
+<INSTRUCTION id="7" code="move v0,zero" time="197">
+</INSTRUCTION>
+<INSTRUCTION id="8" code="mtc1 v1,$f0" time="198">
+</INSTRUCTION>
+<INSTRUCTION id="9" code="mtc1 v0,$f2" time="199">
+</INSTRUCTION>
+<INSTRUCTION id="10" code="nop" time="200">
+</INSTRUCTION>
+<INSTRUCTION id="11" code="c.lt.s $f0,$f2" time="201">
+</INSTRUCTION>
+<INSTRUCTION id="12" code="nop" time="202">
+</INSTRUCTION>
+<INSTRUCTION id="13" code="bc1f 400054" time="203">
+</INSTRUCTION>
+<INSTRUCTION id="14" code="nop" time="204">
+</INSTRUCTION>
+<INSTRUCTION id="24" code="mtc1 v0,$f0" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="25" code="jr ra" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="26" code="nop" time="6">
+</INSTRUCTION>
+<INSTRUCTION id="167" code="mfc1 v0,$f0" time="7">
+</INSTRUCTION>
+<INSTRUCTION id="168" code="nop" time="8">
+</INSTRUCTION>
+<INSTRUCTION id="169" code="mtc1 v0,$f2" time="9">
+</INSTRUCTION>
+<INSTRUCTION id="170" code="nop" time="10">
+</INSTRUCTION>
+<INSTRUCTION id="171" code="cvt.d.s $f2,$f2" time="11">
+</INSTRUCTION>
+<INSTRUCTION id="172" code="mfc1 a1,$f2" time="12">
+</INSTRUCTION>
+<INSTRUCTION id="173" code="mfc1 a0,$f3" time="13">
+</INSTRUCTION>
+<INSTRUCTION id="174" code="lw v1,36(sp)" time="124">
+</INSTRUCTION>
+<INSTRUCTION id="175" code="lw v0,32(sp)" time="125">
+</INSTRUCTION>
+<INSTRUCTION id="176" code="mtc1 a1,$f0" time="126">
+</INSTRUCTION>
+<INSTRUCTION id="177" code="mtc1 a0,$f1" time="127">
+</INSTRUCTION>
+<INSTRUCTION id="178" code="mtc1 v1,$f2" time="128">
+</INSTRUCTION>
+<INSTRUCTION id="179" code="mtc1 v0,$f3" time="129">
+</INSTRUCTION>
+<INSTRUCTION id="180" code="nop" time="130">
+</INSTRUCTION>
+<INSTRUCTION id="181" code="c.le.d $f0,$f2" time="131">
+</INSTRUCTION>
+<INSTRUCTION id="182" code="nop" time="242">
+</INSTRUCTION>
+<INSTRUCTION id="183" code="bc1f 4002b4" time="243">
+</INSTRUCTION>
+<INSTRUCTION id="184" code="nop" time="244">
+</INSTRUCTION>
+<INSTRUCTION id="24" code="mtc1 v0,$f0" time="4">
+</INSTRUCTION>
+<INSTRUCTION id="25" code="jr ra" time="5">
+</INSTRUCTION>
+<INSTRUCTION id="26" code="nop" time="6">
+</INSTRUCTION>
+<INSTRUCTION id="167" code="mfc1 v0,$f0" time="7">
+</INSTRUCTION>
+<INSTRUCTION id="168" code="nop" time="8">
+</INSTRUCTION>
+<INSTRUCTION id="169" code="mtc1 v0,$f2" time="9">
+</INSTRUCTION>
+<INSTRUCTION id="170" code="nop" time="10">
+</INSTRUCTION>
+<INSTRUCTION id="171" code="cvt.d.s $f2,$f2" time="11">
+</INSTRUCTION>
+<INSTRUCTION id="172" code="mfc1 a1,$f2" time="12">
+</INSTRUCTION>
+<INSTRUCTION id="173" code="mfc1 a0,$f3" time="13">
+</INSTRUCTION>
+<INSTRUCTION id="174" code="lw v1,36(sp)" time="14">
+</INSTRUCTION>
+<INSTRUCTION id="175" code="lw v0,32(sp)" time="15">
+</INSTRUCTION>
+<INSTRUCTION id="176" code="mtc1 a1,$f0" time="16">
+</INSTRUCTION>
+<INSTRUCTION id="177" code="mtc1 a0,$f1" time="17">
+</INSTRUCTION>
+<INSTRUCTION id="178" code="mtc1 v1,$f2" time="18">
+</INSTRUCTION>
+<INSTRUCTION id="179" code="mtc1 v0,$f3" time="19">
+</INSTRUCTION>
+<INSTRUCTION id="180" code="nop" time="20">
+</INSTRUCTION>
+<INSTRUCTION id="181" code="c.le.d $f0,$f2" time="21">
+</INSTRUCTION>
+<INSTRUCTION id="182" code="nop" time="22">
+</INSTRUCTION>
+<INSTRUCTION id="183" code="bc1f 4002b4" time="23">
+</INSTRUCTION>
+<INSTRUCTION id="184" code="nop" time="24">
+</INSTRUCTION>
+<INSTRUCTION id="223" code="addiu sp,sp,-24" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="224" code="sw ra,20(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="225" code="lw v0,-32744(gp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="226" code="nop" time="227">
+</INSTRUCTION>
+<INSTRUCTION id="227" code="mtc1 v0,$f12" time="228">
+</INSTRUCTION>
+<INSTRUCTION id="228" code="jal 400068" time="229">
+</INSTRUCTION>
+<INSTRUCTION id="229" code="nop" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="35" code="addiu sp,sp,-64" time="341">
+</INSTRUCTION>
+<INSTRUCTION id="36" code="sw ra,60(sp)" time="342">
+</INSTRUCTION>
+<INSTRUCTION id="37" code="swc1 $f12,64(sp)" time="343">
+</INSTRUCTION>
+<INSTRUCTION id="38" code="lw v1,64(sp)" time="344">
+</INSTRUCTION>
+<INSTRUCTION id="39" code="lw v0,-32760(gp)" time="345">
+</INSTRUCTION>
+<INSTRUCTION id="40" code="mtc1 v1,$f0" time="346">
+</INSTRUCTION>
+<INSTRUCTION id="41" code="mtc1 v0,$f2" time="457">
+</INSTRUCTION>
+<INSTRUCTION id="42" code="nop" time="458">
+</INSTRUCTION>
+<INSTRUCTION id="43" code="div.s $f0,$f0,$f2" time="459">
+</INSTRUCTION>
+<INSTRUCTION id="44" code="mfc1 v0,$f0" time="460">
+</INSTRUCTION>
+<INSTRUCTION id="45" code="nop" time="461">
+</INSTRUCTION>
+<INSTRUCTION id="46" code="sw v0,16(sp)" time="462">
+</INSTRUCTION>
+<INSTRUCTION id="47" code="lw v1,-32748(gp)" time="463">
+</INSTRUCTION>
+<INSTRUCTION id="48" code="lw v0,-32752(gp)" time="464">
+</INSTRUCTION>
+<INSTRUCTION id="49" code="sw v1,36(sp)" time="475">
+</INSTRUCTION>
+<INSTRUCTION id="50" code="sw v0,32(sp)" time="476">
+</INSTRUCTION>
+<INSTRUCTION id="51" code="sw zero,24(sp)" time="477">
+</INSTRUCTION>
+<INSTRUCTION id="52" code="lw v1,64(sp)" time="478">
+</INSTRUCTION>
+<INSTRUCTION id="53" code="move v0,zero" time="479">
+</INSTRUCTION>
+<INSTRUCTION id="54" code="mtc1 v1,$f0" time="480">
+</INSTRUCTION>
+<INSTRUCTION id="55" code="mtc1 v0,$f2" time="481">
+</INSTRUCTION>
+<INSTRUCTION id="56" code="nop" time="482">
+</INSTRUCTION>
+<INSTRUCTION id="57" code="c.eq.s $f0,$f2" time="593">
+</INSTRUCTION>
+<INSTRUCTION id="58" code="nop" time="594">
+</INSTRUCTION>
+<INSTRUCTION id="59" code="bc1f 4000d8" time="595">
+</INSTRUCTION>
+<INSTRUCTION id="60" code="nop" time="596">
+</INSTRUCTION>
+<INSTRUCTION id="223" code="addiu sp,sp,-24" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="224" code="sw ra,20(sp)" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="225" code="lw v0,-32744(gp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="226" code="nop" time="227">
+</INSTRUCTION>
+<INSTRUCTION id="227" code="mtc1 v0,$f12" time="228">
+</INSTRUCTION>
+<INSTRUCTION id="228" code="jal 400068" time="229">
+</INSTRUCTION>
+<INSTRUCTION id="229" code="nop" time="230">
+</INSTRUCTION>
+<INSTRUCTION id="35" code="addiu sp,sp,-64" time="341">
+</INSTRUCTION>
+<INSTRUCTION id="36" code="sw ra,60(sp)" time="342">
+</INSTRUCTION>
+<INSTRUCTION id="37" code="swc1 $f12,64(sp)" time="343">
+</INSTRUCTION>
+<INSTRUCTION id="38" code="lw v1,64(sp)" time="344">
+</INSTRUCTION>
+<INSTRUCTION id="39" code="lw v0,-32760(gp)" time="345">
+</INSTRUCTION>
+<INSTRUCTION id="40" code="mtc1 v1,$f0" time="346">
+</INSTRUCTION>
+<INSTRUCTION id="41" code="mtc1 v0,$f2" time="457">
+</INSTRUCTION>
+<INSTRUCTION id="42" code="nop" time="458">
+</INSTRUCTION>
+<INSTRUCTION id="43" code="div.s $f0,$f0,$f2" time="459">
+</INSTRUCTION>
+<INSTRUCTION id="44" code="mfc1 v0,$f0" time="460">
+</INSTRUCTION>
+<INSTRUCTION id="45" code="nop" time="461">
+</INSTRUCTION>
+<INSTRUCTION id="46" code="sw v0,16(sp)" time="462">
+</INSTRUCTION>
+<INSTRUCTION id="47" code="lw v1,-32748(gp)" time="463">
+</INSTRUCTION>
+<INSTRUCTION id="48" code="lw v0,-32752(gp)" time="464">
+</INSTRUCTION>
+<INSTRUCTION id="49" code="sw v1,36(sp)" time="475">
+</INSTRUCTION>
+<INSTRUCTION id="50" code="sw v0,32(sp)" time="476">
+</INSTRUCTION>
+<INSTRUCTION id="51" code="sw zero,24(sp)" time="477">
+</INSTRUCTION>
+<INSTRUCTION id="52" code="lw v1,64(sp)" time="478">
+</INSTRUCTION>
+<INSTRUCTION id="53" code="move v0,zero" time="479">
+</INSTRUCTION>
+<INSTRUCTION id="54" code="mtc1 v1,$f0" time="480">
+</INSTRUCTION>
+<INSTRUCTION id="55" code="mtc1 v0,$f2" time="481">
+</INSTRUCTION>
+<INSTRUCTION id="56" code="nop" time="482">
+</INSTRUCTION>
+<INSTRUCTION id="57" code="c.eq.s $f0,$f2" time="593">
+</INSTRUCTION>
+<INSTRUCTION id="58" code="nop" time="594">
+</INSTRUCTION>
+<INSTRUCTION id="59" code="bc1f 4000d8" time="595">
+</INSTRUCTION>
+<INSTRUCTION id="60" code="nop" time="596">
+</INSTRUCTION>
+<INSTRUCTION id="199" code="lw v0,16(sp)" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="200" code="nop" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="201" code="mtc1 v0,$f0" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="202" code="lw ra,60(sp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="203" code="addiu sp,sp,64" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="204" code="jr ra" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="205" code="nop" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="230" code="move v0,zero" time="120">
+</INSTRUCTION>
+<INSTRUCTION id="231" code="lw ra,20(sp)" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="232" code="addiu sp,sp,24" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="233" code="jr ra" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="234" code="nop" time="124">
+</INSTRUCTION>
+<INSTRUCTION id="199" code="lw v0,16(sp)" time="113">
+</INSTRUCTION>
+<INSTRUCTION id="200" code="nop" time="114">
+</INSTRUCTION>
+<INSTRUCTION id="201" code="mtc1 v0,$f0" time="115">
+</INSTRUCTION>
+<INSTRUCTION id="202" code="lw ra,60(sp)" time="116">
+</INSTRUCTION>
+<INSTRUCTION id="203" code="addiu sp,sp,64" time="117">
+</INSTRUCTION>
+<INSTRUCTION id="204" code="jr ra" time="118">
+</INSTRUCTION>
+<INSTRUCTION id="205" code="nop" time="119">
+</INSTRUCTION>
+<INSTRUCTION id="230" code="move v0,zero" time="120">
+</INSTRUCTION>
+<INSTRUCTION id="231" code="lw ra,20(sp)" time="121">
+</INSTRUCTION>
+<INSTRUCTION id="232" code="addiu sp,sp,24" time="122">
+</INSTRUCTION>
+<INSTRUCTION id="233" code="jr ra" time="123">
+</INSTRUCTION>
+<INSTRUCTION id="234" code="nop" time="124">
+</INSTRUCTION>
+</PROGRAM>

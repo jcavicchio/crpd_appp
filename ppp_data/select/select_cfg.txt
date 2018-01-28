@@ -1,0 +1,23 @@
+JCSectionNode (0x400754,32,548,36,548,-1)
+JCSectionNode (0x400018,0,3,0,3,-1)
+JCLoopNode (0x400718,3,547,35,547,-1)
+{
+    JCSectionNode (0x400718,30,482,30,482,-1)
+    JCConditionalNode (0x400670,5,JCConditionalNode5,45,JCConditionalNode5,-1)
+    {
+        JCSectionNode (0x400670,26,436,26,436,-1)
+        {
+            JCSectionNode (0x4006e4,27,466,27,466,-1)
+        }
+        JCConditionalNode (0x4006f4,1,JCConditionalNode1,41,JCConditionalNode1,-1)
+        {
+            JCSectionNode (0x4006f4,28,471,28,471,-1)
+            {
+                JCSectionNode (0x40070c,29,478,29,478,-1)
+            }
+            JCSectionNode (0x40077c,35,JCSectionNode35,40,JCSectionNode35,-1)
+        }
+    }
+}
+JCSectionNode (0x400820,41,JCSectionNode41,57,JCSectionNode41,-1)
+JCSectionNode (0x40076c,33,549,37,549,-1)

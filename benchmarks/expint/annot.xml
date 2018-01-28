@@ -1,0 +1,12 @@
+<CFG name="main">
+</CFG>
+<CFG name="foo">
+</CFG>
+<CFG name="expint">
+  <LOOP maxiter="100">
+  </LOOP>
+  <LOOP maxiter="100">
+    <LOOP maxiter="49">
+    </LOOP>
+  </LOOP>
+</CFG>

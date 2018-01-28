@@ -1,0 +1,86 @@
+JCCfg (1,binary_search,796)
+{
+    JCSectionNode (0x400040,2,16,2,16,BasicBlock,None,32)
+    JCLoopNode (0x40013c,0,108,11,108,4,764)
+    {
+        JCConditionalNode (0x40013c,2,JCConditionalNode2,18,JCConditionalNode2,191)
+        {
+            JCSectionNode (0x40013c,9,87,9,87,BasicBlock,None,24)
+            {
+                JCSectionNode (0x400154,10,17,10,17,BasicBlock,None,12)
+            }
+            {
+                JCBlockNode (0x400060,0,JCBlockNode0,17,JCBlockNode0,163)
+                {
+                    JCConditionalNode (0x400060,1,JCConditionalNode1,14,JCConditionalNode1,163)
+                    {
+                        JCSectionNode (0x400060,3,26,3,26,BasicBlock,None,68)
+                        {
+                            JCSectionNode (0x4000a4,4,44,4,44,BasicBlock,None,68)
+                        }
+                        {
+                            JCConditionalNode (0x4000d8,0,JCConditionalNode0,13,JCConditionalNode0,91)
+                            {
+                                JCSectionNode (0x4000d8,5,58,5,58,BasicBlock,None,48)
+                                {
+                                    JCSectionNode (0x400108,6,71,6,71,BasicBlock,None,27)
+                                }
+                                {
+                                    JCSectionNode (0x40011c,7,77,7,77,BasicBlock,None,23)
+                                }
+                                JCSectionNode (0x40012c,8,82,8,82,BasicBlock,None,16)
+                            }
+                        }
+                        JCSectionNode (0x40015c,11,JCSectionNode11,12,JCSectionNode11,BasicBlock,None,4)
+                    }
+                }
+            }
+            JCSectionNode (0x400170,12,JCSectionNode12,16,JCSectionNode12,BasicBlock,None,4)
+        }
+    }
+}
+JCCfg (0,main,816)
+{
+    JCFunctionNode (0x400018,0,JCFunctionNode0,15,JCFunctionNode0,836)
+    {
+        JCSectionNode (0x400018,0,2,0,2,FunctionCall,binary_search,20)
+            JCSectionNode (0x400040,2,16,2,16,BasicBlock,None,32)
+            JCLoopNode (0x40013c,0,108,11,108,4,764)
+            {
+                JCConditionalNode (0x40013c,2,JCConditionalNode2,18,JCConditionalNode2,191)
+                {
+                    JCSectionNode (0x40013c,9,87,9,87,BasicBlock,None,24)
+                    {
+                        JCSectionNode (0x400154,10,17,10,17,BasicBlock,None,12)
+                    }
+                    {
+                        JCBlockNode (0x400060,0,JCBlockNode0,17,JCBlockNode0,163)
+                        {
+                            JCConditionalNode (0x400060,1,JCConditionalNode1,14,JCConditionalNode1,163)
+                            {
+                                JCSectionNode (0x400060,3,26,3,26,BasicBlock,None,68)
+                                {
+                                    JCSectionNode (0x4000a4,4,44,4,44,BasicBlock,None,68)
+                                }
+                                {
+                                    JCConditionalNode (0x4000d8,0,JCConditionalNode0,13,JCConditionalNode0,91)
+                                    {
+                                        JCSectionNode (0x4000d8,5,58,5,58,BasicBlock,None,48)
+                                        {
+                                            JCSectionNode (0x400108,6,71,6,71,BasicBlock,None,27)
+                                        }
+                                        {
+                                            JCSectionNode (0x40011c,7,77,7,77,BasicBlock,None,23)
+                                        }
+                                        JCSectionNode (0x40012c,8,82,8,82,BasicBlock,None,16)
+                                    }
+                                }
+                                JCSectionNode (0x40015c,11,JCSectionNode11,12,JCSectionNode11,BasicBlock,None,4)
+                            }
+                        }
+                    }
+                    JCSectionNode (0x400170,12,JCSectionNode12,16,JCSectionNode12,BasicBlock,None,4)
+                }
+            }
+    }
+}

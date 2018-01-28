@@ -1,0 +1,20 @@
+<CFG name="main">
+</CFG>
+<CFG name="Test">
+</CFG>
+<CFG name="Initialize">
+  <LOOP maxiter="10">
+    <LOOP maxiter="10">
+    </LOOP>
+  </LOOP>
+</CFG>
+<CFG name="InitSeed">
+</CFG>
+<CFG name="Sum">
+  <LOOP maxiter="10">
+    <LOOP maxiter="10">
+    </LOOP>
+  </LOOP>
+</CFG>
+<CFG name="RandomInteger">
+</CFG>

@@ -1,0 +1,287 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<h1>/home/cavicchio/Downloads/heptane_svn/benchmarks/crc/crc.c</h1> <br>
+<table border=0 cellpadding=0 cellspacing=0>
+<tr><td><h2>Frequency</h2></td><th><h2>Source</h2></th></tr><tr><td> 0</td>
+<td><tt><pre>/* MDH WCET BENCHMARK SUITE. File version $Id: crc.c,v 1.1.1.1 2007-12-11 15:22:55 puaut Exp $ */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*************************************************************************/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*   SNU-RT Benchmark Suite for Worst Case Timing Analysis               */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*   =====================================================               */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                              Collected and Modified by S.-S. Lim      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                           sslim@archi.snu.ac.kr       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                         Real-Time Research Group      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                        Seoul National University      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*        < Features > - restrictions for our experimental environment   */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          1. Completely structured.                                    */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - There are no unconditional jumps.                     */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - There are no exit from loop bodies.                   */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                 (There are no 'break' or 'return' in loop bodies)     */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          2. No 'switch' statements.                                   */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          3. No 'do..while' statements.                                */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          4. Expressions are restricted.                               */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - There are no multiple expressions joined by 'or',     */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                'and' operations.                                      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*          5. No library calls.                                         */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*               - All the functions needed are implemented in the       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                 source file.                                          */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*************************************************************************/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  FILE: crc.c                                                          */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  SOURCE : Numerical Recipes in C - The Second Edition                 */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  DESCRIPTION :                                                        */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*     A demonstration for CRC (Cyclic Redundancy Check) operation.      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*     The CRC is manipulated as two functions, icrc1 and icrc.          */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*     icrc1 is for one character and icrc uses icrc1 for a string.      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*     The input string is stored in array lin[].                        */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*     icrc is called two times, one for X-Modem string CRC and the      */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*     other for X-Modem packet CRC.                                     */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  REMARK :                                                             */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*  EXECUTION TIME :                                                     */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*                                                                       */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/*************************************************************************/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/* Changes:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> * JG 2005/12/12: Indented program.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#include <annot.h></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>typedef unsigned char uchar;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#define LOBYTE(x) ((uchar)((x) & 0xFF))</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#define HIBYTE(x) ((uchar)((x) >> 8))</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>unsigned char   lin[256] = "asdffeagewaHAFEFaeDsFEawFdsFaefaeerdjgp";</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>unsigned short  icrc1(unsigned short crc, unsigned char onech);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>unsigned short </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>icrc(unsigned short crc, unsigned long len,</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>     short jinit, int jrev);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>unsigned short </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>icrc1(unsigned short crc, unsigned char onech)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>510 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	int             i;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>510 </td>
+<td><tt><pre>	unsigned short  ans = (crc ^ onech << 8);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>510 4080 4590 </td>
+<td><tt><pre>	for (i = 0; i < 8; i++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  ANNOT_MAXITER(8);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>4080 </td>
+<td><tt><pre>		if (ans & 0x8000)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>4078 </td>
+<td><tt><pre>			ans = (ans <<= 1) ^ 4129;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		else</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>			ans <<= 1;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>510 </td>
+<td><tt><pre>	return ans;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>510 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>unsigned short </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>icrc(unsigned short crc, unsigned long len,</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>     short jinit, int jrev)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	unsigned short  icrc1(unsigned short crc, unsigned char onech);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	static unsigned short icrctb[256], init = 0;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	static uchar    rchr[256];</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>	unsigned short  tmp1, tmp2, j, cword = crc;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	static uchar    it[16] = {0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15};</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>	if (!init) {</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>		init = 1;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 510 512 </td>
+<td><tt><pre>		for (j = 0; j <= 255; j++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		  ANNOT_MAXITER(255);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>510 </td>
+<td><tt><pre>		  icrctb[j] = icrc1(j << 8, (uchar) 0);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>510 </td>
+<td><tt><pre>		  rchr[j] = (uchar) (it[j & 0xF] << 4 | it[j >> 4]);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>	if (jinit >= 0)</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>		cword = ((uchar) jinit) | (((uchar) jinit) << 8);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>	else if (jrev < 0)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>		cword = rchr[HIBYTE(cword)] | rchr[LOBYTE(cword)] << 8;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifdef DEBUG</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	printf("len = %d\n", len);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 84 86 </td>
+<td><tt><pre>	for (j = 1; j <= len; j++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	        ANNOT_MAXITER(42);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>84 </td>
+<td><tt><pre>		if (jrev < 0) {</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>82 </td>
+<td><tt><pre>			tmp1 = rchr[lin[j]] ^ HIBYTE(cword);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		} else {</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>			tmp1 = lin[j] ^ HIBYTE(cword);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>84 </td>
+<td><tt><pre>		cword = icrctb[tmp1] ^ LOBYTE(cword) << 8;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>	if (jrev >= 0) {</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>		tmp2 = cword;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	} else {</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>		tmp2 = rchr[HIBYTE(cword)] | rchr[LOBYTE(cword)] << 8;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>	return (tmp2);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>main(void)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	unsigned short  i1, i2;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	unsigned long   n;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	n = 40;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	lin[n + 1] = 0;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	i1 = icrc(0, n, (short) 0, 1);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	lin[n + 1] = HIBYTE(i1);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	lin[n + 2] = LOBYTE(i1);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	i2 = icrc(i1, n + 2, (short) 0, 1);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	return 0;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+</table>
+</body> </html>

@@ -1,0 +1,12 @@
+<CFG name="select">
+  <LOOP maxiter="16">
+    <LOOP maxiter="1">
+      <LOOP maxiter="1">
+      </LOOP>
+      <LOOP maxiter="16">
+      </LOOP>
+    </LOOP>
+  </LOOP>
+</CFG>
+<CFG name="main">
+</CFG>

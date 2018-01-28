@@ -1,0 +1,463 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<h1>/home/cavicchio/Downloads/heptane_svn/benchmarks/fft/fft.c</h1> <br>
+<table border=0 cellpadding=0 cellspacing=0>
+<tr><td><h2>Frequency</h2></td><th><h2>Source</h2></th></tr><tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#include <annot.h></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#define PI 3.14159</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#define M_PI 3.14159</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>double ar[8];</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>double ai[8] = {0.,  };</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>static double fabs(double n)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>578 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  double f;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>578 3 </td>
+<td><tt><pre>  if (n >= 0) {f = n;}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>575 </td>
+<td><tt><pre>  else {f = -n;}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>578 </td>
+<td><tt><pre>  return f;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>578 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>static double log(double n)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>4 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>4 </td>
+<td><tt><pre>   double result=1.0;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  /*if (n==2.0) {return(0.3);}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  else if (n==8.0) {return(0.9);}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  else return(1.0); /* just to return something IP */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>4 0 </td>
+<td><tt><pre>  if (n==2.0) {result=0.3;}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>4 3 </td>
+<td><tt><pre>  else if (n==8.0) {result=0.9;}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>4 </td>
+<td><tt><pre>  return result;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>4 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>static double sin(double rad)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>72 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  double app;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  double diff;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>72 </td>
+<td><tt><pre>  int inc = 1;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  /*  while (rad > 2*PI) [0] {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>      rad -= 2*PI;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>      }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>      </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>      while (rad < -2*PI) [0] {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>      rad += 2*PI;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>      }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>72 </td>
+<td><tt><pre>  app = diff = rad;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>72 </td>
+<td><tt><pre>  diff = (diff * (-(rad*rad))) /</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>72 </td>
+<td><tt><pre>    ((2.0 * inc) * (2.0 * inc + 1.0));</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>72 </td>
+<td><tt><pre>  app = app + diff;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>72 </td>
+<td><tt><pre>  inc++;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>72 576 </td>
+<td><tt><pre>  while(fabs(diff) >= 0.00001) </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>    {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>      ANNOT_MAXITER(8);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>504 </td>
+<td><tt><pre>      diff = (diff * (-(rad*rad))) /</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>504 </td>
+<td><tt><pre>	((2.0 * inc) * (2.0 * inc + 1.0));</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>504 </td>
+<td><tt><pre>      app = app + diff;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>504 </td>
+<td><tt><pre>      inc++;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>72 </td>
+<td><tt><pre>  return(app);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>72 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>static double cos(double rad)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>40 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  double sin();</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>40 </td>
+<td><tt><pre>  return (sin (PI / 2.0 - rad));</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>40 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int fft1(int n, int flag)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  int i, j, k, it, xp, xp2, j1, j2, iter;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  double sign, w, wr, wi, dr1, dr2, di1, di2, tr, ti, arg;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  </pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>  int result=0;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  </pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>  if (n < 2) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>    </pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>    result = 999;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>    </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  } else {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>    </pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>    iter = log((double)n)/log(2.0);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>    j = 1;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifdef DEBUG </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>    printf("iter=%d\n",iter);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 8 10 </td>
+<td><tt><pre>    for(i = 0; i < iter; i++) </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>      {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>      ANNOT_MAXITER(4);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>8 </td>
+<td><tt><pre>      j *= 2;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>    }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>    </pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>    if(fabs(n-j) > 1.0e-6) {</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>      result=1;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>    } else {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>      </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>      /*  Main FFT Loops  */</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 0 </td>
+<td><tt><pre>      if (flag == 1) {sign=1.0;} else {sign = -1.0;}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>      xp2 = n;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 8 10 </td>
+<td><tt><pre>      for(it = 0; it < iter; it++) </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  ANNOT_MAXITER(4);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>8 </td>
+<td><tt><pre>	  xp = xp2;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>8 </td>
+<td><tt><pre>	  xp2 /= 2;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>8 </td>
+<td><tt><pre>	  w = PI / xp2;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifdef DEBUG</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  printf("xp2=%d\n",xp2);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>8 32 40 </td>
+<td><tt><pre>	  for(k = 0; k < xp2; k++) </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	    </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	    {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  ANNOT_MAXITER(4);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>32 </td>
+<td><tt><pre>	  arg = k * w;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>32 </td>
+<td><tt><pre>	  wr = cos(arg);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>32 </td>
+<td><tt><pre>	  wi = sign * sin(arg);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>32 </td>
+<td><tt><pre>	  i = k - xp;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  </pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>32 128 160 </td>
+<td><tt><pre>	  for(j = xp; j <= n; j += xp) </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	    {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	      ANNOT_MAXITER(4);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>128 </td>
+<td><tt><pre>	      j1 = j + i;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>128 </td>
+<td><tt><pre>	      j2 = j1 + xp2;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>128 </td>
+<td><tt><pre>	      dr1 = ar[j1];</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>128 </td>
+<td><tt><pre>	      dr2 = ar[j2];</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>128 </td>
+<td><tt><pre>	      di1 = ai[j1];</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>128 </td>
+<td><tt><pre>	      di2 = ai[j2];</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>128 </td>
+<td><tt><pre>	      tr = dr1 - dr2;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>128 </td>
+<td><tt><pre>	      ti = di1 - di2;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>128 </td>
+<td><tt><pre>	      ar[j1] = dr1 + dr2;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>128 </td>
+<td><tt><pre>	      ai[j1] = di1 + di2;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>128 </td>
+<td><tt><pre>	      ar[j2] = tr * wr - ti * wi;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>128 </td>
+<td><tt><pre>	      ai[j2] = ti * wr + tr * wi;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	    }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	    }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>      /*  Digit Reverse Counter  */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>      </pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>      j1 = n / 2;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>      j2 = n - 1;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>      j = 1;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#ifdef DEBUG</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>      printf("j2=%d\n",j2);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#endif</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 14 16 </td>
+<td><tt><pre>      for(i = 1; i <= j2; i++) </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  ANNOT_MAXITER(7);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>14 </td>
+<td><tt><pre>	  if(i < j) {</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>14 </td>
+<td><tt><pre>	    tr = ar[j-1];</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>14 </td>
+<td><tt><pre>	    ti = ai[j-1];</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>14 </td>
+<td><tt><pre>	    ar[j-1] = ar[i-1];</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>14 </td>
+<td><tt><pre>	    ai[j-1] = ai[i-1];</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>14 </td>
+<td><tt><pre>	    ar[i-1] = tr;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>14 </td>
+<td><tt><pre>	    ai[i-1] = ti;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  }</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>14 </td>
+<td><tt><pre>	k = j1;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>14 42 </td>
+<td><tt><pre>	while(k < j) </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  ANNOT_MAXITER(2);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>28 </td>
+<td><tt><pre>	  j -= k;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>28 </td>
+<td><tt><pre>	  k /= 2;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>14 </td>
+<td><tt><pre>	j += k;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>      }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>      if(flag == 0) {</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>	result=0;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>      } else {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>	w = n;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 16 18 </td>
+<td><tt><pre>	for(i = 0; i < n; i++)</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  ANNOT_MAXITER(8);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>16 </td>
+<td><tt><pre>	  ar[i] /= w;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>16 </td>
+<td><tt><pre>	  ai[i] /= w;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>      }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>    }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>  return(result);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>2 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int main()</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	int  i, n = 8, flag, chkerr;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	/* ar  */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 8 9 </td>
+<td><tt><pre>	for(i = 0; i < n; i++)</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  ANNOT_MAXITER(8);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>8 </td>
+<td><tt><pre>	  ar[i] = cos(2*M_PI*i/n);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>8 </td>
+<td><tt><pre>	  ai[i] = 0.0;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	/* forward fft */</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	flag = 0;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	chkerr = fft1(n, flag);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	/* inverse fft */</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	flag = 1;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	chkerr = fft1(n, flag);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+</table>
+</body> </html>

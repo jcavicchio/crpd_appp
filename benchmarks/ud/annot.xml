@@ -1,0 +1,26 @@
+<CFG name="main">
+  <LOOP maxiter="5">
+    <LOOP maxiter="5">
+    </LOOP>
+  </LOOP>
+</CFG>
+<CFG name="ludcmp">
+  <LOOP maxiter="5">
+    <LOOP maxiter="5">
+      <LOOP maxiter="5">
+      </LOOP>
+    </LOOP>
+    <LOOP maxiter="5">
+      <LOOP maxiter="5">
+      </LOOP>
+    </LOOP>
+  </LOOP>
+  <LOOP maxiter="5">
+    <LOOP maxiter="5">
+    </LOOP>
+  </LOOP>
+  <LOOP maxiter="5">
+    <LOOP maxiter="5">
+    </LOOP>
+  </LOOP>
+</CFG>

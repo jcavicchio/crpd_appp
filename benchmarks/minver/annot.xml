@@ -1,0 +1,30 @@
+<CFG name="main">
+  <LOOP maxiter="3">
+    <LOOP maxiter="3">
+    </LOOP>
+  </LOOP>
+  <LOOP maxiter="3">
+    <LOOP maxiter="3">
+    </LOOP>
+  </LOOP>
+</CFG>
+<CFG name="mmul">
+  <LOOP maxiter="3">
+    <LOOP maxiter="3">
+      <LOOP maxiter="3">
+      </LOOP>
+    </LOOP>
+  </LOOP>
+</CFG>
+<CFG name="minver">
+  <LOOP maxiter="3">
+  </LOOP>
+  <LOOP maxiter="3">
+    <LOOP maxiter="3">
+    </LOOP>
+  </LOOP>
+  <LOOP maxiter="3">
+    <LOOP maxiter="3">
+    </LOOP>
+  </LOOP>
+</CFG>

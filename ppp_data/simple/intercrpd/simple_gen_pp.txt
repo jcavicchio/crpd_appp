@@ -1,0 +1,91 @@
+Process loop nodes: 16 milliseconds 0 seconds
+Sort all loop nodes: 0 milliseconds 0 seconds
+Process block nodes: 0 milliseconds 0 seconds
+Process conditional nodes 1: 0 milliseconds 0 seconds
+Process function calls: 0 milliseconds 0 seconds
+Process successor conditional nodes: 0 milliseconds 0 seconds
+Process conditional nodes 2: 0 milliseconds 0 seconds
+Process common loop exit nodes: 0 milliseconds 0 seconds
+Process conditional nodes 3: 0 milliseconds 0 seconds
+Process loop exit nodes: 0 milliseconds 0 seconds
+Process conditional nodes 3: 0 milliseconds 0 seconds
+Process check loop exit nodes: 0 milliseconds 0 seconds
+Process new instruction addresses: 0 milliseconds 0 seconds
+BenchmarkCfgParser: Process New Instruction Addresses State
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Program ID 0 Name  Next Address 0x400070
+    CFGs: (0,main) 
+CFG ID 0 Name main WCET -1
+    Exit Node: 
+    Nodes: (0,2,0x400018,-1) 
+Section Node ID 0 Name 2 Address 0x400018 Type BasicBlock Function None WCET -1 CFG (0,main)
+Node ID 0 Name 2 Address 0x400018 Type BasicBlock Function None WCET -1 CFG (0,main)
+    Parent CFG ID 0 Name main WCET -1
+    Predecessors: 
+    Successors: 
+    Number of Instructions: 23
+    Instruction Cache States: 
+    Data Cache States: 
+
+Display CFG structure: 0 milliseconds 0 seconds
+Display CFG instructions: 0 milliseconds 0 seconds
+Benchmark parse CFG: 281 milliseconds 0 seconds
+Compute NPR WCET Cost
+(0,main,0,2,0x400018,-1,BasicBlock,None)
+Non preemptive WCET cost is 92
+Compute NPR WCET: 0 milliseconds 0 seconds
+Done Computing NPR WCET Cost
+WCET Cost Node List:
+(0,main,0,2,0x400018,92,BasicBlock,None)
+End WCET Cost Node List:
+Compute WCET: 0 milliseconds 0 seconds
+Display WCET CFG structure: 0 milliseconds 0 seconds
+Display CFG instructions: 0 milliseconds 0 seconds
+Generate WCET CFG Grammar Structure Information: 0 milliseconds 0 seconds
+Benchmark parse WCET: 42 milliseconds 0 seconds
+Cache State Node List:
+(0,main,0,2,0x400018,BasicBlock,None)
+End Cache State Node List:
+Generate cache state list: 0 milliseconds 0 seconds
+Compute Cache State Node List:
+(0,main,0,2,0x400018,BasicBlock,None,No Predecessors,23/23)
+Compute Missing Cache State Node List:
+End Compute Missing Cache State Node List:
+End Compute Cache State Node List:
+Compute cache state: 10 milliseconds 0 seconds
+BenchmarkCacheParser: Compute Cache State
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Program ID 0 Name  Next Address 0x400070
+    CFGs: (0,main) 
+CFG ID 0 Name main WCET 92
+    Exit Node: 
+    Nodes: (0,2,0x400018,92) 
+Section Node ID 0 Name 2 Address 0x400018 Type BasicBlock Function None WCET 92 CFG (0,main)
+Node ID 0 Name 2 Address 0x400018 Type BasicBlock Function None WCET 92 CFG (0,main)
+    Parent CFG ID 0 Name main WCET 92
+    Predecessors: 
+    Successors: 
+    Number of Instructions: 23
+    Instruction Cache States: 
+    Data Cache States: 
+        Cache Memory ID 45 Address 
+            Cache Lines: (0,<empty>) (1,<empty>) (2,<empty>) (3,<empty>) (4,<empty>) (5,<empty>) (6,<empty>) (7,<empty>) (8,<empty>) (9,<empty>) (10,<empty>) (11,<empty>) (12,<empty>) (13,<empty>) (14,<empty>) (15,<empty>) (16,<empty>) (17,<empty>) (18,<empty>) (19,<empty>) (20,<empty>) (21,<empty>) (22,<empty>) (23,<empty>) (24,<empty>) (25,<empty>) (26,<empty>) (27,<empty>) (28,<empty>) (29,<empty>) (30,<empty>) (31,0x7fffdfe0) 
+
+Computing UCBs
+computeUCBs: Number of instructions is 23
+Compute UCBs: 81 milliseconds 0 seconds
+Done computing UCBs
+Compute Preemption Cost Matrix
+Compute Preemption Cost Matrix: 38 milliseconds 0 seconds
+Done Computing Preemption Cost Matrix
+The number of CFG nodes is 23
+Compute Grammar Node Count: 0 milliseconds 0 seconds
+Generate Preemption Cost Grammar: 6 milliseconds 0 seconds
+Generate CFG Grammar: 0 milliseconds 0 seconds
+Generate CFG Grammar Structure Information: 0 milliseconds 0 seconds
+Maximum task UCB Count is 45
+Compute Maximum UCB Count: 0 milliseconds 0 seconds
+Generate Linear Block List: 0 milliseconds 0 seconds
+Generate Linear Cost Matrices: 9 milliseconds 0 seconds
+Benchmark parse cache: 215 milliseconds 0 seconds
+Benchmark parsing overall: 540 milliseconds 0 seconds

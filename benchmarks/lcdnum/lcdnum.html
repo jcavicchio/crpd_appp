@@ -1,0 +1,217 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<h1>/home/cavicchio/Downloads/heptane_svn/benchmarks/lcdnum/lcdnum.c</h1> <br>
+<table border=0 cellpadding=0 cellspacing=0>
+<tr><td><h2>Frequency</h2></td><th><h2>Source</h2></th></tr><tr><td> 0</td>
+<td><tt><pre>/* MDH WCET BENCHMARK SUITE. File version $Id: lcdnum.c,v 1.1.1.1 2007-12-11 15:22:56 puaut Exp $ */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>/***********************************************************************</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  FILE: lcdnum.c</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  PURPOSE: demonstrate effect of flow facts for straight loops</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *  IDEA: reading from an in port mapped to a ten-item buffer,</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *        send first five characters to an LCD as numbers</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> *</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> ***********************************************************************/</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>#include <annot.h></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre> /*</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  * Changes: JG 2005/12/23: Changed type of main to int Inserted prototypes.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>                            Indented program.</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>  */</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>unsigned char   num_to_lcd(unsigned char a);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>unsigned char </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>num_to_lcd(unsigned char a)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>10 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	/*</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	 * -0-            1            01 1   2         2   4        02  04</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	 * -3-    i.e.    8     i.e.   08 4   5        16   32       10  20</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	 * -6-           64            40</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	 * </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	 */</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>10 0 </td>
+<td><tt><pre>	      if (a == 0x00) { return 0; }</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>10 0 </td>
+<td><tt><pre>	 else if (a == 0x01) { return 0x24; }</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>10 0 </td>
+<td><tt><pre>	 else if (a == 0x02) { return 1 + 4 + 8 + 16 + 64; }</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>10 0 </td>
+<td><tt><pre>	 else if (a == 0x03) { return 1 + 4 + 8 + 32 + 64; }</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>10 1 </td>
+<td><tt><pre>	 else if (a == 0x04) { return 2 + 4 + 8 + 32; }</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>9 1 </td>
+<td><tt><pre>	 else if (a == 0x05) { return 1 + 4 + 8 + 16 + 64; }</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>8 1 </td>
+<td><tt><pre>	 else if (a == 0x06) { return 1 + 2 + 8 + 16 + 32 +64; }</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>7 0 </td>
+<td><tt><pre>	 else if (a == 0x07) { return 1 + 4 + 32; }</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>7 0 </td>
+<td><tt><pre>	 else if (a == 0x08) { return 0x7F; }</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>7 0 </td>
+<td><tt><pre>	 else if (a == 0x09) { return 0x0F + 32 + 64; }</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>7 0 </td>
+<td><tt><pre>	 else if (a == 0x0A) { return 0x0F + 16 + 32; }</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>7 0 </td>
+<td><tt><pre>	 else if (a == 0x0B) { return 2 + 8 + 16 + 32 + 64; }</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>7 1 </td>
+<td><tt><pre>	 else if (a == 0x0C) { return 1 + 2 + 16 + 64; }</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>6 1 </td>
+<td><tt><pre>	 else if (a == 0x0D) { return 4 + 8 + 16 + 32 + 64; }</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>5 1 </td>
+<td><tt><pre>	 else if (a == 0x0E) { return 1 + 2 + 8 + 16 + 64; }</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>4 </td>
+<td><tt><pre>	 else if (a == 0x0F) { return 1 + 2 + 8 + 16; }</pre></tt></td></tr>
+<tr> <td>0 </td>
+<td><tt><pre>	 return 0;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	/*</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	switch (a) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		case 0x00:return 0;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	case 0x01:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		return 0x24;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	case 0x02:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		return 1 + 4 + 8 + 16 + 64;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	case 0x03:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		return 1 + 4 + 8 + 32 + 64;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	case 0x04:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		return 2 + 4 + 8 + 32;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	case 0x05:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		return 1 + 4 + 8 + 16 + 64;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	case 0x06:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		return 1 + 2 + 8 + 16 + 32 + 64;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	case 0x07:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		return 1 + 4 + 32;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	case 0x08:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		return 0x7F;	// light all</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	case 0x09:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		return 0x0F + 32 + 64;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	case 0x0A:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		return 0x0F + 16 + 32;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	case 0x0B:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		return 2 + 8 + 16 + 32 + 64;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	case 0x0C:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		return 1 + 2 + 16 + 64;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	case 0x0D:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		return 4 + 8 + 16 + 32 + 64;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	case 0x0E:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		return 1 + 2 + 8 + 16 + 64;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	case 0x0F:</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>		return 1 + 2 + 8 + 16;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	return 0;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	*/</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>10 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>volatile unsigned char IN;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>volatile unsigned char OUT;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>int </pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>main(void)</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>{</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	int             i;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	unsigned char   a;</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre></pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 10 11 </td>
+<td><tt><pre>	for (i = 0; i < 10; i++) {</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  ANNOT_MAXITER(10);</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>10 </td>
+<td><tt><pre>	  a = IN;		/* scan port */</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>10 </td>
+<td><tt><pre>	  if (i < 5) {</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>10 </td>
+<td><tt><pre>	    a = a & 0x0F;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>10 </td>
+<td><tt><pre>	    OUT = num_to_lcd(a);</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	  }</pre></tt></td></tr>
+<tr><td> 0</td>
+<td><tt><pre>	}</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>	return 0;</pre></tt></td></tr>
+<tr bgcolor="lightgreen"> <td>1 </td>
+<td><tt><pre>}</pre></tt></td></tr>
+</table>
+</body> </html>

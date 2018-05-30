@@ -17,9 +17,10 @@ import java.util.Scanner;
 public class JCBreakDownUtilization 
 {
     private static int INC_BRT_CYCLES = 10;
+    private static int INC_SMALL_BRT_CYCLES = 1;
     private static long LARGEST_COST = Long.MAX_VALUE;
     private static int MIN_BRT_CYCLES = 0;
-    private static int MAX_BRT_CYCLES = 390;
+    private static int MAX_BRT_CYCLES = 640;
     private static int NUMBER_OF_TASKS = 14; // 15
     private static int SCHEDULE_OK = 1;
     private static int SCHEDULE_NOTOK = 0;
@@ -785,7 +786,7 @@ public class JCBreakDownUtilization
 	        	System.out.println("The breakdown utilization for cache block reload cycles of " + cacheBRTCycles + " is: " + (breakdownUtilization+1) + " percent");
 	        }
 
-	        cacheBRTCycles -= INC_BRT_CYCLES;
+	        cacheBRTCycles -= (cacheBRTCycles <= INC_BRT_CYCLES) ? INC_SMALL_BRT_CYCLES : INC_BRT_CYCLES;
 	        
 			if (_debugBRTHeapUsage == true)
 			{

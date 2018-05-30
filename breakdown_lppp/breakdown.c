@@ -15,7 +15,7 @@
 #define LC (LONG_MAX)
 #define INV_PP (-1)
 /* #define DEBUG_CODE */
-/* #define EPP_ALGORITHM */
+#define EPP_ALGORITHM
 #define SPLIT_LARGE_BLOCKS
 /* #define COST_MATRIX_DATA_ONLY */
 /* #define BERTOGNA_ALGORITHM */
@@ -1749,8 +1749,9 @@ void checkTaskBasicBlockExecution(index_t noTasks, char **fileNamePrefixes, inde
 #define MIN_UTIL_PCNT        (1)
 #define MAX_UTIL_PCNT        (100)
 #define INC_BRT_CYCLES       (10)
+#define INC_SMALL_BRT_CYCLES (1)
 #define MIN_BRT_CYCLES       (0)
-#define MAX_BRT_CYCLES       (390)
+#define MAX_BRT_CYCLES       (640)
 
 int main(int argc, char *argv[])
 {
@@ -2074,7 +2075,7 @@ int main(int argc, char *argv[])
                breakdownUtilization+1);
 #endif
 
-        cacheBRTCycles -= INC_BRT_CYCLES;
+        cacheBRTCycles -= (cacheBRTCycles <= INC_BRT_CYCLES) ? INC_SMALL_BRT_CYCLES : INC_BRT_CYCLES;
     }
     exit(1);
 }
